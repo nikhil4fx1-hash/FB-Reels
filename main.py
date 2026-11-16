@@ -5,7 +5,7 @@ import feedparser
 import urllib.parse
 import asyncio
 import io
-import time  # <-- നെറ്റ്‌വർക്ക് ഇഷ്യൂ വരുമ്പോൾ സമയം നൽകാൻ പുതിയതായി ചേർത്തത്
+import time
 from PIL import Image
 import edge_tts
 from moviepy.editor import ImageClip, AudioFileClip
@@ -38,7 +38,6 @@ def get_trending_topic():
     return "ഇന്നത്തെ പ്രധാന വാർത്തകൾ"
 
 def get_available_models():
-    """ജെമിനി അക്കൗണ്ടിലുള്ള ആക്ടീവ് ആയ മോഡലുകൾ എടുക്കാൻ"""
     url = f"https://generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}"
     available_models = []
     try:
@@ -47,7 +46,6 @@ def get_available_models():
         if 'models' in data:
             for m in data['models']:
                 if 'generateContent' in m.get('supportedGenerationMethods', []):
-                    # 'models/' എന്ന ഭാഗം ഒഴിവാക്കി പേര് മാത്രം എടുക്കുന്നു
                     available_models.append(m['name'].split('/')[-1])
     except Exception as e:
         print("Model Fetch Error:", e)
@@ -56,13 +54,9 @@ def get_available_models():
 def get_gemini_script(topic):
     available_models = get_available_models()
     
-    # ലോഗിൽ നിന്നും മനസ്സിലാക്കിയ പുതിയ വർക്കിങ് മോഡലുകളുടെ ലിസ്റ്റ്
-    preferences = ['gemini-3.8-flash', 'gemini-3.1-pro-preview', 'gemma-4-31b-it', 'gemini-1.5-flash-latest']
-    
-    # അക്കൗണ്ടിൽ ഉള്ള മോഡലുകൾ മാത്രം ലിസ്റ്റിൽ എടുക്കുന്നു
+    preferences = ['gemini-3.8-flash', 'gemini-3.1-pro-preview', 'gemma-4-31b-it', 'gemma-4-26b-a4b-it', 'gemini-1.5-flash-latest']
     models_to_try = [m for m in preferences if m in available_models]
     
-    # ഇഷ്ടമുള്ളവ ഇല്ലെങ്കിൽ അക്കൗണ്ടിലുള്ള ബാക്കി മോഡലുകൾ കൂട്ടി ചേർക്കുന്നു
     for m in available_models:
         if m not in models_to_try:
             models_to_try.append(m)
@@ -101,37 +95,53 @@ def get_gemini_script(topic):
                 
         except Exception as e:
             print(f"❌ {model} കണക്ഷൻ എറർ: {e}")
-            continue # എറർ വന്നാൽ അടുത്ത മോഡലിലേക്ക് പോകും
+            continue
             
     print("❌ എല്ലാ മോഡലുകളും പരാജയപ്പെട്ടു.")
     return None, None, None
 
-def generate_flux_image(prompt, filename="reel_image.jpg"):
-    print("\nHugging Face (FLUX.1) വഴി ചിത്രം ജനറേറ്റ് ചെയ്യുന്നു...")
-    url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell"
-    headers = {"Authorization": f"Bearer {HF_API_KEY}"}
+def generate_image(prompt, filename="reel_image.jpg"):
+    print("\nചിത്രം ജനറേറ്റ് ചെയ്യാൻ ശ്രമിക്കുന്നു...")
+    
+    # 1. ആദ്യം Hugging Face (FLUX.1) വഴി ശ്രമിക്കുന്നു
+    print("-> Option A: Hugging Face (FLUX.1)")
+    hf_url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell"
+    headers = {
+        "Authorization": f"Bearer {HF_API_KEY}",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    }
     payload = {"inputs": f"{prompt}, vertical portrait layout 9:16, highly detailed, 4k, cinematic lighting"}
     
-    # നെറ്റ്‌വർക്ക് പ്രശ്നങ്ങൾ വന്നാൽ 3 തവണ വരെ വീണ്ടും ശ്രമിക്കാൻ (Retry Logic)
-    for attempt in range(3):
+    for attempt in range(2): # 2 തവണ മാത്രം നോക്കും, സമയം കളയാതിരിക്കാൻ
         try:
-            res = requests.post(url, headers=headers, json=payload, timeout=90)
+            res = requests.post(hf_url, headers=headers, json=payload, timeout=45)
             if res.status_code == 200:
                 image = Image.open(io.BytesIO(res.content))
                 image = image.resize((1080, 1920), Image.Resampling.LANCZOS)
                 image.save(filename)
-                print("✅ ചിത്രം വിജയകരമായി ഡൗൺലോഡ് ചെയ്തു!")
+                print("✅ Hugging Face വഴി ചിത്രം വിജയകരമായി ഡൗൺലോഡ് ചെയ്തു!")
                 return filename
-            else:
-                 print(f"⚠️ HF API Error (ശ്രമം {attempt+1}): {res.status_code} - {res.text}")
         except Exception as e:
-            print(f"⚠️ HF Network Error (ശ്രമം {attempt+1}): കണക്ഷൻ ലഭിച്ചില്ല.")
-        
-        if attempt < 2:
-            print("⏳ 5 സെക്കൻഡിനു ശേഷം വീണ്ടും ശ്രമിക്കുന്നു...")
-            time.sleep(5) # 5 സെക്കൻഡ് വെയിറ്റ് ചെയ്തിട്ട് വീണ്ടും ട്രൈ ചെയ്യും
+            print(f"⚠️ HF Network Error (ശ്രമം {attempt+1})")
+        if attempt < 1: time.sleep(3)
             
-    print("❌ 3 തവണ ശ്രമിച്ചിട്ടും ചിത്രം ഡൗൺലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.")
+    # 2. Hugging Face ഫെയിൽ ആയാൽ Pollinations.ai (Fallback) വഴി എടുക്കുന്നു
+    print("\n⚠️ Hugging Face പരാജയപ്പെട്ടു. -> Option B: Pollinations.ai ഉപയോഗിക്കുന്നു...")
+    try:
+        encoded_prompt = urllib.parse.quote(f"{prompt}, vertical portrait layout 9:16, highly detailed, cinematic lighting")
+        # nologo=true കൊടുത്താൽ വാട്ടർമാർക്ക് ഇല്ലാതെ കിട്ടും
+        pollinations_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1080&height=1920&nologo=true"
+        
+        res = requests.get(pollinations_url, timeout=60)
+        if res.status_code == 200:
+            image = Image.open(io.BytesIO(res.content))
+            image.save(filename)
+            print("✅ Pollinations.ai വഴി ചിത്രം വിജയകരമായി ഡൗൺലോഡ് ചെയ്തു!")
+            return filename
+    except Exception as e:
+        print(f"❌ Pollinations Error: {e}")
+
+    print("❌ രണ്ടു വഴികളിലൂടെയും ചിത്രം ഡൗൺലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.")
     return None
 
 async def generate_voiceover(script_text, filename="voice.mp3"):
@@ -162,7 +172,6 @@ def create_video(image_path, audio_path, output_path="final_reel.mp4"):
 def upload_to_facebook(video_path, caption):
     print("\nഫേസ്ബുക്കിലേക്ക് റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
     
-    # Step 1: Initialize
     print("Step 1: Initializing...")
     init_url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}/video_reels"
     res1 = requests.post(init_url, data={'upload_phase': 'start', 'access_token': FB_PAGE_ACCESS_TOKEN}).json()
@@ -171,7 +180,6 @@ def upload_to_facebook(video_path, caption):
         print("❌ Init Failed:", res1)
         return
 
-    # Step 2: Upload
     print(f"Step 2: Uploading (Video ID: {video_id})...")
     upload_url = f"https://rupload.facebook.com/video-upload/v18.0/{video_id}"
     headers = {'Authorization': f'OAuth {FB_PAGE_ACCESS_TOKEN}', 'offset': '0', 'file_size': str(os.path.getsize(video_path))}
@@ -181,7 +189,6 @@ def upload_to_facebook(video_path, caption):
         print("❌ Upload Failed:", res2.text)
         return
 
-    # Step 3: Publish
     print("Step 3: Publishing...")
     payload = {'upload_phase': 'finish', 'video_id': video_id, 'video_state': 'PUBLISHED', 'description': caption, 'access_token': FB_PAGE_ACCESS_TOKEN}
     res3 = requests.post(init_url, data=payload).json()
@@ -197,7 +204,7 @@ async def main():
     script, img_prompt, caption = get_gemini_script(topic)
     
     if script and img_prompt and caption:
-        img_path = generate_flux_image(img_prompt)
+        img_path = generate_image(img_prompt)
         
         if img_path:
             audio_path = await generate_voiceover(script)
@@ -212,9 +219,9 @@ async def main():
             else:
                 print("❌ വോയ്‌സ് ഓവർ റെക്കോർഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.")
         else:
-            print("❌ ചിത്രം ഡൗൺലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.")
+            print("❌ ചിത്രം ലഭ്യമാകാത്തതിനാൽ വർക്ക്ഫ്ലോ നിർത്തുന്നു.")
     else:
-        print("❌ ജെമിനിയിൽ നിന്ന് ആവശ്യമായ ഡാറ്റ ലഭിച്ചില്ല. വർക്ക്ഫ്ലോ നിർത്തുന്നു.")
+        print("❌ ജെമിനിയിൽ നിന്ന് ആവശ്യമായ ഡാറ്റ ലഭിച്ചില്ല.")
 
 if __name__ == "__main__":
     asyncio.run(main())
