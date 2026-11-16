@@ -5,6 +5,7 @@ import feedparser
 import urllib.parse
 import asyncio
 import io
+import time  # <-- നെറ്റ്‌വർക്ക് ഇഷ്യൂ വരുമ്പോൾ സമയം നൽകാൻ പുതിയതായി ചേർത്തത്
 from PIL import Image
 import edge_tts
 from moviepy.editor import ImageClip, AudioFileClip
@@ -55,8 +56,8 @@ def get_available_models():
 def get_gemini_script(topic):
     available_models = get_available_models()
     
-    # നമ്മൾ ആദ്യം ട്രൈ ചെയ്യാൻ ആഗ്രഹിക്കുന്ന മോഡലുകൾ
-    preferences = ['gemini-1.5-flash-latest', 'gemini-1.5-flash', 'gemini-1.5-pro-latest', 'gemini-pro']
+    # ലോഗിൽ നിന്നും മനസ്സിലാക്കിയ പുതിയ വർക്കിങ് മോഡലുകളുടെ ലിസ്റ്റ്
+    preferences = ['gemini-3.8-flash', 'gemini-3.1-pro-preview', 'gemma-4-31b-it', 'gemini-1.5-flash-latest']
     
     # അക്കൗണ്ടിൽ ഉള്ള മോഡലുകൾ മാത്രം ലിസ്റ്റിൽ എടുക്കുന്നു
     models_to_try = [m for m in preferences if m in available_models]
@@ -111,19 +112,26 @@ def generate_flux_image(prompt, filename="reel_image.jpg"):
     headers = {"Authorization": f"Bearer {HF_API_KEY}"}
     payload = {"inputs": f"{prompt}, vertical portrait layout 9:16, highly detailed, 4k, cinematic lighting"}
     
-    try:
-        res = requests.post(url, headers=headers, json=payload, timeout=90)
-        if res.status_code == 200:
-            image = Image.open(io.BytesIO(res.content))
-            image = image.resize((1080, 1920), Image.Resampling.LANCZOS)
-            image.save(filename)
-            print("✅ ചിത്രം വിജയകരമായി ഡൗൺലോഡ് ചെയ്തു!")
-            return filename
-        else:
-             print(f"❌ HF API Error: {res.status_code} - {res.text}")
-             return None
-    except Exception as e:
-        print(f"❌ HF Exception: {e}")
+    # നെറ്റ്‌വർക്ക് പ്രശ്നങ്ങൾ വന്നാൽ 3 തവണ വരെ വീണ്ടും ശ്രമിക്കാൻ (Retry Logic)
+    for attempt in range(3):
+        try:
+            res = requests.post(url, headers=headers, json=payload, timeout=90)
+            if res.status_code == 200:
+                image = Image.open(io.BytesIO(res.content))
+                image = image.resize((1080, 1920), Image.Resampling.LANCZOS)
+                image.save(filename)
+                print("✅ ചിത്രം വിജയകരമായി ഡൗൺലോഡ് ചെയ്തു!")
+                return filename
+            else:
+                 print(f"⚠️ HF API Error (ശ്രമം {attempt+1}): {res.status_code} - {res.text}")
+        except Exception as e:
+            print(f"⚠️ HF Network Error (ശ്രമം {attempt+1}): കണക്ഷൻ ലഭിച്ചില്ല.")
+        
+        if attempt < 2:
+            print("⏳ 5 സെക്കൻഡിനു ശേഷം വീണ്ടും ശ്രമിക്കുന്നു...")
+            time.sleep(5) # 5 സെക്കൻഡ് വെയിറ്റ് ചെയ്തിട്ട് വീണ്ടും ട്രൈ ചെയ്യും
+            
+    print("❌ 3 തവണ ശ്രമിച്ചിട്ടും ചിത്രം ഡൗൺലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല.")
     return None
 
 async def generate_voiceover(script_text, filename="voice.mp3"):
