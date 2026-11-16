@@ -42,12 +42,19 @@ def get_gemini_script(topic):
     
     try:
         res = requests.post(url, json=payload, headers={'Content-Type': 'application/json'})
-        text = res.json()['candidates'][0]['content']['parts'][0]['text']
+        data = res.json()
+        
+        # --- IMPORTANT ERROR LOGGING ADDED HERE ---
+        if 'candidates' not in data:
+            print("❌ Google API Error Response:", data)
+            return None, None, None
+            
+        text = data['candidates'][0]['content']['parts'][0]['text']
         parts = text.strip().split('|')
         if len(parts) >= 3:
             return parts[0].strip(), parts[1].strip(), parts[2].strip()
     except Exception as e:
-        print("Gemini Error:", e)
+        print("❌ Python Execution Error:", e)
     return None, None, None
 
 def generate_flux_image(prompt, filename="reel_image.jpg"):
@@ -63,6 +70,9 @@ def generate_flux_image(prompt, filename="reel_image.jpg"):
             image = image.resize((1080, 1920), Image.Resampling.LANCZOS)
             image.save(filename)
             return filename
+        else:
+             print(f"❌ HF API Error Response: {res.status_code} - {res.text}")
+             return None
     except Exception as e:
         print("HF Error:", e)
     return None
@@ -76,13 +86,9 @@ async def generate_voiceover(script_text, filename="voice.mp3"):
 def create_video(image_path, audio_path, output_path="final_reel.mp4"):
     print("MoviePy ഉപയോഗിച്ച് വീഡിയോ എഡിറ്റ് ചെയ്യുന്നു...")
     audio = AudioFileClip(audio_path)
-    # ആനിമേഷൻ എഫക്ട് നൽകി വീഡിയോ ആക്കുന്നു (ചെറിയ സൂം ഇൻ)
     clip = ImageClip(image_path).set_duration(audio.duration)
-    # GitHub Actions-ൽ വേഗത്തിൽ റെൻഡർ ആകാൻ ലളിതമായ സൂം ഉപയോഗിക്കുന്നു
     clip = clip.resize(lambda t: 1 + 0.02 * t).set_position('center')
-    
     video = clip.set_audio(audio)
-    # fps 24 നൽകിയത് റെൻഡറിങ് വേഗത കൂട്ടാനാണ്
     video.write_videofile(output_path, fps=24, codec="libx264", audio_codec="aac")
     return output_path
 
@@ -92,14 +98,18 @@ def upload_to_facebook(video_path, caption):
     init_url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}/video_reels"
     res1 = requests.post(init_url, data={'upload_phase': 'start', 'access_token': FB_PAGE_ACCESS_TOKEN}).json()
     video_id = res1.get('video_id')
-    if not video_id: return print("Init Failed:", res1)
+    if not video_id: 
+        print("Init Failed:", res1)
+        return
 
     # Step 2: Upload
     upload_url = f"https://rupload.facebook.com/video-upload/v18.0/{video_id}"
     headers = {'Authorization': f'OAuth {FB_PAGE_ACCESS_TOKEN}', 'offset': '0', 'file_size': str(os.path.getsize(video_path))}
     with open(video_path, 'rb') as f:
         res2 = requests.post(upload_url, headers=headers, data=f)
-    if res2.status_code != 200: return print("Upload Failed")
+    if res2.status_code != 200: 
+        print("Upload Failed")
+        return
 
     # Step 3: Publish
     payload = {'upload_phase': 'finish', 'video_id': video_id, 'video_state': 'PUBLISHED', 'description': caption, 'access_token': FB_PAGE_ACCESS_TOKEN}
