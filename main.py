@@ -7,6 +7,7 @@ import asyncio
 import io
 import time
 import sys
+import json
 from PIL import Image, ImageOps
 
 # === MOVIEPY ERROR FIX ===
@@ -81,11 +82,21 @@ def get_gemini_script(topic):
         if m not in models_to_try:
             models_to_try.append(m)
 
-    # 3 വ്യത്യസ്ത ഹൈ-ക്വാളിറ്റി ഫോട്ടോകൾക്കുള്ള പ്രോംപ്റ്റ് ജെമിനിയോട് ചോദിക്കുന്നു
+    # ഏറ്റവും സുരക്ഷിതമായ JSON ഫോർമാറ്റ് മാത്രം ചോദിക്കുന്നു
     prompt = f"""
-    വിഷയം: '{topic}'
-    ഇതിനെക്കുറിച്ച് ഫേസ്ബുക്കിൽ ആളുകളെ പിടിച്ചുനിർത്തുന്ന (engaging) ഒരു റീൽസ് ഉണ്ടാക്കാൻ താഴെ പറയുന്ന കാര്യങ്ങൾ തയ്യാറാക്കുക. മറുപടി കൃത്യമായി '|' ഉപയോഗിച്ച് വേർതിരിക്കണം.
-    ഫോർമാറ്റ്: [60 സെക്കൻഡിൽ വായിക്കാൻ കഴിയുന്ന ആകർഷകമായ മലയാളം വോയ്‌സ് ഓവർ സ്ക്രിപ്റ്റ്] | [ഈ വാർത്തയുമായി ബന്ധപ്പെട്ട വളരെ ആകർഷകവും (Eye-catching, hyper-realistic, dramatic) ആളുകൾ നോക്കിയിരുന്നു പോകുന്നതുമായ 3 വ്യത്യസ്ത ചിത്രങ്ങൾ ജനറേറ്റ് ചെയ്യാനുള്ള ഇംഗ്ലീഷ് പ്രോംപ്റ്റുകൾ. ഇവ തമ്മിൽ '*' എന്ന ചിഹ്നം ഉപയോഗിച്ച് വേർതിരിക്കുക] | [ഫേസ്ബുക്കിൽ ഇടാനുള്ള മലയാളം ക്യാപ്ഷനും ഹാഷ്‌ടാഗുകളും]
+    You are an expert Facebook Reels creator. Create content about the topic: '{topic}'.
+    IMPORTANT: You MUST respond ONLY with a valid JSON object. Do not add any markdown, asterisks, or extra text like "Here is the JSON".
+    
+    The JSON must strictly follow this exact structure:
+    {{
+        "script": "A 60-second highly engaging Malayalam voiceover script.",
+        "image_prompts": [
+            "Hyper-realistic, highly detailed, cinematic English prompt for image 1 related to the topic",
+            "Hyper-realistic, highly detailed, cinematic English prompt for image 2 related to the topic",
+            "Hyper-realistic, highly detailed, cinematic English prompt for image 3 related to the topic"
+        ],
+        "caption": "Catchy Malayalam Facebook caption with hashtags"
+    }}
     """
     
     headers = {'Content-Type': 'application/json'}
@@ -99,37 +110,48 @@ def get_gemini_script(topic):
             data = res.json()
             if 'candidates' in data:
                 text = data['candidates'][0]['content']['parts'][0]['text']
-                parts = text.strip().split('|')
-                if len(parts) >= 3:
-                    script = parts[0].strip()
-                    # '*' വെച്ച് 3 പ്രോംപ്റ്റുകളെ വേർതിരിക്കുന്നു
-                    image_prompts = [p.strip() for p in parts[1].split('*') if len(p.strip()) > 5]
-                    caption = parts[2].strip()
-                    print(f"✅ സ്ക്രിപ്റ്റും {len(image_prompts)} ഇമേജ് പ്രോംപ്റ്റുകളും ലഭിച്ചു!")
-                    return script, image_prompts, caption
-        except:
+                
+                # JSON ഡാറ്റ ക്ലീൻ ചെയ്ത് എടുക്കുന്നു
+                clean_text = text.strip()
+                if clean_text.startswith("```"):
+                    clean_text = clean_text.split('\n', 1)[-1].rsplit('\n', 1)[0]
+                if clean_text.startswith("json"):
+                    clean_text = clean_text[4:].strip()
+                
+                try:
+                    parsed_data = json.loads(clean_text)
+                    script = parsed_data.get("script", "")
+                    image_prompts = parsed_data.get("image_prompts", [])
+                    caption = parsed_data.get("caption", "")
+                    
+                    if script and len(image_prompts) >= 1 and caption:
+                        print(f"✅ സ്ക്രിപ്റ്റും {len(image_prompts)} ഇമേജ് പ്രോംപ്റ്റുകളും കൃത്യമായി ലഭിച്ചു!")
+                        return script, image_prompts, caption
+                except json.JSONDecodeError:
+                    print("⚠️ JSON ഡീകോഡിംഗ് എറർ, അടുത്ത മോഡൽ നോക്കുന്നു...")
+                    continue
+        except Exception as e:
+            print(f"⚠️ എറർ: {e}")
             continue
+            
     return None, [], None
 
 def generate_multiple_images(prompts, topic):
     print("\n[3] ചിത്രങ്ങൾ ജനറേറ്റ് ചെയ്യാൻ ആരംഭിക്കുന്നു...")
     downloaded_images = []
     
-    # പരമാവധി 3 ചിത്രങ്ങൾ വരെ ഡൗൺലോഡ് ചെയ്യുന്നു
     for i, prompt in enumerate(prompts[:3]):
         filename = f"reel_image_{i}.jpg"
         print(f"\nചിത്രം {i+1} ജനറേറ്റ് ചെയ്യുന്നു... പ്രോംപ്റ്റ്: {prompt[:50]}...")
         success = False
 
-        # Option A: Hugging Face
         try:
-            hf_url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell"
+            hf_url = "[https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell](https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell)"
             headers = {"Authorization": f"Bearer {HF_API_KEY}", "User-Agent": "Mozilla/5.0"}
-            payload = {"inputs": f"{prompt}, vertical portrait layout 9:16, extremely attractive, highly detailed, 4k, cinematic"}
+            payload = {"inputs": f"{prompt}, vertical portrait layout 9:16, attractive, detailed, 4k"}
             res = requests.post(hf_url, headers=headers, json=payload, timeout=30)
             if res.status_code == 200:
                 img = Image.open(io.BytesIO(res.content))
-                # മികച്ച രീതിയിൽ 9:16 റേഷ്യോയിലേക്ക് ഫിറ്റ് ചെയ്യുന്നു
                 img = ImageOps.fit(img, (1080, 1920), Image.Resampling.LANCZOS)
                 img.save(filename)
                 downloaded_images.append(filename)
@@ -138,11 +160,10 @@ def generate_multiple_images(prompts, topic):
         except:
             pass
 
-        # Option B: Pollinations.ai (Hugging Face കിട്ടിയില്ലെങ്കിൽ മാത്രം)
         if not success:
             try:
-                encoded_prompt = urllib.parse.quote(f"{prompt}, attractive, hyper-realistic, vertical portrait 9:16")
-                poll_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1080&height=1920&nologo=true"
+                encoded_prompt = urllib.parse.quote(f"{prompt}, hyper-realistic, vertical portrait 9:16")
+                poll_url = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_prompt}?width=1080&height=1920&nologo=true"
                 res = requests.get(poll_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
                 if res.status_code == 200:
                     img = Image.open(io.BytesIO(res.content))
@@ -154,14 +175,13 @@ def generate_multiple_images(prompts, topic):
             except:
                 pass
                 
-        time.sleep(2) # സെർവറിൽ ബ്ലോക്ക് ആകാതിരിക്കാൻ ചെറിയൊരു ഇടവേള
+        time.sleep(2)
     
-    # AI ചിത്രങ്ങൾ ഒന്നും കിട്ടിയില്ലെങ്കിൽ മാത്രം വിക്കിപീഡിയ നോക്കുന്നു
     if not downloaded_images:
         print("\n⚠️ AI ചിത്രങ്ങൾ പരാജയപ്പെട്ടു, യഥാർത്ഥ ചിത്രം തിരയുന്നു...")
         try:
             search_term = " ".join(topic.split()[:2])
-            wiki_url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch={urllib.parse.quote(search_term)}&gsrlimit=1&pithumbsize=1000"
+            wiki_url = f"[https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch=](https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch=){urllib.parse.quote(search_term)}&gsrlimit=1&pithumbsize=1000"
             res = requests.get(wiki_url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=20).json()
             pages = res.get('query', {}).get('pages', {})
             for page_id in pages:
@@ -181,9 +201,9 @@ def generate_multiple_images(prompts, topic):
 
 def download_random_bgm(filename="bgm.mp3"):
     bgm_links = [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg", 
-        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+        "[https://upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg](https://upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg)", 
+        "[https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3](https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3)",
+        "[https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3](https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3)"
     ]
     try:
         res = requests.get(random.choice(bgm_links), timeout=30)
@@ -221,16 +241,13 @@ def create_video(image_paths, audio_path, output_path="final_reel.mp4"):
         else:
             final_audio = voice_clip
 
-        # എത്ര ഫോട്ടോകളുണ്ടോ അതനുസരിച്ച് ഓരോ ഫോട്ടോയുടെയും സമയം കണക്കാക്കുന്നു
         duration_per_image = voice_clip.duration / len(image_paths)
         
         clips = []
         for img_path in image_paths:
-            # ബ്ലർ ഒഴിവാക്കാൻ സൂം പൂർണ്ണമായും ഒഴിവാക്കി, പകരം ക്ലിയർ ഇമേജ് വെക്കുന്നു
             clip = ImageClip(img_path).set_duration(duration_per_image).set_position('center')
             clips.append(clip)
 
-        # എല്ലാ ചിത്രങ്ങളും ഒന്നിച്ചുചേർത്ത് ഒറ്റ വീഡിയോ ആക്കുന്നു (Slideshow)
         final_video = concatenate_videoclips(clips, method="compose")
         final_video = final_video.set_audio(final_audio)
         
@@ -243,14 +260,14 @@ def create_video(image_paths, audio_path, output_path="final_reel.mp4"):
 
 def upload_to_facebook(video_path, caption):
     print("\n[6] ഫേസ്ബുക്കിലേക്ക് റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
-    init_url = f"https://graph.facebook.com/v18.0/me/video_reels"
+    init_url = f"[https://graph.facebook.com/v18.0/me/video_reels](https://graph.facebook.com/v18.0/me/video_reels)"
     res1 = requests.post(init_url, data={'upload_phase': 'start', 'access_token': FB_PAGE_ACCESS_TOKEN}).json()
     video_id = res1.get('video_id')
     if not video_id: 
         print(f"❌ Init Failed: {res1}")
         return
 
-    upload_url = f"https://rupload.facebook.com/video-upload/v18.0/{video_id}"
+    upload_url = f"[https://rupload.facebook.com/video-upload/v18.0/](https://rupload.facebook.com/video-upload/v18.0/){video_id}"
     headers = {'Authorization': f'OAuth {FB_PAGE_ACCESS_TOKEN}', 'offset': '0', 'file_size': str(os.path.getsize(video_path))}
     with open(video_path, 'rb') as f:
         res2 = requests.post(upload_url, headers=headers, data=f)
@@ -272,7 +289,6 @@ async def main():
     script, img_prompts, caption = get_gemini_script(topic)
     
     if script and img_prompts and caption:
-        # പുതിയ ഫങ്ക്ഷൻ: ഒന്നിലധികം ചിത്രങ്ങൾ ഡൗൺലോഡ് ചെയ്യുന്നു
         image_paths = generate_multiple_images(img_prompts, topic)
         
         if image_paths:
