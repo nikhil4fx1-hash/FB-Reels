@@ -28,7 +28,8 @@ HF_API_KEY = os.environ.get("HF_API_KEY")
 FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY")
 PIXABAY_API_KEY = os.environ.get("PIXABAY_API_KEY")
-ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY")
+ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY") if os.environ.get("USE_ELEVENLABS") == "1" else None
+ELEVENLABS_MODEL = os.environ.get("ELEVENLABS_MODEL") or "eleven_v3"
 ELEVENLABS_VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID") or "pNInz6obpgDQGcFmaJgB"
 EDGE_VOICE = os.environ.get("EDGE_VOICE") or "ml-IN-MidhunNeural"  # or ml-IN-SobhanaNeural
 
@@ -340,48 +341,125 @@ def make_gradient(filename):
     img.save(filename)
 
 
+def openverse_photo(keywords, filename):
+    """No key needed (anonymous, rate-limited). Creative-Commons photos."""
+    try:
+        res = requests.get("https://api.openverse.org/v1/images/", headers=COMMONS_UA, timeout=30,
+                           params={"q": keywords, "page_size": 20, "license_type": "commercial",
+                                   "mature": "false", "aspect_ratio": "tall"}).json()
+        results = res.get("results", [])
+        random.shuffle(results)
+        for r in results[:6]:
+            url = r.get("url")
+            if not url:
+                continue
+            try:
+                resp = requests.get(url, headers=UA, timeout=40)
+                if resp.status_code == 200 and resp.headers.get("content-type", "").startswith("image"):
+                    save_fitted(resp.content, filename)
+                    return True
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"   ⚠️ Openverse: {e}")
+    return False
+
+
+def loremflickr_photo(keywords, filename):
+    """No key needed. Random Flickr photo matching the tags."""
+    try:
+        tags = ",".join(keywords.replace(",", " ").split()[:2])
+        url = f"https://loremflickr.com/{W}/{H}/{urllib.parse.quote(tags)}?random={random.randint(1, 99999)}"
+        r = requests.get(url, headers=UA, timeout=60)
+        if r.status_code == 200 and r.headers.get("content-type", "").startswith("image"):
+            save_fitted(r.content, filename)
+            return True
+    except Exception as e:
+        print(f"   ⚠️ LoremFlickr: {e}")
+    return False
+
+
+LAST_GOOD_IMAGE = {"path": None}
+
+
+def keyword_variants(kw):
+    words = [w for w in kw.replace(",", " ").split() if w]
+    variants = [kw]
+    if len(words) > 1:
+        variants += [" ".join(words[:2]), words[-1], words[0]]
+    seen, out = set(), []
+    for v in variants:
+        if v and v not in seen:
+            seen.add(v)
+            out.append(v)
+    return out
+
+
 def get_scene_visual(i, scene):
-    """Returns (path, 'video' | 'image').
-    Order: Pexels video > Pixabay video > Commons video > Pexels photo >
-           Commons photo > AI image > gradient. Sources without keys are skipped."""
+    """Returns (path, 'video' | 'image'). Never ends on a blank gradient unless
+    every source failed AND there is no earlier image to reuse."""
     kw = scene.get("keywords") or "news"
     prompt = scene.get("image_prompt") or kw
     vpath = f"scene_{i}.mp4"
     ipath = f"scene_{i}.jpg"
+    variants = keyword_variants(kw)
 
-    if PEXELS_API_KEY:
-        print("   -> Pexels വീഡിയോ...")
-        if pexels_video(kw, vpath):
-            return vpath, "video"
-
-    if PIXABAY_API_KEY:
-        print("   -> Pixabay വീഡിയോ...")
-        if pixabay_video(kw, vpath):
-            return vpath, "video"
-
-    print("   -> Commons വീഡിയോ...")
+    # ---- videos ----
+    for v in variants[:2]:
+        if PEXELS_API_KEY:
+            print(f"   -> Pexels വീഡിയോ ('{v}')...")
+            if pexels_video(v, vpath):
+                return vpath, "video"
+        if PIXABAY_API_KEY:
+            print(f"   -> Pixabay വീഡിയോ ('{v}')...")
+            if pixabay_video(v, vpath):
+                return vpath, "video"
+    print(f"   -> Commons വീഡിയോ ('{kw}')...")
     cv = commons_video(kw, vpath)
     if cv:
         return cv, "video"
 
-    if PEXELS_API_KEY:
-        print("   -> Pexels ഫോട്ടോ...")
-        if pexels_photo(kw, ipath):
-            return ipath, "image"
-
-    print("   -> Commons ഫോട്ടോ...")
-    if commons_photo(kw, ipath):
+    # ---- photos ----
+    def done(src):
+        print(f"   ✅ ചിത്രം: {src}")
+        LAST_GOOD_IMAGE["path"] = ipath
         return ipath, "image"
 
+    for v in variants:
+        if PEXELS_API_KEY:
+            print(f"   -> Pexels ഫോട്ടോ ('{v}')...")
+            if pexels_photo(v, ipath):
+                return done("Pexels")
+        print(f"   -> Commons ഫോട്ടോ ('{v}')...")
+        if commons_photo(v, ipath):
+            return done("Commons")
+    for v in variants[:3]:
+        print(f"   -> Openverse ('{v}')...")
+        if openverse_photo(v, ipath):
+            return done("Openverse")
+    for v in variants[:2]:
+        print(f"   -> LoremFlickr ('{v}')...")
+        if loremflickr_photo(v, ipath):
+            return done("LoremFlickr")
+
+    # ---- AI images ----
     for name, fn in (("Pollinations", try_pollinations),
                      ("HuggingFace", try_huggingface),
                      ("Gemini", try_gemini_image)):
         print(f"   -> {name}...")
         if fn(prompt, ipath):
-            return ipath, "image"
+            return done(name)
         time.sleep(2)
 
-    print("   -> ഗ്രേഡിയന്റ്")
+    # ---- reuse an earlier scene's picture instead of a blank colour ----
+    prev = LAST_GOOD_IMAGE["path"]
+    if prev and os.path.exists(prev):
+        import shutil
+        shutil.copy(prev, ipath)
+        print("   ♻️ മുൻ സീനിലെ ചിത്രം വീണ്ടും ഉപയോഗിക്കുന്നു")
+        return ipath, "image"
+
+    print("   -> ഗ്രേഡിയന്റ് (അവസാന മാർഗം)")
     make_gradient(ipath)
     return ipath, "image"
 
@@ -390,13 +468,14 @@ def get_scene_visual(i, scene):
 # Voice (ElevenLabs first, edge-tts fallback; one voice for the whole reel)
 # ======================================================================
 def eleven_tts(text, filename):
+    payload = {"text": text, "model_id": ELEVENLABS_MODEL}
+    if ELEVENLABS_MODEL != "eleven_v3":
+        payload["language_code"] = "ml"
     try:
         r = requests.post(
             f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVENLABS_VOICE_ID}",
             headers={"xi-api-key": ELEVENLABS_API_KEY, "Content-Type": "application/json"},
-            json={"text": text, "model_id": "eleven_multilingual_v2",
-                  "voice_settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.3}},
-            timeout=90)
+            json=payload, timeout=90)
         if r.status_code == 200:
             with open(filename, "wb") as f:
                 f.write(r.content)
