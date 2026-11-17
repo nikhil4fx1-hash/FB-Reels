@@ -82,7 +82,6 @@ def get_gemini_script(topic):
         if m not in models_to_try:
             models_to_try.append(m)
 
-    # ഏറ്റവും സുരക്ഷിതമായ JSON ഫോർമാറ്റ് മാത്രം ചോദിക്കുന്നു
     prompt = f"""
     You are an expert Facebook Reels creator. Create content about the topic: '{topic}'.
     IMPORTANT: You MUST respond ONLY with a valid JSON object. Do not add any markdown, asterisks, or extra text like "Here is the JSON".
@@ -111,7 +110,6 @@ def get_gemini_script(topic):
             if 'candidates' in data:
                 text = data['candidates'][0]['content']['parts'][0]['text']
                 
-                # JSON ഡാറ്റ ക്ലീൻ ചെയ്ത് എടുക്കുന്നു
                 clean_text = text.strip()
                 if clean_text.startswith("```"):
                     clean_text = clean_text.split('\n', 1)[-1].rsplit('\n', 1)[0]
@@ -145,37 +143,45 @@ def generate_multiple_images(prompts, topic):
         print(f"\nചിത്രം {i+1} ജനറേറ്റ് ചെയ്യുന്നു... പ്രോംപ്റ്റ്: {prompt[:50]}...")
         success = False
 
+        # Option A: Pollinations.ai (വേഗത്തിൽ ലഭിക്കാൻ ആദ്യം ഇത് കൊടുക്കുന്നു)
+        print("-> Option A: Pollinations.ai വഴി ശ്രമിക്കുന്നു...")
         try:
-            hf_url = "[https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell](https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell)"
-            headers = {"Authorization": f"Bearer {HF_API_KEY}", "User-Agent": "Mozilla/5.0"}
-            payload = {"inputs": f"{prompt}, vertical portrait layout 9:16, attractive, detailed, 4k"}
-            res = requests.post(hf_url, headers=headers, json=payload, timeout=30)
+            encoded_prompt = urllib.parse.quote(f"{prompt}, attractive, hyper-realistic, vertical portrait 9:16")
+            poll_url = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_prompt}?width=1080&height=1920&nologo=true"
+            res = requests.get(poll_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=45)
             if res.status_code == 200:
                 img = Image.open(io.BytesIO(res.content))
                 img = ImageOps.fit(img, (1080, 1920), Image.Resampling.LANCZOS)
                 img.save(filename)
                 downloaded_images.append(filename)
-                print(f"✅ ചിത്രം {i+1} Hugging Face വഴി ലഭിച്ചു!")
+                print(f"✅ ചിത്രം {i+1} Pollinations.ai വഴി ലഭിച്ചു!")
                 success = True
-        except:
-            pass
+            else:
+                print(f"⚠️ Pollinations Error: Status {res.status_code}")
+        except Exception as e:
+            print(f"⚠️ Pollinations Exception: {e}")
 
+        # Option B: Hugging Face (Pollinations പരാജയപ്പെട്ടാൽ മാത്രം)
         if not success:
+            print("-> Option B: Hugging Face വഴി ശ്രമിക്കുന്നു...")
             try:
-                encoded_prompt = urllib.parse.quote(f"{prompt}, hyper-realistic, vertical portrait 9:16")
-                poll_url = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_prompt}?width=1080&height=1920&nologo=true"
-                res = requests.get(poll_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+                hf_url = "[https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell](https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell)"
+                headers = {"Authorization": f"Bearer {HF_API_KEY}", "User-Agent": "Mozilla/5.0"}
+                payload = {"inputs": f"{prompt}, vertical portrait layout 9:16, attractive, detailed, 4k"}
+                res = requests.post(hf_url, headers=headers, json=payload, timeout=45)
                 if res.status_code == 200:
                     img = Image.open(io.BytesIO(res.content))
                     img = ImageOps.fit(img, (1080, 1920), Image.Resampling.LANCZOS)
                     img.save(filename)
                     downloaded_images.append(filename)
-                    print(f"✅ ചിത്രം {i+1} Pollinations.ai വഴി ലഭിച്ചു!")
+                    print(f"✅ ചിത്രം {i+1} Hugging Face വഴി ലഭിച്ചു!")
                     success = True
-            except:
-                pass
+                else:
+                    print(f"⚠️ HF Error: Status {res.status_code} - {res.text[:100]}")
+            except Exception as e:
+                print(f"⚠️ HF Exception: {e}")
                 
-        time.sleep(2)
+        time.sleep(3) # സെർവറിൽ ബ്ലോക്ക് ആകാതിരിക്കാൻ 3 സെക്കൻഡ് ഇടവേള
     
     if not downloaded_images:
         print("\n⚠️ AI ചിത്രങ്ങൾ പരാജയപ്പെട്ടു, യഥാർത്ഥ ചിത്രം തിരയുന്നു...")
@@ -194,8 +200,8 @@ def generate_multiple_images(prompts, topic):
                     downloaded_images.append("wiki_img.jpg")
                     print("✅ വിക്കിപീഡിയ വഴി യഥാർത്ഥ ചിത്രം ലഭിച്ചു!")
                     break
-        except:
-            pass
+        except Exception as e:
+            print(f"⚠️ Wikipedia Exception: {e}")
 
     return downloaded_images
 
