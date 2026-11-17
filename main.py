@@ -7,6 +7,13 @@ import asyncio
 import io
 import time
 from PIL import Image
+
+# === MOVIEPY ERROR FIX ===
+import PIL.Image
+if not hasattr(PIL.Image, 'ANTIALIAS'):
+    PIL.Image.ANTIALIAS = PIL.Image.LANCZOS
+# =========================
+
 import edge_tts
 from moviepy.editor import ImageClip, AudioFileClip, CompositeAudioClip
 
@@ -151,15 +158,13 @@ async def generate_voiceover(script_text, filename="voice.mp3"):
 def download_random_bgm(filename="bgm.mp3"):
     print("\nഡയറക്ടറിയിൽ നിന്ന് റാൻഡം BGM തിരഞ്ഞെടുക്കുന്നു...")
     
-    # സൗജന്യമായി ഉപയോഗിക്കാൻ കഴിയുന്ന ചില പശ്ചാത്തല സംഗീത ലിങ്കുകൾ
     bgm_links = [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg", # (ഫോൾബാക്കിനായി സൈലൻസ്, പകരം യഥാർത്ഥ ലിങ്കുകൾ താഴെ)
+        "https://upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg", 
         "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
         "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
         "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
     ]
     
-    # ഇതിൽ നിന്ന് റാൻഡം ആയി ഒരെണ്ണം സെലക്ട് ചെയ്യുന്നു
     selected_url = random.choice(bgm_links)
     
     try:
@@ -177,27 +182,21 @@ def download_random_bgm(filename="bgm.mp3"):
 def create_video(image_path, audio_path, output_path="final_reel.mp4"):
     print("\nMoviePy ഉപയോഗിച്ച് വീഡിയോയും BGM-ഉം മിക്സ് ചെയ്യുന്നു...")
     try:
-        # വോയ്സ് ഓവർ ലോഡ് ചെയ്യുന്നു
         voice_clip = AudioFileClip(audio_path)
-        
-        # റാൻഡം BGM ഡൗൺലോഡ് ചെയ്യുന്നു
         bgm_path = download_random_bgm()
         
         if bgm_path and os.path.exists(bgm_path):
             try:
-                bgm_clip = AudioFileClip(bgm_path).volumex(0.1) # BGM വോയ്സ് ഓവറിനെക്കാൾ കുറച്ച് സൗണ്ടിൽ കേൾക്കാൻ (0.1)
-                # വോയ്സ് ഓവറിന്റെ നീളത്തിനനുസരിച്ച് BGM കട്ട് ചെയ്യുന്നു
+                bgm_clip = AudioFileClip(bgm_path).volumex(0.1) 
                 if bgm_clip.duration > voice_clip.duration:
                     bgm_clip = bgm_clip.subclip(0, voice_clip.duration)
                 
-                # രണ്ടുംകൂടി മിക്സ് ചെയ്യുന്നു
                 final_audio = CompositeAudioClip([voice_clip, bgm_clip])
             except:
                 final_audio = voice_clip
         else:
             final_audio = voice_clip
 
-        # ഇമേജ് വെച്ച് വീഡിയോ ഉണ്ടാക്കുന്നു
         image_clip = ImageClip(image_path).set_duration(voice_clip.duration)
         image_clip = image_clip.resize(lambda t: 1 + 0.02 * t).set_position('center')
         
