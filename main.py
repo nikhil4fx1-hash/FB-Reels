@@ -508,13 +508,13 @@ async def build_reel(scenes, output="final_reel.mp4"):
         time.sleep(1)
 
     print("\n[5] വീഡിയോ എഡിറ്റ് ചെയ്യുന്നു...")
-    # Pad each voice clip so audio timing matches the video scene length
-    from moviepy.audio.AudioClip import AudioClip
-    padded = []
+    # Place each voice clip at the exact start time of its scene
+    starts, t = [], 0.0
     for a in audio_clips:
-        pad = AudioClip(lambda t: 0 * t, duration=0.15, fps=44100)
-        padded.append(concatenate_audioclips([a, pad]))
-    voice = concatenate_audioclips(padded)
+        starts.append(t)
+        t += a.duration + 0.15
+    total_len = t
+    voice = CompositeAudioClip([a.set_start(st) for a, st in zip(audio_clips, starts)]).set_duration(total_len)
 
     final_video = concatenate_videoclips(video_parts, method="compose")
 
@@ -530,8 +530,14 @@ async def build_reel(scenes, output="final_reel.mp4"):
 
     final_video = final_video.set_audio(final_audio).set_duration(voice.duration)
     print(f"ആകെ ദൈർഘ്യം: {voice.duration:.1f}s")
-    final_video.write_videofile(output, fps=24, codec="libx264", audio_codec="aac",
-                                preset="ultrafast", threads=2, logger=None)
+    try:
+        final_video.write_videofile(output, fps=24, codec="libx264", audio_codec="aac",
+                                    preset="ultrafast", threads=2, logger=None)
+    except Exception:
+        import traceback
+        traceback.print_exc()
+        sys.stdout.flush()
+        return None
     print("✅ വീഡിയോ തയ്യാർ!")
     return output
 
