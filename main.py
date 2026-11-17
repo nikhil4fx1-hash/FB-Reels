@@ -21,7 +21,7 @@ from moviepy.editor import ImageClip, AudioFileClip, CompositeAudioClip
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 HF_API_KEY = os.environ.get("HF_API_KEY")
 FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
-FB_PAGE_ID = os.environ.get("FB_PAGE_ID")
+FB_PAGE_ID = os.environ.get("61586450065020")
 
 def get_trending_topic():
     print("ട്രെൻഡിങ് വിഷയം തിരയുന്നു...")
