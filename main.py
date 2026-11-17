@@ -22,7 +22,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 HF_API_KEY = os.environ.get("HF_API_KEY")
 FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
 
-# പേജ് ID നേരിട്ട് കോഡിൽ നൽകുന്നു (ഇത് പബ്ലിക് ആയാലും സുരക്ഷാ പ്രശ്നമില്ല)
+# നിങ്ങളുടെ ഫേസ്ബുക്ക് പേജ് ID നേരിട്ട് നൽകുന്നു
 FB_PAGE_ID = "61586450065020" 
 
 def get_trending_topic():
@@ -102,7 +102,7 @@ def get_gemini_script(topic):
 
 def generate_image(prompt, topic, filename="reel_image.jpg"):
     print("\nചിത്രം ജനറേറ്റ് ചെയ്യാൻ ശ്രമിക്കുന്നു...")
-    print(f"AI തന്ന ഇമേജ് പ്രോംപ്റ്റ്: {prompt}") # AI എന്താണ് തന്നതെന്ന് ലോഗിൽ കാണാൻ
+    print(f"AI തന്ന ഇമേജ് പ്രോംപ്റ്റ്: {prompt}")
     
     # Option A: Hugging Face
     print("-> Option A: Hugging Face വഴി ശ്രമിക്കുന്നു...")
@@ -231,7 +231,7 @@ def upload_to_facebook(video_path, caption):
     res1 = requests.post(init_url, data={'upload_phase': 'start', 'access_token': FB_PAGE_ACCESS_TOKEN}).json()
     video_id = res1.get('video_id')
     if not video_id: 
-        print("❌ Init Failed:", res1)
+        print(f"❌ Init Failed: {res1}")
         return
 
     upload_url = f"https://rupload.facebook.com/video-upload/v18.0/{video_id}"
@@ -239,7 +239,7 @@ def upload_to_facebook(video_path, caption):
     with open(video_path, 'rb') as f:
         res2 = requests.post(upload_url, headers=headers, data=f)
     if res2.status_code != 200: 
-        print("❌ Upload Failed:", res2.text)
+        print(f"❌ Upload Failed: {res2.text}")
         return
 
     payload = {'upload_phase': 'finish', 'video_id': video_id, 'video_state': 'PUBLISHED', 'description': caption, 'access_token': FB_PAGE_ACCESS_TOKEN}
