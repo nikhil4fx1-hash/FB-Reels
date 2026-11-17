@@ -24,13 +24,16 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 HF_API_KEY = os.environ.get("HF_API_KEY")
 FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
 
+# ലിങ്കുകൾ കോപ്പി ചെയ്യുമ്പോൾ എറർ വരാതിരിക്കാനുള്ള ട്രിക്ക്
+SCHEME = "http" + "s://"
+
 def check_facebook_permissions():
     print(f"\n[1] ഫേസ്ബുക്ക് കണക്ഷൻ പരിശോധിക്കുന്നു...")
     if not FB_PAGE_ACCESS_TOKEN:
         print("❌ എറർ: GitHub Secrets-ൽ FB_PAGE_ACCESS_TOKEN നൽകിയിട്ടില്ല!")
         return False
         
-    url = f"https://graph.facebook.com/v18.0/me?fields=name&access_token={FB_PAGE_ACCESS_TOKEN}"
+    url = f"{SCHEME}graph.facebook.com/v18.0/me?fields=name&access_token={FB_PAGE_ACCESS_TOKEN}"
     try:
         res = requests.get(url).json()
         if 'name' in res:
@@ -47,7 +50,7 @@ def get_trending_topic():
     keywords = ["കേരളം", "ഇന്ത്യൻ ഫുട്ബോൾ", "സഞ്ജു സാംസൺ", "ടെക്നോളജി", "സിനിമ", "കേരള രാഷ്ട്രീയം", "ദുബായ് വാർത്തകൾ", "വിചിത്രമായ വാർത്തകൾ"]
     keyword = random.choice(keywords)
     encoded = urllib.parse.quote(keyword)
-    rss_url = f"https://news.google.com/rss/search?q={encoded}&hl=ml&gl=IN&ceid=IN:ml"
+    rss_url = f"{SCHEME}news.google.com/rss/search?q={encoded}&hl=ml&gl=IN&ceid=IN:ml"
     
     try:
         response = requests.get(rss_url, timeout=30)
@@ -61,7 +64,7 @@ def get_trending_topic():
     return "ഇന്നത്തെ പ്രധാന വാർത്തകൾ"
 
 def get_available_models():
-    url = f"https://generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}"
+    url = f"{SCHEME}generativelanguage.googleapis.com/v1beta/models?key={GEMINI_API_KEY}"
     available_models = []
     try:
         response = requests.get(url, timeout=30)
@@ -103,7 +106,7 @@ def get_gemini_script(topic):
 
     for model in models_to_try:
         print(f"\n{model} ഉപയോഗിച്ച് സ്ക്രിപ്റ്റ് തയ്യാറാക്കുന്നു...")
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}"
+        url = f"{SCHEME}generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}"
         try:
             res = requests.post(url, headers=headers, json=payload, timeout=60)
             data = res.json()
@@ -146,7 +149,7 @@ def generate_multiple_images(prompts, topic):
         print("-> Option A: Pollinations.ai വഴി ശ്രമിക്കുന്നു...")
         try:
             encoded_prompt = urllib.parse.quote(f"{prompt}, attractive, hyper-realistic, vertical portrait 9:16")
-            poll_url = f"[https://image.pollinations.ai/prompt/](https://image.pollinations.ai/prompt/){encoded_prompt}?width=1080&height=1920&nologo=true"
+            poll_url = f"{SCHEME}image.pollinations.ai/prompt/{encoded_prompt}?width=1080&height=1920&nologo=true"
             res = requests.get(poll_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=45)
             if res.status_code == 200:
                 img = Image.open(io.BytesIO(res.content))
@@ -163,7 +166,7 @@ def generate_multiple_images(prompts, topic):
         if not success:
             print("-> Option B: Hugging Face വഴി ശ്രമിക്കുന്നു...")
             try:
-                hf_url = "[https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell](https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell)"
+                hf_url = f"{SCHEME}api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell"
                 headers = {"Authorization": f"Bearer {HF_API_KEY}", "User-Agent": "Mozilla/5.0"}
                 payload = {"inputs": f"{prompt}, vertical portrait layout 9:16, attractive, detailed, 4k"}
                 res = requests.post(hf_url, headers=headers, json=payload, timeout=45)
@@ -175,7 +178,7 @@ def generate_multiple_images(prompts, topic):
                     print(f"✅ ചിത്രം {i+1} Hugging Face വഴി ലഭിച്ചു!")
                     success = True
                 else:
-                    print(f"⚠️ HF Error: Status {res.status_code} - {res.text[:100]}")
+                    print(f"⚠️ HF Error: Status {res.status_code}")
             except Exception as e:
                 print(f"⚠️ HF Exception: {e}")
                 
@@ -185,7 +188,7 @@ def generate_multiple_images(prompts, topic):
         print("\n⚠️ AI ചിത്രങ്ങൾ പരാജയപ്പെട്ടു, യഥാർത്ഥ ചിത്രം തിരയുന്നു...")
         try:
             search_term = " ".join(topic.split()[:2])
-            wiki_url = f"[https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch=](https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch=){urllib.parse.quote(search_term)}&gsrlimit=1&pithumbsize=1000"
+            wiki_url = f"{SCHEME}en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch={urllib.parse.quote(search_term)}&gsrlimit=1&pithumbsize=1000"
             res = requests.get(wiki_url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=20).json()
             pages = res.get('query', {}).get('pages', {})
             for page_id in pages:
@@ -205,9 +208,9 @@ def generate_multiple_images(prompts, topic):
 
 def download_random_bgm(filename="bgm.mp3"):
     bgm_links = [
-        "[https://upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg](https://upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg)", 
-        "[https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3](https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3)",
-        "[https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3](https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3)"
+        f"{SCHEME}upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg", 
+        f"{SCHEME}[www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3](https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3)",
+        f"{SCHEME}[www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3](https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3)"
     ]
     try:
         res = requests.get(random.choice(bgm_links), timeout=30)
@@ -264,14 +267,14 @@ def create_video(image_paths, audio_path, output_path="final_reel.mp4"):
 
 def upload_to_facebook(video_path, caption):
     print("\n[6] ഫേസ്ബുക്കിലേക്ക് റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
-    init_url = f"[https://graph.facebook.com/v18.0/me/video_reels](https://graph.facebook.com/v18.0/me/video_reels)"
+    init_url = f"{SCHEME}[graph.facebook.com/v18.0/me/video_reels](https://graph.facebook.com/v18.0/me/video_reels)"
     res1 = requests.post(init_url, data={'upload_phase': 'start', 'access_token': FB_PAGE_ACCESS_TOKEN}).json()
     video_id = res1.get('video_id')
     if not video_id: 
         print(f"❌ Init Failed: {res1}")
         return
 
-    upload_url = f"[https://rupload.facebook.com/video-upload/v18.0/](https://rupload.facebook.com/video-upload/v18.0/){video_id}"
+    upload_url = f"{SCHEME}[rupload.facebook.com/video-upload/v18.0/](https://rupload.facebook.com/video-upload/v18.0/){video_id}"
     headers = {'Authorization': f'OAuth {FB_PAGE_ACCESS_TOKEN}', 'offset': '0', 'file_size': str(os.path.getsize(video_path))}
     with open(video_path, 'rb') as f:
         res2 = requests.post(upload_url, headers=headers, data=f)
