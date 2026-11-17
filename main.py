@@ -22,23 +22,23 @@ from moviepy.editor import ImageClip, AudioFileClip, CompositeAudioClip
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 HF_API_KEY = os.environ.get("HF_API_KEY")
 FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
-FB_PAGE_ID = os.environ.get("FB_PAGE_ID") 
 
 def check_facebook_permissions():
     """സ്ക്രിപ്റ്റ് തുടങ്ങുന്നതിന് മുൻപ് ഫേസ്ബുക്ക് കണക്ഷൻ ശരിയാണോ എന്ന് പരിശോധിക്കാൻ"""
-    print(f"\n[1] ഫേസ്ബുക്ക് കണക്ഷൻ പരിശോധിക്കുന്നു... (Page ID: {FB_PAGE_ID})")
-    if not FB_PAGE_ID or not FB_PAGE_ACCESS_TOKEN:
-        print("❌ എറർ: GitHub Secrets-ൽ FB_PAGE_ID അല്ലെങ്കിൽ FB_PAGE_ACCESS_TOKEN നൽകിയിട്ടില്ല!")
+    print(f"\n[1] ഫേസ്ബുക്ക് കണക്ഷൻ പരിശോധിക്കുന്നു...")
+    if not FB_PAGE_ACCESS_TOKEN:
+        print("❌ എറർ: GitHub Secrets-ൽ FB_PAGE_ACCESS_TOKEN നൽകിയിട്ടില്ല!")
         return False
         
-    url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}?fields=name&access_token={FB_PAGE_ACCESS_TOKEN}"
+    # പേജ് ID-യ്ക്ക് പകരം 'me' ഉപയോഗിക്കുന്നു
+    url = f"https://graph.facebook.com/v18.0/me?fields=name&access_token={FB_PAGE_ACCESS_TOKEN}"
     try:
         res = requests.get(url).json()
         if 'name' in res:
             print(f"✅ ഫേസ്ബുക്ക് പേജ് വിജയകരമായി കണക്ട് ആയി: {res['name']}")
             return True
         else:
-            print(f"❌ ഫേസ്ബുക്ക് കണക്ഷൻ എറർ: നിങ്ങളുടെ പേജ് ID അല്ലെങ്കിൽ ടോക്കൺ തെറ്റാണ്!")
+            print(f"❌ ഫേസ്ബുക്ക് കണക്ഷൻ എറർ: നിങ്ങളുടെ ടോക്കൺ തെറ്റാണ്!")
             print(f"വിശദാംശങ്ങൾ: {res}")
             return False
     except Exception as e:
@@ -226,8 +226,10 @@ def create_video(image_path, audio_path, output_path="final_reel.mp4"):
         return None
 
 def upload_to_facebook(video_path, caption):
-    print(f"\n[6] ഫേസ്ബുക്കിലേക്ക് (Page ID: {FB_PAGE_ID}) റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
-    init_url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}/video_reels"
+    print(f"\n[6] ഫേസ്ബുക്കിലേക്ക് റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
+    
+    # പേജ് ID-യ്ക്ക് പകരം 'me' ഉപയോഗിക്കുന്നു
+    init_url = f"https://graph.facebook.com/v18.0/me/video_reels"
     res1 = requests.post(init_url, data={'upload_phase': 'start', 'access_token': FB_PAGE_ACCESS_TOKEN}).json()
     video_id = res1.get('video_id')
     if not video_id: 
@@ -252,7 +254,6 @@ def upload_to_facebook(video_path, caption):
 async def main():
     print("🚀 Auto Facebook Reels Bot ആരംഭിക്കുന്നു...\n")
     
-    # ഫേസ്ബുക്ക് അക്കൗണ്ട് ശരിയാണോ എന്ന് ആദ്യം പരിശോധിക്കുന്നു
     if not check_facebook_permissions():
         print("⚠️ ഫേസ്ബുക്ക് എറർ പരിഹരിച്ച ശേഷം വീണ്ടും ശ്രമിക്കുക. സ്ക്രിപ്റ്റ് നിർത്തുന്നു.")
         sys.exit(1)
