@@ -40,6 +40,8 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          # ElevenLabs is OFF by default (Malayalam support is uncertain). Set to '1' to test it.
+          # USE_ELEVENLABS: '1'
           # Optional: female voice for edge-tts fallback
           # EDGE_VOICE: ml-IN-SobhanaNeural
         run: python main.py
