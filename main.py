@@ -17,11 +17,13 @@ if not hasattr(PIL.Image, 'ANTIALIAS'):
 import edge_tts
 from moviepy.editor import ImageClip, AudioFileClip, CompositeAudioClip
 
-# --- Environment Variables ---
+# --- Environment Variables & Constants ---
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 HF_API_KEY = os.environ.get("HF_API_KEY")
 FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
-FB_PAGE_ID = os.environ.get("61586450065020")
+
+# പേജ് ID നേരിട്ട് കോഡിൽ നൽകുന്നു (ഇത് പബ്ലിക് ആയാലും സുരക്ഷാ പ്രശ്നമില്ല)
+FB_PAGE_ID = "61586450065020" 
 
 def get_trending_topic():
     print("ട്രെൻഡിങ് വിഷയം തിരയുന്നു...")
@@ -100,8 +102,10 @@ def get_gemini_script(topic):
 
 def generate_image(prompt, topic, filename="reel_image.jpg"):
     print("\nചിത്രം ജനറേറ്റ് ചെയ്യാൻ ശ്രമിക്കുന്നു...")
+    print(f"AI തന്ന ഇമേജ് പ്രോംപ്റ്റ്: {prompt}") # AI എന്താണ് തന്നതെന്ന് ലോഗിൽ കാണാൻ
     
     # Option A: Hugging Face
+    print("-> Option A: Hugging Face വഴി ശ്രമിക്കുന്നു...")
     try:
         hf_url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell"
         headers = {"Authorization": f"Bearer {HF_API_KEY}", "User-Agent": "Mozilla/5.0"}
@@ -111,10 +115,13 @@ def generate_image(prompt, topic, filename="reel_image.jpg"):
             Image.open(io.BytesIO(res.content)).resize((1080, 1920), Image.Resampling.LANCZOS).save(filename)
             print("✅ Hugging Face വഴി ചിത്രം ലഭിച്ചു!")
             return filename
-    except:
-        pass
+        else:
+            print(f"⚠️ HF Error: {res.status_code} - {res.text}")
+    except Exception as e:
+        print(f"⚠️ HF Exception: {e}")
 
     # Option B: Pollinations.ai
+    print("-> Option B: Pollinations.ai വഴി ശ്രമിക്കുന്നു...")
     try:
         encoded_prompt = urllib.parse.quote(f"{prompt}, vertical portrait layout 9:16")
         poll_url = f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=1080&height=1920&nologo=true"
@@ -123,37 +130,35 @@ def generate_image(prompt, topic, filename="reel_image.jpg"):
             Image.open(io.BytesIO(res.content)).resize((1080, 1920), Image.Resampling.LANCZOS).save(filename)
             print("✅ Pollinations.ai വഴി ചിത്രം ലഭിച്ചു!")
             return filename
-    except:
-        pass
+        else:
+            print(f"⚠️ Pollinations Error: {res.status_code}")
+    except Exception as e:
+        print(f"⚠️ Pollinations Exception: {e}")
 
     # Option C: Wikipedia Image
+    print("-> Option C: വിക്കിപീഡിയയിൽ തിരയുന്നു...")
     try:
         search_term = " ".join(topic.split()[:2])
         wiki_url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch={urllib.parse.quote(search_term)}&gsrlimit=1&pithumbsize=1000"
         res = requests.get(wiki_url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=20).json()
         pages = res.get('query', {}).get('pages', {})
+        
+        image_found = False
         for page_id in pages:
             img_url = pages[page_id].get('thumbnail', {}).get('source')
             if img_url:
                 img_data = requests.get(img_url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=20).content
                 Image.open(io.BytesIO(img_data)).resize((1080, 1920), Image.Resampling.LANCZOS).save(filename)
                 print("✅ വിക്കിപീഡിയ വഴി യഥാർത്ഥ ചിത്രം ലഭിച്ചു!")
+                image_found = True
                 return filename
-    except:
-        pass
+        if not image_found:
+            print("⚠️ വിക്കിപീഡിയയിൽ അനുയോജ്യമായ ചിത്രം കണ്ടെത്താനായില്ല.")
+    except Exception as e:
+        print(f"⚠️ Wikipedia Exception: {e}")
 
     print("❌ ചിത്രങ്ങൾ ലഭ്യമായില്ല.")
     return None
-
-async def generate_voiceover(script_text, filename="voice.mp3"):
-    print("\nമലയാളം ശബ്ദം (Edge-TTS) റെക്കോർഡ് ചെയ്യുന്നു...")
-    try:
-        communicate = edge_tts.Communicate(script_text, "ml-IN-MidhunNeural")
-        await communicate.save(filename)
-        return filename
-    except Exception as e:
-        print(f"❌ TTS Error: {e}")
-        return None
 
 def download_random_bgm(filename="bgm.mp3"):
     print("\nഡയറക്ടറിയിൽ നിന്ന് റാൻഡം BGM തിരഞ്ഞെടുക്കുന്നു...")
@@ -178,6 +183,16 @@ def download_random_bgm(filename="bgm.mp3"):
         print(f"⚠️ BGM Download Error: {e}")
     
     return None
+
+async def generate_voiceover(script_text, filename="voice.mp3"):
+    print("\nമലയാളം ശബ്ദം (Edge-TTS) റെക്കോർഡ് ചെയ്യുന്നു...")
+    try:
+        communicate = edge_tts.Communicate(script_text, "ml-IN-MidhunNeural")
+        await communicate.save(filename)
+        return filename
+    except Exception as e:
+        print(f"❌ TTS Error: {e}")
+        return None
 
 def create_video(image_path, audio_path, output_path="final_reel.mp4"):
     print("\nMoviePy ഉപയോഗിച്ച് വീഡിയോയും BGM-ഉം മിക്സ് ചെയ്യുന്നു...")
@@ -210,7 +225,7 @@ def create_video(image_path, audio_path, output_path="final_reel.mp4"):
         return None
 
 def upload_to_facebook(video_path, caption):
-    print("\nഫേസ്ബുക്കിലേക്ക് റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
+    print(f"\nഫേസ്ബുക്കിലേക്ക് (Page ID: {FB_PAGE_ID}) റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
     
     init_url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}/video_reels"
     res1 = requests.post(init_url, data={'upload_phase': 'start', 'access_token': FB_PAGE_ACCESS_TOKEN}).json()
