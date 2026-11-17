@@ -1,3 +1,4 @@
+
 import os
 import random
 import requests
@@ -143,7 +144,7 @@ def generate_multiple_images(prompts, topic):
         print(f"\nചിത്രം {i+1} ജനറേറ്റ് ചെയ്യുന്നു... പ്രോംപ്റ്റ്: {prompt[:50]}...")
         success = False
 
-        # Option A: Pollinations.ai (വേഗത്തിൽ ലഭിക്കാൻ ആദ്യം ഇത് കൊടുക്കുന്നു)
+        # Option A: Pollinations.ai 
         print("-> Option A: Pollinations.ai വഴി ശ്രമിക്കുന്നു...")
         try:
             encoded_prompt = urllib.parse.quote(f"{prompt}, attractive, hyper-realistic, vertical portrait 9:16")
@@ -161,7 +162,7 @@ def generate_multiple_images(prompts, topic):
         except Exception as e:
             print(f"⚠️ Pollinations Exception: {e}")
 
-        # Option B: Hugging Face (Pollinations പരാജയപ്പെട്ടാൽ മാത്രം)
+        # Option B: Hugging Face 
         if not success:
             print("-> Option B: Hugging Face വഴി ശ്രമിക്കുന്നു...")
             try:
@@ -181,7 +182,7 @@ def generate_multiple_images(prompts, topic):
             except Exception as e:
                 print(f"⚠️ HF Exception: {e}")
                 
-        time.sleep(3) # സെർവറിൽ ബ്ലോക്ക് ആകാതിരിക്കാൻ 3 സെക്കൻഡ് ഇടവേള
+        time.sleep(3) 
     
     if not downloaded_images:
         print("\n⚠️ AI ചിത്രങ്ങൾ പരാജയപ്പെട്ടു, യഥാർത്ഥ ചിത്രം തിരയുന്നു...")
