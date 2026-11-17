@@ -6,6 +6,7 @@ import urllib.parse
 import asyncio
 import io
 import time
+import sys
 from PIL import Image
 
 # === MOVIEPY ERROR FIX ===
@@ -17,16 +18,35 @@ if not hasattr(PIL.Image, 'ANTIALIAS'):
 import edge_tts
 from moviepy.editor import ImageClip, AudioFileClip, CompositeAudioClip
 
-# --- Environment Variables & Constants ---
+# --- Environment Variables ---
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 HF_API_KEY = os.environ.get("HF_API_KEY")
 FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
+FB_PAGE_ID = os.environ.get("FB_PAGE_ID") 
 
-# നിങ്ങളുടെ ഫേസ്ബുക്ക് പേജ് ID നേരിട്ട് നൽകുന്നു
-FB_PAGE_ID = "61586450065020" 
+def check_facebook_permissions():
+    """സ്ക്രിപ്റ്റ് തുടങ്ങുന്നതിന് മുൻപ് ഫേസ്ബുക്ക് കണക്ഷൻ ശരിയാണോ എന്ന് പരിശോധിക്കാൻ"""
+    print(f"\n[1] ഫേസ്ബുക്ക് കണക്ഷൻ പരിശോധിക്കുന്നു... (Page ID: {FB_PAGE_ID})")
+    if not FB_PAGE_ID or not FB_PAGE_ACCESS_TOKEN:
+        print("❌ എറർ: GitHub Secrets-ൽ FB_PAGE_ID അല്ലെങ്കിൽ FB_PAGE_ACCESS_TOKEN നൽകിയിട്ടില്ല!")
+        return False
+        
+    url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}?fields=name&access_token={FB_PAGE_ACCESS_TOKEN}"
+    try:
+        res = requests.get(url).json()
+        if 'name' in res:
+            print(f"✅ ഫേസ്ബുക്ക് പേജ് വിജയകരമായി കണക്ട് ആയി: {res['name']}")
+            return True
+        else:
+            print(f"❌ ഫേസ്ബുക്ക് കണക്ഷൻ എറർ: നിങ്ങളുടെ പേജ് ID അല്ലെങ്കിൽ ടോക്കൺ തെറ്റാണ്!")
+            print(f"വിശദാംശങ്ങൾ: {res}")
+            return False
+    except Exception as e:
+        print(f"❌ കണക്ഷൻ എറർ: {e}")
+        return False
 
 def get_trending_topic():
-    print("ട്രെൻഡിങ് വിഷയം തിരയുന്നു...")
+    print("\n[2] ട്രെൻഡിങ് വിഷയം തിരയുന്നു...")
     keywords = ["കേരളം", "ഇന്ത്യൻ ഫുട്ബോൾ", "സഞ്ജു സാംസൺ", "ടെക്നോളജി", "സിനിമ", "കേരള രാഷ്ട്രീയം"]
     keyword = random.choice(keywords)
     encoded = urllib.parse.quote(keyword)
@@ -40,7 +60,6 @@ def get_trending_topic():
             print(f"✅ വിഷയം കണ്ടെത്തി: {topic}")
             return topic
     except Exception as e:
-        print("RSS Fetch Error:", e)
         pass
     
     return "ഇന്നത്തെ പ്രധാന വാർത്തകൾ"
@@ -55,8 +74,8 @@ def get_available_models():
             for m in data['models']:
                 if 'generateContent' in m.get('supportedGenerationMethods', []):
                     available_models.append(m['name'].split('/')[-1])
-    except Exception as e:
-        print("Model Fetch Error:", e)
+    except:
+        pass
     return available_models
 
 def get_gemini_script(topic):
@@ -84,24 +103,22 @@ def get_gemini_script(topic):
     for model in models_to_try:
         print(f"\n{model} ഉപയോഗിച്ച് സ്ക്രിപ്റ്റ് തയ്യാറാക്കുന്നു...")
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}"
-        
         try:
             res = requests.post(url, headers=headers, json=payload, timeout=60)
             data = res.json()
-            
             if 'candidates' in data:
                 text = data['candidates'][0]['content']['parts'][0]['text']
                 parts = text.strip().split('|')
                 if len(parts) >= 3:
                     print(f"✅ {model} ഉപയോഗിച്ച് സ്ക്രിപ്റ്റ് വിജയകരമായി ലഭിച്ചു!")
                     return parts[0].strip(), parts[1].strip(), parts[2].strip()
-        except Exception as e:
+        except:
             continue
             
     return None, None, None
 
 def generate_image(prompt, topic, filename="reel_image.jpg"):
-    print("\nചിത്രം ജനറേറ്റ് ചെയ്യാൻ ശ്രമിക്കുന്നു...")
+    print("\n[3] ചിത്രം ജനറേറ്റ് ചെയ്യാൻ ശ്രമിക്കുന്നു...")
     print(f"AI തന്ന ഇമേജ് പ്രോംപ്റ്റ്: {prompt}")
     
     # Option A: Hugging Face
@@ -115,10 +132,8 @@ def generate_image(prompt, topic, filename="reel_image.jpg"):
             Image.open(io.BytesIO(res.content)).resize((1080, 1920), Image.Resampling.LANCZOS).save(filename)
             print("✅ Hugging Face വഴി ചിത്രം ലഭിച്ചു!")
             return filename
-        else:
-            print(f"⚠️ HF Error: {res.status_code} - {res.text}")
-    except Exception as e:
-        print(f"⚠️ HF Exception: {e}")
+    except:
+        pass
 
     # Option B: Pollinations.ai
     print("-> Option B: Pollinations.ai വഴി ശ്രമിക്കുന്നു...")
@@ -130,10 +145,8 @@ def generate_image(prompt, topic, filename="reel_image.jpg"):
             Image.open(io.BytesIO(res.content)).resize((1080, 1920), Image.Resampling.LANCZOS).save(filename)
             print("✅ Pollinations.ai വഴി ചിത്രം ലഭിച്ചു!")
             return filename
-        else:
-            print(f"⚠️ Pollinations Error: {res.status_code}")
-    except Exception as e:
-        print(f"⚠️ Pollinations Exception: {e}")
+    except:
+        pass
 
     # Option C: Wikipedia Image
     print("-> Option C: വിക്കിപീഡിയയിൽ തിരയുന്നു...")
@@ -142,36 +155,28 @@ def generate_image(prompt, topic, filename="reel_image.jpg"):
         wiki_url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&generator=search&gsrsearch={urllib.parse.quote(search_term)}&gsrlimit=1&pithumbsize=1000"
         res = requests.get(wiki_url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=20).json()
         pages = res.get('query', {}).get('pages', {})
-        
-        image_found = False
         for page_id in pages:
             img_url = pages[page_id].get('thumbnail', {}).get('source')
             if img_url:
                 img_data = requests.get(img_url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=20).content
                 Image.open(io.BytesIO(img_data)).resize((1080, 1920), Image.Resampling.LANCZOS).save(filename)
                 print("✅ വിക്കിപീഡിയ വഴി യഥാർത്ഥ ചിത്രം ലഭിച്ചു!")
-                image_found = True
                 return filename
-        if not image_found:
-            print("⚠️ വിക്കിപീഡിയയിൽ അനുയോജ്യമായ ചിത്രം കണ്ടെത്താനായില്ല.")
-    except Exception as e:
-        print(f"⚠️ Wikipedia Exception: {e}")
+    except:
+        pass
 
     print("❌ ചിത്രങ്ങൾ ലഭ്യമായില്ല.")
     return None
 
 def download_random_bgm(filename="bgm.mp3"):
     print("\nഡയറക്ടറിയിൽ നിന്ന് റാൻഡം BGM തിരഞ്ഞെടുക്കുന്നു...")
-    
     bgm_links = [
         "https://upload.wikimedia.org/wikipedia/commons/b/b2/Silence.ogg", 
         "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
         "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
         "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
     ]
-    
     selected_url = random.choice(bgm_links)
-    
     try:
         res = requests.get(selected_url, timeout=30)
         if res.status_code == 200:
@@ -179,13 +184,12 @@ def download_random_bgm(filename="bgm.mp3"):
                 f.write(res.content)
             print("✅ റാൻഡം BGM വിജയകരമായി ഡൗൺലോഡ് ചെയ്തു!")
             return filename
-    except Exception as e:
-        print(f"⚠️ BGM Download Error: {e}")
-    
+    except:
+        pass
     return None
 
 async def generate_voiceover(script_text, filename="voice.mp3"):
-    print("\nമലയാളം ശബ്ദം (Edge-TTS) റെക്കോർഡ് ചെയ്യുന്നു...")
+    print("\n[4] മലയാളം ശബ്ദം (Edge-TTS) റെക്കോർഡ് ചെയ്യുന്നു...")
     try:
         communicate = edge_tts.Communicate(script_text, "ml-IN-MidhunNeural")
         await communicate.save(filename)
@@ -195,17 +199,15 @@ async def generate_voiceover(script_text, filename="voice.mp3"):
         return None
 
 def create_video(image_path, audio_path, output_path="final_reel.mp4"):
-    print("\nMoviePy ഉപയോഗിച്ച് വീഡിയോയും BGM-ഉം മിക്സ് ചെയ്യുന്നു...")
+    print("\n[5] MoviePy ഉപയോഗിച്ച് വീഡിയോയും BGM-ഉം മിക്സ് ചെയ്യുന്നു...")
     try:
         voice_clip = AudioFileClip(audio_path)
         bgm_path = download_random_bgm()
-        
         if bgm_path and os.path.exists(bgm_path):
             try:
                 bgm_clip = AudioFileClip(bgm_path).volumex(0.1) 
                 if bgm_clip.duration > voice_clip.duration:
                     bgm_clip = bgm_clip.subclip(0, voice_clip.duration)
-                
                 final_audio = CompositeAudioClip([voice_clip, bgm_clip])
             except:
                 final_audio = voice_clip
@@ -214,7 +216,6 @@ def create_video(image_path, audio_path, output_path="final_reel.mp4"):
 
         image_clip = ImageClip(image_path).set_duration(voice_clip.duration)
         image_clip = image_clip.resize(lambda t: 1 + 0.02 * t).set_position('center')
-        
         video = image_clip.set_audio(final_audio)
         video.write_videofile(output_path, fps=24, codec="libx264", audio_codec="aac", logger=None)
         
@@ -225,8 +226,7 @@ def create_video(image_path, audio_path, output_path="final_reel.mp4"):
         return None
 
 def upload_to_facebook(video_path, caption):
-    print(f"\nഫേസ്ബുക്കിലേക്ക് (Page ID: {FB_PAGE_ID}) റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
-    
+    print(f"\n[6] ഫേസ്ബുക്കിലേക്ക് (Page ID: {FB_PAGE_ID}) റീൽസ് അപ്‌ലോഡ് ചെയ്യുന്നു...")
     init_url = f"https://graph.facebook.com/v18.0/{FB_PAGE_ID}/video_reels"
     res1 = requests.post(init_url, data={'upload_phase': 'start', 'access_token': FB_PAGE_ACCESS_TOKEN}).json()
     video_id = res1.get('video_id')
@@ -252,18 +252,20 @@ def upload_to_facebook(video_path, caption):
 async def main():
     print("🚀 Auto Facebook Reels Bot ആരംഭിക്കുന്നു...\n")
     
+    # ഫേസ്ബുക്ക് അക്കൗണ്ട് ശരിയാണോ എന്ന് ആദ്യം പരിശോധിക്കുന്നു
+    if not check_facebook_permissions():
+        print("⚠️ ഫേസ്ബുക്ക് എറർ പരിഹരിച്ച ശേഷം വീണ്ടും ശ്രമിക്കുക. സ്ക്രിപ്റ്റ് നിർത്തുന്നു.")
+        sys.exit(1)
+    
     topic = get_trending_topic()
     script, img_prompt, caption = get_gemini_script(topic)
     
     if script and img_prompt and caption:
         img_path = generate_image(img_prompt, topic)
-        
         if img_path:
             audio_path = await generate_voiceover(script)
-            
             if audio_path:
                 video_path = create_video(img_path, audio_path)
-                
                 if video_path:
                     upload_to_facebook(video_path, caption)
                 else:
