@@ -9,7 +9,9 @@ import time
 import sys
 import json
 import base64
-from PIL import Image, ImageOps
+import re
+import shutil
+from PIL import Image, ImageOps, ImageFilter
 
 # === MOVIEPY / PILLOW FIX ===
 import PIL.Image
@@ -39,6 +41,10 @@ COMMONS_UA = {"User-Agent": "ReelsBot/1.0 (personal project)"}
 W, H = 1080, 1920
 MAX_REEL_SECONDS = 88
 USED_VIDEO_IDS = set()
+USED_IMG_URLS = set()
+NEWS_LINK = {"url": None}
+WIKI_CACHE = {}
+USE_NEWS_IMAGES = os.environ.get("USE_NEWS_IMAGES") == "1"
 
 
 # ======================================================================
@@ -74,7 +80,9 @@ def get_trending_topic():
     try:
         feed = feedparser.parse(requests.get(rss_url, timeout=30).content)
         if feed.entries:
-            topic = random.choice(feed.entries[:5]).title
+            entry = random.choice(feed.entries[:5])
+            topic = entry.title
+            NEWS_LINK["url"] = entry.get("link")
             print(f"✅ വിഷയം: {topic}")
             return topic
     except Exception:
@@ -111,11 +119,13 @@ def get_gemini_scenes(topic):
     - "keywords": 2-3 simple English words for stock footage that visually matches THAT narration
       (concrete things like "gold jewellery", "heavy rain", "football stadium", "smartphone", "city traffic")
     - "image_prompt": a detailed English prompt for an AI image matching that scene
+    - "wiki_title": the exact English Wikipedia article title of the MAIN real person, team, place,
+      organisation or event that scene is about (e.g. "Sanju Samson", "Kerala", "Gold"). Use "" if generic.
 
     Exact structure:
     {{
       "scenes": [
-        {{"narration": "...", "keywords": "...", "image_prompt": "..."}}
+        {{"narration": "...", "keywords": "...", "image_prompt": "...", "wiki_title": "..."}}
       ],
       "caption": "Catchy Malayalam Facebook caption with hashtags"
     }}
@@ -149,7 +159,14 @@ def get_gemini_scenes(topic):
 # ======================================================================
 def save_fitted(img_bytes, filename):
     img = Image.open(io.BytesIO(img_bytes)).convert("RGB")
-    img = ImageOps.fit(img, (W, H), Image.Resampling.LANCZOS)
+    if img.width / img.height > 1.2:
+        # landscape: blurred full-screen backdrop + whole photo in the middle
+        bg = ImageOps.fit(img, (W, H), Image.Resampling.LANCZOS).filter(ImageFilter.GaussianBlur(40))
+        fg = img.resize((W, int(img.height * W / img.width)), Image.Resampling.LANCZOS)
+        bg.paste(fg, (0, (H - fg.height) // 2))
+        img = bg
+    else:
+        img = ImageOps.fit(img, (W, H), Image.Resampling.LANCZOS)
     img.save(filename, quality=92)
 
 
@@ -341,6 +358,91 @@ def make_gradient(filename):
     img.save(filename)
 
 
+BAD_FILE_WORDS = ("logo", "icon", "flag", "map", "symbol", "signature", "commons-", "question_book",
+                  "edit-", "ambox", "wiki", "stub", "disambig", "padlock", "folder")
+
+
+def wiki_entity_urls(entity):
+    """Image URLs from the English Wikipedia article about `entity` (free-licensed, topic-specific)."""
+    if entity in WIKI_CACHE:
+        return WIKI_CACHE[entity]
+    urls = []
+    api = "https://en.wikipedia.org/w/api.php"
+    try:
+        sr = requests.get(api, headers=COMMONS_UA, timeout=30,
+                          params={"action": "query", "format": "json", "list": "search",
+                                  "srsearch": entity, "srlimit": 1}).json()
+        hits = sr.get("query", {}).get("search", [])
+        if hits:
+            title = hits[0]["title"]
+            im = requests.get(api, headers=COMMONS_UA, timeout=30,
+                              params={"action": "query", "format": "json", "titles": title,
+                                      "prop": "images", "imlimit": 40}).json()
+            files = []
+            for p in im.get("query", {}).get("pages", {}).values():
+                for f in p.get("images", []):
+                    name = f["title"]
+                    low = name.lower()
+                    if low.endswith((".jpg", ".jpeg", ".png")) and not any(w in low for w in BAD_FILE_WORDS):
+                        files.append(name)
+            files = files[:20]
+            if files:
+                info = requests.get(api, headers=COMMONS_UA, timeout=30,
+                                    params={"action": "query", "format": "json", "titles": "|".join(files),
+                                            "prop": "imageinfo", "iiprop": "url|size", "iiurlwidth": 1200}).json()
+                for p in info.get("query", {}).get("pages", {}).values():
+                    ii = (p.get("imageinfo") or [{}])[0]
+                    if ii.get("thumburl") and ii.get("width", 0) >= 400 and ii.get("height", 0) >= 300:
+                        urls.append(ii["thumburl"])
+    except Exception as e:
+        print(f"   ⚠️ Wikipedia: {e}")
+    random.shuffle(urls)
+    WIKI_CACHE[entity] = urls
+    return urls
+
+
+def wiki_photo(entity, filename):
+    for url in wiki_entity_urls(entity):
+        if url in USED_IMG_URLS:
+            continue
+        try:
+            r = requests.get(url, headers=COMMONS_UA, timeout=60)
+            if r.status_code == 200:
+                save_fitted(r.content, filename)
+                USED_IMG_URLS.add(url)
+                return True
+        except Exception:
+            continue
+    return False
+
+
+def fetch_news_image(filename="news_img.jpg"):
+    """OPTIONAL (USE_NEWS_IMAGES=1): the main photo of the news article itself."""
+    if not USE_NEWS_IMAGES or not NEWS_LINK["url"]:
+        return False
+    try:
+        url = NEWS_LINK["url"]
+        try:
+            from googlenewsdecoder import gnewsdecoder
+            d = gnewsdecoder(url, interval=1)
+            if d.get("status") and d.get("decoded_url"):
+                url = d["decoded_url"]
+        except Exception as e:
+            print(f"   ⚠️ link decoder: {e}")
+        html = requests.get(url, headers=UA, timeout=30).text
+        m = (re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', html) or
+             re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', html))
+        if m:
+            img_url = m.group(1).replace("&amp;", "&")
+            r = requests.get(img_url, headers=UA, timeout=40)
+            if r.status_code == 200:
+                save_fitted(r.content, filename)
+                return True
+    except Exception as e:
+        print(f"   ⚠️ News image: {e}")
+    return False
+
+
 def openverse_photo(keywords, filename):
     """No key needed (anonymous, rate-limited). Creative-Commons photos."""
     try:
@@ -404,6 +506,23 @@ def get_scene_visual(i, scene):
     ipath = f"scene_{i}.jpg"
     variants = keyword_variants(kw)
 
+    def done(src):
+        print(f"   ✅ ചിത്രം: {src}")
+        LAST_GOOD_IMAGE["path"] = ipath
+        return ipath, "image"
+
+    # ---- topic-specific pictures first ----
+    if i == 0:
+        print("   -> വാർത്തയുടെ ചിത്രം...")
+        if fetch_news_image("news_img.jpg"):
+            shutil.copy("news_img.jpg", ipath)
+            return done("News article")
+    entity = (scene.get("wiki_title") or "").strip()
+    if entity:
+        print(f"   -> Wikipedia ('{entity}')...")
+        if wiki_photo(entity, ipath):
+            return done("Wikipedia")
+
     # ---- videos ----
     for v in variants[:2]:
         if PEXELS_API_KEY:
@@ -420,11 +539,6 @@ def get_scene_visual(i, scene):
         return cv, "video"
 
     # ---- photos ----
-    def done(src):
-        print(f"   ✅ ചിത്രം: {src}")
-        LAST_GOOD_IMAGE["path"] = ipath
-        return ipath, "image"
-
     for v in variants:
         if PEXELS_API_KEY:
             print(f"   -> Pexels ഫോട്ടോ ('{v}')...")
@@ -454,7 +568,6 @@ def get_scene_visual(i, scene):
     # ---- reuse an earlier scene's picture instead of a blank colour ----
     prev = LAST_GOOD_IMAGE["path"]
     if prev and os.path.exists(prev):
-        import shutil
         shutil.copy(prev, ipath)
         print("   ♻️ മുൻ സീനിലെ ചിത്രം വീണ്ടും ഉപയോഗിക്കുന്നു")
         return ipath, "image"
