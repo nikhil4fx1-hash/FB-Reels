@@ -42,6 +42,8 @@ jobs:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           # ElevenLabs is OFF by default (Malayalam support is uncertain). Set to '1' to test it.
           # USE_ELEVENLABS: '1'
+          # Optional: use the news article's own photo for the first scene (copyright risk, see notes)
+          # USE_NEWS_IMAGES: '1'
           # Optional: female voice for edge-tts fallback
           # EDGE_VOICE: ml-IN-SobhanaNeural
         run: python main.py
