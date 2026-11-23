@@ -1,51 +1,45 @@
 {
- "status": "cancelled",
- "created": 1795447342.1477702,
- "offset": 141181718,
- "topic": "India Newland test match tie",
+ "status": "waiting_media",
+ "created": 1795450250.8155277,
+ "offset": 141181719,
+ "topic": "Gold Price",
  "scenes": [
   {
-   "narration": "സ്വന്തം നാട്ടിൽ 24 വർഷത്തിന് ശേഷം ഇന്ത്യക്കൊരു വൻ തിരിച്ചടി! ന്യൂസിലൻഡിനെതിരായ ടെസ്റ്റ് പരമ്പരയിൽ ഇന്ത്യ സമ്പൂർണ്ണമായി പരാജയപ്പെട്ടിരിക്കുന്നു.",
-   "keywords": "cricket stadium sadness",
-   "image_prompt": "A cinematic shot of an empty cricket stadium at dusk with an Indian flag fluttering sadly and a scoreboard showing a 0-3 series loss, high quality, photorealistic.",
-   "wiki_title": "New Zealand national cricket team"
+   "narration": "സ്വർണ്ണവില വീണ്ടും കുതിക്കുന്നു! നിങ്ങളുടെ നിക്ഷേപങ്ങൾ ഇപ്പോൾ സുരക്ഷിതമാണോ?",
+   "keywords": "Gold bars shining",
+   "image_prompt": "Close-up cinematic shot of shiny gold bars stacked on a dark reflective surface, dramatic lighting, 8k resolution, professional photography",
+   "wiki_title": "Gold"
   },
   {
-   "narration": "ബെംഗളൂരു, പൂനെ, മുംബൈ എന്നിവിടങ്ങളിൽ നടന്ന മൂന്ന് മത്സരങ്ങളിലും വിജയിച്ച് കിവികൾ ഇന്ത്യയെ വൈറ്റ് വാഷ് ചെയ്തു.",
-   "keywords": "cricket team celebrating",
-   "image_prompt": "New Zealand cricket players in white jerseys celebrating a victory on a sunny cricket field, holding a trophy, cinematic lighting, high detail.",
-   "wiki_title": "India national cricket team"
+   "narration": "അന്താരാഷ്ട്ര വിപണിയിലെ വലിയ മാറ്റങ്ങൾ കേരളത്തിലെ സ്വർണ്ണവിലയിൽ വൻ വർദ്ധനവ് വരുത്തിയിരിക്കുകയാണ്.",
+   "keywords": "Gold jewelry store",
+   "image_prompt": "A luxurious gold jewelry showroom in Kerala with various gold ornaments displayed in glass cases, soft warm lighting",
+   "wiki_title": "Kerala"
   },
   {
-   "narration": "1933-ൽ ടെസ്റ്റ് ക്രിക്കറ്റ് കളിക്കാൻ തുടങ്ങിയ ശേഷം ഇതാദ്യമായാണ് ഇന്ത്യ സ്വന്തം മണ്ണിൽ മൂന്നോ അതിലധികമോ മത്സരങ്ങളുള്ള ഒരു പരമ്പരയിൽ തോൽവി വഴങ്ങുന്നത്.",
-   "keywords": "cricket records history",
-   "image_prompt": "A glowing digital screen displaying historical cricket statistics with the Indian cricket logo, stylized as a news graphic, 4k resolution.",
-   "wiki_title": "History of cricket in India"
+   "narration": "യുഎസ് ഫെഡറൽ റിസർവിന്റെ പലിശ നിരക്കിലെ മാറ്റങ്ങളും ആഗോള രാഷ്ട്രീയ സംഘർഷങ്ങളും ഇതിന് പ്രധാന കാരണങ്ങളാണ്.",
+   "keywords": "US Federal Reserve",
+   "image_prompt": "A conceptual image of the US Federal Reserve building mixed with a fluctuating financial gold price graph in the background",
+   "wiki_title": "Federal Reserve"
   },
   {
-   "narration": "രണ്ടാമത്തെ ഇന്നിങ്സിൽ ഋഷഭ് പന്ത് പൊരുതി നോക്കിയെങ്കിലും അജാസ് പട്ടേലിന്റെ സ്പിൻ മാന്ത്രികതയ്ക്ക് മുന്നിൽ ഇന്ത്യ തകർന്നടിയുകയായിരുന്നു.",
-   "keywords": "cricket spin bowling",
-   "image_prompt": "A close-up shot of a cricket ball spinning in the air towards the stumps, dust flying from the pitch, dramatic focus.",
-   "wiki_title": "Ajaz Patel"
+   "narration": "സാമ്പത്തിക അസ്ഥിരതയുള്ള സമയങ്ങളിൽ ലോകമെമ്പാടുമുള്ള നിക്ഷേപകർ സ്വർണ്ണത്തെയാണ് ഏറ്റവും സുരക്ഷിതമായ നിക്ഷേപമായി കാണുന്നത്.",
+   "keywords": "Safe haven asset",
+   "image_prompt": "A symbolic image of a gold coin acting as a shield against a stormy background of falling stock market red charts",
+   "wiki_title": "Safe haven"
   },
   {
-   "narration": "ഈ കനത്ത പരാജയം ലോക ടെസ്റ്റ് ചാമ്പ്യൻഷിപ്പ് ഫൈനലിലേക്കുള്ള ഇന്ത്യയുടെ സാധ്യതകളെ സങ്കീർണ്ണമാക്കിയിട്ടുണ്ട്.",
-   "keywords": "world test championship",
-   "image_prompt": "The ICC World Test Championship trophy on a pedestal with a blurred background of a cricket stadium, professional photography.",
-   "wiki_title": "ICC World Test Championship"
+   "narration": "വിവാഹ സീസണുകൾ വരുമ്പോൾ ഇന്ത്യയിലെ ഡിമാൻഡ് കൂടുന്നതും വില ഇനിയും ഉയരാൻ കാരണമാകുന്നു.",
+   "keywords": "Indian wedding gold",
+   "image_prompt": "Close-up of a traditional Indian bride wearing heavy gold necklaces and jewelry, vibrant colors, cultural atmosphere",
+   "wiki_title": "Indian wedding"
   },
   {
-   "narration": "സീനിയർ താരങ്ങളുടെ മോശം ഫോമും സ്പിൻ പിച്ചുകളിലെ ഇന്ത്യയുടെ പതർച്ചയുമാണ് ഈ തോൽവിക്ക് പ്രധാന കാരണമായി വിലയിരുത്തപ്പെടുന്നത്.",
-   "keywords": "cricket players thinking",
-   "image_prompt": "Indian cricket players in white uniforms looking disappointed on the field, focus on the captain's face, blurred crowd in the background.",
-   "wiki_title": "Rohit Sharma"
-  },
-  {
-   "narration": "ഇന്ത്യൻ ബാറ്റിംഗ് നിരയുടെ ഈ തകർച്ചയ്ക്ക് പിന്നിൽ അമിത ആത്മവിശ്വാസമാണോ അതോ സാങ്കേതികമായ പിഴവുകളാണോ എന്ന് ചിന്തിക്കേണ്ടിയിരിക്കുന്നു.",
-   "keywords": "cricket bat broken",
-   "image_prompt": "An artistic representation of a broken cricket bat lying on a dry, cracked pitch, symbolic of a major defeat, dramatic shadows.",
-   "wiki_title": "Wankhede Stadium"
+   "narration": "വില ഇനിയും കുതിച്ചുയരുമോ അതോ ഉടൻ ഒരു ഇടിവ് പ്രതീക്ഷിക്കാമോ? നിക്ഷേപകർ ഇപ്പോൾ വലിയ ആശയക്കുഴപ്പത്തിലാണ്.",
+   "keywords": "Confused investor",
+   "image_prompt": "A person looking at a smartphone screen showing gold price charts with a thoughtful and worried expression, modern office background",
+   "wiki_title": ""
   }
  ],
- "caption": "ഇന്ത്യയുടെ മണ്ണിൽ കിവികളുടെ ചരിത്രവിജയം! 🇳🇿🏏\n\nസ്വന്തം കാണികൾക്ക് മുന്നിൽ ഇന്ത്യൻ ക്രിക്കറ്റ് ടീമിന് ദയനീയ പരാജയം. ന്യൂസിലൻഡിനെതിരായ മൂന്ന് മത്സരങ്ങളടങ്ങിയ ടെസ്റ്റ് പരമ്പര ഇന്ത്യ 0-3 എന്ന നിലയിൽ പൂർണ്ണമായും കൈവിട്ടിരിക്കുകയാണ്. മുംബൈ വാങ്കഡെ സ്റ്റേഡിയത്തിൽ നടന്ന ആവേശകരമായ അവസാന മത്സരത്തിൽ 25 റൺസിനാണ് ഇന്ത്യ തോൽവി സമ്മതിച്ചത്. \n\n1933-ൽ ടെസ്റ്റ് പദവി ലഭിച്ച ശേഷം ഇതാദ്യമായാണ് ഇന്ത്യ സ്വന്തം നാട്ടിൽ വെച്ച് ഒരു ടെസ്റ്റ് പരമ്പരയിൽ മൂന്ന് മത്സരങ്ങളും തോൽക്കുന്നത്. ബെംഗളൂരുവിലും പൂനെയിലും നടന്ന മത്സരങ്ങളിലും കിവികൾ ആധിപത്യം പുലർത്തിയിരുന്നു. കിവീസ് സ്പിന്നർ അജാസ് പട്ടേലിന്റെ തകർപ്പൻ പ്രകടനമാണ് ഇന്ത്യയുടെ ബാറ്റിംഗ് നിരയെ തകർത്തത്. \n\nറിഷഭ് പന്ത് അർദ്ധ സെഞ്ച്വറിയുമായി പൊരുതിയെങ്കിലും മറ്റ് മുൻനിര താരങ്ങളുടെ പരാജയം ഇന്ത്യക്ക് തിരിച്ചടിയായി. രോഹിത് ശർമ്മ, വിരാട് കോലി തുടങ്ങിയ സീനിയർ താരങ്ങളുടെ മോശം ഫോം വലിയ ചർച്ചകൾക്കാണ് വഴിതുറന്നിരിക്കുന്നത്. ഈ തോൽവിയോടെ ലോക ടെസ്റ്റ് ചാമ്പ്യൻഷിപ്പ് പോയിന്റ് പട്ടികയിൽ ഇന്ത്യ രണ്ടാം സ്ഥാനത്തേക്ക് പിന്തള്ളപ്പെട്ടു. \n\nഓസ്ട്രേലിയക്കെതിരായ വരാനിരിക്കുന്ന ബോർഡർ-ഗവാസ്കർ ട്രോഫിയിൽ ഇന്ത്യക്ക് ഇനി ഫൈനൽ സാധ്യതകൾ നിലനിർത്തണമെങ്കിൽ കടുത്ത പോരാട്ടം കാഴ്ചവെക്കേണ്ടി വരും. സ്പിൻ പിച്ചുകൾ തയ്യാറാക്കി എതിരാളികളെ കുടുക്കാൻ ശ്രമിക്കുന്ന തന്ത്രം ഇന്ത്യക്ക് തന്നെ തിരിച്ചടിയാവുകയാണോ എന്ന ചോദ്യം ഇപ്പോൾ ഉയരുന്നുണ്ട്. \n\nബാറ്റിംഗ് നിരയുടെ ഈ തകർച്ചയ്ക്ക് കാരണം സാങ്കേതികമായ പിഴവുകളാണോ അതോ താരങ്ങളുടെ അമിത ആത്മവിശ്വാസമാണോ എന്നതാണ് ക്രിക്കറ്റ് ലോകത്തെ പ്രധാന ചർച്ചാവിഷയം. ഇന്ത്യൻ ടീമിൽ അഴിച്ചുപണികൾ നടത്തേണ്ട സമയം അതിക്രമിച്ചോ?\n\n#IndiaVsNewZealand #CricketNews #TestCricket #TeamIndia #Whitewash #WTC2025 #RishabhPant #AjazPatel #IndianCricket"
+ "caption": "സ്വർണ്ണവിലയിലെ വൻ വർദ്ധനവ്: നിക്ഷേപകർ ശ്രദ്ധിക്കുക! 📈\n\nഅന്താരാഷ്ട്ര വിപണിയിലെ അപ്രതീക്ഷിത മാറ്റങ്ങൾ മൂലം സ്വർണ്ണവിലയിൽ വലിയ വർദ്ധനവാണ് രേഖപ്പെടുത്തുന്നത്. കേരളത്തിലെ വിപണിയിലും ഇത് പ്രതിഫലിക്കുന്നു.\n\nയുഎസ് ഫെഡറൽ റിസർവ് നടത്തുന്ന പലിശ നിരക്ക് മാറ്റങ്ങളും, ആഗോളതലത്തിൽ നിലനിൽക്കുന്ന രാഷ്ട്രീയ സംഘർഷങ്ങളും സ്വർണ്ണവില ഉയരാൻ കാരണമായി. സാമ്പത്തിക അസ്ഥിരതയുള്ള സാഹചര്യത്തിൽ ലോകമെമ്പാടുമുള്ള നിക്ഷേപകർ സ്വർണ്ണത്തെ ഒരു 'സേഫ് ഹാവൻ' അഥവാ സുരക്ഷിത നിക്ഷേപമായി കാണുന്നതാണ് ഈ മുന്നേറ്റത്തിന് പിന്നിൽ.\n\nഇതോടൊപ്പം ഇന്ത്യയിലെ വിവാഹ സീസണുകൾക്കിടയിലെ ഡിമാൻഡ് വർദ്ധനവും വിലയെ കൂടുതൽ മുകളിലേക്ക് എത്തിക്കുന്നു. വരും ദിവസങ്ങളിൽ വില ഇനിയും ഉയരുമോ അതോ വിപണിയിൽ ഒരു തിരുത്തൽ ഉണ്ടാകുമോ എന്നത് വലിയ ചർച്ചാവിഷയമാണ്.\n\nഇപ്പോഴത്തെ ഉയർന്ന വിലയിൽ സ്വർണ്ണം വാങ്ങുന്നത് ബുദ്ധിയാണോ, അതോ വില കുറയുന്നതിനായി കാത്തിരിക്കുന്നതാണോ ഉചിതം എന്നത് നിക്ഷേപകർക്കിടയിൽ വലിയ സംശയങ്ങൾക്ക് ഇടയാക്കുന്നു.\n\n#GoldPrice #KeralaGold #Investment #Economy #GoldRate #FinanceNews #IndiaGold #FinancialPlanning"
 }
