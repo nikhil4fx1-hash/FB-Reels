@@ -1,0 +1,68 @@
+name: Reels Telegram Bot
+
+on:
+  schedule:
+    # Checks Telegram every 10 minutes. Public repo: free. Private repo: each check uses ~1 Actions minute.
+    - cron: '*/10 * * * *'
+  workflow_dispatch:   # press "Run workflow" to react to your Telegram message immediately
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reels-state
+  cancel-in-progress: false
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Read Telegram messages
+        id: check
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          pip install requests
+          python check_telegram.py
+
+      - name: Install system dependencies
+        if: steps.check.outputs.action != 'none'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg imagemagick
+
+      - name: Install Python libraries
+        if: steps.check.outputs.action != 'none'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run action (plan or publish)
+        if: steps.check.outputs.action != 'none'
+        env:
+          PYTHONUNBUFFERED: '1'
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          HF_API_KEY: ${{ secrets.HF_API_KEY }}
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # USE_ELEVENLABS: '1'
+          # EDGE_VOICE: ml-IN-SobhanaNeural
+        run: python main.py ${{ steps.check.outputs.action }}
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "reels-bot"
+          git config user.email "reels-bot@users.noreply.github.com"
+          git add pending.json || true
+          git diff --cached --quiet || (git commit -m "reels: update state" && git push)
