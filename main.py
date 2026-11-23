@@ -106,51 +106,75 @@ def get_available_models():
 
 
 def get_gemini_scenes(topic):
+    """Returns (scenes, caption). Uses Google Search grounding when available so the
+    script and the long caption contain the latest real details about the topic."""
     available = get_available_models()
     prefs = ['gemini-3.8-flash', 'gemini-3.1-pro-preview', 'gemma-4-31b-it', 'gemma-4-26b-a4b-it']
     models = [m for m in prefs if m in available] + [m for m in available if m not in prefs]
 
     prompt = f"""
-    You are an expert Facebook Reels creator. Topic: '{topic}'.
-    Respond ONLY with a valid JSON object, no markdown, no extra text.
+You are an expert Malayalam news-explainer Reels creator for a Facebook page.
+Topic given by the page owner: '{topic}'
 
-    Split a ~60 second Malayalam voiceover into 6 to 8 short scenes. For each scene give:
-    - "narration": 1-2 short Malayalam sentences spoken in that scene
-    - "keywords": 2-3 simple English words for stock footage that visually matches THAT narration
-      (concrete things like "gold jewellery", "heavy rain", "football stadium", "smartphone", "city traffic")
-    - "image_prompt": a detailed English prompt for an AI image matching that scene
-    - "wiki_title": the exact English Wikipedia article title of the MAIN real person, team, place,
-      organisation or event that scene is about (e.g. "Sanju Samson", "Kerala", "Gold"). Use "" if generic.
+STEP 1: Use Google Search to find the LATEST verified information about this topic:
+what happened, who is involved, where and when, key numbers, the reasons, reactions from different sides,
+background, and what may happen next.
 
-    Exact structure:
-    {{
-      "scenes": [
-        {{"narration": "...", "keywords": "...", "image_prompt": "...", "wiki_title": "..."}}
-      ],
-      "caption": "Catchy Malayalam Facebook caption with hashtags"
-    }}
-    """
-    payload = {"contents": [{"parts": [{"text": prompt}]}]}
+RULES
+- Use only facts you actually found. Never invent numbers, quotes, names or dates.
+- If something is unconfirmed, say "റിപ്പോർട്ടുകൾ പ്രകാരം". Keep facts separate from opinions. Be fair and non-defamatory.
+
+STEP 2: Respond ONLY with one valid JSON object (no markdown fences, no text outside the JSON).
+Inside JSON strings write line breaks as \\n.
+
+"scenes": 6 to 8 scenes for a ~60 second Malayalam voiceover. Each scene has:
+  - "narration": 1-2 short, spoken-style Malayalam sentences.
+    Scene 1 must be a strong hook (a surprising fact or a sharp question).
+    The last scene must leave the viewer with a debatable point (do NOT ask for comments, likes or shares).
+  - "keywords": 2-3 simple English words for stock footage matching THAT narration
+  - "image_prompt": detailed English prompt for an AI image matching that scene
+  - "wiki_title": exact English Wikipedia article title of the MAIN real person, team, place,
+    organisation or event of that scene (e.g. "Sanju Samson", "Kerala"). Use "" if generic.
+
+"caption": the Facebook post text in Malayalam, MAX 1800 characters, written so that a person who never
+watched the reel still understands the whole story:
+  - Line 1: attention-grabbing headline with one emoji
+  - Then short paragraphs: what happened, who/where/when, key numbers and facts, why it matters,
+    background, what may happen next
+  - Then 1-2 sentences that lay out the different sides or the dilemma, so readers feel like giving
+    their own opinion. NEVER write "comment", "share", "tag", "like" requests and never ask
+    "what do you think?"; just present the issue so sharply that people react on their own.
+  - 5 to 8 relevant hashtags at the end
+
+Exact structure:
+{{"scenes": [{{"narration": "...", "keywords": "...", "image_prompt": "...", "wiki_title": "..."}}],
+  "caption": "..."}}
+"""
     for model in models:
-        print(f"\n{model} ഉപയോഗിച്ച് സീനുകൾ തയ്യാറാക്കുന്നു...")
+        print(f"\\n{model} ഉപയോഗിച്ച് സീനുകൾ തയ്യാറാക്കുന്നു...")
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}"
-        try:
-            data = requests.post(url, json=payload, timeout=90).json()
-            if 'candidates' not in data:
-                continue
-            text = data['candidates'][0]['content']['parts'][0]['text'].strip()
-            if text.startswith("```"):
-                text = text.split('\n', 1)[-1].rsplit('```', 1)[0].strip()
-            if text.startswith("json"):
-                text = text[4:].strip()
-            parsed = json.loads(text)
-            scenes = [s for s in parsed.get("scenes", []) if s.get("narration")]
-            caption = parsed.get("caption", "")
-            if len(scenes) >= 3 and caption:
-                print(f"✅ {len(scenes)} സീനുകൾ ലഭിച്ചു!")
-                return scenes, caption
-        except Exception as e:
-            print(f"⚠️ {e}")
+        for use_search in (True, False):
+            payload = {"contents": [{"parts": [{"text": prompt}]}]}
+            if use_search:
+                payload["tools"] = [{"google_search": {}}]
+            try:
+                data = requests.post(url, json=payload, timeout=120).json()
+                if 'candidates' not in data:
+                    print(f"   ⚠️ {'search' if use_search else 'plain'}: {str(data)[:150]}")
+                    continue
+                parts = data['candidates'][0]['content']['parts']
+                text = "".join(p.get("text", "") for p in parts).strip()
+                a, b = text.find("{"), text.rfind("}")
+                if a < 0 or b < 0:
+                    continue
+                parsed = json.loads(text[a:b + 1], strict=False)
+                scenes = [s for s in parsed.get("scenes", []) if s.get("narration")]
+                caption = (parsed.get("caption") or "").strip()
+                if len(scenes) >= 3 and caption:
+                    print(f"✅ {len(scenes)} സീനുകൾ ലഭിച്ചു! (search={use_search})")
+                    return scenes, caption
+            except Exception as e:
+                print(f"   ⚠️ {e}")
     return [], None
 
 
@@ -784,13 +808,11 @@ def upload_to_facebook(video_path, caption):
 
 # ======================================================================
 # ======================================================================
-# Telegram semi-automatic mode:  prepare -> (you send photos) -> publish
+# Telegram control:  you send a topic -> plan -> you send photos + "reel" -> publish
 # ======================================================================
 TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TG_CHAT = os.environ.get("TELEGRAM_CHAT_ID")
 STATE_FILE = "pending.json"
-MEDIA_EXPIRE_HOURS = 24
-POST_WORDS = ("post", "/post", "done", "/done")
 
 
 def tg(method, **params):
@@ -799,8 +821,14 @@ def tg(method, **params):
 
 
 def tg_send(text):
+    """Sends a message (split if long). Returns True only if Telegram accepted every part."""
+    ok = True
     for i in range(0, len(text), 3800):
-        tg("sendMessage", chat_id=TG_CHAT, text=text[i:i + 3800])
+        res = tg("sendMessage", chat_id=TG_CHAT, text=text[i:i + 3800])
+        if not res.get("ok"):
+            print(f"❌ Telegram send failed: {res}")
+            ok = False
+    return ok
 
 
 def load_state():
@@ -817,10 +845,10 @@ def save_state(state):
 
 
 def collect_media(state):
-    """Reads new Telegram messages. Returns (media list, post_now flag, last update id)."""
+    """Photos/videos sent since state['offset']. Returns (media list, last update id)."""
     res = tg("getUpdates", offset=state.get("offset", 0), timeout=0,
              allowed_updates=json.dumps(["message"]))
-    media, post_now, max_id = [], False, None
+    media, max_id = [], None
     for u in res.get("result", []):
         max_id = u["update_id"]
         m = u.get("message") or {}
@@ -836,9 +864,7 @@ def collect_media(state):
                 media.append({"file_id": m["document"]["file_id"], "kind": "image"})
             elif mt.startswith("video/"):
                 media.append({"file_id": m["document"]["file_id"], "kind": "video"})
-        if (m.get("text") or "").strip().lower() in POST_WORDS:
-            post_now = True
-    return media, post_now, max_id
+    return media, max_id
 
 
 def assign_media(i, n, media):
@@ -851,54 +877,54 @@ def assign_media(i, n, media):
     return chosen
 
 
-async def prepare():
-    print("🚀 തയ്യാറെടുപ്പ്: വിഷയം + സ്ക്രിപ്റ്റ് ഉണ്ടാക്കി ടെലിഗ്രാമിൽ അയക്കുന്നു...")
-    if not TG_TOKEN or not TG_CHAT:
-        print("❌ TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID secrets ചേർത്തിട്ടില്ല.")
-        sys.exit(1)
+async def plan():
+    """Triggered by check_telegram.py when you send a topic. Writes the script and sends it to you."""
+    state = load_state() or {}
+    topic = (state.get("topic") or "").strip()
+    try:
+        if not topic:
+            topic = get_trending_topic()
+        tg_send(f"🔎 '{topic}' - ഏറ്റവും പുതിയ വിവരങ്ങൾ തിരഞ്ഞ് സ്ക്രിപ്റ്റ് തയ്യാറാക്കുന്നു...")
+        scenes, caption = get_gemini_scenes(topic)
+    except Exception as e:
+        print(f"❌ {e}")
+        scenes, caption = [], None
 
-    old = load_state()
-    if old and old.get("status") == "waiting" and \
-            (time.time() - old.get("created", 0)) < MEDIA_EXPIRE_HOURS * 3600:
-        print("⏳ പഴയ റീലിന് ഫോട്ടോ കാത്തിരിക്കുന്നു, പുതിയത് ഉണ്ടാക്കുന്നില്ല.")
-        tg_send("⏳ മുൻ റീലിനുള്ള ഫോട്ടോകൾക്കായി കാത്തിരിക്കുന്നു. അയച്ചാൽ അത് പോസ്റ്റ് ആകും.")
-        return
-
-    topic = get_trending_topic()
-    scenes, caption = get_gemini_scenes(topic)
     if not scenes:
-        print("❌ ജെമിനിയിൽ നിന്ന് ഡാറ്റ ലഭിച്ചില്ല.")
-        tg_send("❌ ഇന്ന് സ്ക്രിപ്റ്റ് ഉണ്ടാക്കാൻ കഴിഞ്ഞില്ല.")
+        state.update(status="failed")
+        save_state(state)
+        tg_send("❌ സ്ക്രിപ്റ്റ് ഉണ്ടാക്കാൻ കഴിഞ്ഞില്ല. വിഷയം ഒന്ന് മാറ്റി വീണ്ടും അയക്കൂ.")
         sys.exit(1)
 
-    last = tg("getUpdates", offset=-1, timeout=0).get("result", [])
-    offset = last[-1]["update_id"] + 1 if last else 0
-
-    state = {"status": "waiting", "created": time.time(), "offset": offset,
-             "topic": topic, "scenes": scenes, "caption": caption}
-    save_state(state)
-
-    lines = [f"🎬 പുതിയ റീൽ ആശയം", f"വിഷയം: {topic}", "",
-             f"📸 {len(scenes)} ഫോട്ടോ/വീഡിയോ ക്രമത്തിൽ അയക്കൂ (സീൻ 1 മുതൽ).",
-             "കുറച്ച് മാത്രം അയക്കണമെങ്കിൽ അയച്ച ശേഷം 'post' എന്ന് ടൈപ്പ് ചെയ്യൂ.", ""]
+    state.update(status="waiting_media", topic=topic, scenes=scenes, caption=caption,
+                 created=time.time())
+    lines = [f"🎬 വിഷയം: {topic}", "",
+             f"📸 {len(scenes)} ഫോട്ടോ/വീഡിയോ ക്രമത്തിൽ അയക്കൂ (കുറവായാലും മതി). "
+             "എല്ലാം അയച്ച ശേഷം  reel  എന്ന് ടൈപ്പ് ചെയ്യൂ.",
+             "വേറെ വിഷയം: /new വിഷയം   |   ഒഴിവാക്കാൻ: cancel", ""]
     for i, s in enumerate(scenes, 1):
         hint = s.get("wiki_title") or s.get("keywords") or ""
         lines.append(f"സീൻ {i}: {s['narration']}")
         lines.append(f"   🔎 തിരയാൻ: {hint}")
-    lines += ["", f"📝 ക്യാപ്ഷൻ: {caption}"]
-    tg_send("\n".join(lines))
-    print("✅ ടെലിഗ്രാമിൽ അയച്ചു. ഇനി ഫോട്ടോകൾക്കായി കാത്തിരിക്കുന്നു.")
+    if not tg_send("\n".join(lines)):
+        print("❌ ടെലിഗ്രാമിൽ അയക്കാൻ കഴിഞ്ഞില്ല. സ്റ്റേറ്റ് സേവ് ചെയ്തില്ല.")
+        sys.exit(1)
+    tg_send("📝 പോസ്റ്റ് ടെക്സ്റ്റ് (ക്യാപ്ഷൻ):\n\n" + caption)
+    save_state(state)
+    print("✅ സ്ക്രിപ്റ്റ് അയച്ചു. ഇനി ഫോട്ടോകൾക്കായി കാത്തിരിക്കുന്നു.")
 
 
 async def publish():
+    """Triggered by check_telegram.py when you type 'reel' after sending photos."""
     state = load_state()
-    if not state or state.get("status") != "waiting":
+    if not state or state.get("status") != "waiting_media":
         print("പോസ്റ്റ് ചെയ്യാൻ ഒന്നുമില്ല.")
         return
-    media_info, post_now, max_id = collect_media(state)
-    if not media_info:
-        print("മീഡിയ ഇല്ല.")
-        return
+    state["status"] = "posting"      # if this run crashes, the same reel is not retried forever
+    save_state(state)
+
+    media_info, max_id = collect_media(state)
+    state["offset"] = (max_id + 1) if max_id is not None else state.get("offset", 0)
 
     print(f"\n📥 {len(media_info)} ഫയൽ ഡൗൺലോഡ് ചെയ്യുന്നു...")
     files = []
@@ -917,21 +943,21 @@ async def publish():
             files.append((path, mi["kind"]))
         except Exception as e:
             print(f"   ⚠️ ഫയൽ {k+1} എടുക്കാൻ കഴിഞ്ഞില്ല (20MB-ൽ കൂടുതലാകാം): {e}")
+
+    ok = False
     if not files:
-        tg_send("❌ അയച്ച ഫയലുകൾ എടുക്കാൻ കഴിഞ്ഞില്ല. ചെറിയ ഫയലുകൾ വീണ്ടും അയക്കൂ.")
-        return
-
-    if not check_facebook_permissions():
+        tg_send("❌ അയച്ച ഫയലുകൾ എടുക്കാൻ കഴിഞ്ഞില്ല. ചെറിയ ഫയലുകൾ അയച്ച് വീണ്ടും ശ്രമിക്കൂ.")
+    elif not check_facebook_permissions():
         tg_send("❌ ഫേസ്ബുക്ക് ടോക്കൺ പ്രശ്നം. റീൽ പോസ്റ്റ് ചെയ്തില്ല.")
-        sys.exit(1)
-
-    video_path = await build_reel(state["scenes"], user_media=files)
-    ok = bool(video_path) and upload_to_facebook(video_path, state["caption"])
+    else:
+        tg_send("⚙️ റീൽ ഉണ്ടാക്കുന്നു, കുറച്ച് മിനിറ്റ് എടുക്കും...")
+        video_path = await build_reel(state["scenes"], user_media=files)
+        ok = bool(video_path) and upload_to_facebook(video_path, state["caption"][:2200])
+        tg_send("🎉 റീൽ പോസ്റ്റ് ചെയ്തു!" if ok else
+                "❌ റീൽ പോസ്റ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല. GitHub ലോഗ് നോക്കൂ.")
 
     state["status"] = "posted" if ok else "failed"
-    state["offset"] = (max_id + 1) if max_id is not None else state.get("offset", 0)
     save_state(state)
-    tg_send("🎉 റീൽ പോസ്റ്റ് ചെയ്തു!" if ok else "❌ റീൽ പോസ്റ്റ് ചെയ്യാൻ കഴിഞ്ഞില്ല. GitHub ലോഗ് നോക്കൂ.")
     if not ok:
         sys.exit(1)
 
@@ -960,8 +986,8 @@ async def main():
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "auto"
-    if mode == "prepare":
-        asyncio.run(prepare())
+    if mode == "plan":
+        asyncio.run(plan())
     elif mode == "publish":
         asyncio.run(publish())
     else:
