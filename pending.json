@@ -1,45 +1,45 @@
 {
- "status": "posted",
- "created": 1795450250.8155277,
- "offset": 141181749,
- "topic": "Gold Price",
+ "status": "waiting_media",
+ "created": 1795453087.4300637,
+ "offset": 141181750,
+ "topic": "India Newland test match tie",
  "scenes": [
   {
-   "narration": "സ്വർണ്ണവില വീണ്ടും കുതിക്കുന്നു! നിങ്ങളുടെ നിക്ഷേപങ്ങൾ ഇപ്പോൾ സുരക്ഷിതമാണോ?",
-   "keywords": "Gold bars shining",
-   "image_prompt": "Close-up cinematic shot of shiny gold bars stacked on a dark reflective surface, dramatic lighting, 8k resolution, professional photography",
-   "wiki_title": "Gold"
+   "narration": "ഒന്നാം ഇന്നിങ്സിൽ 720 റൺസ് നേടിയിട്ടും ഇന്ത്യക്ക് ന്യൂസിലാൻഡിനെ തോൽപ്പിക്കാൻ കഴിഞ്ഞില്ലെന്ന് പറഞ്ഞാൽ നിങ്ങൾ വിശ്വസിക്കുമോ? വെല്ലിംഗ്ടണിൽ നടന്ന ഒന്നാം ടെസ്റ്റ് സമനിലയിലാണ് അവസാനിച്ചത്!",
+   "keywords": "cricket stadium wickets",
+   "image_prompt": "A dramatic, high-contrast shot of a cricket stadium in Wellington with a scoreboard showing 720 runs and Indian cricket players in white uniforms.",
+   "wiki_title": "Basin Reserve"
   },
   {
-   "narration": "അന്താരാഷ്ട്ര വിപണിയിലെ വലിയ മാറ്റങ്ങൾ കേരളത്തിലെ സ്വർണ്ണവിലയിൽ വൻ വർദ്ധനവ് വരുത്തിയിരിക്കുകയാണ്.",
-   "keywords": "Gold jewelry store",
-   "image_prompt": "A luxurious gold jewelry showroom in Kerala with various gold ornaments displayed in glass cases, soft warm lighting",
-   "wiki_title": "Kerala"
+   "narration": "അവസാന ദിവസം സമനിലയ്ക്കായി ചെറുത്തുനിന്ന കിവീസ് ബാറ്റർമാരായ ഡാരിൽ മിച്ചലും ഗ്ലെൻ ഫിലിപ്സും ചേർന്ന് ഇന്ത്യയുടെ വിജയം തടഞ്ഞു.",
+   "keywords": "cricket defensive shot",
+   "image_prompt": "A close-up action shot of a New Zealand batsman in white jersey playing a defensive shot on a sunny day at Basin Reserve, Wellington.",
+   "wiki_title": "Daryl Mitchell (cricketer)"
   },
   {
-   "narration": "യുഎസ് ഫെഡറൽ റിസർവിന്റെ പലിശ നിരക്കിലെ മാറ്റങ്ങളും ആഗോള രാഷ്ട്രീയ സംഘർഷങ്ങളും ഇതിന് പ്രധാന കാരണങ്ങളാണ്.",
-   "keywords": "US Federal Reserve",
-   "image_prompt": "A conceptual image of the US Federal Reserve building mixed with a fluctuating financial gold price graph in the background",
-   "wiki_title": "Federal Reserve"
+   "narration": "ആദ്യം ബാറ്റ് ചെയ്ത ന്യൂസിലാൻഡ് 368 റൺസ് എടുത്തപ്പോൾ ഇന്ത്യ ഒമ്പത് വിക്കറ്റ് നഷ്ടത്തിൽ 720 റൺസെന്ന കൂറ്റൻ സ്കോർ അടിച്ചുകൂട്ടി ഡിക്ലയർ ചെയ്യുകയായിരുന്നു.",
+   "keywords": "cricket score bat",
+   "image_prompt": "An Indian cricketer wearing white Indian cricket jersey raising his bat and helmet in celebration on a green stadium background.",
+   "wiki_title": "K. L. Rahul"
   },
   {
-   "narration": "സാമ്പത്തിക അസ്ഥിരതയുള്ള സമയങ്ങളിൽ ലോകമെമ്പാടുമുള്ള നിക്ഷേപകർ സ്വർണ്ണത്തെയാണ് ഏറ്റവും സുരക്ഷിതമായ നിക്ഷേപമായി കാണുന്നത്.",
-   "keywords": "Safe haven asset",
-   "image_prompt": "A symbolic image of a gold coin acting as a shield against a stormy background of falling stock market red charts",
-   "wiki_title": "Safe haven"
+   "narration": "അവസാന ദിവസം ജയത്തിനായി ഇന്ത്യക്ക് അഞ്ച് വിക്കറ്റുകൾ കൂടി വേണ്ടിയിരുന്നെങ്കിലും വെല്ലിംഗ്ടണിലെ ഫ്ലാറ്റ് പിച്ചിൽ ബൗളർമാർക്ക് അവസരങ്ങൾ ലഭിച്ചില്ല.",
+   "keywords": "cricket spin bowling",
+   "image_prompt": "An Indian bowler in white cricket kit releasing the red leather cricket ball towards the batsman under a bright sun.",
+   "wiki_title": "Glenn Phillips (cricketer)"
   },
   {
-   "narration": "വിവാഹ സീസണുകൾ വരുമ്പോൾ ഇന്ത്യയിലെ ഡിമാൻഡ് കൂടുന്നതും വില ഇനിയും ഉയരാൻ കാരണമാകുന്നു.",
-   "keywords": "Indian wedding gold",
-   "image_prompt": "Close-up of a traditional Indian bride wearing heavy gold necklaces and jewelry, vibrant colors, cultural atmosphere",
-   "wiki_title": "Indian wedding"
+   "narration": "കളി തീരാൻ പതിനഞ്ച് ഓവറുകൾ ബാക്കിയുള്ളപ്പോൾ തന്നെ ഇന്ത്യൻ നായകൻ ശുഭ്മാൻ ഗിൽ കളി സമനില സമ്മതിച്ച് ഹസ്തദാനം നൽകി.",
+   "keywords": "cricket handshake match",
+   "image_prompt": "Indian cricket captain Shubman Gill, wearing white test match kit, shaking hands with the opposition batsman on the field.",
+   "wiki_title": "Shubman Gill"
   },
   {
-   "narration": "വില ഇനിയും കുതിച്ചുയരുമോ അതോ ഉടൻ ഒരു ഇടിവ് പ്രതീക്ഷിക്കാമോ? നിക്ഷേപകർ ഇപ്പോൾ വലിയ ആശയക്കുഴപ്പത്തിലാണ്.",
-   "keywords": "Confused investor",
-   "image_prompt": "A person looking at a smartphone screen showing gold price charts with a thoughtful and worried expression, modern office background",
-   "wiki_title": ""
+   "narration": "ഈ സമനില ലോക ടെസ്റ്റ് ചാമ്പ്യൻഷിപ്പ് ഫൈനലിലേക്കുള്ള ഇന്ത്യയുടെ വഴി പ്രയാസകരമാക്കി. ബൗളർമാരെ സംരക്ഷിക്കാൻ നേരത്തെ കളി അവസാനിപ്പിച്ച ഗില്ലിന്റെ തന്ത്രം ശരിയായിരുന്നോ?",
+   "keywords": "cricket match stand",
+   "image_prompt": "An Indian cricket fan wearing a blue jersey looking at a digital screen showing sports tournament standings.",
+   "wiki_title": "ICC World Test Championship"
   }
  ],
- "caption": "സ്വർണ്ണവിലയിലെ വൻ വർദ്ധനവ്: നിക്ഷേപകർ ശ്രദ്ധിക്കുക! 📈\n\nഅന്താരാഷ്ട്ര വിപണിയിലെ അപ്രതീക്ഷിത മാറ്റങ്ങൾ മൂലം സ്വർണ്ണവിലയിൽ വലിയ വർദ്ധനവാണ് രേഖപ്പെടുത്തുന്നത്. കേരളത്തിലെ വിപണിയിലും ഇത് പ്രതിഫലിക്കുന്നു.\n\nയുഎസ് ഫെഡറൽ റിസർവ് നടത്തുന്ന പലിശ നിരക്ക് മാറ്റങ്ങളും, ആഗോളതലത്തിൽ നിലനിൽക്കുന്ന രാഷ്ട്രീയ സംഘർഷങ്ങളും സ്വർണ്ണവില ഉയരാൻ കാരണമായി. സാമ്പത്തിക അസ്ഥിരതയുള്ള സാഹചര്യത്തിൽ ലോകമെമ്പാടുമുള്ള നിക്ഷേപകർ സ്വർണ്ണത്തെ ഒരു 'സേഫ് ഹാവൻ' അഥവാ സുരക്ഷിത നിക്ഷേപമായി കാണുന്നതാണ് ഈ മുന്നേറ്റത്തിന് പിന്നിൽ.\n\nഇതോടൊപ്പം ഇന്ത്യയിലെ വിവാഹ സീസണുകൾക്കിടയിലെ ഡിമാൻഡ് വർദ്ധനവും വിലയെ കൂടുതൽ മുകളിലേക്ക് എത്തിക്കുന്നു. വരും ദിവസങ്ങളിൽ വില ഇനിയും ഉയരുമോ അതോ വിപണിയിൽ ഒരു തിരുത്തൽ ഉണ്ടാകുമോ എന്നത് വലിയ ചർച്ചാവിഷയമാണ്.\n\nഇപ്പോഴത്തെ ഉയർന്ന വിലയിൽ സ്വർണ്ണം വാങ്ങുന്നത് ബുദ്ധിയാണോ, അതോ വില കുറയുന്നതിനായി കാത്തിരിക്കുന്നതാണോ ഉചിതം എന്നത് നിക്ഷേപകർക്കിടയിൽ വലിയ സംശയങ്ങൾക്ക് ഇടയാക്കുന്നു.\n\n#GoldPrice #KeralaGold #Investment #Economy #GoldRate #FinanceNews #IndiaGold #FinancialPlanning"
+ "caption": "🏏 വെല്ലിംഗ്ടണിൽ ഇന്ത്യക്ക് നിരാശ; ഒന്നാം ടെസ്റ്റ് സമനിലയിൽ!\n\nആദ്യ ഇന്നിങ്സിൽ 720 റൺസ് എന്ന വമ്പൻ സ്കോർ പടുത്തുയർത്തിയിട്ടും ന്യൂസിലാൻഡിനെതിരായ വെല്ലിംഗ്ടൺ ടെസ്റ്റ് സമനിലയിൽ അവസാനിപ്പിക്കേണ്ടി വന്നിരിക്കുകയാണ് ടീം ഇന്ത്യക്ക്. അവസാന ദിവസത്തെ മികച്ച പ്രതിരോധത്തിലൂടെ കളി സമനിലയിലാക്കി കിവികൾ രക്ഷപ്പെട്ടു.\n\nന്യൂസിലാൻഡിന്റെ ഒന്നാം ഇന്നിങ്സ് സ്കോറായ 368 റൺസിന് മറുപടിയായി കെ.എൽ രാഹുലിന്റെയും (136) ഋഷഭ് പന്തിന്റെയും (128) സെഞ്ചുറി ഇന്നിങ്സുകളുടെ കരുത്തിലാണ് ഇന്ത്യ 720 റൺസെടുത്ത് ഡിക്ലയർ ചെയ്തത്. 352 റൺസിന്റെ ഭീമമായ ലീഡുമായി രണ്ടാം ഇന്നിങ്സിന് ഇറങ്ങിയ കിവീസിനെ അഞ്ചാം ദിവസം എളുപ്പത്തിൽ ചുരുട്ടിക്കെട്ടാമെന്നായിരുന്നു ഇന്ത്യൻ കണക്കുകൂട്ടൽ.\n\nഎന്നാൽ വെല്ലിംഗ്ടണിലെ ഫ്ലാറ്റ് പിച്ചിൽ ഇന്ത്യൻ ബൗളർമാരുടെ തന്ത്രങ്ങളൊന്നും ഫലിച്ചില്ല. അവസാന ദിവസം വെറും മൂന്ന് വിക്കറ്റുകൾ മാത്രമാണ് ഇന്ത്യക്ക് വീഴ്ത്താനായത്. ഗ്ലെൻ ഫിലിപ്സും ഡാരിൽ മിച്ചലും നടത്തിയ അപാരമായ ചെറുത്തുനിൽപ്പാണ് ഇന്ത്യയുടെ വിജയം തടഞ്ഞത്.\n\nകളി തീരാൻ 15 ഓവറുകൾ ബാക്കിനിൽക്കെ നായകൻ ശുഭ്മാൻ ഗിൽ കളി സമനിലയായി അംഗീകരിച്ചു. അടുത്ത മത്സരങ്ങൾക്ക് മുന്നോടിയായി ബൗളർമാരുടെ ജോലിഭാരം കുറയ്ക്കാനാണ് ഈ തീരുമാനമെന്ന് ഗിൽ വ്യക്തമാക്കി. എന്നാൽ ഈ ഫലം ലോക ടെസ്റ്റ് ചാമ്പ്യൻഷിപ്പ് (WTC) ഫൈനലിലേക്കുള്ള ഇന്ത്യയുടെ സാധ്യതകൾക്ക് വലിയ തിരിച്ചടിയാണ് നൽകിയിരിക്കുന്നത്.\n\nഅവസാന നിമിഷം വരെ പൊരുതി ജയം നേടാൻ ശ്രമിക്കാതെ, നേരത്തെ തന്നെ കളി നിർത്തി ഹസ്തദാനം നൽകിയ ഗില്ലിന്റെ നായകത്വം ഇപ്പോൾ ചർച്ചകൾക്ക് വഴിവെച്ചിരിക്കുകയാണ്. ജയത്തിനായി പരമാവധി ശ്രമിക്കേണ്ടിയിരുന്നു എന്ന് ഒരു വിഭാഗവും, ബൗളർമാരുടെ ആരോഗ്യം നോക്കിയത് ശരിയായ തീരുമാനമെന്ന് മറുവിഭാഗവും വാദിക്കുന്നു.\n\n#INDvNZ #TeamIndia #ShubmanGill #TestCricket #WTC2027 #CricketNews #WellingtonDraw"
 }
