@@ -2,8 +2,9 @@ name: Reels Telegram Bot
 
 on:
   schedule:
-    # Checks Telegram every 10 minutes. Public repo: free. Private repo: each check uses ~1 Actions minute.
-    - cron: '*/10 * * * *'
+    # Safety net. With the Cloudflare Worker the bot reacts instantly; this only catches missed triggers.
+    # Without the Worker, change to '*/10 * * * *' to poll Telegram every 10 minutes.
+    - cron: '*/30 * * * *'
   workflow_dispatch:   # press "Run workflow" to react to your Telegram message immediately
 
 permissions:
@@ -29,6 +30,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          WORKER_API_KEY: ${{ secrets.WORKER_API_KEY }}
         run: |
           pip install requests
           python check_telegram.py
@@ -55,6 +58,8 @@ jobs:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+          WORKER_API_KEY: ${{ secrets.WORKER_API_KEY }}
           # USE_ELEVENLABS: '1'
           # EDGE_VOICE: ml-IN-SobhanaNeural
         run: python main.py ${{ steps.check.outputs.action }}
