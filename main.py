@@ -813,6 +813,8 @@ def upload_to_facebook(video_path, caption):
 TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TG_CHAT = os.environ.get("TELEGRAM_CHAT_ID")
 STATE_FILE = "pending.json"
+WORKER_URL = (os.environ.get("WORKER_URL") or "").rstrip("/")
+WORKER_API_KEY = os.environ.get("WORKER_API_KEY") or ""
 
 
 def tg(method, **params):
@@ -846,10 +848,15 @@ def save_state(state):
 
 def collect_media(state):
     """Photos/videos sent since state['offset']. Returns (media list, last update id)."""
-    res = tg("getUpdates", offset=state.get("offset", 0), timeout=0,
-             allowed_updates=json.dumps(["message"]))
+    if WORKER_URL:
+        updates = requests.get(f"{WORKER_URL}/updates", params={"offset": state.get("offset", 0)},
+                               headers={"Authorization": f"Bearer {WORKER_API_KEY}"},
+                               timeout=30).json().get("result", [])
+    else:
+        updates = tg("getUpdates", offset=state.get("offset", 0), timeout=0,
+                     allowed_updates=json.dumps(["message"])).get("result", [])
     media, max_id = [], None
-    for u in res.get("result", []):
+    for u in updates:
         max_id = u["update_id"]
         m = u.get("message") or {}
         if str(m.get("chat", {}).get("id")) != str(TG_CHAT):

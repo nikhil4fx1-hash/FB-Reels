@@ -13,11 +13,23 @@ REEL_WORDS = ("reel", "/reel", "post", "/post", "done", "/done")
 CANCEL_WORDS = ("cancel", "/cancel")
 TRENDING_WORDS = ("trending", "/trending")
 IGNORE = {"hi", "hii", "hello", "hey", "ok", "okay", "thanks", "thank you", "/start", "/help"}
+WORKER_URL = (os.environ.get("WORKER_URL") or "").rstrip("/")
+WORKER_API_KEY = os.environ.get("WORKER_API_KEY") or ""
 IDLE = {"idle", "posted", "failed", "expired", "cancelled", "posting", "waiting", None}
 
 
 def tg(method, **params):
     return requests.post(f"https://api.telegram.org/bot{TOKEN}/{method}", data=params, timeout=60).json()
+
+
+def get_updates(offset):
+    """Reads messages from the Cloudflare Worker (instant mode) or straight from Telegram (polling mode)."""
+    if WORKER_URL:
+        r = requests.get(f"{WORKER_URL}/updates", params={"offset": offset},
+                         headers={"Authorization": f"Bearer {WORKER_API_KEY}"}, timeout=30)
+        return r.json().get("result", [])
+    return tg("getUpdates", offset=offset, timeout=0,
+              allowed_updates=json.dumps(["message"])).get("result", [])
 
 
 def say(text):
@@ -56,10 +68,9 @@ def main():
     if status == "planning":          # an earlier plan run did not finish: retry
         return out("plan")
 
-    res = tg("getUpdates", offset=state.get("offset", 0), timeout=0,
-             allowed_updates=json.dumps(["message"]))
+    updates = get_updates(state.get("offset", 0))
     media_count, last_id = 0, None
-    for u in res.get("result", []):
+    for u in updates:
         uid = u["update_id"]
         last_id = uid
         m = u.get("message") or {}
