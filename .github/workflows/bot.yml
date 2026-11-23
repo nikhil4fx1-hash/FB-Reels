@@ -4,7 +4,7 @@ on:
   schedule:
     # Safety net. With the Cloudflare Worker the bot reacts instantly; this only catches missed triggers.
     # Without the Worker, change to '*/10 * * * *' to poll Telegram every 10 minutes.
-    - cron: '*/30 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:   # press "Run workflow" to react to your Telegram message immediately
 
 permissions:
