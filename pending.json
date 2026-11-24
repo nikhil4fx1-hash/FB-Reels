@@ -1,51 +1,45 @@
 {
- "status": "cancelled",
- "created": 1795522791.6848378,
- "offset": 141181779,
- "topic": "Vaibhav Suryavanshi todays Performance in List A Cricket",
+ "status": "waiting_media",
+ "created": 1795523843.419462,
+ "offset": 141181780,
+ "topic": "vabhav suryavamshi todays centuruy against UAE in doha",
  "scenes": [
   {
-   "narration": "13 വയസ്സുള്ള ഒരു കുട്ടി ലിസ്റ്റ് എ ക്രിക്കറ്റിൽ സെഞ്ച്വറി അടിച്ചാൽ നിങ്ങൾ വിശ്വസിക്കുമോ?",
-   "keywords": "young cricketer batting",
-   "image_prompt": "A cinematic close-up of a very young 13-year-old Indian boy in white cricket gear, holding a bat, looking determined, stadium lights in the background, hyper-realistic, 8k",
-   "wiki_title": "Vaibhav Suryavanshi"
+   "narration": "ദോഹയിൽ ഒരു ഇന്ത്യൻ താരം ചരിത്രം കുറിക്കുന്നു! ആരാണ് ഈ പതിനാറുകാരൻ?",
+   "keywords": "cricket stadium Doha",
+   "image_prompt": "A cinematic wide shot of a modern cricket stadium in Doha, Qatar, under bright lights, with a focused atmosphere.",
+   "wiki_title": "Doha"
   },
   {
-   "narration": "ബിഹാറിൽ നിന്നുള്ള വൈഭവ് സൂര്യവൻശിയെന്ന അത്ഭുതബാലനാണ് ഇപ്പോൾ ക്രിക്കറ്റ് ലോകത്തെ ഞെട്ടിച്ചിരിക്കുന്നത്.",
-   "keywords": "Indian cricket player",
-   "image_prompt": "A wide shot of a young teenage cricketer playing a powerful shot on a professional cricket ground, Bihar team jersey, action shot, motion blur, professional photography",
-   "wiki_title": "Vaibhav Suryavanshi"
-  },
-  {
-   "narration": "വിജയ് ഹസാരെ ട്രോഫിയിൽ സെഞ്ച്വറി നേടിയതോടെ, ലിസ്റ്റ് എ ചരിത്രത്തിലെ ഏറ്റവും പ്രായം കുറഞ്ഞ സെഞ്ച്വറിയൻ ആയി വൈഭവ് മാറി.",
-   "keywords": "cricket scoreboard century",
-   "image_prompt": "A digital cricket scoreboard showing '100 runs' with the name Vaibhav Suryavanshi, blurred cricket stadium background, bright colors",
-   "wiki_title": "Vijay Hazare Trophy"
-  },
-  {
-   "narration": "അരുണാചൽ പ്രദേശിനെതിരായ മത്സരത്തിലായിരുന്നു ഈ വിസ്മയ പ്രകടനം.",
-   "keywords": "cricket match action",
-   "image_prompt": "A view from the stands of a cricket match, young batsman hitting a ball, fielders in white uniforms, sunny day, sports photography",
-   "wiki_title": "Arunachal Pradesh"
-  },
-  {
-   "narration": "ചെറുപ്പത്തിലേ ക്രിക്കറ്റിൽ ശ്രദ്ധ കേന്ദ്രീകരിച്ച വൈഭവിന്റെ ബാറ്റിംഗ് ശൈലി പലരെയും അത്ഭുതപ്പെടുത്തുന്നു.",
-   "keywords": "cricket coaching youth",
-   "image_prompt": "A montage showing a young boy practicing cricket in a local Indian ground with a coach, sunlight filtering through trees, nostalgic atmosphere",
+   "narration": "യുഎഇക്കെതിരെ വബാബ് സൂര്യവംശിയുടെ തകർപ്പൻ സെഞ്ചുറി. ക്രിക്കറ്റ് ലോകം ഇപ്പോൾ ഇയാളെയാണ് ശ്രദ്ധിക്കുന്നത്.",
+   "keywords": "batsman century celebration",
+   "image_prompt": "A young Indian cricketer in a white and blue jersey raising his bat in celebration of a century, cheering crowd in the background.",
    "wiki_title": ""
   },
   {
-   "narration": "ഇന്ത്യൻ ക്രിക്കറ്റിന്റെ ഭാവി വാഗ്ദാനമായി ഈ കൊച്ചു മിടുക്കൻ മാറിക്കഴിഞ്ഞു.",
-   "keywords": "Indian cricket team",
-   "image_prompt": "An artistic representation of a young boy's silhouette transitioning into a professional Indian international cricketer, glowing outlines, futuristic sports art",
-   "wiki_title": "Indian national cricket team"
+   "narration": "അതിവേഗമായി റൺസുകൾ വാരിക്കൂട്ടി വബാബ് യുഎഇ ബൗളർമാരെ വിറപ്പിച്ചു. മികച്ച ബാറ്റിംഗ് മികവാണ് അദ്ദേഹം കാഴ്ചവെച്ചത്.",
+   "keywords": "cricket batting shot",
+   "image_prompt": "Action shot of a teenage batsman playing a powerful cover drive, cricket ball flying towards the boundary, grass flying.",
+   "wiki_title": "United Arab Emirates national cricket team"
   },
   {
-   "narration": "പ്രായം കുറഞ്ഞവർക്ക് ഇത്രയും വലിയ മത്സരങ്ങളിൽ അവസരം നൽകുന്നത് അവരുടെ വളർച്ചയെ സഹായിക്കുമോ അതോ സമ്മർദ്ദം വർദ്ധിപ്പിക്കുമോ?",
-   "keywords": "pressure stress sports",
-   "image_prompt": "A split screen showing a cheering crowd on one side and a close-up of a young player's face reflecting intense concentration and pressure, cinematic lighting",
+   "narration": "വളരെ ചെറിയ പ്രായത്തിൽ തന്നെ വലിയ റെക്കോർഡുകൾ ലക്ഷ്യമിടുന്ന പ്രതിഭയാണ് വബാബ് സൂര്യവംശി.",
+   "keywords": "young cricket player",
+   "image_prompt": "Close-up portrait of a determined young Indian cricketer wearing a helmet, sweat on forehead, intense gaze.",
+   "wiki_title": ""
+  },
+  {
+   "narration": "ഈ പ്രകടനം വബാബിനെ ഇന്ത്യൻ ക്രിക്കറ്റിന്റെ ഭാവി പ്രതീക്ഷയായി മാറ്റുന്നു.",
+   "keywords": "Indian cricket team logo",
+   "image_prompt": "A conceptual image of a young player's shadow transforming into a professional Indian international cricketer on a pitch.",
+   "wiki_title": "India national cricket team"
+  },
+  {
+   "narration": "പ്രതിഭ മാത്രം മതിയോ അതോ കടുത്ത മത്സരങ്ങൾക്കിടയിൽ ഈ ഫോം നിലനിർത്താൻ സാധിക്കുമോ എന്നതാണ് വലിയ ചോദ്യം.",
+   "keywords": "cricket pressure",
+   "image_prompt": "A split screen showing a cheering crowd on one side and a lonely batsman facing a fast bowler on the other, representing pressure.",
    "wiki_title": ""
   }
  ],
- "caption": "13 വയസ്സിൽ ചരിത്രം കുറിച്ച വൈഭവ്! 🏏\n\nബിഹാറിൽ നിന്നുള്ള 13 വയസ്സുകാരനായ വൈഭവ് സൂര്യവൻഷി ലിസ്റ്റ് എ ക്രിക്കറ്റിൽ പുതിയ ചരിത്രം സൃഷ്ടിച്ചിരിക്കുകയാണ്. വിജയ ഹസാരെ ട്രോഫിയിൽ അരുണാചൽ പ്രദേശിനെതിരെയുള്ള മത്സരത്തിൽ സെഞ്ച്വറി നേടിയതോടെ, ലിസ്റ്റ് എ ക്രിക്കറ്റിൽ ഏറ്റവും പ്രായം കുറഞ്ഞ സെഞ്ച്വറിയൻ എന്ന റെക്കോർഡ് ഇദ്ദേഹത്തിന് സ്വന്തമായി.\n\nചെറുപ്രായത്തിലേ ക്രിക്കറ്റിൽ അസാമാന്യമായ കഴിവ് പ്രകടിപ്പിച്ച വൈഭവിന്റെ ഈ പ്രകടനം ഇന്ത്യൻ ക്രിക്കറ്റ് ലോകത്തെയാകെ ആവേശത്തിലാക്കി. പ്രതിഭകൾക്ക് പ്രായം ഒരു തടസ്സമല്ലെന്ന് തെളിയിച്ചതാണ് ഈ നേട്ടം. ഇന്ത്യൻ ടീമിലേക്കുള്ള ഒരു വലിയ കുതിപ്പിന്റെ തുടക്കമായിരിക്കും ഇത്.\n\nഎന്നാൽ ഇത്ര ചെറിയ പ്രായത്തിൽ വലിയ മത്സരങ്ങളുടെ സമ്മർദ്ദത്തിലേക്ക് കുട്ടികളെ തള്ളുന്നത് ശരിയാണോ എന്നതാണ് പ്രധാന ചർച്ചാവിഷയം. പ്രതിഭയെ പ്രോത്സാഹിപ്പിക്കുന്നതാണോ അതോ ശരിയായ പ്രായം വരെ കാത്തിരിക്കുന്നതാണോ താരങ്ങളുടെ ദീർഘകാല കരിയറിന് ഗുണം ചെയ്യുക.\n\n#VaibhavSuryavanshi #CricketNews #VijayHazareTrophy #IndianCricket #RecordBreaker #BiharCricket #CricketProdigy #SportsNews"
+ "caption": "ദോഹയിൽ തകർപ്പൻ സെഞ്ചുറിയുമായി വബാബ് സൂര്യവംശി! 🏏\n\nയുഎഇക്കെതിരെ നടന്ന മത്സരത്തിൽ വബാബ് സൂര്യവംശി സെഞ്ചുറി നേടി ശ്രദ്ധേയനായി. ദോഹയിൽ നടന്ന മത്സരത്തിൽ മികച്ച ബാറ്റിംഗ് പ്രകടനമാണ് ഈ യുവതാരം കാഴ്ചവെച്ചത്.\n\nചെറിയ പ്രായത്തിൽ തന്നെ ഇന്ത്യൻ ക്രിക്കറ്റിൽ വലിയ പ്രതീക്ഷയായി മാറുകയാണ് വബാബ്. യുഎഇ ബൗളർമാരെ വിറപ്പിച്ചുകൊണ്ട് അദ്ദേഹം നേടിയ റൺസുകൾ ടീമിന് വലിയ നേട്ടമായി മാറി.\n\nവരാനിരിക്കുന്ന വലിയ ടൂർണമെന്റുകളിൽ ഈ ഫോം നിലനിർത്താൻ സാധിച്ചാൽ ഇന്ത്യൻ ദേശീയ ടീമിലേക്ക് എത്താനുള്ള വഴി ഇദ്ദേഹത്തിന് മുൻപിൽ തുറക്കപ്പെടും.\n\nഒരു വശത്ത് വബാബിന്റെ അസാമാന്യമായ പ്രതിഭയെ എല്ലാവരും പ്രശംസിക്കുമ്പോൾ, മറുവശത്ത് അന്താരാഷ്ട്ര തലത്തിലെ കടുത്ത സമ്മർദ്ദങ്ങളെ നേരിടാനുള്ള പക്വത ഈ പ്രായത്തിൽ ഉണ്ടോ എന്ന സംശയവും നിലനിൽക്കുന്നു.\n\n#VabhavSuryavamshi #CricketNews #IndiaU19 #Doha #CricketUpdate #MalayalamNews #UAEvsIndia"
 }
