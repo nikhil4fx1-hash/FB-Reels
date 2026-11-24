@@ -1,45 +1,51 @@
 {
- "status": "posted",
- "created": 1795503617.621266,
- "offset": 141181777,
- "topic": "Story behind chakkulath kavu pongala",
+ "status": "waiting_media",
+ "created": 1795522791.6848378,
+ "offset": 141181778,
+ "topic": "Vaibhav Suryavanshi todays Performance in List A Cricket",
  "scenes": [
   {
-   "narration": "സ്ത്രീകളുടെ ശബരിമല എന്നറിയപ്പെടുന്ന ചക്കുളത്തുകാവിലെ പൊങ്കാലയ്ക്ക് പിന്നിലെ വിസ്മയിപ്പിക്കുന്ന ഐതിഹ്യം നിങ്ങൾക്കറിയാമോ?",
-   "keywords": "temple ritual women",
-   "image_prompt": "Cinematic wide shot of thousands of women lighting traditional hearths with clay pots for Pongala ritual in a Kerala temple background, golden hour lighting, authentic atmosphere.",
-   "wiki_title": "Chakkulathukavu Temple"
+   "narration": "13 വയസ്സുള്ള ഒരു കുട്ടി ലിസ്റ്റ് എ ക്രിക്കറ്റിൽ സെഞ്ച്വറി അടിച്ചാൽ നിങ്ങൾ വിശ്വസിക്കുമോ?",
+   "keywords": "young cricketer batting",
+   "image_prompt": "A cinematic close-up of a very young 13-year-old Indian boy in white cricket gear, holding a bat, looking determined, stadium lights in the background, hyper-realistic, 8k",
+   "wiki_title": "Vaibhav Suryavanshi"
   },
   {
-   "narration": "വർഷങ്ങൾക്ക് മുൻപ് കാട്ടിൽ വിറക് ശേഖരിക്കാൻ പോയ ഒരു വേടനും ഭാര്യയ്ക്കും മുൻപിൽ വിശന്നു വലഞ്ഞ ഒരു പെൺകുട്ടിയായി ദേവി പ്രത്യക്ഷപ്പെട്ടതാണ് ഈ കഥയുടെ തുടക്കം.",
-   "keywords": "forest hunter goddess",
-   "image_prompt": "An ancient hunter and his wife in a dense forest, offering food in a leaf to a radiant little girl with a divine aura, 4k realistic style.",
-   "wiki_title": "Bhagavati"
+   "narration": "ബിഹാറിൽ നിന്നുള്ള വൈഭവ് സൂര്യവൻശിയെന്ന അത്ഭുതബാലനാണ് ഇപ്പോൾ ക്രിക്കറ്റ് ലോകത്തെ ഞെട്ടിച്ചിരിക്കുന്നത്.",
+   "keywords": "Indian cricket player",
+   "image_prompt": "A wide shot of a young teenage cricketer playing a powerful shot on a professional cricket ground, Bihar team jersey, action shot, motion blur, professional photography",
+   "wiki_title": "Vaibhav Suryavanshi"
   },
   {
-   "narration": "അവർ നൽകിയ ലളിതമായ ആഹാരത്തിൽ സംപ്രീതയായ ദേവി അവർക്ക് ദർശനം നൽകിയതിന്റെ ഓർമ്മയ്ക്കായിട്ടാണ് വൃശ്ചികത്തിലെ തൃക്കാർത്തിക നാളിൽ ഇവിടെ പൊങ്കാല നടക്കുന്നത്.",
-   "keywords": "divine apparition light",
-   "image_prompt": "A powerful and glowing manifestation of Goddess Durga standing in a forest clearing, traditional ornaments, divine light rays, looking towards a humble couple.",
-   "wiki_title": "Karthika Deepam"
+   "narration": "വിജയ് ഹസാരെ ട്രോഫിയിൽ സെഞ്ച്വറി നേടിയതോടെ, ലിസ്റ്റ് എ ചരിത്രത്തിലെ ഏറ്റവും പ്രായം കുറഞ്ഞ സെഞ്ച്വറിയൻ ആയി വൈഭവ് മാറി.",
+   "keywords": "cricket scoreboard century",
+   "image_prompt": "A digital cricket scoreboard showing '100 runs' with the name Vaibhav Suryavanshi, blurred cricket stadium background, bright colors",
+   "wiki_title": "Vijay Hazare Trophy"
   },
   {
-   "narration": "പമ്പാ നദിയുടെയും മണിമലയാറിന്റെയും തീരത്തായി കിലോമീറ്ററുകളോളം നീളുന്ന അടുപ്പുകളിൽ ലക്ഷക്കണക്കിന് സ്ത്രീകളാണ് ഇന്ന് പൊങ്കാല അർപ്പിക്കുന്നത്.",
-   "keywords": "river bank crowd",
-   "image_prompt": "Aerial view of a long line of brick stoves along a river bank in Kerala, smoke rising from clay pots, massive gathering of devotees in traditional attire.",
-   "wiki_title": "Pamba River"
+   "narration": "അരുണാചൽ പ്രദേശിനെതിരായ മത്സരത്തിലായിരുന്നു ഈ വിസ്മയ പ്രകടനം.",
+   "keywords": "cricket match action",
+   "image_prompt": "A view from the stands of a cricket match, young batsman hitting a ball, fielders in white uniforms, sunny day, sports photography",
+   "wiki_title": "Arunachal Pradesh"
   },
   {
-   "narration": "സ്ത്രീകളെ ദേവിയായി സങ്കൽപ്പിച്ച് അവരുടെ പാദങ്ങൾ കഴുകി വന്ദിക്കുന്ന 'നാരീ പൂജ' എന്ന അപൂർവ്വ ചടങ്ങും ഇവിടുത്തെ വലിയ പ്രത്യേകതയാണ്.",
-   "keywords": "ritual feet washing",
-   "image_prompt": "A priest traditionally washing the feet of a woman seated on a wooden chair inside a temple, flowers and lamps around, cultural ceremony.",
-   "wiki_title": "Chakkulathukavu Temple"
+   "narration": "ചെറുപ്പത്തിലേ ക്രിക്കറ്റിൽ ശ്രദ്ധ കേന്ദ്രീകരിച്ച വൈഭവിന്റെ ബാറ്റിംഗ് ശൈലി പലരെയും അത്ഭുതപ്പെടുത്തുന്നു.",
+   "keywords": "cricket coaching youth",
+   "image_prompt": "A montage showing a young boy practicing cricket in a local Indian ground with a coach, sunlight filtering through trees, nostalgic atmosphere",
+   "wiki_title": ""
   },
   {
-   "narration": "ഇത്രയും വലിയ ജനസഞ്ചയം എത്തുമ്പോൾ നദികളുടെ ശുചിത്വവും പരിസ്ഥിതി പ്രശ്നങ്ങളും ഭക്തിക്ക് മുകളിൽ വലിയ വെല്ലുവിളിയായി ഉയരുന്നുണ്ടോ എന്നതാണ് ഇന്നും ബാക്കിയാകുന്ന ചോദ്യം.",
-   "keywords": "river pollution environment",
-   "image_prompt": "Contrast shot showing a beautiful river on one side and remnants of a massive festival on the other, thought-provoking cinematic composition.",
-   "wiki_title": "Environmental issues in India"
+   "narration": "ഇന്ത്യൻ ക്രിക്കറ്റിന്റെ ഭാവി വാഗ്ദാനമായി ഈ കൊച്ചു മിടുക്കൻ മാറിക്കഴിഞ്ഞു.",
+   "keywords": "Indian cricket team",
+   "image_prompt": "An artistic representation of a young boy's silhouette transitioning into a professional Indian international cricketer, glowing outlines, futuristic sports art",
+   "wiki_title": "Indian national cricket team"
+  },
+  {
+   "narration": "പ്രായം കുറഞ്ഞവർക്ക് ഇത്രയും വലിയ മത്സരങ്ങളിൽ അവസരം നൽകുന്നത് അവരുടെ വളർച്ചയെ സഹായിക്കുമോ അതോ സമ്മർദ്ദം വർദ്ധിപ്പിക്കുമോ?",
+   "keywords": "pressure stress sports",
+   "image_prompt": "A split screen showing a cheering crowd on one side and a close-up of a young player's face reflecting intense concentration and pressure, cinematic lighting",
+   "wiki_title": ""
   }
  ],
- "caption": "ചക്കുളത്തുകാവിലെ ആ വലിയ വിശ്വാസത്തിന് പിന്നിൽ! 🔥\n\nകേരളത്തിലെ ഏറ്റവും പ്രധാനപ്പെട്ട സ്ത്രീപുണ്യസങ്കേതങ്ങളിൽ ഒന്നായ ചക്കുളത്തുകാവ് ശ്രീ ഭഗവതി ക്ഷേത്രത്തിലെ പൊങ്കാലയുടെ ചരിത്രം അതിശയിപ്പിക്കുന്നതാണ്. പമ്പയുടെയും മണിമലയാറിന്റെയും സംഗമഭൂമിയായ നീരട്ടുപുറത്ത് നടക്കുന്ന ഈ ഭക്തിനിർഭരമായ ചടങ്ങിനെ 'സ്ത്രീകളുടെ ശബരിമല' എന്നാണ് വിശേഷിപ്പിക്കാറുള്ളത്.\n\nഐതിഹ്യമനുസരിച്ച്, വനത്തിൽ വിറക് വെട്ടാൻ പോയ ഒരു വേടനും ഭാര്യയ്ക്കും മുൻപിൽ വിശന്നു വലഞ്ഞ പെൺകുട്ടിയായി ദേവി എത്തുകയായിരുന്നു. അവർ നൽകിയ ലളിതമായ ഭക്ഷണം സ്വീകരിച്ച ദേവി പിന്നീട് അവർക്ക് ദിവ്യരൂപത്തിൽ ദർശനം നൽകി. ഈ സംഭവത്തിന്റെ സ്മരണ പുതുക്കിയാണ് എല്ലാ വർഷവും വൃശ്ചിക മാസത്തിലെ തൃക്കാർത്തിക നാളിൽ ലക്ഷക്കണക്കിന് സ്ത്രീകൾ ഇവിടെ പൊങ്കാല സമർപ്പിക്കുന്നത്.\n\nമറ്റൊരു ക്ഷേത്രത്തിലും കാണാത്ത 'നാരീ പൂജ' ഇവിടുത്തെ പ്രത്യേകതയാണ്. സ്ത്രീകളെ ദേവീ ചൈതന്യമായി കണ്ട് ക്ഷേത്ര മുഖ്യകാർമ്മികൻ അവരുടെ പാദങ്ങൾ കഴുകി വന്ദിക്കുന്ന ചടങ്ങാണിത്. ജാതി-മത ഭേദമന്യേ ആയിരക്കണക്കിന് സ്ത്രീകളാണ് ഈ പൂജയിൽ പങ്കെടുക്കാൻ എത്തുന്നത്.\n\nലക്ഷക്കണക്കിന് ആളുകൾ ഒരേസമയം ഒത്തുചേരുമ്പോൾ പമ്പാ നദിയുടെ സംരക്ഷണവും മാലിന്യ സംസ്കരണവും വലിയ പ്രതിസന്ധിയായി മാറാറുണ്ട്. ആചാരങ്ങളുടെ പവിത്രത കാത്തുസൂക്ഷിക്കുമ്പോൾ തന്നെ പരിസ്ഥിതിക്ക് ഉണ്ടാകുന്ന ആഘാതം എങ്ങനെ കുറയ്ക്കാം എന്നത് ഗൗരവകരമായ ചർച്ചകൾക്ക് വഴിമാറുകയാണ്. ഭക്തിയും പ്രകൃതി സംരക്ഷണവും എങ്ങനെ ഒരുമിച്ച് കൊണ്ടുപോകാം എന്നതിലാണ് വരുംകാലത്തെ വെല്ലുവിളി.\n\n#Chakkulathukavu #Pongala #KeralaFestivals #DivineStory #NareePooja #Pathanamthitta #Alappuzha #CultureOfKerala"
+ "caption": "13 വയസ്സിൽ ചരിത്രം കുറിച്ച വൈഭവ്! 🏏\n\nബിഹാറിൽ നിന്നുള്ള 13 വയസ്സുകാരനായ വൈഭവ് സൂര്യവൻഷി ലിസ്റ്റ് എ ക്രിക്കറ്റിൽ പുതിയ ചരിത്രം സൃഷ്ടിച്ചിരിക്കുകയാണ്. വിജയ ഹസാരെ ട്രോഫിയിൽ അരുണാചൽ പ്രദേശിനെതിരെയുള്ള മത്സരത്തിൽ സെഞ്ച്വറി നേടിയതോടെ, ലിസ്റ്റ് എ ക്രിക്കറ്റിൽ ഏറ്റവും പ്രായം കുറഞ്ഞ സെഞ്ച്വറിയൻ എന്ന റെക്കോർഡ് ഇദ്ദേഹത്തിന് സ്വന്തമായി.\n\nചെറുപ്രായത്തിലേ ക്രിക്കറ്റിൽ അസാമാന്യമായ കഴിവ് പ്രകടിപ്പിച്ച വൈഭവിന്റെ ഈ പ്രകടനം ഇന്ത്യൻ ക്രിക്കറ്റ് ലോകത്തെയാകെ ആവേശത്തിലാക്കി. പ്രതിഭകൾക്ക് പ്രായം ഒരു തടസ്സമല്ലെന്ന് തെളിയിച്ചതാണ് ഈ നേട്ടം. ഇന്ത്യൻ ടീമിലേക്കുള്ള ഒരു വലിയ കുതിപ്പിന്റെ തുടക്കമായിരിക്കും ഇത്.\n\nഎന്നാൽ ഇത്ര ചെറിയ പ്രായത്തിൽ വലിയ മത്സരങ്ങളുടെ സമ്മർദ്ദത്തിലേക്ക് കുട്ടികളെ തള്ളുന്നത് ശരിയാണോ എന്നതാണ് പ്രധാന ചർച്ചാവിഷയം. പ്രതിഭയെ പ്രോത്സാഹിപ്പിക്കുന്നതാണോ അതോ ശരിയായ പ്രായം വരെ കാത്തിരിക്കുന്നതാണോ താരങ്ങളുടെ ദീർഘകാല കരിയറിന് ഗുണം ചെയ്യുക.\n\n#VaibhavSuryavanshi #CricketNews #VijayHazareTrophy #IndianCricket #RecordBreaker #BiharCricket #CricketProdigy #SportsNews"
 }
