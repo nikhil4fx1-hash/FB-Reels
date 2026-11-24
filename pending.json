@@ -1,6 +1,45 @@
 {
- "status": "planning",
- "created": 1795455196.893416,
+ "status": "waiting_media",
+ "created": 1795487191.160779,
  "offset": 141181762,
- "topic": "Kidney damage after using face cream in kerala"
+ "topic": "Kidney damage after using face cream in kerala",
+ "scenes": [
+  {
+   "narration": "മുഖത്തെ തിളക്കത്തിന് വേണ്ടി നിങ്ങൾ ഉപയോഗിക്കുന്ന ക്രീം നിങ്ങളുടെ വൃക്കകളെ തകർക്കുന്നുണ്ടോ? ഇത് കേട്ട് നിങ്ങൾ ഞെട്ടിയേക്കാം.",
+   "keywords": "face cream skin",
+   "image_prompt": "Cinematic close-up of a person applying white cream to their face, dramatic lighting, split screen effect showing a medical illustration of human kidneys, high resolution, 8k.",
+   "wiki_title": ""
+  },
+  {
+   "narration": "കേരളത്തിൽ ചർമ്മം വെളുപ്പിക്കാൻ ഉപയോഗിക്കുന്ന ചില ക്രീമുകൾ ഗുരുതരമായ വൃക്കരോഗത്തിന് കാരണമാകുന്നു എന്ന റിപ്പോർട്ടുകൾ പുറത്തുവരുന്നു.",
+   "keywords": "hospital doctor concern",
+   "image_prompt": "A professional doctor in a white coat looking concerned while examining medical reports in a clinic in Kerala, realistic photography, soft natural lighting.",
+   "wiki_title": "Kerala"
+  },
+  {
+   "narration": "നിയന്ത്രണമില്ലാത്ത ക്രീമുകളിലെ മെർക്കുറി, ലെഡ് തുടങ്ങിയ വിഷാംശങ്ങളാണ് ഇതിന്റെ പ്രധാന കാരണം.",
+   "keywords": "chemical mercury lead",
+   "image_prompt": "Microscopic view of toxic heavy metal particles like mercury and lead floating in a dark liquid, scientific and dangerous atmosphere, 3D render.",
+   "wiki_title": "Mercury"
+  },
+  {
+   "narration": "ഈ വിഷാംശങ്ങൾ ചർമ്മത്തിലൂടെ രക്തത്തിലേക്ക് കലരുകയും നേരിട്ട് വൃക്കകളെ ബാധിക്കുകയും ചെയ്യുന്നു.",
+   "keywords": "human bloodstream anatomy",
+   "image_prompt": "A detailed 3D medical animation showing toxic molecules traveling through the human bloodstream towards the kidneys, dark cinematic medical style.",
+   "wiki_title": "Blood"
+  },
+  {
+   "narration": "ബ്രാൻഡ് ഇല്ലാത്തതോ പെട്ടെന്ന് നിറം മാറ്റുന്നതോ ആയ ക്രീമുകൾ ഉപയോഗിക്കരുതെന്ന് ആരോഗ്യവിദഗ്ദ്ധർ ശക്തമായ മുന്നറിയിപ്പ് നൽകുന്നു.",
+   "keywords": "unbranded cosmetics",
+   "image_prompt": "A collection of various unbranded, colorful, and suspicious looking skin cream jars scattered on a dark wooden table, moody lighting, high detail.",
+   "wiki_title": ""
+  },
+  {
+   "narration": "പെട്ടെന്നുള്ള സൗന്ദര്യത്തിന് വേണ്ടി ജീവിതകാലം മുഴുവൻ ഡയാലിസിസ് ചെയ്യേണ്ടി വരുന്ന അവസ്ഥ എത്രത്തോളം ന്യായമാണ്?",
+   "keywords": "dialysis hospital patient",
+   "image_prompt": "A melancholic cinematic shot of a person sitting in a hospital ward near a dialysis machine, soft focus, emotional atmosphere, high quality.",
+   "wiki_title": "Dialysis"
+  }
+ ],
+ "caption": "⚠️ സൗന്ദര്യത്തിന് പിന്നാലെ ചെന്ന് വൃക്കകൾ നഷ്ടപ്പെടുത്തണോ?\n\nചർമ്മം വെളുപ്പിക്കാനായി ഉപയോഗിക്കുന്ന പല ക്രീമുകളും ഗുരുതരമായ ആരോഗ്യപ്രശ്നങ്ങൾക്ക് കാരണമാകുന്നു എന്ന ആശങ്ക കേരളത്തിൽ ശക്തമാകുന്നു. റിപ്പോർട്ടുകൾ പ്രകാരം, നിയന്ത്രണമില്ലാത്ത പല ഫേസ് ക്രീമുകളിലും അപകടകാരികളായ മെർക്കുറി, ലെഡ്, ഹൈഡ്രോക്വിനോൺ തുടങ്ങിയവ അടങ്ങിയിട്ടുണ്ട്.\n\nഇവ ചർമ്മത്തിലൂടെ ശരീരത്തിലേക്ക് ആഗിരണം ചെയ്യപ്പെടുകയും രക്തത്തിലൂടെ വൃക്കകളിൽ എത്തുകയും ചെയ്യുന്നു. ഇത് വൃക്കകളുടെ പ്രവർത്തനം തകരാറിലാക്കാനും ക്രോണിക് കിഡ്നി ഡിസീസ് (CKD) പോലുള്ള അവസ്ഥകളിലേക്ക് നയിക്കാനും സാധ്യതയുണ്ട്. ബ്രാൻഡ് ഇല്ലാത്തതോ പെട്ടെന്ന് നിറം മാറ്റം വരുത്തുന്നതോ ആയ ക്രീമുകൾ ഉപയോഗിക്കുന്നത് ഒഴിവാക്കണമെന്ന് ഡോക്ടർമാർ മുന്നറിയിപ്പ് നൽകുന്നു.\n\nസൗന്ദര്യത്തിന് മുൻഗണന നൽകുന്നതിനിടയിൽ ആരോഗ്യത്തെ അവഗണിക്കുന്നത് വലിയ അപകടമാണ്. പെട്ടെന്നുള്ള സൗന്ദര്യം ലഭിക്കാൻ ജീവിതകാലം മുഴുവൻ ഡയാലിസിസ് ചെയ്യേണ്ടി വരുന്ന അവസ്ഥ എത്രത്തോളം ന്യായമാണ്?\n\n#KeralaHealth #KidneyCare #SkinCareAlert #HealthTipsMalayalam #FaceCreamDanger #Awareness #KeralaNews #HealthWarning"
 }
