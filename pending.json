@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795611303.9854355,
- "offset": 141181815,
- "topic": "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ\n   ↳ ഭീഷണി, ബലാത്സംഗം ഉൾപ്പെടെയുള്ള പരാതികളിൽ യൂത്ത് കോൺഗ്രസ് അധ്യക്ഷനെതിരെ പോലീസ് കുറ്റപത്രം തയാറാക്കുന്നു.",
+ "status": "waiting_media",
+ "created": 1795621134.5144458,
+ "offset": 141181816,
+ "topic": "ലോക വിപണിയെ ഞെട്ടിച്ച് ട്രംപിന്റെ പുതിയ താരിഫ് പ്രഖ്യാപനം",
  "suggested_at": 1795620897.1758204,
  "seen_topics": [
   "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ",
@@ -22,86 +22,44 @@
   "മിസൈൽ പരീക്ഷണത്തിന് ജപ്പാനെ ക്ഷണിച്ച് ഇന്ത്യ; പ്രതിരോധ രംഗത്ത് വൻ കുതിപ്പ്",
   "സൗരവ് ദാസിന്റെ യുകെ യാത്ര തടഞ്ഞു; പാസ്പോർട്ട് ഉപയോഗിക്കരുതെന്ന് നിർദേശം"
  ],
- "context": "",
+ "context": "അമേരിക്കൻ പ്രസിഡന്റ് ട്രംപ് പുതിയ താരിഫുകൾ പ്രഖ്യാപിച്ചതോടെ ലോകമെമ്പാടുമുള്ള സ്റ്റോക്ക് മാർക്കറ്റുകളിൽ ഇടിവ്.",
  "scenes": [
   {
-   "narration": "യൂത്ത് കോൺഗ്രസ് അധ്യക്ഷൻ രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ബലാത്സംഗം ഉൾപ്പെടെയുള്ള അതീവ ഗുരുതരമായ ആരോപണങ്ങളിൽ പോലീസ് കുറ്റപത്രം തയാറാക്കുന്നു.",
-   "keywords": "Rahul Mamkootathil, Police investigation",
-   "image_prompt": "A professional portrait of a young Indian political leader with a serious expression, photorealistic style, high resolution.",
-   "wiki_title": "Rahul Mamkootathil"
+   "narration": "ലോക വിപണിയെ വിറപ്പിച്ചു ട്രംപിന്റെ പുതിയ തീരുമാനം! എന്താണ് ഈ താരിഫ് യുദ്ധം?",
+   "keywords": "Donald Trump, Global Market, Shock",
+   "image_prompt": "A dramatic cinematic close-up of Donald Trump with a digital world map in the background showing red warning signals and flashing economic symbols",
+   "wiki_title": "Donald Trump"
   },
   {
-   "narration": "മുൻ കെ.എസ്.യു നേതാവായ യുവതി നൽകിയ പരാതിയിൽ തിരുവനന്തപുരം മ്യൂസിയം പോലീസാണ് ഇപ്പോൾ കരട് കുറ്റപത്രം തയാറാക്കിയിരിക്കുന്നത്.",
-   "keywords": "Kerala Police, Legal documents",
-   "image_prompt": "A close-up shot of a legal document with a 'Draft Chargesheet' heading in a government office setting, blurred background of a police station.",
-   "wiki_title": "Kerala Police"
+   "narration": "മെക്സിക്കോ, കാനഡ, ചൈന എന്നീ രാജ്യങ്ങളിൽ നിന്നുള്ള ഇറക്കുമതിക്ക് വലിയ തോതിൽ നികുതി വർദ്ധിപ്പിക്കാനാണ് ട്രംപ് പ്രഖ്യാപിച്ചത്.",
+   "keywords": "Cargo ships, Trade, Flags",
+   "image_prompt": "A massive cargo ship carrying colorful containers with flags of USA, China, Mexico, and Canada overlaid, symbolizing international trade",
+   "wiki_title": "International trade"
   },
   {
-   "narration": "2017-18 കാലയളവിൽ തിരുവനന്തപുരത്തെ ഒരു ഹോട്ടലിൽ വെച്ച് പീഡിപ്പിച്ചുവെന്നും പിന്നീട് ഇത് പുറത്തുപറയാതിരിക്കാൻ ഭീഷണിപ്പെടുത്തിയെന്നുമാണ് പരാതി.",
-   "keywords": "Hotel room, Thiruvananthapuram",
-   "image_prompt": "A cinematic shot of a dark hotel corridor in Thiruvananthapuram, moody lighting, symbolizing a past event.",
-   "wiki_title": "Thiruvananthapuram"
+   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം മെക്സിക്കോയ്ക്കും കാനഡയ്ക്കും 25 ശതമാനവും ചൈനയ്ക്ക് അധികമായി 10 ശതമാനവും താരിഫ് ഏർപ്പെടുത്താനാണ് നീക്കം.",
+   "keywords": "Percentage, Tax, Finance",
+   "image_prompt": "3D render of gold coins and percentage symbols '25%' and '10%' floating over a business desk with professional documents",
+   "wiki_title": "Tariff"
   },
   {
-   "narration": "ബലാത്സംഗം (IPC 376), ക്രിമിനൽ ഭീഷണി (IPC 506), സ്ത്രീത്വത്തെ അപമാനിക്കൽ തുടങ്ങിയ ഗൗരവകരമായ വകുപ്പുകളാണ് രാഹുലിനെതിരെ ചുമത്തിയിരിക്കുന്നത്.",
-   "keywords": "Indian Penal Code, Law",
-   "image_prompt": "A digital illustration of a law book 'Indian Penal Code' with a wooden gavel on the side, focused lighting.",
-   "wiki_title": "Indian Penal Code"
+   "narration": "മയക്കുമരുന്ന് കടത്തും അനധികൃത കുടിയേറ്റവും തടയാനാണ് ഈ കർശന നടപടിയിലൂടെ അമേരിക്ക ലക്ഷ്യമിടുന്നത്.",
+   "keywords": "US Border, Security, Immigration",
+   "image_prompt": "A wide shot of the US-Mexico border wall with security patrols and a dramatic sunset sky",
+   "wiki_title": "United States–Mexico border"
   },
   {
-   "narration": "നേരത്തെ പല രാഷ്ട്രീയ സമരങ്ങളുമായി ബന്ധപ്പെട്ട് രാഹുൽ ജയിലിലായിട്ടുണ്ടെങ്കിലും വ്യക്തിപരമായ ഇത്തരം ആരോപണം ഇതാദ്യമായാണ് നേരിടുന്നത്.",
-   "keywords": "Political protest, Arrest",
-   "image_prompt": "A scene of a political protest in Kerala with flags and police barricades, motion blur to show intensity.",
-   "wiki_title": "Indian Youth Congress"
+   "narration": "ഈ പ്രഖ്യാപനത്തോടെ ലോകമെമ്പാടുമുള്ള സ്റ്റോക്ക് മാർക്കറ്റുകളിൽ വലിയ ഇടിവ് രേഖപ്പെടുത്തി. നിക്ഷേപകർക്കിടയിൽ വലിയ ആശങ്കയാണ് നിലവിലുള്ളത്.",
+   "keywords": "Stock Market, Crash, Red Graph",
+   "image_prompt": "A stock market trading screen showing multiple red downward arrows and crashing line graphs in a dark trading room",
+   "wiki_title": "Stock market"
   },
   {
-   "narration": "സർക്കാരിന്റെ രാഷ്ട്രീയ പ്രതികാരമാണോ അതോ അതീവ ഗൗരവകരമായ കുറ്റകൃത്യമാണോ ഇതെന്ന് വരും ദിവസങ്ങളിൽ കോടതിക്ക് മുൻപിലെത്തുന്ന വിവരങ്ങൾ വ്യക്തമാക്കും.",
-   "keywords": "Court building, Justice",
-   "image_prompt": "An imposing view of a high court building in India, symbolize justice and legal proceedings.",
-   "wiki_title": "Kerala High Court"
+   "narration": "അമേരിക്കൻ വ്യവസായങ്ങളെ ഇത് സംരക്ഷിക്കുമെങ്കിലും, സാധാരണക്കാരുടെ ജീവിതച്ചെലവ് വർദ്ധിക്കുമോ എന്നതാണ് ഇപ്പോൾ ലോകം ഉറ്റുനോക്കുന്നത്.",
+   "keywords": "Consumer goods, Inflation, Global Economy",
+   "image_prompt": "A split screen showing a modern US factory on one side and a common person looking worried at high price tags in a supermarket on the other",
+   "wiki_title": "Inflation"
   }
  ],
- "caption": "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ബലാത്സംഗക്കുറ്റം: കരട് കുറ്റപത്രം തയാർ 🚨\n\nയൂത്ത് കോൺഗ്രസ് സംസ്ഥാന അധ്യക്ഷൻ രാഹുൽ മാങ്കൂട്ടത്തിൽ വലിയൊരു നിയമക്കുരുക്കിലേക്ക് നീങ്ങുന്നതായാണ് റിപ്പോർട്ടുകൾ. തിരുവനന്തപുരം മ്യൂസിയം പോലീസ് രാഹുലിനെതിരെ ബലാത്സംഗം ഉൾപ്പെടെയുള്ള വകുപ്പുകൾ ചേർത്ത് കരട് കുറ്റപത്രം തയാറാക്കിയിരിക്കുകയാണ്. മുൻ കെ.എസ്.യു നേതാവായ ഒരു യുവതി നൽകിയ പരാതിയുടെ അടിസ്ഥാനത്തിലാണ് നടപടി.\n\n2017-18 കാലയളവിൽ തിരുവനന്തപുരത്തെ ഒരു ഹോട്ടലിൽ വെച്ച് തന്നെ പീഡിപ്പിച്ചുവെന്നും, വിവരം പുറത്തുപറയാതിരിക്കാൻ രാഹുൽ ഭീഷണിപ്പെടുത്തിയെന്നും യുവതി മൊഴി നൽകിയിട്ടുണ്ട്. ബലാത്സംഗം (IPC 376), ക്രിമിനൽ ഭീഷണിപ്പെടുത്തൽ (IPC 506), സ്ത്രീത്വത്തെ അപമാനിക്കൽ (IPC 354) എന്നീ വകുപ്പുകളാണ് കുറ്റപത്രത്തിലുള്ളത്. ഈ കുറ്റപത്രം നിയമപരമായ പരിശോധനകൾക്ക് ശേഷം കോടതിയിൽ സമർപ്പിക്കും.\n\nനേരത്തെ പലതവണ രാഷ്ട്രീയ സമരങ്ങളുടെ പേരിൽ രാഹുൽ ജയിലിലായിട്ടുണ്ടെങ്കിലും, ഇത്തരമൊരു ഗൗരവകരമായ സ്വകാര്യ പരാതി അദ്ദേഹത്തിന് വലിയ രാഷ്ട്രീയ തിരിച്ചടിയാണ്. ഈ കേസ് രാഷ്ട്രീയ പ്രേരിതമാണെന്ന് ഒരു വിഭാഗം ആരോപിക്കുമ്പോൾ, ഗൗരവകരമായ ഒരു പരാതിയിൽ നിയമപരമായ നീതി നടപ്പാകണം എന്നാണ് മറുവശത്തെ വാദം.\n\nയുവതിയുടെ പരാതിയിൽ വ്യക്തമായ അന്വേഷണം നടക്കട്ടെ എന്ന് കരുതുന്നവരും, തിരഞ്ഞെടുപ്പ് രാഷ്ട്രീയവും മറ്റും മുന്നിൽ കണ്ടുള്ള നീക്കമാണിതെന്ന് സംശയിക്കുന്നവരും ഒരേപോലെ തർക്കത്തിലാണ്. കോടതി വിധി വരുന്നത് വരെ ഓരോ ആരോപണവും നിയമപരമായി തന്നെ പരിശോധിക്കപ്പെടേണ്ടതുണ്ട്.\n\n#RahulMamkootathil #KeralaPolitics #YouthCongress #KeralaPolice #LegalNews #Thiruvananthapuram #KSU #PoliticalControversy",
- "suggestions": [
-  {
-   "topic": "ചക്കക്കൊമ്പൻ ദൗത്യം; ആനയെ മയക്കുവെടിവെച്ചു, റേഡിയോ കോളർ ഘടിപ്പിക്കുന്നു",
-   "context": "ഇടുക്കിയിലെ ഭീതിയായിരുന്ന ചക്കക്കൊമ്പനെ മയക്കുവെടിവെച്ചു, റേഡിയോ കോളർ ഘടിപ്പിക്കുന്ന നടപടികൾ പുരോഗമിക്കുന്നു.",
-   "where": "News headlines, Kerala"
-  },
-  {
-   "topic": "എംഎസ് ധോണിയുടെ വിരമിക്കൽ; വൈകാരികമായി പ്രതികരിച്ച് ഇഷാൻ കിഷൻ",
-   "context": "ക്രിക്കറ്റ് ഇതിഹാസം എംഎസ് ധോണിയുടെ വിരമിക്കലിനെക്കുറിച്ച് ഇഷാൻ കിഷൻ നടത്തിയ പ്രതികരണം സോഷ്യൽ മീഡിയയിൽ വൈറലാകുന്നു.",
-   "where": "Google Trends, X"
-  },
-  {
-   "topic": "പ്ലേ സ്റ്റേഷൻ ചരിത്രത്തിലെ ഏറ്റവും വലിയ ലോഞ്ചായി ജിടിഎ 6 (GTA VI)",
-   "context": "ഗെയിമിംഗ് ലോകം കാത്തിരുന്ന ജിടിഎ 6 പ്ലേ സ്റ്റേഷൻ ചരിത്രത്തിലെ ഏറ്റവും വലിയ നേട്ടമായി മാറിയെന്ന് റിപ്പോർട്ട്.",
-   "where": "Google Trends, YouTube"
-  },
-  {
-   "topic": "സംസ്ഥാനത്ത് വീണ്ടും മഴ ശക്തമാകുന്നു; വിവിധ ജില്ലകളിൽ യെല്ലോ അലർട്ട്",
-   "context": "ബംഗാൾ ഉൾക്കടലിലെ ന്യൂനമർദ്ദത്തെത്തുടർന്ന് കേരളത്തിൽ വെള്ളിയാഴ്ച വരെ മഴയ്ക്കും കാറ്റിനും സാധ്യത.",
-   "where": "News headlines, Facebook"
-  },
-  {
-   "topic": "ലോക വിപണിയെ ഞെട്ടിച്ച് ട്രംപിന്റെ പുതിയ താരിഫ് പ്രഖ്യാപനം",
-   "context": "അമേരിക്കൻ പ്രസിഡന്റ് ട്രംപ് പുതിയ താരിഫുകൾ പ്രഖ്യാപിച്ചതോടെ ലോകമെമ്പാടുമുള്ള സ്റ്റോക്ക് മാർക്കറ്റുകളിൽ ഇടിവ്.",
-   "where": "Google Trends, International News"
-  },
-  {
-   "topic": "ഡോളറിനെതിരെ കരുത്താർജ്ജിച്ച് ഇന്ത്യൻ രൂപ; ആർബിഐ ഇടപെടൽ വിജയം",
-   "context": "ഡോളറിനെതിരെ റെക്കോർഡ് ഇടിവിലായിരുന്ന ഇന്ത്യൻ രൂപ ആർബിഐയുടെ നിർണ്ണായക ഇടപെടലിലൂടെ തിരിച്ചുവരുന്നു.",
-   "where": "Google Trends, News"
-  },
-  {
-   "topic": "മിസൈൽ പരീക്ഷണത്തിന് ജപ്പാനെ ക്ഷണിച്ച് ഇന്ത്യ; പ്രതിരോധ രംഗത്ത് വൻ കുതിപ്പ്",
-   "context": "ഇന്ത്യയുടെ മിസൈൽ പരീക്ഷണ കേന്ദ്രങ്ങളിൽ ജപ്പാന് ആദ്യമായി അനുമതി നൽകുന്നു, ഹൈപ്പർസോണിക് സഹകരണം ലക്ഷ്യം.",
-   "where": "National News, Firstpost"
-  },
-  {
-   "topic": "സൗരവ് ദാസിന്റെ യുകെ യാത്ര തടഞ്ഞു; പാസ്പോർട്ട് ഉപയോഗിക്കരുതെന്ന് നിർദേശം",
-   "context": "കോക്രോച്ച് ജനതാ പാർട്ടി നേതാവ് സൗരവ് ദാസിനെ യാത്ര ചെയ്യുന്നതിൽ നിന്ന് തടഞ്ഞത് കോടതിയിൽ.",
-   "where": "News headlines, Mathrubhumi"
-  }
- ]
+ "caption": "🚨 ലോക വിപണിയെ ഞെട്ടിച്ച് ട്രംപിന്റെ താരിഫ് പ്രഖ്യാപനം!\n\nഅമേരിക്കൻ പ്രസിഡന്റ് ഡൊണാൾഡ് ട്രംപ് പ്രധാന വ്യാപാര പങ്കാളികളായ മെക്സിക്കോ, കാനഡ, ചൈന എന്നിവയ്‌ക്കെതിരെ പുതിയ താരിഫ് പ്രഖ്യാപിച്ചതോടെ ആഗോള സാമ്പത്തിക വിപണിയിൽ വലിയ ചലനങ്ങളാണ് ഉണ്ടാകുന്നത്. \n\nറിപ്പോർട്ടുകൾ പ്രകാരം മെക്സിക്കോയ്ക്കും കാനഡയ്ക്കും 25 ശതമാനം നികുതിയും, ചൈനയ്ക്ക് അധികമായി 10 ശതമാനം താരിഫും ഏർപ്പെടുത്താനാണ് ട്രംപ് ലക്ഷ്യമിടുന്നത്. രാജ്യത്തെ മയക്കുമരുന്ന് കടത്ത് തടയുന്നതിനും അനധികൃത കുടിയേറ്റം അവസാനിപ്പിക്കുന്നതിനും വേണ്ടിയുള്ള സമ്മർദ്ദതന്ത്രമായാണ് ഈ നീക്കം വിലയിരുത്തപ്പെടുന്നത്.\n\nഈ പ്രഖ്യാപനത്തെത്തുടർന്ന് ആഗോള സ്റ്റോക്ക് മാർക്കറ്റുകളിൽ വൻ ഇടിവ് രേഖപ്പെടുത്തി. അമേരിക്കൻ ഉൽപ്പന്നങ്ങളെ പ്രോത്സാഹിപ്പിക്കാനുള്ള 'അമേരിക്ക ഫസ്റ്റ്' നയത്തിന്റെ ഭാഗമാണിതെങ്കിലും, ഇത് വലിയൊരു വ്യാപാര യുദ്ധത്തിലേക്ക് (Trade War) വഴിതെളിക്കുമെന്ന ആശങ്കയിലാണ് ലോകരാജ്യങ്ങൾ.\n\nസ്വദേശി വ്യവസായങ്ങളെ സംരക്ഷിക്കാനുള്ള ഈ നീക്കം അമേരിക്കയ്ക്ക് ഗുണകരമാകുമോ, അതോ ഉൽപ്പന്നങ്ങളുടെ വില വർദ്ധിച്ച് സാധാരണക്കാരുടെ ജീവിതം ദുസ്സഹമാകുമോ എന്നതാണ് വലിയ ചോദ്യം. വ്യാപാര നിയന്ത്രണങ്ങളിലൂടെ സുരക്ഷ ഉറപ്പാക്കാനുള്ള ശ്രമം ആഗോള സാമ്പത്തിക തകർച്ചയ്ക്ക് കാരണമാകുമോ എന്നത് ചർച്ചാവിഷയമായി മാറുന്നു.\n\n#DonaldTrump #TradeWar #StockMarket #GlobalEconomy #Tariffs #EconomyNews #USA #WorldTrade"
 }
