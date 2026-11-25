@@ -2,9 +2,9 @@ name: Reels Telegram Bot
 
 on:
   schedule:
-    # Safety net. With the Cloudflare Worker the bot reacts instantly; this only catches missed triggers.
+    # Safety net every 3 hours. With the Cloudflare Worker the bot reacts instantly.
     # Without the Worker, change to '*/10 * * * *' to poll Telegram every 10 minutes.
-    - cron: '*/10 * * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:   # press "Run workflow" to react to your Telegram message immediately
 
 permissions:
