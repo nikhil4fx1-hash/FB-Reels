@@ -1,8 +1,8 @@
 {
- "status": "posted",
- "created": 1795605945.5430439,
- "offset": 141181804,
- "topic": "റെയിൽവേ സ്റ്റേഷൻ മാസ്റ്റർ ആകാൻ ഇന്ന് അവസാന അവസരം",
+ "status": "waiting_media",
+ "created": 1795610745.2797627,
+ "offset": 141181805,
+ "topic": "ഓസീസിനെ അടിച്ചുതകർത്ത് അനൂറിൻ ഡൊണാൾഡ്; ക്രിക്കറ്റ് ലോകം ഞെട്ടലിൽ\n   ↳ വെൽഷ് താരം അനൂറിൻ ഡൊണാൾഡ് ഓസ്‌ട്രേലിയൻ ബൗളർമാരെ നിലംപരിശാക്കിയ പ്രകടനം സോഷ്യൽ മീഡിയയിൽ വൈറലായി.",
  "suggested_at": 1795605641.7905962,
  "seen_topics": [
   "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ",
@@ -14,44 +14,68 @@
   "ഷാഫി പറമ്പിലിനെതിരെ ഉണ്ണിത്താന്റെ മകൻ; കോൺഗ്രസിൽ പുതിയ പോര്",
   "കിം ജോങ് ഉന്നിനും പ്രിയപ്പെട്ട ജപ്പാനിലെ 'യാക്കൂസ'; ഇവർ ആരാണ്?"
  ],
- "context": "1,250 സ്റ്റേഷൻ മാസ്റ്റർ ഒഴിവുകളിലേക്കുള്ള ആർആർബി അപേക്ഷാ നടപടികൾ ഇന്ന് അവസാനിക്കുന്നു.",
+ "context": "",
  "scenes": [
   {
-   "narration": "റെയിൽവേയിൽ ഒരു സർക്കാർ ജോലി സ്വപ്നം കാണുന്നവരാണോ നിങ്ങൾ? എങ്കിൽ ഇന്ന് നിങ്ങൾക്കുള്ള അവസാന അവസരമാണ്!",
-   "keywords": "Railway Station, Dream Job",
-   "image_prompt": "Cinematic close up of a young Indian man looking hopeful at a modern railway station platform, sun rays shining through the station roof, high quality, photorealistic, 8k.",
-   "wiki_title": "Indian Railways"
+   "narration": "ഓസ്‌ട്രേലിയൻ ബൗളിംഗ് നിരയെ ഒരു വെൽഷ് താരം അടിച്ചുകൂട്ടിയതോർത്ത് ക്രിക്കറ്റ് ലോകം ഇപ്പോഴും ഞെട്ടലിലാണ്!",
+   "keywords": [
+    "cricket shock",
+    "stadium lights",
+    "batsman"
+   ],
+   "image_prompt": "Dramatic cinematic wide shot of a cricket stadium under lights with a stunned crowd and scoreboard, hyper-realistic, 4k",
+   "wiki_title": "Welsh cricket team"
   },
   {
-   "narration": "ആർആർബി പ്രഖ്യാപിച്ച 1,250 സ്റ്റേഷൻ മാസ്റ്റർ ഒഴിവുകളിലേക്കുള്ള അപേക്ഷകൾ ഇന്ന് അവസാനിക്കുന്നു.",
-   "keywords": "Recruitment, Job Vacancy",
-   "image_prompt": "A digital infographic style background showing the number '1,250' in large bold gold numbers, with a subtle Indian Railway train moving in the background, professional motion graphics style.",
-   "wiki_title": "Railway Recruitment Board"
+   "narration": "ആരായിരുന്നു ആ താരം? വെയിൽസിന്റെ അഭിമാനമായ അനൂറിൻ ഡൊണാൾഡ്!",
+   "keywords": [
+    "female cricketer",
+    "confident pose",
+    "sports portrait"
+   ],
+   "image_prompt": "Close-up portrait of a determined female cricketer in Welsh team jersey, holding a bat with confidence, stadium background",
+   "wiki_title": "Anthonie Donald"
   },
   {
-   "narration": "റെയിൽവേ റിക്രൂട്ട്‌മെന്റ് ബോർഡ് വഴിയാണ് ഈ നിയമനം നടക്കുന്നത്.",
-   "keywords": "Official Document, RRB",
-   "image_prompt": "A close up of an official government document with the emblem of India, placed on a professional wooden desk, soft office lighting.",
-   "wiki_title": "Railway Recruitment Board"
+   "narration": "ഓസ്‌ട്രേലിയൻ ബൗളർമാരെ ഒന്നിനും സമ്മതിക്കാതെ ഗ്രൗണ്ടിന്റെ നാലുപാടും പറത്തിയാണ് അനൂറിൻ ബാറ്റ് വീശിയത്.",
+   "keywords": [
+    "cricket shot",
+    "batting power",
+    "fielders running"
+   ],
+   "image_prompt": "Action shot of a female cricketer playing a powerful pull shot against Australian bowlers, motion blur on fielders",
+   "wiki_title": "Australia women's national cricket team"
   },
   {
-   "narration": "യോഗ്യതയുള്ളവർ ഉടൻ തന്നെ ഔദ്യോഗിക വെബ്സൈറ്റ് വഴി അപേക്ഷ സമർപ്പിക്കണം. സമയം കളയാതെ തന്നെ വേണം ഇത് ചെയ്യാൻ.",
-   "keywords": "Online Application, Laptop",
-   "image_prompt": "A person's hands typing rapidly on a laptop keyboard, an official looking website with forms visible on the screen, warm indoor lighting, focused shot.",
-   "wiki_title": ""
+   "narration": "ഈ വെടിക്കെട്ട് പ്രകടനം സോഷ്യൽ മീഡിയയിലും കായിക ലോകത്തും വലിയ ചർച്ചയായിക്കഴിഞ്ഞു.",
+   "keywords": [
+    "social media",
+    "viral news",
+    "mobile phone"
+   ],
+   "image_prompt": "Glowing smartphone screen showing viral sports highlights and news articles with enthusiastic fans watching, dark room background",
+   "wiki_title": "Viral phenomenon"
   },
   {
-   "narration": "റെയിൽവേയുടെ സുരക്ഷിതമായ യാത്രയിൽ സ്റ്റേഷൻ മാസ്റ്റർമാരുടെ പങ്ക് വളരെ വലുതാണ്.",
-   "keywords": "Station Master, Control Room",
-   "image_prompt": "A professional Station Master in a crisp uniform, monitoring railway signals and train movements on a large digital control panel, high-tech atmosphere.",
-   "wiki_title": "Station master"
+   "narration": "ഇത്തരം അസാധാരണ പ്രകടനങ്ങൾ വനിതാ ക്രിക്കറ്റിന്റെ മുഖഛായ തന്നെ മാറ്റിക്കൊണ്ടിരിക്കുകയാണ്.",
+   "keywords": [
+    "women cricket",
+    "celebration",
+    "trophy"
+   ],
+   "image_prompt": "Group of international female cricketers celebrating a victory on the pitch, bright sunlight, confetti falling",
+   "wiki_title": "Women's cricket"
   },
   {
-   "narration": "ആയിരക്കണക്കിന് അപേക്ഷകർ വരുമ്പോൾ, ഈ നിയമന പ്രക്രിയ എത്രത്തോളം സുതാര്യമായിരിക്കും എന്നത് ഒരു വലിയ ചോദ്യമാണ്.",
-   "keywords": "Crowd, Competition",
-   "image_prompt": "A wide shot of a massive crowd of young Indian students sitting in a large examination hall, looking intense and focused, dramatic cinematic lighting, symbolizing high competition.",
-   "wiki_title": ""
+   "narration": "വരുന്ന മത്സരങ്ങളിലും അനൂറിന് ഈ ഫോം തുടരാനാവുമോ അതോ ഓസീസ് തന്ത്രങ്ങൾ മെനയുമോ?",
+   "keywords": [
+    "cricket strategy",
+    "coach talking",
+    "focused player"
+   ],
+   "image_prompt": "Cricket coach discussing tactics with players on the boundary line, intense atmosphere, evening light",
+   "wiki_title": "Cricket strategy"
   }
  ],
- "caption": "റെയിൽവേയിൽ സ്റ്റേഷൻ മാസ്റ്ററാകാൻ ഇതാ ഒരു അവസാന അവസരം! 🚂\n\nറെയിൽവേ റിക്രൂട്ട്‌മെന്റ് ബോർഡ് (RRB) പ്രഖ്യാപിച്ച 1,250 സ്റ്റേഷൻ മാസ്റ്റർ ഒഴിവുകളിലേക്കുള്ള അപേക്ഷാ നടപടികൾ ഇന്ന് അവസാനിക്കുകയാണ്. റെയിൽവേയുടെ സുരക്ഷയിലും പ്രവർത്തനത്തിലും നിർണായക പങ്കുവഹിക്കുന്ന ഈ തസ്തികയിലേക്ക് താൽപ്പര്യമുള്ളവർ ഇന്ന് തന്നെ ഔദ്യോഗിക വെബ്സൈറ്റ് വഴി അപേക്ഷ സമർപ്പിക്കേണ്ടതാണ്.\n\nആയിരക്കണക്കിന് ഉദ്യോഗാർത്ഥികൾ ഈ ചെറിയ ഒഴിവുകൾക്കായി മത്സരിക്കുമ്പോൾ, ഇത്രയും വലിയ തോതിലുള്ള റിക്രൂട്ട്‌മെന്റുകൾ നടത്തുമ്പോൾ പരീക്ഷാ നടപടികളുടെ സുതാര്യതയും വേഗതയും എന്നത് വലിയൊരു ചർച്ചാവിഷയമാണ്. വൻതോതിലുള്ള അപേക്ഷകർക്കിടയിൽ യോഗ്യരായവരെ കണ്ടെത്താനുള്ള ഈ പ്രക്രിയ എത്രത്തോളം കൃത്യതയോടെ നടക്കുമെന്ന് കാണാം.\n\n#RailwayJobs #RRB #StationMaster #JobAlert #KeralaNews #EmploymentNews #RailwayRecruitment #GovernmentJobs"
+ "caption": "ഓസീസിനെ അടിച്ചുതകർത്ത് അനൂറിൻ ഡൊണാൾഡ്; ക്രിക്കറ്റ് ലോകം ഞെട്ടലിൽ! 🏏🔥\n\nവെൽഷ് താരമായ അനൂറിൻ ഡൊണാൾഡ് ഓസ്‌ട്രേലിയൻ ബൗളർമാരെ നിലംപരിശാക്കിയ പ്രകടനം ഇപ്പോൾ സോഷ്യൽ മീഡിയയിൽ വലിയ ചർച്ചയായിരിക്കുകയാണ്. കരുത്തരായ ഓസീസ് ബൗളിംഗ് നിരയെ യാതൊരു ദാക്ഷിണ്യവുമില്ലാതെയാണ് അനൂറിൻ ഗ്രൗണ്ടിന്റെ നാലുപാടും അടിച്ചുപറത്തിയത്.\n\nവനിതാ ക്രിക്കറ്റിൽ സമീപകാലത്തുകണ്ട ഏറ്റവും മികച്ച വെടിക്കെട്ട് പ്രകടനങ്ങളിലൊന്നായാണ് ഇത് വിലയിരുത്തപ്പെടുന്നത്. കളിയിലെ അനൂരിന്റെ ഓരോ ഷോട്ടുകളും ആരാധകരെ ആവേശത്തിലാഴ്ത്തി.\n\nഇത്തരം അമ്പരപ്പിക്കുന്ന പ്രകടനങ്ങൾ വനിതാ ക്രിക്കറ്റിന്റെ നിലവാരം എത്രത്തോളം ഉയർന്നു എന്നതിന്റെ തെളിവാണ്. വരും മത്സരങ്ങളിൽ എതിരാളികൾ അനൂരിനെതിരെ എന്ത് തന്ത്രമായിരിക്കും പരീക്ഷിക്കുക എന്നതും കായിക ലോകം ഉറ്റുനോക്കുന്നു.\n\n#AnthonieDonald #WelshCricket #AustraliaCricket #WomensCricket #CricketNews #SportsReels #CricketHighlights"
 }
