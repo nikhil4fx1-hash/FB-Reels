@@ -1,45 +1,45 @@
 {
- "status": "posted",
- "created": 1795523843.419462,
- "offset": 141181787,
- "topic": "vabhav suryavamshi todays centuruy against UAE in doha",
+ "status": "waiting_media",
+ "created": 1795595569.2582557,
+ "offset": 141181788,
+ "topic": "rasalkhaima accident today",
  "scenes": [
   {
-   "narration": "ദോഹയിൽ ഒരു ഇന്ത്യൻ താരം ചരിത്രം കുറിക്കുന്നു! ആരാണ് ഈ പതിനാറുകാരൻ?",
-   "keywords": "cricket stadium Doha",
-   "image_prompt": "A cinematic wide shot of a modern cricket stadium in Doha, Qatar, under bright lights, with a focused atmosphere.",
-   "wiki_title": "Doha"
+   "narration": "ഇന്ന് റാസൽഖൈമയിലുണ്ടായ വാഹനാപകടം വലിയ ഞെട്ടലാണ് ഉണ്ടാക്കിയിരിക്കുന്നത്!\nഎന്താണ് യഥാർത്ഥത്തിൽ അവിടെ സംഭവിച്ചത്?",
+   "keywords": "Ras Al Khaimah accident, car crash",
+   "image_prompt": "A serious car accident scene on a highway in Ras Al Khaimah, police cars with flashing lights, cinematic lighting, realistic, 4k",
+   "wiki_title": "Ras Al Khaimah"
   },
   {
-   "narration": "യുഎഇക്കെതിരെ വബാബ് സൂര്യവംശിയുടെ തകർപ്പൻ സെഞ്ചുറി. ക്രിക്കറ്റ് ലോകം ഇപ്പോൾ ഇയാളെയാണ് ശ്രദ്ധിക്കുന്നത്.",
-   "keywords": "batsman century celebration",
-   "image_prompt": "A young Indian cricketer in a white and blue jersey raising his bat in celebration of a century, cheering crowd in the background.",
+   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം, ഇന്ന് രാവിലെ റാസൽഖൈമയിലെ പ്രധാന പാതയിലുണ്ടായ ശക്തമായ കൂട്ടിയിടിയിൽ വാഹനങ്ങൾ പൂർണ്ണമായി തകർന്നു.\nഗതാഗതം മണിക്കൂറുകളോളം സ്തംഭിച്ചു.",
+   "keywords": "traffic jam, wrecked cars, highway",
+   "image_prompt": "Heavy traffic jam and damaged vehicles on a multi-lane highway in the UAE, overcast day, realistic photo",
+   "wiki_title": "Ras Al Khaimah"
+  },
+  {
+   "narration": "അപകടത്തിൽപ്പെട്ടവരെ ഉടൻതന്നെ അടുത്തുള്ള ആശുപത്രികളിൽ പ്രവേശിപ്പിച്ചു.\nരക്ഷാപ്രവർത്തകർ മിനിറ്റുകൾക്കകം സ്ഥലത്തെത്തിയിരുന്നു.",
+   "keywords": "ambulance, rescue operation, hospital",
+   "image_prompt": "An ambulance parked at an accident site with paramedics working quickly, dramatic lighting, realistic",
    "wiki_title": ""
   },
   {
-   "narration": "അതിവേഗമായി റൺസുകൾ വാരിക്കൂട്ടി വബാബ് യുഎഇ ബൗളർമാരെ വിറപ്പിച്ചു. മികച്ച ബാറ്റിംഗ് മികവാണ് അദ്ദേഹം കാഴ്ചവെച്ചത്.",
-   "keywords": "cricket batting shot",
-   "image_prompt": "Action shot of a teenage batsman playing a powerful cover drive, cricket ball flying towards the boundary, grass flying.",
-   "wiki_title": "United Arab Emirates national cricket team"
-  },
-  {
-   "narration": "വളരെ ചെറിയ പ്രായത്തിൽ തന്നെ വലിയ റെക്കോർഡുകൾ ലക്ഷ്യമിടുന്ന പ്രതിഭയാണ് വബാബ് സൂര്യവംശി.",
-   "keywords": "young cricket player",
-   "image_prompt": "Close-up portrait of a determined young Indian cricketer wearing a helmet, sweat on forehead, intense gaze.",
+   "narration": "മോശം കാലാവസ്ഥയും കാഴ്ചാപരിമിതിയുമാണോ ഈ അപകടത്തിന് കാരണമെന്ന് അധികാരികൾ പരിശോധിക്കുന്നുണ്ട്.\nവേഗപരിധി പാലിക്കാത്തതും കാരണമായേക്കാം.",
+   "keywords": "speeding, foggy road, dangerous driving",
+   "image_prompt": "A car speeding on a hazy, low-visibility road in the desert region, cinematic and tense atmosphere",
    "wiki_title": ""
   },
   {
-   "narration": "ഈ പ്രകടനം വബാബിനെ ഇന്ത്യൻ ക്രിക്കറ്റിന്റെ ഭാവി പ്രതീക്ഷയായി മാറ്റുന്നു.",
-   "keywords": "Indian cricket team logo",
-   "image_prompt": "A conceptual image of a young player's shadow transforming into a professional Indian international cricketer on a pitch.",
-   "wiki_title": "India national cricket team"
+   "narration": "യുഎഇയിലെ നിരത്തുകളിൽ സുരക്ഷ കർശനമാക്കിയിട്ടും ഇത്തരം അപകടങ്ങൾ ആവർത്തിക്കുന്നത് വലിയ ആശങ്കയാണ് ഉണ്ടാക്കുന്നത്.\nനിയമങ്ങൾ കർശനമാക്കണമെന്ന് ആവശ്യമുയരുന്നു.",
+   "keywords": "traffic police, safety warning, UAE",
+   "image_prompt": "UAE traffic police inspecting a vehicle on a highway, strict safety enforcement, professional photography",
+   "wiki_title": "United Arab Emirates"
   },
   {
-   "narration": "പ്രതിഭ മാത്രം മതിയോ അതോ കടുത്ത മത്സരങ്ങൾക്കിടയിൽ ഈ ഫോം നിലനിർത്താൻ സാധിക്കുമോ എന്നതാണ് വലിയ ചോദ്യം.",
-   "keywords": "cricket pressure",
-   "image_prompt": "A split screen showing a cheering crowd on one side and a lonely batsman facing a fast bowler on the other, representing pressure.",
+   "narration": "തിരക്കേറിയ റോഡുകളിൽ ഡ്രൈവിംഗ് എത്രത്തോളം ശ്രദ്ധയോടെ വേണമെന്ന ചോദ്യമാണ് ഈ ദുരന്തം വീണ്ടും ഉയർത്തുന്നത്.\nയാത്രക്കാരുടെ ജീവൻ സംരക്ഷിക്കാൻ സാങ്കേതികവിദ്യ മാത്രമാണോ അതോ കർശന നിയമങ്ങളാണോ വേണ്ടത്?",
+   "keywords": "safe driving, careful driver, highway",
+   "image_prompt": "A thoughtful driver looking out of a car window on a highway, warm sunset light, realistic",
    "wiki_title": ""
   }
  ],
- "caption": "ദോഹയിൽ തകർപ്പൻ സെഞ്ചുറിയുമായി വബാബ് സൂര്യവംശി! 🏏\n\nയുഎഇക്കെതിരെ നടന്ന മത്സരത്തിൽ വബാബ് സൂര്യവംശി സെഞ്ചുറി നേടി ശ്രദ്ധേയനായി. ദോഹയിൽ നടന്ന മത്സരത്തിൽ മികച്ച ബാറ്റിംഗ് പ്രകടനമാണ് ഈ യുവതാരം കാഴ്ചവെച്ചത്.\n\nചെറിയ പ്രായത്തിൽ തന്നെ ഇന്ത്യൻ ക്രിക്കറ്റിൽ വലിയ പ്രതീക്ഷയായി മാറുകയാണ് വബാബ്. യുഎഇ ബൗളർമാരെ വിറപ്പിച്ചുകൊണ്ട് അദ്ദേഹം നേടിയ റൺസുകൾ ടീമിന് വലിയ നേട്ടമായി മാറി.\n\nവരാനിരിക്കുന്ന വലിയ ടൂർണമെന്റുകളിൽ ഈ ഫോം നിലനിർത്താൻ സാധിച്ചാൽ ഇന്ത്യൻ ദേശീയ ടീമിലേക്ക് എത്താനുള്ള വഴി ഇദ്ദേഹത്തിന് മുൻപിൽ തുറക്കപ്പെടും.\n\nഒരു വശത്ത് വബാബിന്റെ അസാമാന്യമായ പ്രതിഭയെ എല്ലാവരും പ്രശംസിക്കുമ്പോൾ, മറുവശത്ത് അന്താരാഷ്ട്ര തലത്തിലെ കടുത്ത സമ്മർദ്ദങ്ങളെ നേരിടാനുള്ള പക്വത ഈ പ്രായത്തിൽ ഉണ്ടോ എന്ന സംശയവും നിലനിൽക്കുന്നു.\n\n#VabhavSuryavamshi #CricketNews #IndiaU19 #Doha #CricketUpdate #MalayalamNews #UAEvsIndia"
+ "caption": "⚠️ റാസൽഖൈമയിൽ ഇന്ന് ഉണ്ടായ വാഹനാപകടം വലിയ ആശങ്ക പരത്തുന്നു!\n\nഇന്ന് രാവിലെ റാസൽഖൈമയിലെ പ്രധാന പാതയിലുണ്ടായ ശക്തമായ വാഹനാപകടത്തിൽ വാഹനങ്ങൾക്ക് ഗുരുതരമായ കേടുപാടുകൾ സംഭവിച്ചു. അപകടത്തെ തുടർന്ന് റോഡിൽ വലിയ ഗതാഗത കുരുക്കാണ് അനുഭവപ്പെട്ടത്.\n\nറിപ്പോർട്ടുകൾ പ്രകാരം, വിവരമറിഞ്ഞ ഉടൻ തന്നെ പൊലീസും റെസ്ക്യൂ ടീമും ആംബുലൻസുകളും സ്ഥലത്തെത്തി പരിക്കേറ്റവരെ ഉടൻതന്നെ അടുത്തുള്ള ആശുപത്രികളിലേക്ക് മാറ്റി. മോശം കാലാവസ്ഥയും റോഡിലെ കാഴ്ചാപരിമിതിയുമാണോ അതോ അശ്രദ്ധമായ ഡ്രൈവിംഗാണോ അപകടത്തിന് കാരm എന്ന കാര്യം അധികാരികൾ ഔദ്യോഗികമായി അന്വേഷിച്ചു വരികയാണ്.\n\nയുഎഇ നിരത്തുകളിൽ കർശനമായ വേഗപരിധികളും സുരക്ഷാ മുൻകരുതലുകളും നിലവിലുണ്ടെങ്കിലും, ഇത്തരം അപകടങ്ങൾ ആവർത്തിക്കുന്നത് ഡ്രൈവർമാരുടെ ശ്രദ്ധക്കുറവിനെക്കുറിച്ചുള്ള ഗൗരവകരമായ ചോദ്യങ്ങൾ ഉയർത്തുന്നുണ്ട്. റോഡുകളിലെ സുരക്ഷ വർദ്ധിപ്പിക്കാൻ സാങ്കേതിക പരിശോധനകൾ മാത്രം പോരായോ അതോ ഡ്രൈവർമാരുടെ മനോഭാവത്തിൽ മാറ്റം വരേണ്ടതുണ്ടോ എന്നത് ഇപ്പോൾ ഗൗരവമായ ചർച്ചാവിഷയമാണ്.\n\n#RasAlKhaimah #UAEAccident #RoadSafety #UAENews #GulfNews #CarAccident #TrafficAlert"
 }
