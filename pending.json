@@ -1,8 +1,8 @@
 {
- "status": "cancelled",
- "created": 1795610745.2797627,
- "offset": 141181806,
- "topic": "ഓസീസിനെ അടിച്ചുതകർത്ത് അനൂറിൻ ഡൊണാൾഡ്; ക്രിക്കറ്റ് ലോകം ഞെട്ടലിൽ\n   ↳ വെൽഷ് താരം അനൂറിൻ ഡൊണാൾഡ് ഓസ്‌ട്രേലിയൻ ബൗളർമാരെ നിലംപരിശാക്കിയ പ്രകടനം സോഷ്യൽ മീഡിയയിൽ വൈറലായി.",
+ "status": "waiting_media",
+ "created": 1795611303.9854355,
+ "offset": 141181807,
+ "topic": "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ\n   ↳ ഭീഷണി, ബലാത്സംഗം ഉൾപ്പെടെയുള്ള പരാതികളിൽ യൂത്ത് കോൺഗ്രസ് അധ്യക്ഷനെതിരെ പോലീസ് കുറ്റപത്രം തയാറാക്കുന്നു.",
  "suggested_at": 1795605641.7905962,
  "seen_topics": [
   "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ",
@@ -17,65 +17,41 @@
  "context": "",
  "scenes": [
   {
-   "narration": "ഓസ്‌ട്രേലിയൻ ബൗളിംഗ് നിരയെ ഒരു വെൽഷ് താരം അടിച്ചുകൂട്ടിയതോർത്ത് ക്രിക്കറ്റ് ലോകം ഇപ്പോഴും ഞെട്ടലിലാണ്!",
-   "keywords": [
-    "cricket shock",
-    "stadium lights",
-    "batsman"
-   ],
-   "image_prompt": "Dramatic cinematic wide shot of a cricket stadium under lights with a stunned crowd and scoreboard, hyper-realistic, 4k",
-   "wiki_title": "Welsh cricket team"
+   "narration": "യൂത്ത് കോൺഗ്രസ് അധ്യക്ഷൻ രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ബലാത്സംഗം ഉൾപ്പെടെയുള്ള അതീവ ഗുരുതരമായ ആരോപണങ്ങളിൽ പോലീസ് കുറ്റപത്രം തയാറാക്കുന്നു.",
+   "keywords": "Rahul Mamkootathil, Police investigation",
+   "image_prompt": "A professional portrait of a young Indian political leader with a serious expression, photorealistic style, high resolution.",
+   "wiki_title": "Rahul Mamkootathil"
   },
   {
-   "narration": "ആരായിരുന്നു ആ താരം? വെയിൽസിന്റെ അഭിമാനമായ അനൂറിൻ ഡൊണാൾഡ്!",
-   "keywords": [
-    "female cricketer",
-    "confident pose",
-    "sports portrait"
-   ],
-   "image_prompt": "Close-up portrait of a determined female cricketer in Welsh team jersey, holding a bat with confidence, stadium background",
-   "wiki_title": "Anthonie Donald"
+   "narration": "മുൻ കെ.എസ്.യു നേതാവായ യുവതി നൽകിയ പരാതിയിൽ തിരുവനന്തപുരം മ്യൂസിയം പോലീസാണ് ഇപ്പോൾ കരട് കുറ്റപത്രം തയാറാക്കിയിരിക്കുന്നത്.",
+   "keywords": "Kerala Police, Legal documents",
+   "image_prompt": "A close-up shot of a legal document with a 'Draft Chargesheet' heading in a government office setting, blurred background of a police station.",
+   "wiki_title": "Kerala Police"
   },
   {
-   "narration": "ഓസ്‌ട്രേലിയൻ ബൗളർമാരെ ഒന്നിനും സമ്മതിക്കാതെ ഗ്രൗണ്ടിന്റെ നാലുപാടും പറത്തിയാണ് അനൂറിൻ ബാറ്റ് വീശിയത്.",
-   "keywords": [
-    "cricket shot",
-    "batting power",
-    "fielders running"
-   ],
-   "image_prompt": "Action shot of a female cricketer playing a powerful pull shot against Australian bowlers, motion blur on fielders",
-   "wiki_title": "Australia women's national cricket team"
+   "narration": "2017-18 കാലയളവിൽ തിരുവനന്തപുരത്തെ ഒരു ഹോട്ടലിൽ വെച്ച് പീഡിപ്പിച്ചുവെന്നും പിന്നീട് ഇത് പുറത്തുപറയാതിരിക്കാൻ ഭീഷണിപ്പെടുത്തിയെന്നുമാണ് പരാതി.",
+   "keywords": "Hotel room, Thiruvananthapuram",
+   "image_prompt": "A cinematic shot of a dark hotel corridor in Thiruvananthapuram, moody lighting, symbolizing a past event.",
+   "wiki_title": "Thiruvananthapuram"
   },
   {
-   "narration": "ഈ വെടിക്കെട്ട് പ്രകടനം സോഷ്യൽ മീഡിയയിലും കായിക ലോകത്തും വലിയ ചർച്ചയായിക്കഴിഞ്ഞു.",
-   "keywords": [
-    "social media",
-    "viral news",
-    "mobile phone"
-   ],
-   "image_prompt": "Glowing smartphone screen showing viral sports highlights and news articles with enthusiastic fans watching, dark room background",
-   "wiki_title": "Viral phenomenon"
+   "narration": "ബലാത്സംഗം (IPC 376), ക്രിമിനൽ ഭീഷണി (IPC 506), സ്ത്രീത്വത്തെ അപമാനിക്കൽ തുടങ്ങിയ ഗൗരവകരമായ വകുപ്പുകളാണ് രാഹുലിനെതിരെ ചുമത്തിയിരിക്കുന്നത്.",
+   "keywords": "Indian Penal Code, Law",
+   "image_prompt": "A digital illustration of a law book 'Indian Penal Code' with a wooden gavel on the side, focused lighting.",
+   "wiki_title": "Indian Penal Code"
   },
   {
-   "narration": "ഇത്തരം അസാധാരണ പ്രകടനങ്ങൾ വനിതാ ക്രിക്കറ്റിന്റെ മുഖഛായ തന്നെ മാറ്റിക്കൊണ്ടിരിക്കുകയാണ്.",
-   "keywords": [
-    "women cricket",
-    "celebration",
-    "trophy"
-   ],
-   "image_prompt": "Group of international female cricketers celebrating a victory on the pitch, bright sunlight, confetti falling",
-   "wiki_title": "Women's cricket"
+   "narration": "നേരത്തെ പല രാഷ്ട്രീയ സമരങ്ങളുമായി ബന്ധപ്പെട്ട് രാഹുൽ ജയിലിലായിട്ടുണ്ടെങ്കിലും വ്യക്തിപരമായ ഇത്തരം ആരോപണം ഇതാദ്യമായാണ് നേരിടുന്നത്.",
+   "keywords": "Political protest, Arrest",
+   "image_prompt": "A scene of a political protest in Kerala with flags and police barricades, motion blur to show intensity.",
+   "wiki_title": "Indian Youth Congress"
   },
   {
-   "narration": "വരുന്ന മത്സരങ്ങളിലും അനൂറിന് ഈ ഫോം തുടരാനാവുമോ അതോ ഓസീസ് തന്ത്രങ്ങൾ മെനയുമോ?",
-   "keywords": [
-    "cricket strategy",
-    "coach talking",
-    "focused player"
-   ],
-   "image_prompt": "Cricket coach discussing tactics with players on the boundary line, intense atmosphere, evening light",
-   "wiki_title": "Cricket strategy"
+   "narration": "സർക്കാരിന്റെ രാഷ്ട്രീയ പ്രതികാരമാണോ അതോ അതീവ ഗൗരവകരമായ കുറ്റകൃത്യമാണോ ഇതെന്ന് വരും ദിവസങ്ങളിൽ കോടതിക്ക് മുൻപിലെത്തുന്ന വിവരങ്ങൾ വ്യക്തമാക്കും.",
+   "keywords": "Court building, Justice",
+   "image_prompt": "An imposing view of a high court building in India, symbolize justice and legal proceedings.",
+   "wiki_title": "Kerala High Court"
   }
  ],
- "caption": "ഓസീസിനെ അടിച്ചുതകർത്ത് അനൂറിൻ ഡൊണാൾഡ്; ക്രിക്കറ്റ് ലോകം ഞെട്ടലിൽ! 🏏🔥\n\nവെൽഷ് താരമായ അനൂറിൻ ഡൊണാൾഡ് ഓസ്‌ട്രേലിയൻ ബൗളർമാരെ നിലംപരിശാക്കിയ പ്രകടനം ഇപ്പോൾ സോഷ്യൽ മീഡിയയിൽ വലിയ ചർച്ചയായിരിക്കുകയാണ്. കരുത്തരായ ഓസീസ് ബൗളിംഗ് നിരയെ യാതൊരു ദാക്ഷിണ്യവുമില്ലാതെയാണ് അനൂറിൻ ഗ്രൗണ്ടിന്റെ നാലുപാടും അടിച്ചുപറത്തിയത്.\n\nവനിതാ ക്രിക്കറ്റിൽ സമീപകാലത്തുകണ്ട ഏറ്റവും മികച്ച വെടിക്കെട്ട് പ്രകടനങ്ങളിലൊന്നായാണ് ഇത് വിലയിരുത്തപ്പെടുന്നത്. കളിയിലെ അനൂരിന്റെ ഓരോ ഷോട്ടുകളും ആരാധകരെ ആവേശത്തിലാഴ്ത്തി.\n\nഇത്തരം അമ്പരപ്പിക്കുന്ന പ്രകടനങ്ങൾ വനിതാ ക്രിക്കറ്റിന്റെ നിലവാരം എത്രത്തോളം ഉയർന്നു എന്നതിന്റെ തെളിവാണ്. വരും മത്സരങ്ങളിൽ എതിരാളികൾ അനൂരിനെതിരെ എന്ത് തന്ത്രമായിരിക്കും പരീക്ഷിക്കുക എന്നതും കായിക ലോകം ഉറ്റുനോക്കുന്നു.\n\n#AnthonieDonald #WelshCricket #AustraliaCricket #WomensCricket #CricketNews #SportsReels #CricketHighlights"
+ "caption": "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ബലാത്സംഗക്കുറ്റം: കരട് കുറ്റപത്രം തയാർ 🚨\n\nയൂത്ത് കോൺഗ്രസ് സംസ്ഥാന അധ്യക്ഷൻ രാഹുൽ മാങ്കൂട്ടത്തിൽ വലിയൊരു നിയമക്കുരുക്കിലേക്ക് നീങ്ങുന്നതായാണ് റിപ്പോർട്ടുകൾ. തിരുവനന്തപുരം മ്യൂസിയം പോലീസ് രാഹുലിനെതിരെ ബലാത്സംഗം ഉൾപ്പെടെയുള്ള വകുപ്പുകൾ ചേർത്ത് കരട് കുറ്റപത്രം തയാറാക്കിയിരിക്കുകയാണ്. മുൻ കെ.എസ്.യു നേതാവായ ഒരു യുവതി നൽകിയ പരാതിയുടെ അടിസ്ഥാനത്തിലാണ് നടപടി.\n\n2017-18 കാലയളവിൽ തിരുവനന്തപുരത്തെ ഒരു ഹോട്ടലിൽ വെച്ച് തന്നെ പീഡിപ്പിച്ചുവെന്നും, വിവരം പുറത്തുപറയാതിരിക്കാൻ രാഹുൽ ഭീഷണിപ്പെടുത്തിയെന്നും യുവതി മൊഴി നൽകിയിട്ടുണ്ട്. ബലാത്സംഗം (IPC 376), ക്രിമിനൽ ഭീഷണിപ്പെടുത്തൽ (IPC 506), സ്ത്രീത്വത്തെ അപമാനിക്കൽ (IPC 354) എന്നീ വകുപ്പുകളാണ് കുറ്റപത്രത്തിലുള്ളത്. ഈ കുറ്റപത്രം നിയമപരമായ പരിശോധനകൾക്ക് ശേഷം കോടതിയിൽ സമർപ്പിക്കും.\n\nനേരത്തെ പലതവണ രാഷ്ട്രീയ സമരങ്ങളുടെ പേരിൽ രാഹുൽ ജയിലിലായിട്ടുണ്ടെങ്കിലും, ഇത്തരമൊരു ഗൗരവകരമായ സ്വകാര്യ പരാതി അദ്ദേഹത്തിന് വലിയ രാഷ്ട്രീയ തിരിച്ചടിയാണ്. ഈ കേസ് രാഷ്ട്രീയ പ്രേരിതമാണെന്ന് ഒരു വിഭാഗം ആരോപിക്കുമ്പോൾ, ഗൗരവകരമായ ഒരു പരാതിയിൽ നിയമപരമായ നീതി നടപ്പാകണം എന്നാണ് മറുവശത്തെ വാദം.\n\nയുവതിയുടെ പരാതിയിൽ വ്യക്തമായ അന്വേഷണം നടക്കട്ടെ എന്ന് കരുതുന്നവരും, തിരഞ്ഞെടുപ്പ് രാഷ്ട്രീയവും മറ്റും മുന്നിൽ കണ്ടുള്ള നീക്കമാണിതെന്ന് സംശയിക്കുന്നവരും ഒരേപോലെ തർക്കത്തിലാണ്. കോടതി വിധി വരുന്നത് വരെ ഓരോ ആരോപണവും നിയമപരമായി തന്നെ പരിശോധിക്കപ്പെടേണ്ടതുണ്ട്.\n\n#RahulMamkootathil #KeralaPolitics #YouthCongress #KeralaPolice #LegalNews #Thiruvananthapuram #KSU #PoliticalControversy"
 }
