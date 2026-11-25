@@ -892,7 +892,8 @@ async def plan():
         if not topic:
             topic = get_trending_topic()
         tg_send(f"🔎 '{topic}' - ഏറ്റവും പുതിയ വിവരങ്ങൾ തിരഞ്ഞ് സ്ക്രിപ്റ്റ് തയ്യാറാക്കുന്നു...")
-        scenes, caption = get_gemini_scenes(topic)
+        context = (state.get("context") or "").strip()
+        scenes, caption = get_gemini_scenes(topic + (f" (പശ്ചാത്തലം: {context})" if context else ""))
     except Exception as e:
         print(f"❌ {e}")
         scenes, caption = [], None
