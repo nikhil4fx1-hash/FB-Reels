@@ -1,8 +1,8 @@
 {
- "status": "posted",
- "created": 1795677082.6945076,
- "offset": 141181843,
- "topic": "സ്വർണവിലയിൽ വൻ ഇടിവ്; ഞെട്ടിച്ച് വിപണി",
+ "status": "waiting_media",
+ "created": 1795683227.8398702,
+ "offset": 141181844,
+ "topic": "ഭാര്യയുടെ വിഷപ്രയോഗം; ഇൻഷുറൻസ് തുകയ്ക്കായി നടത്തിയ നാടകം\n   ↳ ഭര്‍ത്താവിന് നൽകിയ വിഷപ്രയോഗത്തിലൂടെ 8 കോടിയുടെ സ്വത്തും ഇൻഷുറൻസും ലക്ഷ്യമിട്ട ഭാര്യ പിടിയിൽ.",
  "suggested_at": 1795676956.8720582,
  "seen_topics": [
   "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ",
@@ -38,71 +38,68 @@
   "റാസ് അൽ ഖൈമ അപകടം; മലയാളികൾ ഉൾപ്പെടെ മരിച്ചവരുടെ വിവരങ്ങൾ പുറത്ത്",
   "ഷെയ്ഖ് ഹസീനയുടെ തിരിച്ചുവരവ്; ഡിസംബർ 16 തീയതി പ്രഖ്യാപിച്ചു"
  ],
- "context": "ഇന്ത്യയിൽ സ്വർണവിലയിൽ വൻ ഇടിവുണ്ടായതായി റിപ്പോർട്ട്.",
+ "context": "",
  "scenes": [
   {
-   "narration": "സ്വർണം വാങ്ങാൻ കാത്തിരുന്നവർക്ക് ആശ്വാസമായി ചരിത്രത്തിലെ വലിയ ഇടിവ്! എന്താണ് വിപണിയിൽ സംഭവിക്കുന്നത്?",
+   "narration": "സ്നേഹവും വിശ്വാസവും തകർത്തൊരു കൊടും ചതി! 8 കോടിയുടെ സ്വത്തും ഇൻഷുറൻസ് തുകയും തട്ടിയെടുക്കാൻ ഭാര്യ നടത്തിയ ഞെട്ടിക്കുന്ന കൊലപാതക ശ്രമം.",
    "keywords": [
-    "gold price drop",
-    "shocked woman"
+    "police arrest",
+    "investigation",
+    "money motive"
    ],
-   "image_prompt": "A close-up of a shocked Indian woman looking at a gold price ticker showing a downward trend, cinematic lighting, photorealistic",
-   "wiki_title": "Gold as an investment"
+   "image_prompt": "A cinematic dramatic shot of police investigation tape and crime scene, dark moody lighting, high quality",
+   "wiki_title": ""
   },
   {
-   "narration": "ഇന്ത്യൻ വിപണിയിൽ സ്വർണവിലയിൽ സമീപകാലത്തായി വൻ ഇടിവാണ് രേഖപ്പെടുത്തിയിരിക്കുന്നത്. ഗ്രാമിനും പവനും വില കുത്തനെ കുറഞ്ഞു.",
+   "narration": "ഭർത്താവിന് നൽകിയ ഭക്ഷണത്തിലും വെള്ളത്തിലും നിരന്തരം വിഷം കലർത്തി കൊല്ലാൽ ശ്രമിച്ചെന്ന പരാതിയിലാണ് ഭാര്യ ഇപ്പോൾ പിടിയിലായിരിക്കുന്നത്.",
    "keywords": [
-    "gold coins",
-    "falling chart"
+    "poison",
+    "food test",
+    "hospital bed"
    ],
-   "image_prompt": "A digital stock market chart displaying a sharp downward trend in gold prices over a background of gold bars, professional financial design",
-   "wiki_title": "Gold"
+   "image_prompt": "Medical laboratory setting with forensic testing equipment and poison warning signs, cinematic lighting",
+   "wiki_title": ""
   },
   {
-   "narration": "കഴിഞ്ഞ ദിവസങ്ങളെ അപേക്ഷിച്ച് പവന് നൂറുകണക്കിന് രൂപയുടെ കുറവാണ് ഉണ്ടായിരിക്കുന്നത്. ഉപഭോക്താക്കൾക്ക് ഇതൊരു വലിയ ആശ്വാസമാണ്.",
+   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം, ലക്ഷ്യമിട്ടത് ഇൻഷുറൻസ് തുകയും കോടികൾ വിലമതിക്കുന്ന സ്വത്തുക്കളുമാണ്. അതുകൊണ്ടുതന്നെ ഇതൊരു സാധാരണ കുടുംബപ്രശ്നമല്ല.",
    "keywords": [
-    "jewellery shop",
-    "india market"
+    "insurance papers",
+    "money bag",
+    "wealth"
    ],
-   "image_prompt": "A crowded Indian jewellery shop window with price boards showing reduced rates, bright daylight, realistic photography",
-   "wiki_title": "Economy of India"
+   "image_prompt": "Close up of insurance documents and wealth planning papers on a wooden table, dramatic shadows",
+   "wiki_title": ""
   },
   {
-   "narration": "അന്താരാഷ്ട്ര വിപണിയിലെ മാറ്റങ്ങളും യുഎസ് ഡോളറിന്റെ മൂല്യത്തിലുള്ള വ്യതിയാനങ്ങളുമാണ് ഈ വിലത്തളർച്ചയ്ക്ക് പ്രധാന കാരണം.",
+   "narration": "ആദ്യം ആരോഗ്യപ്രശ്നങ്ങളാണെന്ന് കരുതിയെങ്കിലും, ഭർത്താവിന്റെയും ബന്ധുക്കളുടെയും സംശയമാണ് പിന്നീട് ഞെട്ടിക്കുന്ന വിവരങ്ങൾ പുറത്തുകൊണ്ടുവന്നത്.",
    "keywords": [
-    "global market",
-    "us dollar"
+    "suspicion",
+    "medical report",
+    "doctor explaining"
    ],
-   "image_prompt": "A conceptual image showing US dollar currency symbols alongside gold bars and global financial data screens, professional lighting",
-   "wiki_title": "Gold standard"
+   "image_prompt": "A concerned doctor explaining medical reports to family members in a hospital room, realistic photography",
+   "wiki_title": ""
   },
   {
-   "narration": "കൂടാതെ, നിക്ഷേപകർ സ്വർണത്തിൽ നിന്ന് മറ്റ് ആസ്തികളിലേക്ക് ശ്രദ്ധ മാറ്റുന്നതും ആഗോള തലത്തിൽ വില കുറയാൻ കാരണമായി.",
+   "narration": "തുടർന്ന് നടത്തിയ ശാസ്ത്രീയ പരിശോധനകളിലും അന്വേഷണത്തിലുമാണ് ഭാര്യയുടെ പങ്ക് വ്യക്തമായതും പോലീസ് നടപടിയിലേക്ക് കടന്നതും.",
    "keywords": [
-    "stock exchange",
-    "financial traders"
+    "forensic science",
+    "police interrogation",
+    "evidence"
    ],
-   "image_prompt": "Stock market traders looking at computer screens with red downward graphs in a busy trading floor, dramatic atmosphere",
-   "wiki_title": "Stock exchange"
+   "image_prompt": "Forensic experts examining evidence in a modern laboratory, intense atmosphere",
+   "wiki_title": ""
   },
   {
-   "narration": "വിപണി വിദഗ്ധരുടെ അഭിപ്രായത്തിൽ, ഇത് താൽക്കാലികമായ ഇടിവ് മാത്രമാണോ അതോ വില ഇനിയും താഴേക്ക് പോകുമോ എന്നതിൽ ആശങ്കയുണ്ട്.",
+   "narration": "പണത്തോടുള്ള ആർത്തി മനുഷ്യനെ ഏത് ക്രൂരതയിലേക്കാണ് നയിക്കുന്നത്? സുരക്ഷിതമെന്ന് കരുതേണ്ട വീടുകൾ പോലും ഇന്ന് എത്രത്തോളം അപകടകരമായി മാറുന്നു?",
    "keywords": [
-    "expert analysis",
-    "financial graph"
+    "broken trust",
+    "family drama",
+    "thoughtful man"
    ],
-   "image_prompt": "An Indian financial analyst pointing at a digital screen displaying fluctuating gold price trends in a modern office, sharp focus",
-   "wiki_title": "Financial market"
-  },
-  {
-   "narration": "വില കുറഞ്ഞ ഈ അവസരം ഉപയോഗിച്ച് സ്വർണം വാങ്ങണോ, അതോ വില വീണ്ടും ഇടിയാൻ കാത്തിരിക്കണോ?",
-   "keywords": [
-    "gold necklace",
-    "investment decision"
-   ],
-   "image_prompt": "A luxurious gold necklace displayed on a velvet surface with a thoughtful person blurred in the background, elegant macro shot",
-   "wiki_title": "Gold as an investment"
+   "image_prompt": "A thoughtful and concerned person sitting alone in a dim lit room, representing betrayal and shock, cinematic",
+   "wiki_title": ""
   }
  ],
- "caption": "📉 സ്വർണവിലയിൽ വൻ ഇടിവ്; ഞെട്ടിച്ച് വിപണി!\n\nഇന്ത്യൻ വിപണിയിൽ സ്വർണവിലയിൽ സമീപകാലത്തായി വലിയ ഇടിവാണ് രേഖപ്പെടുത്തിയിരിക്കുന്നത്. സ്വർണം വാങ്ങാൻ ആഗ്രഹിക്കുന്നവർക്ക് വലിയ ആശ്വാസം നൽകുന്നതാണ് പുതിയ കണക്കുകൾ.\n\nകഴിഞ്ഞ ദിവസങ്ങളെ അപേക്ഷിച്ച് പവന് ഗണ്യമായ കുറവാണ് ഉണ്ടായിരിക്കുന്നത്. അന്താരാഷ്ട്ര വിപണിയിലെ മാറ്റങ്ങളും, യുഎസ് ഡോളറിന്റെ മൂല്യത്തിലുള്ള വ്യതിയാനങ്ങളും, ആഗോളതലത്തിലുള്ള സാമ്പത്തിക പ്രവണതകളുമാണ് സ്വർണവില ഇടിയാൻ പ്രധാന കാരണമായി വിലയിരുത്തപ്പെടുന്നത്.\n\nസാധാരണക്കാർക്കും വിവാഹ ആവശ്യങ്ങൾക്കായി സ്വർണം മുൻകൂട്ടി ബുക്ക് ചെയ്തവർക്കും ഈ വിലയിടിവ് വലിയ ആശ്വാസമാകുമ്പോൾ, നിക്ഷേപകരിൽ ഇത് ചെറിയ തോതിൽ ആശങ്കയും ഉണ്ടാക്കുന്നുണ്ട്. ഈ വിലക്കുറവ് വിപണിയിലെ താൽക്കാലിക പ്രതിഭാസം മാത്രമാണോ അതോ വരും ദിവസങ്ങളിലും വില താഴേക്ക് പോകുമോ എന്ന കാര്യത്തിൽ വിദഗ്ധർക്കിടയിൽ ഭിന്നാഭിപ്രായമുണ്ട്.\n\nഈ വിലയിടിയുന്ന സാഹചര്യം മുതലെടുത്ത് ഇപ്പോൾ തന്നെ സ്വർണം വാങ്ങുന്നതാണോ ബുദ്ധി, അതോ വില ഇനിയും കുറയാൻ കാത്തിരിക്കുന്നതാണോ സുരക്ഷിതം?\n\n#GoldPrice #GoldRate #KeralaGold #GoldMarket #FinancialNews #GoldInvestment #MarketUpdate"
+ "caption": "കെണിയൊരുക്കിയത് പ്രാണനെപോലെ സ്നേഹിക്കേണ്ടവൾ; ഇൻഷുറൻസ് തുകയ്ക്കായി ഭാര്യ നടത്തിയ ഞെട്ടിക്കുന്ന നാടകം! 🚨\n\nഭർത്താവിന് നൽകിയ വിഷപ്രയോഗത്തിലൂടെ 8 കോടിയുടെ സ്വത്തും ഇൻഷുറൻസ് തുകയും സ്വന്തമാക്കാൻ ശ്രമിച്ച ഭാര്യ ഒടുവിൽ പിടിയിൽ. റിപ്പോർട്ടുകൾ പ്രകാരം, ഭർത്താവിന്റെ തുടർച്ചയായ ആരോഗ്യപ്രശ്നങ്ങൾക്ക് പിന്നിൽ ആസൂത്രിതമായ വിഷപ്രയോഗമാണെന്ന് വ്യക്തമായതോടെയാണ് സംഭവത്തിന്റെ ചുരുളഴിയുന്നത്.\n\nസാധാരണ ശാരീരിക അസ്വസ്ഥതകളാണെന്ന് കരുതി അവഗണിച്ച ലക്ഷണങ്ങളാണ് പിന്നീട് വലിയൊരു കൊലപാതക ശ്രമത്തിന്റെ കഥ പുറത്തുകൊണ്ടുവന്നത്. ബന്ധുക്കളുടെ സംശയവും തുടർന്ന് നടന്ന ശാസ്ത്രീയ പരിശോധനകളും പൊലീസിനെ കൃത്യമായ തെളിവുകളിലേക്ക് നയിച്ചു. പണത്തിനും ആഡംബര ജീവിതത്തിനും വേണ്ടി സ്വന്തം ജീവിതപങ്കാളിയെ പോലും ഇല്ലായ്മ ചെയ്യാൻ ശ്രമിച്ച ഈ ക്രൂരത സമൂഹത്തെ ഒന്നടക്കം ഞെട്ടിച്ചിരിക്കുകയാണ്.\n\nസുരക്ഷിതമെന്ന് കരുതേണ്ട കുടുംബബന്ധങ്ങളും വീടുകളും പോലും പണത്തിന് മുന്നിൽ എത്രമേൽ ദുർബലമാകുന്നു എന്ന ചിന്തയാണ് ഈ സംഭവം ബാക്കിവെക്കുന്നത്. സ്നേഹവും വിശ്വാസവും ചതിച്ചുകയറുന്ന ഇത്തരം കേസുകൾ വർദ്ധിക്കുന്നത് നമ്മുടെ സാമൂഹിക മനഃസാക്ഷിയെയാണ് ചോദ്യം ചെയ്യുന്നത്.\n\n#KeralaNews #CrimeNews #Investigation #InsuranceFraud #MalayalamNews #PoliceArrest #SocialIssue"
 }
