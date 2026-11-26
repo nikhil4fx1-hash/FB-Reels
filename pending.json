@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795621134.5144458,
- "offset": 141181824,
- "topic": "ലോക വിപണിയെ ഞെട്ടിച്ച് ട്രംപിന്റെ പുതിയ താരിഫ് പ്രഖ്യാപനം",
+ "status": "waiting_media",
+ "created": 1795659512.3415515,
+ "offset": 141181825,
+ "topic": "ചൈനയുടെ ഷെൻഷൗ 24 ദൗത്യം; ബഹിരാകാശത്ത് പുതിയ ചരിത്രം",
  "suggested_at": 1795638873.6040611,
  "seen_topics": [
   "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ",
@@ -30,86 +30,56 @@
   "ചൈനയുടെ ഷെൻഷൗ 24 ദൗത്യം; ബഹിരാകാശത്ത് പുതിയ ചരിത്രം",
   "ഗാർനാച്ചോയുടെ ഇൻസ്റ്റാഗ്രാം മാറ്റങ്ങൾ; ഫുട്ബോൾ ലോകത്ത് ചർച്ച"
  ],
- "context": "അമേരിക്കൻ പ്രസിഡന്റ് ട്രംപ് പുതിയ താരിഫുകൾ പ്രഖ്യാപിച്ചതോടെ ലോകമെമ്പാടുമുള്ള സ്റ്റോക്ക് മാർക്കറ്റുകളിൽ ഇടിവ്.",
+ "context": "രണ്ട് ചൈനീസ് and ഒരു പാക്കിസ്ഥാൻ ബഹിരാകാശ സഞ്ചാരികളുമായി ഷെൻഷൗ 24 വിക്ഷേപിച്ചു",
  "scenes": [
   {
-   "narration": "ലോക വിപണിയെ വിറപ്പിച്ചു ട്രംപിന്റെ പുതിയ തീരുമാനം! എന്താണ് ഈ താരിഫ് യുദ്ധം?",
-   "keywords": "Donald Trump, Global Market, Shock",
-   "image_prompt": "A dramatic cinematic close-up of Donald Trump with a digital world map in the background showing red warning signals and flashing economic symbols",
-   "wiki_title": "Donald Trump"
+   "narration": "ബഹിരാകാശത്ത് അമേരിക്കയെപ്പോലും അമ്പരപ്പിച്ചുകൊണ്ട് ചൈനയുടെ പുതിയ പടയോട്ടം! ഷെൻഷൗ-19 ദൗത്യം ചരിത്രമാകുന്നത് എന്തുകൊണ്ടാണ്?",
+   "keywords": "rocket launch space",
+   "image_prompt": "Cinematic shot of a Chinese Long March rocket lifting off from a desert launchpad at night, bright orange flames, high contrast, 8k resolution.",
+   "wiki_title": "Shenzhou 19"
   },
   {
-   "narration": "മെക്സിക്കോ, കാനഡ, ചൈന എന്നീ രാജ്യങ്ങളിൽ നിന്നുള്ള ഇറക്കുമതിക്ക് വലിയ തോതിൽ നികുതി വർദ്ധിപ്പിക്കാനാണ് ട്രംപ് പ്രഖ്യാപിച്ചത്.",
-   "keywords": "Cargo ships, Trade, Flags",
-   "image_prompt": "A massive cargo ship carrying colorful containers with flags of USA, China, Mexico, and Canada overlaid, symbolizing international trade",
-   "wiki_title": "International trade"
+   "narration": "ഒക്ടോബർ 30-ന് ഗോബി മരുഭൂമിയിലെ ജിയുക്വാൻ ലോഞ്ച് സെന്ററിൽ നിന്നാണ് മൂന്ന് ബഹിരാകാശ സഞ്ചാരികളുമായി ഷെൻഷൗ-19 കുതിച്ചുയർന്നത്.",
+   "keywords": "satellite launch center",
+   "image_prompt": "Wide angle view of Jiuquan Satellite Launch Center in the Gobi Desert, futuristic technology, rocket on the pad, daytime.",
+   "wiki_title": "Jiuquan Satellite Launch Center"
   },
   {
-   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം മെക്സിക്കോയ്ക്കും കാനഡയ്ക്കും 25 ശതമാനവും ചൈനയ്ക്ക് അധികമായി 10 ശതമാനവും താരിഫ് ഏർപ്പെടുത്താനാണ് നീക്കം.",
-   "keywords": "Percentage, Tax, Finance",
-   "image_prompt": "3D render of gold coins and percentage symbols '25%' and '10%' floating over a business desk with professional documents",
-   "wiki_title": "Tariff"
+   "narration": "സീനിയർ കമാൻഡർ ചായ് ഷുഷെ നയിക്കുന്ന സംഘത്തിൽ രണ്ടു യുവ സഞ്ചാരികളാണുള്ളത്. ഇതിൽ വാങ് ഹാവോസെ എന്ന വനിത പുതിയ ചരിത്രമെഴുതി.",
+   "keywords": "astronauts crew portrait",
+   "image_prompt": "Three Chinese astronauts in white spacesuits, smiling, holding helmets, standing in front of a blue background with mission patches.",
+   "wiki_title": "Cai Xuzhe"
   },
   {
-   "narration": "മയക്കുമരുന്ന് കടത്തും അനധികൃത കുടിയേറ്റവും തടയാനാണ് ഈ കർശന നടപടിയിലൂടെ അമേരിക്ക ലക്ഷ്യമിടുന്നത്.",
-   "keywords": "US Border, Security, Immigration",
-   "image_prompt": "A wide shot of the US-Mexico border wall with security patrols and a dramatic sunset sky",
-   "wiki_title": "United States–Mexico border"
+   "narration": "ചൈനയുടെ ആദ്യ ബഹിരാകാശ പേടക എഞ്ചിനീയറാണ് വാങ് ഹാവോസെ. ബഹിരാകാശത്തെത്തുന്ന മൂന്നാമത്തെ ചൈനീസ് വനിതയും ഇവർ തന്നെ.",
+   "keywords": "female astronaut engineer",
+   "image_prompt": "Close up portrait of Wang Haoze in a professional space suit, looking determined, tech-filled space station background.",
+   "wiki_title": "Wang Haoze"
   },
   {
-   "narration": "ഈ പ്രഖ്യാപനത്തോടെ ലോകമെമ്പാടുമുള്ള സ്റ്റോക്ക് മാർക്കറ്റുകളിൽ വലിയ ഇടിവ് രേഖപ്പെടുത്തി. നിക്ഷേപകർക്കിടയിൽ വലിയ ആശങ്കയാണ് നിലവിലുള്ളത്.",
-   "keywords": "Stock Market, Crash, Red Graph",
-   "image_prompt": "A stock market trading screen showing multiple red downward arrows and crashing line graphs in a dark trading room",
-   "wiki_title": "Stock market"
+   "narration": "ആറുമാസം ഇവർ ടിയാങ്കോങ് ബഹിരാകാശ നിലയത്തിൽ ചെലവഴിക്കും. 86 ശാസ്ത്ര പരീക്ഷണങ്ങളാണ് ഈ ദൗത്യത്തിന്റെ ലക്ഷ്യം.",
+   "keywords": "space station interior",
+   "image_prompt": "Interior of the Tiangong Space Station, futuristic white modules, scientific equipment, floating objects in zero gravity.",
+   "wiki_title": "Tiangong space station"
   },
   {
-   "narration": "അമേരിക്കൻ വ്യവസായങ്ങളെ ഇത് സംരക്ഷിക്കുമെങ്കിലും, സാധാരണക്കാരുടെ ജീവിതച്ചെലവ് വർദ്ധിക്കുമോ എന്നതാണ് ഇപ്പോൾ ലോകം ഉറ്റുനോക്കുന്നത്.",
-   "keywords": "Consumer goods, Inflation, Global Economy",
-   "image_prompt": "A split screen showing a modern US factory on one side and a common person looking worried at high price tags in a supermarket on the other",
-   "wiki_title": "Inflation"
+   "narration": "ചൈനയുടെ ഈ നേട്ടം പാകിസ്താൻ അടക്കമുള്ള രാജ്യങ്ങൾക്കും പ്രതീക്ഷ നൽകുന്നുണ്ട്. ഒരു പാകിസ്താനി സഞ്ചാരിയെ ബഹിരാകാശത്തെത്തിക്കാൻ ചൈനയുമായി ധാരണയായിട്ടുണ്ട്.",
+   "keywords": "china pakistan flags",
+   "image_prompt": "Digital art showing the flags of China and Pakistan side by side against a starry space background.",
+   "wiki_title": "China National Space Administration"
+  },
+  {
+   "narration": "അടുത്ത പത്തുവർഷത്തിനുള്ളിൽ ചന്ദ്രനിൽ മനുഷ്യനെ ഇറക്കാനാണ് ചൈന ലക്ഷ്യമിടുന്നത്. അമേരിക്കയുടെ നാസയുമായുള്ള കടുത്ത മത്സരമാണിവിടെ നടക്കുന്നത്.",
+   "keywords": "moon mission concept",
+   "image_prompt": "Concept art of a Chinese lunar lander on the moon's surface, Earth visible in the black sky, cinematic lighting.",
+   "wiki_title": "Chinese Lunar Exploration Program"
+  },
+  {
+   "narration": "അന്താരാഷ്ട്ര ബഹിരാകാശ നിലയം ഉടൻ വിരമിക്കാനിരിക്കെ, ചൈനയുടെ ടിയാങ്കോങ് മാത്രമായിരിക്കുമോ ഇനി ബഹിരാകാശത്തെ ഏക ആശ്രയം?",
+   "keywords": "international space station",
+   "image_prompt": "The International Space Station orbiting Earth, sunlight reflecting off solar panels, deep space background.",
+   "wiki_title": "International Space Station"
   }
  ],
- "caption": "🚨 ലോക വിപണിയെ ഞെട്ടിച്ച് ട്രംപിന്റെ താരിഫ് പ്രഖ്യാപനം!\n\nഅമേരിക്കൻ പ്രസിഡന്റ് ഡൊണാൾഡ് ട്രംപ് പ്രധാന വ്യാപാര പങ്കാളികളായ മെക്സിക്കോ, കാനഡ, ചൈന എന്നിവയ്‌ക്കെതിരെ പുതിയ താരിഫ് പ്രഖ്യാപിച്ചതോടെ ആഗോള സാമ്പത്തിക വിപണിയിൽ വലിയ ചലനങ്ങളാണ് ഉണ്ടാകുന്നത്. \n\nറിപ്പോർട്ടുകൾ പ്രകാരം മെക്സിക്കോയ്ക്കും കാനഡയ്ക്കും 25 ശതമാനം നികുതിയും, ചൈനയ്ക്ക് അധികമായി 10 ശതമാനം താരിഫും ഏർപ്പെടുത്താനാണ് ട്രംപ് ലക്ഷ്യമിടുന്നത്. രാജ്യത്തെ മയക്കുമരുന്ന് കടത്ത് തടയുന്നതിനും അനധികൃത കുടിയേറ്റം അവസാനിപ്പിക്കുന്നതിനും വേണ്ടിയുള്ള സമ്മർദ്ദതന്ത്രമായാണ് ഈ നീക്കം വിലയിരുത്തപ്പെടുന്നത്.\n\nഈ പ്രഖ്യാപനത്തെത്തുടർന്ന് ആഗോള സ്റ്റോക്ക് മാർക്കറ്റുകളിൽ വൻ ഇടിവ് രേഖപ്പെടുത്തി. അമേരിക്കൻ ഉൽപ്പന്നങ്ങളെ പ്രോത്സാഹിപ്പിക്കാനുള്ള 'അമേരിക്ക ഫസ്റ്റ്' നയത്തിന്റെ ഭാഗമാണിതെങ്കിലും, ഇത് വലിയൊരു വ്യാപാര യുദ്ധത്തിലേക്ക് (Trade War) വഴിതെളിക്കുമെന്ന ആശങ്കയിലാണ് ലോകരാജ്യങ്ങൾ.\n\nസ്വദേശി വ്യവസായങ്ങളെ സംരക്ഷിക്കാനുള്ള ഈ നീക്കം അമേരിക്കയ്ക്ക് ഗുണകരമാകുമോ, അതോ ഉൽപ്പന്നങ്ങളുടെ വില വർദ്ധിച്ച് സാധാരണക്കാരുടെ ജീവിതം ദുസ്സഹമാകുമോ എന്നതാണ് വലിയ ചോദ്യം. വ്യാപാര നിയന്ത്രണങ്ങളിലൂടെ സുരക്ഷ ഉറപ്പാക്കാനുള്ള ശ്രമം ആഗോള സാമ്പത്തിക തകർച്ചയ്ക്ക് കാരണമാകുമോ എന്നത് ചർച്ചാവിഷയമായി മാറുന്നു.\n\n#DonaldTrump #TradeWar #StockMarket #GlobalEconomy #Tariffs #EconomyNews #USA #WorldTrade",
- "suggestions": [
-  {
-   "topic": "Avengers: Doomsday ട്രെയിലർ; മാർവൽ ലോകത്ത് പുതിയ চমക്കുകൾ",
-   "context": "ക്യാപ്റ്റൻ അമേരിക്കയുടെ മകനും എക്സ്-മെൻ അംഗങ്ങളും ട്രെയിലറിൽ പ്രത്യക്ഷപ്പെട്ടു",
-   "where": "Google Trends, YouTube"
-  },
-  {
-   "topic": "ചാമ്പ്യൻസ് ലീഗിൽ പിഎസ്ജി; ഫുട്ബോൾ ലോകം ഉറ്റുനോക്കുന്നു",
-   "context": "പിഎസ്ജി-എഎസ് റോം മത്സരത്തിന്റെ സ്റ്റാർട്ടിംഗ് ഇലവൻ പുറത്തുവന്നു",
-   "where": "Google Trends, X"
-  },
-  {
-   "topic": "ചരിത്രമായി ജെന്നിഫർ; വിവാഹിതയും അമ്മയുമായ മിസ് യൂണിവേഴ്സ്",
-   "context": "മിസ് യൂണിവേഴ്സ് കിരീടം നേടിയ ആദ്യ വിവാഹിതയും അമ്മയുമായി ജെന്നിഫർ മാറി",
-   "where": "news, Facebook"
-  },
-  {
-   "topic": "ട്രംപ് സർക്കാരും ഇന്ത്യയും; വ്യാപാര കരാറിൽ പുതിയ നീക്കങ്ങൾ",
-   "context": "ഇന്ത്യയുമായുള്ള വ്യാപാര കരാർ reached ആയാൽ താരിഫ് 17% ആയി പരിമിതപ്പെടുത്തും",
-   "where": "news, X"
-  },
-  {
-   "topic": "ഫിഡെ ലോക ചാമ്പ്യൻഷിപ്പ് 2026; ചെസ്സ് ലോകത്തെ പുതിയ പോരാട്ടം",
-   "context": "ലോക ചാമ്പ്യൻഷിപ്പിലെ രണ്ടാം കളി ഡ്രോയിൽ അവസാനിച്ചു",
-   "where": "news, Google Trends"
-  },
-  {
-   "topic": "റഫിൻഹയുടെ റെക്കോർഡ് കുതിപ്പ്; ബാഴ്സ ചരിത്രത്തിലേക്ക് ഒരു ചുവട് കൂടി",
-   "context": "ലൂയിസ് സുവാരെസിന്റെ റെക്കോർഡ് മറികടക്കാൻ റഫിൻഹ ഒരുങ്ങുന്നു",
-   "where": "Google Trends, X"
-  },
-  {
-   "topic": "ചൈനയുടെ ഷെൻഷൗ 24 ദൗത്യം; ബഹിരാകാശത്ത് പുതിയ ചരിത്രം",
-   "context": "രണ്ട് ചൈനീസ് and ഒരു പാക്കിസ്ഥാൻ ബഹിരാകാശ സഞ്ചാരികളുമായി ഷെൻഷൗ 24 വിക്ഷേപിച്ചു",
-   "where": "news, X"
-  },
-  {
-   "topic": "ഗാർനാച്ചോയുടെ ഇൻസ്റ്റാഗ്രാം മാറ്റങ്ങൾ; ഫുട്ബോൾ ലോകത്ത് ചർച്ച",
-   "context": "മാഞ്ചസ്റ്റർ യുണൈറ്റഡ് ഒഴികെയുള്ള എല്ലാ ക്ലബ്ബുകളുടെയും അടയാളങ്ങൾ ഗാർനാച്ചോ നീക്കം ചെയ്തു",
-   "where": "Google Trends, Instagram"
-  }
- ]
+ "caption": "ബഹിരാകാശത്ത് ചൈനയുടെ കരുത്തുറ്റ കുതിപ്പ്! 🚀\n\nചൈനയുടെ ബഹിരാകാശ പദ്ധതിയിലെ നിർണ്ണായക നാഴികക്കല്ലായ ഷെൻഷൗ-19 (Shenzhou-19) ദൗത്യം വിജയകരമായി വിക്ഷേപിച്ചു. 2024 ഒക്ടോബർ 30-ന് ഗോബി മരുഭൂമിയിലെ ജിയുക്വാൻ സാറ്റലൈറ്റ് ലോഞ്ച് സെന്ററിൽ നിന്നാണ് ദൗത്യം ആരംഭിച്ചത്. \n\nമൂന്ന് പേടങ്ങുന്ന സംഘത്തെ നയിക്കുന്നത് പരിചയസമ്പന്നനായ ചായ് ഷുഷെയാണ്. സോങ് ലിംഗ്‌ഡോംഗ്, വാങ് ഹാവോസെ എന്നിവരാണ് കൂടെയുള്ളത്. ഇതിൽ വാങ് ഹാവോസെ ചൈനയുടെ ആദ്യത്തെ ബഹിരാകാശ പേടക എഞ്ചിനീയറാണെന്ന പ്രത്യേകതയുമുണ്ട്. ബഹിരാകാശത്തെത്തുന്ന മൂന്നാമത്തെ ചൈനീസ് വനിതയാണ് ഇവർ. \n\nഅടുത്ത ആറുമാസം ഇവർ ചൈനയുടെ സ്വന്തം ബഹിരാകാശ നിലയമായ 'ടിയാങ്കോങ്ങി'ൽ (Tiangong Space Station) ചെലവഴിക്കും. ബഹിരാകാശത്തെ നിർമ്മാണ പ്രവർത്തനങ്ങൾ, ലൈഫ് സയൻസ് പരീക്ഷണങ്ങൾ തുടങ്ങി 86 പ്രധാന പഠനങ്ങളാണ് ഈ സംഘം നടത്തുക. \n\nചൈനയും പാകിസ്താനും തമ്മിലുള്ള ബഹിരാകാശ സഹകരണവും ഈ ഘട്ടത്തിൽ ശ്രദ്ധേയമാണ്. ഒരു പാകിസ്താനി ബഹിരാകാശ സഞ്ചാരിയെ ഉടൻ തന്നെ ചൈനീസ് പേടകത്തിൽ അയക്കുന്നതിനുള്ള കരാറുകൾ ഇരുരാജ്യങ്ങളും ഒപ്പുവെച്ചിട്ടുണ്ട്. ഇത് മേഖലയിലെ ഭൂരാഷ്ട്രതന്ത്രപരമായ മാറ്റങ്ങൾക്കും കാരണമായേക്കാം. \n\n2030-ഓടെ ചന്ദ്രനിൽ മനുഷ്യനെ എത്തിക്കാനുള്ള ചൈനയുടെ വലിയ ലക്ഷ്യത്തിലേക്കുള്ള പ്രധാന ചുവടുവെപ്പാണിത്. നിലവിൽ അന്താരാഷ്ട്ര ബഹിരാകാശ നിലയം (ISS) 2030-ഓടെ പ്രവർത്തനം നിർത്താനിരിക്കെ, ബഹിരാകാശ രംഗത്ത് ചൈനയുടെ ആധിപത്യം വർധിക്കുമോ എന്നതാണ് ലോകം ഉറ്റുനോക്കുന്നത്. അമേരിക്കയുടെ നാസയ്ക്ക് ചൈന വലിയ വെല്ലുവിളി ഉയർത്തുന്നു എന്നതിൽ തർക്കമില്ല. \n\nഅമേരിക്കയെ മറികടന്ന് ബഹിരാകാശത്തെ ഏക ശക്തിയായി ചൈന മാറുമോ അതോ ഈ മത്സരം മനുഷ്യരാശിക്ക് പുതിയ കണ്ടെത്തലുകൾ നൽകുമോ?\n\n#Shenzhou19 #ChinaSpace #SpaceNews #Tiangong #Astronomy #Technology #Science #ChinaPakistan"
 }
