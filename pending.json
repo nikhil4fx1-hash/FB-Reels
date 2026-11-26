@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795659512.3415515,
- "offset": 141181833,
- "topic": "ചൈനയുടെ ഷെൻഷൗ 24 ദൗത്യം; ബഹിരാകാശത്ത് പുതിയ ചരിത്രം",
+ "status": "waiting_media",
+ "created": 1795677082.6945076,
+ "offset": 141181834,
+ "topic": "സ്വർണവിലയിൽ വൻ ഇടിവ്; ഞെട്ടിച്ച് വിപണി",
  "suggested_at": 1795676956.8720582,
  "seen_topics": [
   "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ",
@@ -38,98 +38,71 @@
   "റാസ് അൽ ഖൈമ അപകടം; മലയാളികൾ ഉൾപ്പെടെ മരിച്ചവരുടെ വിവരങ്ങൾ പുറത്ത്",
   "ഷെയ്ഖ് ഹസീനയുടെ തിരിച്ചുവരവ്; ഡിസംബർ 16 തീയതി പ്രഖ്യാപിച്ചു"
  ],
- "context": "രണ്ട് ചൈനീസ് and ഒരു പാക്കിസ്ഥാൻ ബഹിരാകാശ സഞ്ചാരികളുമായി ഷെൻഷൗ 24 വിക്ഷേപിച്ചു",
+ "context": "ഇന്ത്യയിൽ സ്വർണവിലയിൽ വൻ ഇടിവുണ്ടായതായി റിപ്പോർട്ട്.",
  "scenes": [
   {
-   "narration": "ബഹിരാകാശത്ത് അമേരിക്കയെപ്പോലും അമ്പരപ്പിച്ചുകൊണ്ട് ചൈനയുടെ പുതിയ പടയോട്ടം! ഷെൻഷൗ-19 ദൗത്യം ചരിത്രമാകുന്നത് എന്തുകൊണ്ടാണ്?",
-   "keywords": "rocket launch space",
-   "image_prompt": "Cinematic shot of a Chinese Long March rocket lifting off from a desert launchpad at night, bright orange flames, high contrast, 8k resolution.",
-   "wiki_title": "Shenzhou 19"
+   "narration": "സ്വർണം വാങ്ങാൻ കാത്തിരുന്നവർക്ക് ആശ്വാസമായി ചരിത്രത്തിലെ വലിയ ഇടിവ്! എന്താണ് വിപണിയിൽ സംഭവിക്കുന്നത്?",
+   "keywords": [
+    "gold price drop",
+    "shocked woman"
+   ],
+   "image_prompt": "A close-up of a shocked Indian woman looking at a gold price ticker showing a downward trend, cinematic lighting, photorealistic",
+   "wiki_title": "Gold as an investment"
   },
   {
-   "narration": "ഒക്ടോബർ 30-ന് ഗോബി മരുഭൂമിയിലെ ജിയുക്വാൻ ലോഞ്ച് സെന്ററിൽ നിന്നാണ് മൂന്ന് ബഹിരാകാശ സഞ്ചാരികളുമായി ഷെൻഷൗ-19 കുതിച്ചുയർന്നത്.",
-   "keywords": "satellite launch center",
-   "image_prompt": "Wide angle view of Jiuquan Satellite Launch Center in the Gobi Desert, futuristic technology, rocket on the pad, daytime.",
-   "wiki_title": "Jiuquan Satellite Launch Center"
+   "narration": "ഇന്ത്യൻ വിപണിയിൽ സ്വർണവിലയിൽ സമീപകാലത്തായി വൻ ഇടിവാണ് രേഖപ്പെടുത്തിയിരിക്കുന്നത്. ഗ്രാമിനും പവനും വില കുത്തനെ കുറഞ്ഞു.",
+   "keywords": [
+    "gold coins",
+    "falling chart"
+   ],
+   "image_prompt": "A digital stock market chart displaying a sharp downward trend in gold prices over a background of gold bars, professional financial design",
+   "wiki_title": "Gold"
   },
   {
-   "narration": "സീനിയർ കമാൻഡർ ചായ് ഷുഷെ നയിക്കുന്ന സംഘത്തിൽ രണ്ടു യുവ സഞ്ചാരികളാണുള്ളത്. ഇതിൽ വാങ് ഹാവോസെ എന്ന വനിത പുതിയ ചരിത്രമെഴുതി.",
-   "keywords": "astronauts crew portrait",
-   "image_prompt": "Three Chinese astronauts in white spacesuits, smiling, holding helmets, standing in front of a blue background with mission patches.",
-   "wiki_title": "Cai Xuzhe"
+   "narration": "കഴിഞ്ഞ ദിവസങ്ങളെ അപേക്ഷിച്ച് പവന് നൂറുകണക്കിന് രൂപയുടെ കുറവാണ് ഉണ്ടായിരിക്കുന്നത്. ഉപഭോക്താക്കൾക്ക് ഇതൊരു വലിയ ആശ്വാസമാണ്.",
+   "keywords": [
+    "jewellery shop",
+    "india market"
+   ],
+   "image_prompt": "A crowded Indian jewellery shop window with price boards showing reduced rates, bright daylight, realistic photography",
+   "wiki_title": "Economy of India"
   },
   {
-   "narration": "ചൈനയുടെ ആദ്യ ബഹിരാകാശ പേടക എഞ്ചിനീയറാണ് വാങ് ഹാവോസെ. ബഹിരാകാശത്തെത്തുന്ന മൂന്നാമത്തെ ചൈനീസ് വനിതയും ഇവർ തന്നെ.",
-   "keywords": "female astronaut engineer",
-   "image_prompt": "Close up portrait of Wang Haoze in a professional space suit, looking determined, tech-filled space station background.",
-   "wiki_title": "Wang Haoze"
+   "narration": "അന്താരാഷ്ട്ര വിപണിയിലെ മാറ്റങ്ങളും യുഎസ് ഡോളറിന്റെ മൂല്യത്തിലുള്ള വ്യതിയാനങ്ങളുമാണ് ഈ വിലത്തളർച്ചയ്ക്ക് പ്രധാന കാരണം.",
+   "keywords": [
+    "global market",
+    "us dollar"
+   ],
+   "image_prompt": "A conceptual image showing US dollar currency symbols alongside gold bars and global financial data screens, professional lighting",
+   "wiki_title": "Gold standard"
   },
   {
-   "narration": "ആറുമാസം ഇവർ ടിയാങ്കോങ് ബഹിരാകാശ നിലയത്തിൽ ചെലവഴിക്കും. 86 ശാസ്ത്ര പരീക്ഷണങ്ങളാണ് ഈ ദൗത്യത്തിന്റെ ലക്ഷ്യം.",
-   "keywords": "space station interior",
-   "image_prompt": "Interior of the Tiangong Space Station, futuristic white modules, scientific equipment, floating objects in zero gravity.",
-   "wiki_title": "Tiangong space station"
+   "narration": "കൂടാതെ, നിക്ഷേപകർ സ്വർണത്തിൽ നിന്ന് മറ്റ് ആസ്തികളിലേക്ക് ശ്രദ്ധ മാറ്റുന്നതും ആഗോള തലത്തിൽ വില കുറയാൻ കാരണമായി.",
+   "keywords": [
+    "stock exchange",
+    "financial traders"
+   ],
+   "image_prompt": "Stock market traders looking at computer screens with red downward graphs in a busy trading floor, dramatic atmosphere",
+   "wiki_title": "Stock exchange"
   },
   {
-   "narration": "ചൈനയുടെ ഈ നേട്ടം പാകിസ്താൻ അടക്കമുള്ള രാജ്യങ്ങൾക്കും പ്രതീക്ഷ നൽകുന്നുണ്ട്. ഒരു പാകിസ്താനി സഞ്ചാരിയെ ബഹിരാകാശത്തെത്തിക്കാൻ ചൈനയുമായി ധാരണയായിട്ടുണ്ട്.",
-   "keywords": "china pakistan flags",
-   "image_prompt": "Digital art showing the flags of China and Pakistan side by side against a starry space background.",
-   "wiki_title": "China National Space Administration"
+   "narration": "വിപണി വിദഗ്ധരുടെ അഭിപ്രായത്തിൽ, ഇത് താൽക്കാലികമായ ഇടിവ് മാത്രമാണോ അതോ വില ഇനിയും താഴേക്ക് പോകുമോ എന്നതിൽ ആശങ്കയുണ്ട്.",
+   "keywords": [
+    "expert analysis",
+    "financial graph"
+   ],
+   "image_prompt": "An Indian financial analyst pointing at a digital screen displaying fluctuating gold price trends in a modern office, sharp focus",
+   "wiki_title": "Financial market"
   },
   {
-   "narration": "അടുത്ത പത്തുവർഷത്തിനുള്ളിൽ ചന്ദ്രനിൽ മനുഷ്യനെ ഇറക്കാനാണ് ചൈന ലക്ഷ്യമിടുന്നത്. അമേരിക്കയുടെ നാസയുമായുള്ള കടുത്ത മത്സരമാണിവിടെ നടക്കുന്നത്.",
-   "keywords": "moon mission concept",
-   "image_prompt": "Concept art of a Chinese lunar lander on the moon's surface, Earth visible in the black sky, cinematic lighting.",
-   "wiki_title": "Chinese Lunar Exploration Program"
-  },
-  {
-   "narration": "അന്താരാഷ്ട്ര ബഹിരാകാശ നിലയം ഉടൻ വിരമിക്കാനിരിക്കെ, ചൈനയുടെ ടിയാങ്കോങ് മാത്രമായിരിക്കുമോ ഇനി ബഹിരാകാശത്തെ ഏക ആശ്രയം?",
-   "keywords": "international space station",
-   "image_prompt": "The International Space Station orbiting Earth, sunlight reflecting off solar panels, deep space background.",
-   "wiki_title": "International Space Station"
+   "narration": "വില കുറഞ്ഞ ഈ അവസരം ഉപയോഗിച്ച് സ്വർണം വാങ്ങണോ, അതോ വില വീണ്ടും ഇടിയാൻ കാത്തിരിക്കണോ?",
+   "keywords": [
+    "gold necklace",
+    "investment decision"
+   ],
+   "image_prompt": "A luxurious gold necklace displayed on a velvet surface with a thoughtful person blurred in the background, elegant macro shot",
+   "wiki_title": "Gold as an investment"
   }
  ],
- "caption": "ബഹിരാകാശത്ത് ചൈനയുടെ കരുത്തുറ്റ കുതിപ്പ്! 🚀\n\nചൈനയുടെ ബഹിരാകാശ പദ്ധതിയിലെ നിർണ്ണായക നാഴികക്കല്ലായ ഷെൻഷൗ-19 (Shenzhou-19) ദൗത്യം വിജയകരമായി വിക്ഷേപിച്ചു. 2024 ഒക്ടോബർ 30-ന് ഗോബി മരുഭൂമിയിലെ ജിയുക്വാൻ സാറ്റലൈറ്റ് ലോഞ്ച് സെന്ററിൽ നിന്നാണ് ദൗത്യം ആരംഭിച്ചത്. \n\nമൂന്ന് പേടങ്ങുന്ന സംഘത്തെ നയിക്കുന്നത് പരിചയസമ്പന്നനായ ചായ് ഷുഷെയാണ്. സോങ് ലിംഗ്‌ഡോംഗ്, വാങ് ഹാവോസെ എന്നിവരാണ് കൂടെയുള്ളത്. ഇതിൽ വാങ് ഹാവോസെ ചൈനയുടെ ആദ്യത്തെ ബഹിരാകാശ പേടക എഞ്ചിനീയറാണെന്ന പ്രത്യേകതയുമുണ്ട്. ബഹിരാകാശത്തെത്തുന്ന മൂന്നാമത്തെ ചൈനീസ് വനിതയാണ് ഇവർ. \n\nഅടുത്ത ആറുമാസം ഇവർ ചൈനയുടെ സ്വന്തം ബഹിരാകാശ നിലയമായ 'ടിയാങ്കോങ്ങി'ൽ (Tiangong Space Station) ചെലവഴിക്കും. ബഹിരാകാശത്തെ നിർമ്മാണ പ്രവർത്തനങ്ങൾ, ലൈഫ് സയൻസ് പരീക്ഷണങ്ങൾ തുടങ്ങി 86 പ്രധാന പഠനങ്ങളാണ് ഈ സംഘം നടത്തുക. \n\nചൈനയും പാകിസ്താനും തമ്മിലുള്ള ബഹിരാകാശ സഹകരണവും ഈ ഘട്ടത്തിൽ ശ്രദ്ധേയമാണ്. ഒരു പാകിസ്താനി ബഹിരാകാശ സഞ്ചാരിയെ ഉടൻ തന്നെ ചൈനീസ് പേടകത്തിൽ അയക്കുന്നതിനുള്ള കരാറുകൾ ഇരുരാജ്യങ്ങളും ഒപ്പുവെച്ചിട്ടുണ്ട്. ഇത് മേഖലയിലെ ഭൂരാഷ്ട്രതന്ത്രപരമായ മാറ്റങ്ങൾക്കും കാരണമായേക്കാം. \n\n2030-ഓടെ ചന്ദ്രനിൽ മനുഷ്യനെ എത്തിക്കാനുള്ള ചൈനയുടെ വലിയ ലക്ഷ്യത്തിലേക്കുള്ള പ്രധാന ചുവടുവെപ്പാണിത്. നിലവിൽ അന്താരാഷ്ട്ര ബഹിരാകാശ നിലയം (ISS) 2030-ഓടെ പ്രവർത്തനം നിർത്താനിരിക്കെ, ബഹിരാകാശ രംഗത്ത് ചൈനയുടെ ആധിപത്യം വർധിക്കുമോ എന്നതാണ് ലോകം ഉറ്റുനോക്കുന്നത്. അമേരിക്കയുടെ നാസയ്ക്ക് ചൈന വലിയ വെല്ലുവിളി ഉയർത്തുന്നു എന്നതിൽ തർക്കമില്ല. \n\nഅമേരിക്കയെ മറികടന്ന് ബഹിരാകാശത്തെ ഏക ശക്തിയായി ചൈന മാറുമോ അതോ ഈ മത്സരം മനുഷ്യരാശിക്ക് പുതിയ കണ്ടെത്തലുകൾ നൽകുമോ?\n\n#Shenzhou19 #ChinaSpace #SpaceNews #Tiangong #Astronomy #Technology #Science #ChinaPakistan",
- "suggestions": [
-  {
-   "topic": "സ്വർണവിലയിൽ വൻ ഇടിവ്; ഞെട്ടിച്ച് വിപണി",
-   "context": "ഇന്ത്യയിൽ സ്വർണവിലയിൽ വൻ ഇടിവുണ്ടായതായി റിപ്പോർട്ട്.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "സഞ്ജു സാംസൺ കേരള ടീമിൽ; സയ്യിദ് മുഷ്താഖ് അലി ട്രോഫി",
-   "context": "കേരളവും അസമും തമ്മിലുള്ള സയ്യിദ് മുഷ്താഖ് അലി ട്രോഫി മത്സരം.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ഐപിഎൽ ലേലം: 13-കാരൻ സൂര്യവംശിയെ വിളിച്ച കഥ പുറത്തുവിട്ട് രാജസ്ഥാൻ",
-   "context": "സൂര്യവംശിക്ക് ഐപിഎൽ ലേലത്തിനുശേഷം ലഭിച്ച ആദ്യ ഫോൺ കോൾ പങ്കുവെച്ച് രാജസ്ഥാൻ റോയൽസ്.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ചീമേനി കൊലപാതകം: വിവാദ ഭീഷണി പ്രസംഗവുമായി നേതാവ്",
-   "context": "ധനരാജ് വധവുമായി ബന്ധപ്പെട്ട് ചീമേനി കൊലപാതകത്തിൽ വിവാദ പ്രസംഗം.",
-   "where": "News"
-  },
-  {
-   "topic": "ഭാര്യയുടെ വിഷപ്രയോഗം; ഇൻഷുറൻസ് തുകയ്ക്കായി നടത്തിയ നാടകം",
-   "context": "ഭര്‍ത്താവിന് നൽകിയ വിഷപ്രയോഗത്തിലൂടെ 8 കോടിയുടെ സ്വത്തും ഇൻഷുറൻസും ലക്ഷ്യമിട്ട ഭാര്യ പിടിയിൽ.",
-   "where": "News"
-  },
-  {
-   "topic": "വൈറ്റിലയിലെ ഇരട്ട ടവർ ഫ്ലാറ്റുകൾ സ്ഫോടനത്തിലൂടെ പൊളിച്ചുമാറ്റും",
-   "context": "വൈറ്റില ചന്ദർകുഞ്ജ് ഫ്ലാറ്റ് മാർച്ച് മാസം സ്ഫോടനത്തിലൂടെ പൊളിക്കും.",
-   "where": "News"
-  },
-  {
-   "topic": "റാസ് അൽ ഖൈമ അപകടം; മലയാളികൾ ഉൾപ്പെടെ മരിച്ചവരുടെ വിവരങ്ങൾ പുറത്ത്",
-   "context": "റാസ് അൽ ഖൈമയിലുണ്ടായ ബസ്-ട്രക്ക് അപകടത്തിൽ മരിച്ച മലയാളികളുടെ വിവരങ്ങൾ തിരിച്ചറിഞ്ഞു.",
-   "where": "News"
-  },
-  {
-   "topic": "ഷെയ്ഖ് ഹസീനയുടെ തിരിച്ചുവരവ്; ഡിസംബർ 16 തീയതി പ്രഖ്യാപിച്ചു",
-   "context": "ഷെയ്ഖ് ഹസീന ഡിസംബർ 16-ന് തിരികെ എത്തുമെന്ന് പ്രഖ്യാപിച്ചതായി റിപ്പോർട്ട്.",
-   "where": "Google Trends"
-  }
- ]
+ "caption": "📉 സ്വർണവിലയിൽ വൻ ഇടിവ്; ഞെട്ടിച്ച് വിപണി!\n\nഇന്ത്യൻ വിപണിയിൽ സ്വർണവിലയിൽ സമീപകാലത്തായി വലിയ ഇടിവാണ് രേഖപ്പെടുത്തിയിരിക്കുന്നത്. സ്വർണം വാങ്ങാൻ ആഗ്രഹിക്കുന്നവർക്ക് വലിയ ആശ്വാസം നൽകുന്നതാണ് പുതിയ കണക്കുകൾ.\n\nകഴിഞ്ഞ ദിവസങ്ങളെ അപേക്ഷിച്ച് പവന് ഗണ്യമായ കുറവാണ് ഉണ്ടായിരിക്കുന്നത്. അന്താരാഷ്ട്ര വിപണിയിലെ മാറ്റങ്ങളും, യുഎസ് ഡോളറിന്റെ മൂല്യത്തിലുള്ള വ്യതിയാനങ്ങളും, ആഗോളതലത്തിലുള്ള സാമ്പത്തിക പ്രവണതകളുമാണ് സ്വർണവില ഇടിയാൻ പ്രധാന കാരണമായി വിലയിരുത്തപ്പെടുന്നത്.\n\nസാധാരണക്കാർക്കും വിവാഹ ആവശ്യങ്ങൾക്കായി സ്വർണം മുൻകൂട്ടി ബുക്ക് ചെയ്തവർക്കും ഈ വിലയിടിവ് വലിയ ആശ്വാസമാകുമ്പോൾ, നിക്ഷേപകരിൽ ഇത് ചെറിയ തോതിൽ ആശങ്കയും ഉണ്ടാക്കുന്നുണ്ട്. ഈ വിലക്കുറവ് വിപണിയിലെ താൽക്കാലിക പ്രതിഭാസം മാത്രമാണോ അതോ വരും ദിവസങ്ങളിലും വില താഴേക്ക് പോകുമോ എന്ന കാര്യത്തിൽ വിദഗ്ധർക്കിടയിൽ ഭിന്നാഭിപ്രായമുണ്ട്.\n\nഈ വിലയിടിയുന്ന സാഹചര്യം മുതലെടുത്ത് ഇപ്പോൾ തന്നെ സ്വർണം വാങ്ങുന്നതാണോ ബുദ്ധി, അതോ വില ഇനിയും കുറയാൻ കാത്തിരിക്കുന്നതാണോ സുരക്ഷിതം?\n\n#GoldPrice #GoldRate #KeralaGold #GoldMarket #FinancialNews #GoldInvestment #MarketUpdate"
 }
