@@ -168,18 +168,23 @@ def main():
     if not TOKEN or not CHAT:
         print("❌ TELEGRAM secrets missing")
         sys.exit(1)
+    manual = len(sys.argv) > 1 and sys.argv[1] == "manual"   # you asked for it on Telegram
     state = load_state() or {"status": "idle", "offset": 0}
     if state.get("status") in BUSY:
         print(f"ഒരു റീൽ പുരോഗമിക്കുന്നു ({state.get('status')}), നിർദ്ദേശങ്ങൾ ഒഴിവാക്കി.")
+        if manual:
+            tg_send("⏳ ഒരു റീൽ ഇപ്പോൾ തയ്യാറാകുന്നു. കഴിഞ്ഞ ശേഷം 'trends' വീണ്ടും അയക്കൂ.")
         return
 
     print("📡 ട്രെൻഡിങ് വിവരങ്ങൾ ശേഖരിക്കുന്നു...")
     trends, news = fetch_google_trends(), fetch_news()
     print(f"   trends: {len(trends)} | news: {len(news)}")
     seen = state.get("seen_topics", [])
-    topics = pick_topics(trends, news, seen)
+    topics = pick_topics(trends, news, [] if manual else seen)   # on request: show everything again
     if not topics:
         print("പുതിയ വിഷയങ്ങളൊന്നുമില്ല.")
+        if manual:
+            tg_send("ഇപ്പോൾ ട്രെൻഡിങ് വിഷയങ്ങളൊന്നും കിട്ടിയില്ല. കുറച്ച് കഴിഞ്ഞ് വീണ്ടും 'trends' അയക്കൂ.")
         return
 
     now_ist = datetime.utcnow() + timedelta(hours=5, minutes=30)

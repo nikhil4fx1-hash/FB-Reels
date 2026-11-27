@@ -11,7 +11,7 @@ STATE_FILE = "pending.json"
 EXPIRE_HOURS = 24
 REEL_WORDS = ("reel", "/reel", "post", "/post", "done", "/done")
 CANCEL_WORDS = ("cancel", "/cancel")
-TRENDING_WORDS = ("trending", "/trending")
+SUGGEST_WORDS = ("trends", "/trends", "trending", "/trending", "news", "/news", "suggest", "/suggest")
 IGNORE = {"yes", "y", "no", "n", "hi", "hii", "hello", "hey", "ok", "okay", "thanks", "thank you", "/start", "/help"}
 WORKER_URL = (os.environ.get("WORKER_URL") or "").rstrip("/")
 WORKER_API_KEY = os.environ.get("WORKER_API_KEY") or ""
@@ -82,9 +82,12 @@ def main():
 
     updates = get_updates(state.get("offset", 0))
     media_count, last_id = 0, None
+    handled = set(state.get("handled", []))
     for u in updates:
         uid = u["update_id"]
         last_id = uid
+        if uid in handled:
+            continue
         m = u.get("message") or {}
         if str(m.get("chat", {}).get("id")) != str(CHAT):
             continue
@@ -110,14 +113,25 @@ def main():
             save(state)
             return out("plan")
 
+        # ---- command: show the latest trending topics right now ----
+        if low in SUGGEST_WORDS:
+            if status == "waiting_media":       # photos are being collected: don't overwrite anything
+                say("⏳ ഒരു റീൽ ഫോട്ടോകൾക്കായി കാത്തിരിക്കുന്നു. ഫോട്ടോ അയച്ച് 'reel' അയക്കൂ, "
+                    "അല്ലെങ്കിൽ 'cancel' അയച്ച ശേഷം 'trends' അയക്കൂ.")
+                state["handled"] = (state.get("handled", []) + [uid])[-50:]
+                save(state)
+                continue
+            state["offset"] = uid + 1
+            save(state)
+            return out("suggest")
+
         # ---- does this message start a new reel? ----
         new_topic = None
-        if low in TRENDING_WORDS:
-            new_topic = ""
-        elif low.startswith("/new "):
+        if low.startswith("/new "):
             new_topic = text[5:].strip()
         elif (status in IDLE and text and not text.startswith("/") and low not in IGNORE
-              and low not in REEL_WORDS and low not in CANCEL_WORDS and not low.rstrip(".)").isdigit()):
+              and low not in REEL_WORDS and low not in CANCEL_WORDS and low not in SUGGEST_WORDS
+              and not low.rstrip(".)").isdigit()):
             new_topic = text
         if new_topic is not None:
             state.update(status="planning", topic=new_topic, context="", offset=uid + 1, created=time.time())
