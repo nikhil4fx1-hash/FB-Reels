@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795794844.7825615,
- "offset": 141181885,
- "topic": "റോയൽ എൻഫീൽഡിന്റെ ഹിമാലയൻ 750 വിപണിയിൽ എത്തി",
+ "status": "waiting_media",
+ "created": 1795802188.0349503,
+ "offset": 141181886,
+ "topic": "രോഹിത് ശർമ വീണ്ടും മുംബൈ ഇന്ത്യൻസ് ക്യാപ്റ്റൻ",
  "suggested_at": 1795802013.0611925,
  "seen_topics": [
   "ലോക വിപണിയെ ഞെട്ടിച്ച് ട്രംപിന്റെ പുതിയ താരിഫ് പ്രഖ്യാപനം",
@@ -66,113 +66,68 @@
   "ജർമനിയിലെ വിചിത്രമായ പിഴയീടാക്കൽ വാർത്ത",
   "രാഷ്ട്രീയരംഗത്തെ പുതിയ വാക്പോരുകൾ"
  ],
- "context": "ആകർഷകമായ ഫീച്ചറുകളോടെ എത്തിയ പുതിയ ബൈക്കിന്റെ പ്രാരംഭ വില 4.89 ലക്ഷം രൂപ.",
+ "context": "ഐപിഎല്ലില്‍ രോഹിത് ശർമയെ വീണ്ടും മുംബൈ ഇന്ത്യൻസ് നായകനായി പ്രഖ്യാപിച്ചു",
  "scenes": [
   {
-   "narration": "റോയൽ എൻഫീൽഡ് പ്രേമികളുടെ കാത്തിരിപ്പിന് വിരാമമിട്ട് പുതിയൊരു ഭീമൻ വിപണിയിലെത്തി!",
+   "narration": "രോഹിത് ശർമ വീണ്ടും മുംബൈ ഇന്ത്യൻസിന്റെ ക്യാപ്റ്റൻ കസേരയിലേക്ക്!\nഇതെന്ത് നാടകമാണ്?",
    "keywords": [
-    "Royal Enfield",
-    "motorcycle launch"
+    "Rohit Sharma",
+    "Mumbai Indians",
+    "captaincy"
    ],
-   "image_prompt": "A cinematic close-up shot of a powerful Royal Enfield motorcycle headlight glowing in a misty mountain background, dramatic lighting.",
-   "wiki_title": "Royal Enfield"
+   "image_prompt": "Cinematic portrait of Rohit Sharma looking intense in a Mumbai Indians jersey, dramatic stadium lighting, 4k",
+   "wiki_title": "Rohit Sharma"
   },
   {
-   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം റോയൽ എൻഫീൽഡിന്റെ പുതിയ ഹിമാലയൻ മോഡൽ വിപണിയിൽ തരംഗം സൃഷ്ടിക്കാൻ എത്തിയിരിക്കുകയാണ്.",
+   "narration": "കഴിഞ്ഞ ഐപിഎൽ സീസണിൽ ഹാർദിക് പാണ്ഡ്യയെ നായകനാക്കിയത് വലിയ വിവാദങ്ങൾക്ക് വഴിവെച്ചിരുന്നു.\nകടുത്ത ആരാധകരോഷവും ടീമിലെ ചേരിപ്പോരും പരസ്യമായ രഹസ്യമായിരുന്നു.",
    "keywords": [
-    "adventure bike",
-    "off road"
+    "Hardik Pandya",
+    "IPL",
+    "controversy"
    ],
-   "image_prompt": "An adventure motorcycle cruising through a rugged mountain terrain with dirt tracks, realistic photography, sunny day.",
+   "image_prompt": "Hardik Pandya looking thoughtful in Mumbai Indians kit on the cricket ground, realistic sports photography",
+   "wiki_title": "Hardik Pandya"
+  },
+  {
+   "narration": "എന്നാൽ പുതിയ സീസണിന് മുന്നോടിയായി മുംബൈ ഫ്രാഞ്ചൈസി വീണ്ടും നിലപാട് മാറ്റുകയാണ്.\nരോഹിത് ശർമയെ നായകസ്ഥാനത്തേക്ക് തിരികെ കൊണ്ടുവന്നതായി റിപ്പോർട്ടുകൾ വ്യക്തമാക്കുന്നു.",
+   "keywords": [
+    "Cricket team",
+    "announcement",
+    "news"
+   ],
+   "image_prompt": "Mumbai Indians team logo and cricket stadium packed with fans, vibrant atmosphere, digital art",
+   "wiki_title": "Mumbai Indians"
+  },
+  {
+   "narration": "അഞ്ച് ഐപിഎൽ കിരീടങ്ങൾ മുംബൈക്ക് സമ്മാനിച്ച ക്യാപ്റ്റനാണ് രോഹിത്.\nഅദ്ദേഹത്തിന്റെ അനുഭവസമ്പത്ത് ടീമിന് വീണ്ടും കരുത്താകുമെന്നാണ് മാനേജ്‌മെന്റിന്റെ വിലയിരുത്തൽ.",
+   "keywords": [
+    "Trophy",
+    "victory",
+    "celebration"
+   ],
+   "image_prompt": "Rohit Sharma lifting the IPL trophy with a joyful expression, confetti falling, sports photography",
+   "wiki_title": "Indian Premier League"
+  },
+  {
+   "narration": "ഈ മാറ്റം ഹാർദിക് പാണ്ഡ്യയുടെ ടീമിലെ ഭാവിയെ എങ്ങനെ ബാധിക്കും?\nഅല്ലെങ്കിൽ ഇതൊരു തന്ത്രപരമായ തീരുമാനമാണോ?",
+   "keywords": [
+    "Discussion",
+    "cricket strategy",
+    "players"
+   ],
+   "image_prompt": "Two cricket players shaking hands on the field, sunset lighting, professional sports atmosphere",
    "wiki_title": ""
   },
   {
-   "narration": "ആകർഷകമായ ഫീച്ചറുകളോടെ എത്തിയ ഈ അടിപൊളി ബൈക്കിന്റെ പ്രാരംഭ വില 4.89 ലക്ഷം രൂപയാണ്.",
+   "narration": "മുംബൈ ഇന്ത്യൻസിന്റെ ഈ പുതിയ പടപ്പുറപ്പാട് വരാനിരിക്കുന്ന ഐപിഎൽ സീസണിൽ വലിയ മാറ്റങ്ങൾക്ക് വഴിയൊരുക്കുമെന്നുറപ്പാണ്.",
    "keywords": [
-    "price tag",
-    "bike dashboard"
+    "Stadium",
+    "match day",
+    "excitement"
    ],
-   "image_prompt": "A close-up of a modern motorcycle digital instrument cluster and handlebars, high-tech display glowing.",
-   "wiki_title": ""
-  },
-  {
-   "narration": "ദീർഘദൂര യാത്രകൾ ഇഷ്ടപ്പെടുന്ന റൈഡേഴ്സിനെ ലക്ഷ്യമിട്ടാണ് കമ്പനി ഈ പുതിയ വാഹനം അവതരിപ്പിച്ചിരിക്കുന്നത്.",
-   "keywords": [
-    "long ride",
-    "biker touring"
-   ],
-   "image_prompt": "A biker wearing riding gear riding a heavy adventure motorcycle on a highway stretching towards distant hills.",
-   "wiki_title": ""
-  },
-  {
-   "narration": "ശക്തമായ എൻജിനും മികച്ച ഗ്രൗണ്ട് ക്ലിയറൻസും ഇതിന്റെ പ്രധാന പ്രത്യേകതകളിൽ ഉൾപ്പെടുന്നു.",
-   "keywords": [
-    "engine power",
-    "motorcycle parts"
-   ],
-   "image_prompt": "Detailed shot of a powerful motorcycle engine block with metallic finish and branding, studio lighting.",
-   "wiki_title": ""
-  },
-  {
-   "narration": "ഈ പ്രീമിയം വില നിലവാരത്തിൽ മറ്റ് വമ്പൻമാരായ ബ്രാൻഡുകളോട് ഇത് കടുത്ത മത്സരം കാഴ്ചവെക്കേണ്ടി വരും.",
-   "keywords": [
-    "motorcycle market",
-    "competition"
-   ],
-   "image_prompt": "Two different modern adventure motorcycles parked side by side in a showroom, professional automotive photography.",
-   "wiki_title": ""
-  },
-  {
-   "narration": "ഏതായാലും അഞ്ച് ലക്ഷത്തോളം രൂപ മുടക്കി ഈ ബൈക്ക് സ്വന്തമാക്കാൻ റൈഡേഴ്സ് തയ്യാറാകുമോ എന്നതാണ് ഇപ്പോൾ ഉയരുന്ന പ്രധാന ചോദ്യം.",
-   "keywords": [
-    "biker thinking",
-    "showroom bike"
-   ],
-   "image_prompt": "A motorcycle enthusiast looking thoughtfully at a new adventure bike in a bright modern showroom, cinematic depth of field.",
-   "wiki_title": ""
+   "image_prompt": "Wankhede stadium packed with cheering cricket fans holding blue flags, night match, cinematic shot",
+   "wiki_title": "Wankhede Stadium"
   }
  ],
- "caption": "ചെന്നൈ ആസ്ഥാനമായുള്ള പ്രശസ്ത ഇരുചക്ര വാഹന നിർമാതാക്കളായ റോയൽ എൻഫീൽഡിന്റെ പുതിയ അഡ്വഞ്ചർ ബൈക്ക് വിപണിയിൽ എത്തിയത് വലിയ ചർച്ചയായിരിക്കുകയാണ്.\n\nറിപ്പോർട്ടുകൾ പ്രകാരം റോയൽ എൻഫീൽഡിന്റെ പുതിയ ഹിമാലയൻ ശ്രേണിയിലെ മോഡൽ ആകർഷകമായ ഫീച്ചറുകളോടെയാണ് വിപണിയിൽ എത്തിയിരിക്കുന്നത്. ലോഞ്ച് ചെയ്ത ഈ പുതിയ ബൈക്കിന്റെ പ്രാരംഭ വില 4.89 ലക്ഷം രൂപയാണ്.\n\nദീർഘദൂര യാത്രകളും ഓഫ്-റോഡിംഗും ഇഷ്ടപ്പെടുന്ന റൈഡേഴ്സിനെ ലക്ഷ്യമിട്ടാണ് ഈ വാഹനം രൂപകൽപ്പന ചെയ്തിരിക്കുന്നത്. ശക്തമായ എൻജിൻ പ്രകടനവും റൈഡിംഗ് കംഫർട്ടും ഈ വാഹനത്തെ സവിശേഷമാക്കുന്നു.\n\nഎന്നാൽ അഞ്ച് ലക്ഷത്തോളം രൂപ പ്രാരംഭ വില വരുന്ന ഈ പ്രീമിയം മോഡൽ ആഗോളതലത്തിലും ഇന്ത്യൻ വിപണിയിലും മറ്റ് വമ്പൻ അഡ്വഞ്ചർ ബൈക്കുകളോട് കടുത്ത മത്സരം നേരിടേണ്ടി വരുമെന്ന് ഓട്ടോമൊബൈൽ വിദഗ്ധർ വിലയിരുത്തുന്നു.\n\nഈ വില നിലവാരത്തിൽ റോയൽ എൻഫീൽഡ് ഹിമാലയൻ ശ്രേണിയിലെ ഈ പുതിയ മോഡൽ ഇന്ത്യൻ റൈഡേഴ്സിന്റെ പ്രതീക്ഷകൾ എത്രത്തോളം നിറവേറ്റുമെന്ന് കാത്തിരുന്ന് കാണേണ്ടതുണ്ട്.\n\n#RoyalEnfield #Himalayan #BikeLaunch #AdventureBike #AutoNews #MalayalamNews #Motorcycles",
- "suggestions": [
-  {
-   "topic": "രോഹിത് ശർമ വീണ്ടും മുംബൈ ഇന്ത്യൻസ് ക്യാപ്റ്റൻ",
-   "context": "ഐപിഎല്ലില്‍ രോഹിത് ശർമയെ വീണ്ടും മുംബൈ ഇന്ത്യൻസ് നായകനായി പ്രഖ്യാപിച്ചു",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "മണ്ഡലപുനർനിർണയ ബില്ലിന് കേന്ദ്ര മന്ത്രിസഭയുടെ അംഗീകാരം",
-   "context": "ചർച്ചകൾക്ക് വഴിയൊരുക്കി പുതിയ മണ്ഡലപുനർനിർണയ ബില്ലിന് കേന്ദ്ര മന്ത്രിസഭ അനുമതി നൽകി",
-   "where": "News"
-  },
-  {
-   "topic": "തിരുപ്പറകുൺട്രം ദീപം: സുപ്രീം കോടതിയുടെ ഉത്തരവ്",
-   "context": "തമിഴ്‌നാട്ടിലെ തിരുപ്പറകുൺട്രം ദീപത്തൂണിൽ നാളെ തന്നെ ദീപം തെളിയിക്കണമെന്ന് സുപ്രീം കോടതി",
-   "where": "News"
-  },
-  {
-   "topic": "ചിന്നക്കനാലിലെ ചക്കക്കൊമ്പനും വയോധികയും വൈറൽ",
-   "context": "നാടിനെ വിറപ്പിക്കുന്ന ചക്കക്കൊമ്പൻ മരിയമ്മ എന്ന വയോധികയ്ക്ക് കാവലാകുന്ന ദൃശ്യങ്ങൾ വൈറലാകുന്നു",
-   "where": "News"
-  },
-  {
-   "topic": "ആഗോള ഫാഷൻ ബ്രാൻഡുകൾ ഓർഡറുകൾ ഇന്ത്യയിലേക്ക് മാറ്റുന്നു",
-   "context": "ബംഗ്ലാദേശിലെ അശാന്തിയെ തുടർന്ന് പ്രമുഖ ആഗോള ഫാഷൻ ബ്രാൻഡുകൾ ഇന്ത്യയിലേക്ക് വരുന്നു",
-   "where": "News"
-  },
-  {
-   "topic": "മലയാളികൾക്ക് നടുക്കമായി ബെംഗളൂരുവിലെ സംഭവം",
-   "context": "ബെംഗളൂരുവിൽ ലോഡ്ജിൽ മലയാളി നഴ്സ് കൊല്ലപ്പെട്ട സംഭവത്തിൽ സുഹൃത്ത് പിടിയിൽ",
-   "where": "News"
-  },
-  {
-   "topic": "ജർമനിയിലെ വിചിത്രമായ പിഴയീടാക്കൽ വാർത്ത",
-   "context": "ജർമനിയിൽ പാർക്കിൽ ഒറ്റയ്ക്ക് ഇരുന്ന യുവതിക്ക് വിചിത്ര കാരണത്താൽ പിഴ ലഭിച്ചു",
-   "where": "News"
-  },
-  {
-   "topic": "രാഷ്ട്രീയരംഗത്തെ പുതിയ വാക്പോരുകൾ",
-   "context": "ടി.ഐ. മധുസൂദനന്റെ പ്രസംഗവും അതിനെതിരെയുള്ള നേതാക്കളുടെ പ്രതികരണങ്ങളും ചർച്ചയാകുന്നു",
-   "where": "News"
-  }
- ]
+ "caption": "ചുളുവില്‍ ക്യാപ്റ്റന്‍സി തിരികെ പിടിച്ചോ രോഹിത്? മുംബൈ ഇന്ത്യന്‍സില്‍ വീണ്ടും വമ്പന്‍ അഴിച്ചുപണി! 🏏\n\nഐപിഎൽ ആരാധകരെ ഞെട്ടിച്ചുകൊണ്ട് മുംബൈ ഇന്ത്യൻസ് ക്യാപ്റ്റൻസിയിൽ വീണ്ടും നിർണായക മാറ്റം. റിപ്പോർട്ടുകൾ പ്രകാരം രോഹിത് ശർമയെ ടീമിന്റെ നായകനായി വീണ്ടും പ്രഖ്യാപിച്ചിരിക്കുകയാണ്. കഴിഞ്ഞ സീസണിൽ ഹാർദിക് പാണ്ഡ്യയെ ക്യാപ്റ്റനായി നിയമിച്ചത് വലിയ ആരാധകരോഷത്തിനും സ്റ്റേഡിയത്തിലെ കൂവലുകൾക്കും ടീമിനുള്ളിലെ അസ്വാരസ്യങ്ങൾക്കും കാരണമായിരുന്നു.\n\nഅഞ്ച് ഐപിഎൽ ട്രോഫികൾ മുംബൈക്ക് സമ്മാനിച്ച രോഹിത് ശർമയുടെ അനുഭവസമ്പത്ത് ടീമിന് തിരികെ ആവശ്യമാണെന്ന തിരിച്ചറിവാണ് ഫ്രാഞ്ചൈസിയെ ഈ തീരുമാനത്തിലേക്ക് നയിച്ചതെന്നാണ് സൂചന. അതേസമയം, കഴിഞ്ഞ വർഷം വലിയ തുക നൽകി ഗുജറാത്ത് ടൈറ്റൻസിൽ നിന്നും ട്രേഡ് ചെയ്തെടുത്ത ഹാർദിക് പാണ്ഡ്യയുടെ പുതിയ പങ്ക് എന്തായിരിക്കുമെന്നത് സംബന്ധിച്ച് വ്യക്തത വന്നിട്ടില്ല.\n\nഒരു ഭാഗത്ത് ആരാധകർ ആഹ്ളാദം കൊള്ളുമ്പോൾ, മറുവശത്ത് മുൻ ക്യാപ്റ്റനും നിലവിലെ ക്യാപ്റ്റനും തമ്മിലുള്ള ഈ മാറ്റം ടീമിന്റെ ഡ്രെസ്സിങ് റൂം അന്തരീക്ഷത്തെ എങ്ങനെ ബാധിക്കുമെന്ന ചോദ്യവും ശക്തമാണ്.\n\n#RohitSharma #MumbaiIndians #IPL #HardikPandya #CricketNews #IPLAuction #IndianPremierLeague"
 }
