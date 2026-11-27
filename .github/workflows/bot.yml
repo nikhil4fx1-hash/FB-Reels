@@ -36,20 +36,31 @@ jobs:
           pip install requests
           python check_telegram.py
 
+      - name: Send the latest trending topics (you sent "trends")
+        if: steps.check.outputs.action == 'suggest'
+        env:
+          PYTHONUNBUFFERED: '1'
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          pip install requests feedparser
+          python suggest.py manual
+
       - name: Install system dependencies
-        if: steps.check.outputs.action != 'none'
+        if: steps.check.outputs.action == 'plan' || steps.check.outputs.action == 'publish'
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg imagemagick
 
       - name: Install Python libraries
-        if: steps.check.outputs.action != 'none'
+        if: steps.check.outputs.action == 'plan' || steps.check.outputs.action == 'publish'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run action (plan or publish)
-        if: steps.check.outputs.action != 'none'
+        if: steps.check.outputs.action == 'plan' || steps.check.outputs.action == 'publish'
         env:
           PYTHONUNBUFFERED: '1'
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
