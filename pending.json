@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795687272.0503955,
- "offset": 141181863,
- "topic": "26/11 മുംബൈ ആക്രമണത്തിന് 18 വർഷം: ഇന്ത്യയുടെ സുരക്ഷാ മാറ്റങ്ങൾ",
+ "status": "waiting_media",
+ "created": 1795766484.5079799,
+ "offset": 141181864,
+ "topic": "തിരുവനന്തപുരത്ത് കനത്ത മഴ; 9 ജില്ലകളിൽ യെല്ലോ അലർട്ട്",
  "suggested_at": 1795765186.6013775,
  "seen_topics": [
   "രാഹുൽ മാങ്കൂട്ടത്തിലിനെതിരെ ഗുരുതര ആരോപണങ്ങൾ; കരട് കുറ്റപത്രം തയാർ",
@@ -62,92 +62,68 @@
   "ആഡംബര വിവാഹം; രാഷ്ട്രീയക്കാരന്റെ മകളുടെ കല്യാണം ചർച്ചയാകുന്നു",
   "യുപി രാഷ്ട്രീയത്തിൽ പുതിയ നീക്കങ്ങൾ; രാഹുൽ ഗാന്ധിയും അഖിലേഷും"
  ],
- "context": "മുംബൈ ആക്രമണത്തിന് ശേഷം ഇന്ത്യ തീരദേശ സുരക്ഷയിൽ വരുത്തിയ മാറ്റങ്ങൾ",
+ "context": "",
  "scenes": [
   {
-   "narration": "2008 നവംബർ 26, മുംബൈയുടെ ചരിത്രം മാറ്റിമറിച്ച ആ ഭീകര രാത്രിയെക്കുറിച്ച് നിങ്ങൾക്കറിയാമോ?",
-   "keywords": "Mumbai skyline night, terror attack flashback",
-   "image_prompt": "Cinematic high-angle shot of Mumbai skyline at night with dramatic lighting, smoke in the distance, intense atmosphere, photorealistic, 8k",
-   "wiki_title": "2008 Mumbai attacks"
+   "narration": "തിരുവനന്തപുരത്ത് കനത്ത മഴ; സംസ്ഥാനത്ത് 9 ജില്ലകളിൽ യെല്ലോ അലർട്ട് പ്രഖ്യാപിച്ചു!\nഈ മാർച്ചിൽ എന്തിനാണ് ഈ മഴ?",
+   "keywords": [
+    "heavy rain",
+    "Thiruvananthapuram",
+    "weather alert"
+   ],
+   "image_prompt": "Cinematic shot of heavy rain falling in Thiruvananthapuram city streets with glowing streetlights, dramatic dark clouds, photorealistic",
+   "wiki_title": "Thiruvananthapuram"
   },
   {
-   "narration": "പത്ത് ഭീകരർ കടലിലൂടെ കടന്നുവന്നപ്പോൾ ഇന്ത്യയുടെ സുരക്ഷാ സംവിധാനങ്ങൾ വലിയൊരു പരാജയം നേരിട്ടു.",
-   "keywords": "Dark ocean waves, terrorist boat",
-   "image_prompt": "A dark, stormy Arabian Sea at night, a small silhouette of a boat approaching the coast, cinematic lighting, moody and suspenseful",
-   "wiki_title": "Arabian Sea"
+   "narration": "തലസ്ഥാന നഗരിയിൽ ഇന്നലെ ഉച്ചയോടെ തുടങ്ങിയ മഴ മണിക്കൂറുകളോളം ശക്തമായി തുടർന്നു.\nറോഡുകളെല്ലാം വെള്ളത്തിലായി, പലയിടത്തും ഗതാഗതം തടസ്സപ്പെട്ടു.",
+   "keywords": [
+    "flooded street",
+    "traffic jam",
+    "rain Kerala"
+   ],
+   "image_prompt": "A flooded city road in Kerala with cars moving slowly through water, overcast sky, realistic photo",
+   "wiki_title": "Kerala"
   },
   {
-   "narration": "ആ വലിയ തിരിച്ചറിവിൽ നിന്നാണ് ഇന്ത്യയുടെ തീരദേശ സുരക്ഷയിൽ വിപ്ലവകരമായ മാറ്റങ്ങൾ ആരംഭിച്ചത്.",
-   "keywords": "Coastal security, radar technology",
-   "image_prompt": "Close up of a modern high-tech coastal surveillance radar rotating, sea in the background, high-tech defense aesthetic",
-   "wiki_title": "Coastal security"
+   "narration": "കേന്ദ്ര കാലാവസ്ഥ വകുപ്പിന്റെ കണക്കനുസരിച്ച് തിരുവനന്തപുരം ഉൾപ്പെടെയുള്ള 9 ജില്ലകളിലാണ് ഇപ്പോൾ യെല്ലോ അലർട്ട് നൽകിയിരിക്കുന്നത്.\nവേനൽമഴയാണെങ്കിലും ഇതിന്റെ തീവ്രത ആശങ്ക ഉണ്ടാക്കുന്നുണ്ട്.",
+   "keywords": [
+    "weather forecast",
+    "meteorological department",
+    "warning sign"
+   ],
+   "image_prompt": "A modern weather forecasting screen showing a map of Kerala with yellow warning markers, professional studio lighting",
+   "wiki_title": "India Meteorological Department"
   },
   {
-   "narration": "NIA രൂപീകരിച്ചും NSG സേനയെ ശക്തിപ്പെടുത്തിയും ഭീകരവിരുദ്ധ പോരാട്ടം ഇന്ത്യ കൂടുതൽ ശക്തമാക്കി.",
-   "keywords": "Special forces, NIA officers",
-   "image_prompt": "Indian National Security Guard (NSG) commandos in tactical gear, standing ready, professional and intense, cinematic lighting",
-   "wiki_title": "National Investigation Agency"
+   "narration": "ഇടിമിന്നലോട് കൂടിയ ശക്തമായ മഴയ്ക്കാണ് സാധ്യത.\nമലയോര മേഖലകളിൽ യാത്രാവിലക്കും ജാഗ്രതാ നിർദ്ദേശങ്ങളും നൽകിയിട്ടുണ്ട്.",
+   "keywords": [
+    "lightning storm",
+    "hilly road",
+    "caution sign"
+   ],
+   "image_prompt": "Bright lightning striking over a hilly landscape in Kerala with lush green trees bending in the wind",
+   "wiki_title": "Thunderstorm"
   },
   {
-   "narration": "ഇന്ന് കോസ്റ്റ് ഗാർഡും നാവികസേനയും പുതിയ സാങ്കേതികവിദ്യയുമായി ഓരോ കടൽ അതിരുകളും കാവലിരിക്കുന്നു.",
-   "keywords": "Indian Coast Guard ship, Navy patrol",
-   "image_prompt": "An Indian Coast Guard vessel patrolling the deep blue ocean, sunlight reflecting on waves, powerful and majestic, cinematic",
-   "wiki_title": "Indian Coast Guard"
+   "narration": "സാധാരണയായി മാർച്ച് മാസത്തിൽ ലഭിക്കുന്ന സാധാരണ വേനൽമഴയേക്കാൾ ശക്തമാണ് ഇത്തവണത്തെ മഴ.\nകാലാവസ്ഥ വ്യതിയാനമാണ് ഇതിന് കാരണമെന്നാണ് വിദഗ്ധരുടെ വിലയിരുത്തൽ.",
+   "keywords": [
+    "climate change",
+    "weather pattern",
+    "sun and rain"
+   ],
+   "image_prompt": "Conceptual image showing climate change, dry cracked earth transforming into a stormy rainy landscape, dramatic art",
+   "wiki_title": "Climate change in India"
   },
   {
-   "narration": "രഡാറുകളും AIS സംവിധാനങ്ങളും ഇന്ന് നമ്മുടെ തീരങ്ങളിൽ നിരന്തരം നിരീക്ഷണം നടത്തുന്നുണ്ട്.",
-   "keywords": "Digital map, maritime tracking",
-   "image_prompt": "A digital glowing maritime map showing vessel tracks and radar blips, high-tech command center interface",
-   "wiki_title": "Automatic Identification System"
-  },
-  {
-   "narration": "സാങ്കേതികവിദ്യ കൊണ്ട് സുരക്ഷ ഉറപ്പാക്കിയെങ്കിലും, മാറുന്ന ഭീഷണികൾക്ക് മുന്നിൽ ഇന്ത്യ എത്രത്തോളം സുരക്ഷിതമാണ്?",
-   "keywords": "Cyber security, futuristic defense",
-   "image_prompt": "A split screen showing a modern high-tech surveillance room on one side and a dark, mysterious ocean horizon on the other, thought-provoking atmosphere",
-   "wiki_title": ""
+   "narration": "വേനൽച്ചൂടിൽ നിന്ന് ആശ്വാസം കിട്ടിയെങ്കിലും അപ്രതീക്ഷിതമായി എത്തിയ ഈ മഴ കൃഷിയെയും സാധാരണ ജീവിതത്തെയും ബാധിക്കുമോ?\nനമ്മുടെ കാലാവസ്ഥാ മുന്നൊരുപ്പുകൾ എത്രത്തോളം ഫലപ്രദമാണ്?",
+   "keywords": [
+    "farmers worried",
+    "uncertain future",
+    "rain drops on leaf"
+   ],
+   "image_prompt": "A concerned farmer looking at his crop under a cloudy, rainy sky in Kerala, high detail, emotional atmosphere",
+   "wiki_title": "Agriculture in Kerala"
   }
  ],
- "caption": "26/11 മുംബൈ ആക്രമണം: 18 വർഷത്തെ സുരക്ഷാ പരിണാമം 🇮🇳\n\n2008 നവംബറിൽ മുംബൈ നേരിട്ട ആ ഭീകരമായ ആക്രമണം ഇന്ത്യയുടെ സുരക്ഷാ ചരിത്രത്തിലെ ഏറ്റവും വലിയ പാഠമായിരുന്നു. 10 ഭീകരർ കടൽമാർഗ്ഗം നഗരത്തിൽ അതിക്രമിച്ചു കയറിയത് നമ്മുടെ തീരദേശ സുരക്ഷയിലെ വലിയ വീഴ്ചയാണ് തുറന്നുകാട്ടിയത്.\n\nഈ ദുരന്തത്തിന് ശേഷം ഇന്ത്യ സുരക്ഷാ മേഖലയിൽ വലിയ മാറ്റങ്ങൾ കൊണ്ടുവന്നു:\n\n📍 NIA (National Investigation Agency) രൂപീകരിച്ച് ഭീകരവിരുദ്ധ അന്വേഷണങ്ങൾ ശക്തമാക്കി.\n📍 NSG സേനയുടെ സാന്നിധ്യം പ്രധാന നഗരങ്ങളിൽ വർദ്ധിപ്പിച്ചു.\n📍 തീരദേശ സുരക്ഷയ്ക്കായി കോസ്റ്റ് ഗാർഡും നാവികസേനയും തമ്മിലുള്ള ഏകോപനം മെച്ചപ്പെടുത്തി.\n📍 കടലിലെ ഓരോ ചലനവും നിരീക്ഷിക്കാൻ അത്യാധുനിക റഡാറുകളും AIS സാങ്കേതികവിദ്യയും സജ്ജമാക്കി.\n\nഇന്ന് നമ്മുടെ അതിരുകൾ കൂടുതൽ സുരക്ഷിതമാണെങ്കിലും, ലോകം മാറിക്കൊണ്ടിരിക്കുകയാണ്. സാങ്കേതികവിദ്യ കൊണ്ട് മാത്രം ഇത്തരം ഭീഷണികളെ പൂർണ്ണമായും തടയാനാകുമോ അതോ മനുഷ്യവിഭവശേഷിയും നിരീക്ഷണവും ഇനിയും ശക്തിപ്പെടുത്തേണ്ടതുണ്ടോ എന്നത് വലിയൊരു ചോദ്യചിഹ്നമായി അവശേഷിക്കുന്നു.\n\n#MumbaiAttacks #2611 #IndiaSecurity #NationalSecurity #IndianCoastGuard #NIA #IndianNavy #SecurityReform",
- "suggestions": [
-  {
-   "topic": "സൺറൂഫിലൂടെ ഡ്രൈവറെ ചവിട്ടിയ എംഎൽഎ; വൈറൽ വീഡിയോ",
-   "context": "സൺറൂഫിൽ നിന്ന് അതിഥികളെ അഭിവാദ്യം ചെയ്ത എംഎൽഎ ഡ്രൈവറെ ചവിട്ടിയ വീഡിയോ സമൂഹമാധ്യമങ്ങളിൽ വൈറലായി.",
-   "where": "news, Facebook"
-  },
-  {
-   "topic": "ശുഭ്മൻ ഗില്ലിന് ടെസ്റ്റ് ക്രിക്കറ്റിൽ അഗ്നിപരീക്ഷ",
-   "context": "ന്യൂസിലൻഡ് ടെസ്റ്റിന് മുന്നോടിയായി ശുഭ്മൻ ഗില്ലിന്റെ നേതൃത്വപാടവവും ഫോമും ചർച്ചയാകുന്നു.",
-   "where": "Google Trends, X"
-  },
-  {
-   "topic": "അർവിന്ദ് കെജ്‌രിവാളിന്റെ 'ഷീഷ് മഹൽ' പൊതുജനങ്ങൾക്ക് തുറന്നു",
-   "context": "കെജ്‌രിവാളിന്റെ മുൻ ബംഗ്ലാവിലെ ആഡംബര സൗകര്യങ്ങൾ കാണാൻ പൊതുജനങ്ങൾക്ക് അനുമതി നൽകി.",
-   "where": "Google Trends, news"
-  },
-  {
-   "topic": "അമേരിക്ക വിടുക അല്ലെങ്കിൽ ജോലി ഉപേക്ഷിക്കുക; ഇന്ത്യക്കാർക്ക് അന്ത്യശാസനം",
-   "context": "അമേരിക്കയിലെ ചില കമ്പനികൾ ഇന്ത്യൻ ജീവനക്കാർക്ക് ജോലി നിലനിർത്താൻ കഠിനമായ നിബന്ധനകൾ വെച്ചു.",
-   "where": "news, X"
-  },
-  {
-   "topic": "ഡീപ്‌ഫേക്കുകൾ വഴി ഇന്ത്യയെ ലക്ഷ്യമാക്കി പാകിസ്ഥാൻ",
-   "context": "വ്യാജ ഐഡന്റിറ്റികളും ഡീപ്‌ഫേക്കുകളും ഉപയോഗിച്ച് ഇന്ത്യയിൽ പ്രശ്നങ്ങൾ സൃഷ്ടിക്കാൻ പാകിസ്ഥാൻ ശ്രമിക്കുന്നു.",
-   "where": "news, YouTube"
-  },
-  {
-   "topic": "ആധാർ സേവനങ്ങൾ ഇനി വീട്ടിലെത്തും; യുഐഡിഎഐയുടെ പുതിയ നീക്കം",
-   "context": "ആധാർ തിരുത്തലുകൾക്കായി കേന്ദ്രങ്ങൾ തേടിപ്പോകാതെ വീട്ടിൽ വന്ന് സേവനം നൽകുന്ന സംവിധാനം വരുന്നു.",
-   "where": "Google Trends, news"
-  },
-  {
-   "topic": "ആഡംബര വിവാഹം; രാഷ്ട്രീയക്കാരന്റെ മകളുടെ കല്യാണം ചർച്ചയാകുന്നു",
-   "context": "ഇന്ത്യയിലെ ഒരു പ്രമുഖ രാഷ്ട്രീയക്കാരന്റെ മകളുടെ അതിവിപുലമായ വിവാഹ ചടങ്ങുകൾ സോഷ്യൽ മീഡിയയിൽ തരംഗമാകുന്നു.",
-   "where": "BBC, Instagram"
-  },
-  {
-   "topic": "യുപി രാഷ്ട്രീയത്തിൽ പുതിയ നീക്കങ്ങൾ; രാഹുൽ ഗാന്ധിയും അഖിലേഷും",
-   "context": "സീറ്റ് പങ്കിടൽ ചർച്ചകളിൽ രാഹുൽ ഗാന്ധിയും അഖിലേഷ് യാദവും നിർണായകമായ ഇടപെടലുകൾ നടത്തുന്നു.",
-   "where": "news, X"
-  }
- ]
+ "caption": "മഴക്കാലം അല്ലാത്ത സമയത്ത് കേരളത്തിൽ വീണ്ടും ശക്തമായ മഴ; 9 ജില്ലകളിൽ യെല്ലോ അലർട്ട് 🌧️\n\nതിരുവനന്തപുരം ഉൾപ്പെടെയുള്ള ഒൻപത് ജില്ലകളിലാണ് കേന്ദ്ര കാലാവസ്ഥ വകുപ്പ് യെല്ലോ അലർട്ട് പ്രഖ്യാപിച്ചിരിക്കുന്നത്. തലസ്ഥാന നഗരിയിൽ ഇന്നലെ ഉച്ചയോടെ ആരംഭിച്ച കനത്ത മഴ മണിക്കൂറുകളോളം തുടർന്നു. നഗരത്തിന്റെ പല ഭാഗങ്ങളിലും റോഡുകൾ വെള്ളത്തിൽ മുങ്ങുകയും ഗതാടഗതം തടസ്സപ്പെടുകയും ചെയ്തു.\n\nതിരുവനന്തപുരം, കൊല്ലം, പത്തനംതിട്ട, ആലപ്പുഴ, കോട്ടയം, എറണാകുളം, ഇടുക്കി, തൃശൂർ, പാലക്കാട് എന്നീ ജില്ലകളിലാണ് ജാഗ്രതാ നിർദ്ദേശം നൽകിയിരിക്കുന്നത്. ഒറ്റപ്പെട്ടയിടങ്ങളിൽ ഇടിമിന്നലോട് കൂടിയ ശക്തമായ മഴയ്ക്കും മണിക്കൂറിൽ 40 കിലോമീറ്റർ വരെ വേഗതയിൽ വീശിയടിച്ചേക്കാവുന്ന കാറ്റിനും സാധ്യതയുണ്ട്.\n\nവേനൽച്ചൂടിൽ നിന്ന് ആശ്വാസം ലഭിക്കുന്നുണ്ടെങ്കിലും, മുൻകൂട്ടി കാണാത്ത ഈ മഴക്കെടുതികൾ സാധാരണക്കാരുടെ ജീവിതത്തെയും കൃഷിയെയും പ്രതികൂലമായി ബാധിക്കുന്നുണ്ട്. കാലാവസ്ഥാ വ്യതിയാനത്തിന്റെ ഭാഗമായി നമ്മുടെ കാലാവസ്ഥാ പാറ്റേണുകളിൽ ഉണ്ടാകുന്ന ഈ വലിയ മാറ്റങ്ങളെ എത്രത്തോളം നേരിടാൻ നമുക്ക് കഴിയുമെന്നത് ഗൗരവകരമായ ഒരു ചോദ്യമാണ്.\n\n#KeralaRain #YellowAlert #Thiruvananthapuram #WeatherUpdate #KeralaWeather #ClimateChange #Monsoon2024 #KeralaNews"
 }
