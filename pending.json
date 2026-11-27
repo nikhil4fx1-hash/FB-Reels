@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795766484.5079799,
- "offset": 141181872,
- "topic": "തിരുവനന്തപുരത്ത് കനത്ത മഴ; 9 ജില്ലകളിൽ യെല്ലോ അലർട്ട്",
+ "status": "waiting_media",
+ "created": 1795794844.7825615,
+ "offset": 141181873,
+ "topic": "റോയൽ എൻഫീൽഡിന്റെ ഹിമാലയൻ 750 വിപണിയിൽ എത്തി",
  "suggested_at": 1795794385.5268805,
  "seen_topics": [
   "റെയിൽവേ സ്റ്റേഷൻ മാസ്റ്റർ ആകാൻ ഇന്ന് അവസാന അവസരം",
@@ -66,110 +66,71 @@
   "ബെംഗളൂരുവിൽ മലയാളി നഴ്സിനെ കൊല്ലപ്പെട്ട നിലയിൽ കണ്ടെത്തി",
   "ചക്കക്കൊമ്പൻ കാടുകയറി; ദൗത്യം തൽക്കാലത്തേക്ക് നിർത്തിവച്ചു"
  ],
- "context": "",
+ "context": "ആകർഷകമായ ഫീച്ചറുകളോടെ എത്തിയ പുതിയ ബൈക്കിന്റെ പ്രാരംഭ വില 4.89 ലക്ഷം രൂപ.",
  "scenes": [
   {
-   "narration": "തിരുവനന്തപുരത്ത് കനത്ത മഴ; സംസ്ഥാനത്ത് 9 ജില്ലകളിൽ യെല്ലോ അലർട്ട് പ്രഖ്യാപിച്ചു!\nഈ മാർച്ചിൽ എന്തിനാണ് ഈ മഴ?",
+   "narration": "റോയൽ എൻഫീൽഡ് പ്രേമികളുടെ കാത്തിരിപ്പിന് വിരാമമിട്ട് പുതിയൊരു ഭീമൻ വിപണിയിലെത്തി!",
    "keywords": [
-    "heavy rain",
-    "Thiruvananthapuram",
-    "weather alert"
+    "Royal Enfield",
+    "motorcycle launch"
    ],
-   "image_prompt": "Cinematic shot of heavy rain falling in Thiruvananthapuram city streets with glowing streetlights, dramatic dark clouds, photorealistic",
-   "wiki_title": "Thiruvananthapuram"
+   "image_prompt": "A cinematic close-up shot of a powerful Royal Enfield motorcycle headlight glowing in a misty mountain background, dramatic lighting.",
+   "wiki_title": "Royal Enfield"
   },
   {
-   "narration": "തലസ്ഥാന നഗരിയിൽ ഇന്നലെ ഉച്ചയോടെ തുടങ്ങിയ മഴ മണിക്കൂറുകളോളം ശക്തമായി തുടർന്നു.\nറോഡുകളെല്ലാം വെള്ളത്തിലായി, പലയിടത്തും ഗതാഗതം തടസ്സപ്പെട്ടു.",
+   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം റോയൽ എൻഫീൽഡിന്റെ പുതിയ ഹിമാലയൻ മോഡൽ വിപണിയിൽ തരംഗം സൃഷ്ടിക്കാൻ എത്തിയിരിക്കുകയാണ്.",
    "keywords": [
-    "flooded street",
-    "traffic jam",
-    "rain Kerala"
+    "adventure bike",
+    "off road"
    ],
-   "image_prompt": "A flooded city road in Kerala with cars moving slowly through water, overcast sky, realistic photo",
-   "wiki_title": "Kerala"
+   "image_prompt": "An adventure motorcycle cruising through a rugged mountain terrain with dirt tracks, realistic photography, sunny day.",
+   "wiki_title": ""
   },
   {
-   "narration": "കേന്ദ്ര കാലാവസ്ഥ വകുപ്പിന്റെ കണക്കനുസരിച്ച് തിരുവനന്തപുരം ഉൾപ്പെടെയുള്ള 9 ജില്ലകളിലാണ് ഇപ്പോൾ യെല്ലോ അലർട്ട് നൽകിയിരിക്കുന്നത്.\nവേനൽമഴയാണെങ്കിലും ഇതിന്റെ തീവ്രത ആശങ്ക ഉണ്ടാക്കുന്നുണ്ട്.",
+   "narration": "ആകർഷകമായ ഫീച്ചറുകളോടെ എത്തിയ ഈ അടിപൊളി ബൈക്കിന്റെ പ്രാരംഭ വില 4.89 ലക്ഷം രൂപയാണ്.",
    "keywords": [
-    "weather forecast",
-    "meteorological department",
-    "warning sign"
+    "price tag",
+    "bike dashboard"
    ],
-   "image_prompt": "A modern weather forecasting screen showing a map of Kerala with yellow warning markers, professional studio lighting",
-   "wiki_title": "India Meteorological Department"
+   "image_prompt": "A close-up of a modern motorcycle digital instrument cluster and handlebars, high-tech display glowing.",
+   "wiki_title": ""
   },
   {
-   "narration": "ഇടിമിന്നലോട് കൂടിയ ശക്തമായ മഴയ്ക്കാണ് സാധ്യത.\nമലയോര മേഖലകളിൽ യാത്രാവിലക്കും ജാഗ്രതാ നിർദ്ദേശങ്ങളും നൽകിയിട്ടുണ്ട്.",
+   "narration": "ദീർഘദൂര യാത്രകൾ ഇഷ്ടപ്പെടുന്ന റൈഡേഴ്സിനെ ലക്ഷ്യമിട്ടാണ് കമ്പനി ഈ പുതിയ വാഹനം അവതരിപ്പിച്ചിരിക്കുന്നത്.",
    "keywords": [
-    "lightning storm",
-    "hilly road",
-    "caution sign"
+    "long ride",
+    "biker touring"
    ],
-   "image_prompt": "Bright lightning striking over a hilly landscape in Kerala with lush green trees bending in the wind",
-   "wiki_title": "Thunderstorm"
+   "image_prompt": "A biker wearing riding gear riding a heavy adventure motorcycle on a highway stretching towards distant hills.",
+   "wiki_title": ""
   },
   {
-   "narration": "സാധാരണയായി മാർച്ച് മാസത്തിൽ ലഭിക്കുന്ന സാധാരണ വേനൽമഴയേക്കാൾ ശക്തമാണ് ഇത്തവണത്തെ മഴ.\nകാലാവസ്ഥ വ്യതിയാനമാണ് ഇതിന് കാരണമെന്നാണ് വിദഗ്ധരുടെ വിലയിരുത്തൽ.",
+   "narration": "ശക്തമായ എൻജിനും മികച്ച ഗ്രൗണ്ട് ക്ലിയറൻസും ഇതിന്റെ പ്രധാന പ്രത്യേകതകളിൽ ഉൾപ്പെടുന്നു.",
    "keywords": [
-    "climate change",
-    "weather pattern",
-    "sun and rain"
+    "engine power",
+    "motorcycle parts"
    ],
-   "image_prompt": "Conceptual image showing climate change, dry cracked earth transforming into a stormy rainy landscape, dramatic art",
-   "wiki_title": "Climate change in India"
+   "image_prompt": "Detailed shot of a powerful motorcycle engine block with metallic finish and branding, studio lighting.",
+   "wiki_title": ""
   },
   {
-   "narration": "വേനൽച്ചൂടിൽ നിന്ന് ആശ്വാസം കിട്ടിയെങ്കിലും അപ്രതീക്ഷിതമായി എത്തിയ ഈ മഴ കൃഷിയെയും സാധാരണ ജീവിതത്തെയും ബാധിക്കുമോ?\nനമ്മുടെ കാലാവസ്ഥാ മുന്നൊരുപ്പുകൾ എത്രത്തോളം ഫലപ്രദമാണ്?",
+   "narration": "ഈ പ്രീമിയം വില നിലവാരത്തിൽ മറ്റ് വമ്പൻമാരായ ബ്രാൻഡുകളോട് ഇത് കടുത്ത മത്സരം കാഴ്ചവെക്കേണ്ടി വരും.",
    "keywords": [
-    "farmers worried",
-    "uncertain future",
-    "rain drops on leaf"
+    "motorcycle market",
+    "competition"
    ],
-   "image_prompt": "A concerned farmer looking at his crop under a cloudy, rainy sky in Kerala, high detail, emotional atmosphere",
-   "wiki_title": "Agriculture in Kerala"
+   "image_prompt": "Two different modern adventure motorcycles parked side by side in a showroom, professional automotive photography.",
+   "wiki_title": ""
+  },
+  {
+   "narration": "ഏതായാലും അഞ്ച് ലക്ഷത്തോളം രൂപ മുടക്കി ഈ ബൈക്ക് സ്വന്തമാക്കാൻ റൈഡേഴ്സ് തയ്യാറാകുമോ എന്നതാണ് ഇപ്പോൾ ഉയരുന്ന പ്രധാന ചോദ്യം.",
+   "keywords": [
+    "biker thinking",
+    "showroom bike"
+   ],
+   "image_prompt": "A motorcycle enthusiast looking thoughtfully at a new adventure bike in a bright modern showroom, cinematic depth of field.",
+   "wiki_title": ""
   }
  ],
- "caption": "മഴക്കാലം അല്ലാത്ത സമയത്ത് കേരളത്തിൽ വീണ്ടും ശക്തമായ മഴ; 9 ജില്ലകളിൽ യെല്ലോ അലർട്ട് 🌧️\n\nതിരുവനന്തപുരം ഉൾപ്പെടെയുള്ള ഒൻപത് ജില്ലകളിലാണ് കേന്ദ്ര കാലാവസ്ഥ വകുപ്പ് യെല്ലോ അലർട്ട് പ്രഖ്യാപിച്ചിരിക്കുന്നത്. തലസ്ഥാന നഗരിയിൽ ഇന്നലെ ഉച്ചയോടെ ആരംഭിച്ച കനത്ത മഴ മണിക്കൂറുകളോളം തുടർന്നു. നഗരത്തിന്റെ പല ഭാഗങ്ങളിലും റോഡുകൾ വെള്ളത്തിൽ മുങ്ങുകയും ഗതാടഗതം തടസ്സപ്പെടുകയും ചെയ്തു.\n\nതിരുവനന്തപുരം, കൊല്ലം, പത്തനംതിട്ട, ആലപ്പുഴ, കോട്ടയം, എറണാകുളം, ഇടുക്കി, തൃശൂർ, പാലക്കാട് എന്നീ ജില്ലകളിലാണ് ജാഗ്രതാ നിർദ്ദേശം നൽകിയിരിക്കുന്നത്. ഒറ്റപ്പെട്ടയിടങ്ങളിൽ ഇടിമിന്നലോട് കൂടിയ ശക്തമായ മഴയ്ക്കും മണിക്കൂറിൽ 40 കിലോമീറ്റർ വരെ വേഗതയിൽ വീശിയടിച്ചേക്കാവുന്ന കാറ്റിനും സാധ്യതയുണ്ട്.\n\nവേനൽച്ചൂടിൽ നിന്ന് ആശ്വാസം ലഭിക്കുന്നുണ്ടെങ്കിലും, മുൻകൂട്ടി കാണാത്ത ഈ മഴക്കെടുതികൾ സാധാരണക്കാരുടെ ജീവിതത്തെയും കൃഷിയെയും പ്രതികൂലമായി ബാധിക്കുന്നുണ്ട്. കാലാവസ്ഥാ വ്യതിയാനത്തിന്റെ ഭാഗമായി നമ്മുടെ കാലാവസ്ഥാ പാറ്റേണുകളിൽ ഉണ്ടാകുന്ന ഈ വലിയ മാറ്റങ്ങളെ എത്രത്തോളം നേരിടാൻ നമുക്ക് കഴിയുമെന്നത് ഗൗരവകരമായ ഒരു ചോദ്യമാണ്.\n\n#KeralaRain #YellowAlert #Thiruvananthapuram #WeatherUpdate #KeralaWeather #ClimateChange #Monsoon2024 #KeralaNews",
- "suggestions": [
-  {
-   "topic": "കുഞ്ചാക്കോ ബോബന്റെ 'ഹെയ്ൽ മേരി' ഒടിടി റൈറ്റ്സ് നെറ്റ്ഫ്ലിക്സിന്",
-   "context": "സിനിമ തിയേറ്ററുകളിൽ മികച്ച അഭിപ്രായവുമായി മുന്നേറുന്നതിനിടെയാണ് പുതിയ അപ്ഡേറ്റ്.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ഷാരൂഖ് ഖാന്റെ 'കിംഗ്' സിനിമയുടെ ട്രെയിലർ ചർച്ചയാകുന്നു",
-   "context": "ചിത്രത്തിന്റെ മേക്കിംഗ് വീഡിയോയും ട്രെയിലർ വിശേഷങ്ങളും സോഷ്യൽ മീഡിയയിൽ വൈറൽ.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ക്രിസ്മസ് രാവിൽ ആകാശത്ത് അതിവിശേഷമായ സൂപ്പർമൂൺ പ്രതിഭാസം",
-   "context": "സാധാരണയേക്കാൾ വലിയ ചന്ദ്രനെ കാണാൻ കഴിയുന്ന ആകാശ വിസ്മയത്തിനായി കാത്തിരിപ്പിൽ ലോകം.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "റോയൽ എൻഫീൽഡിന്റെ ഹിമാലയൻ 750 വിപണിയിൽ എത്തി",
-   "context": "ആകർഷകമായ ഫീച്ചറുകളോടെ എത്തിയ പുതിയ ബൈക്കിന്റെ പ്രാരംഭ വില 4.89 ലക്ഷം രൂപ.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "കേന്ദ്ര മന്ത്രിസഭ ഡെലിമിറ്റേഷൻ ബില്ലിന് പച്ചക്കൊടി കാട്ടി",
-   "context": "വരുന്ന പാർലമെന്റ് പ്രത്യേക സമ്മേളനത്തിൽ ചർച്ചയാകുന്ന പ്രധാനപ്പെട്ട ബില്ലിന്റെ വിശദാംശങ്ങൾ.",
-   "where": "News & Top Headlines"
-  },
-  {
-   "topic": "പാലക്കാട്ട് ജ്വല്ലറിയിൽ വൻ കവർച്ച; 20 പവൻ നഷ്ടപ്പെട്ടു",
-   "context": "ജീവനക്കാർക്ക് നേരെ വെടിയുതിർത്ത ശേഷം നാലംഗ സംഘം സ്വർണം കവർന്നു കടന്നുകളഞ്ഞു.",
-   "where": "News & Top Headlines"
-  },
-  {
-   "topic": "ബെംഗളൂരുവിൽ മലയാളി നഴ്സിനെ കൊല്ലപ്പെട്ട നിലയിൽ കണ്ടെത്തി",
-   "context": "ലോഡ്ജിൽ മരിച്ച നിലയിൽ കണ്ടെത്തിയ സംഭവത്തിൽ ആൺസുഹൃത്ത് പൊലീസ് പിടിയിൽ.",
-   "where": "News & Top Headlines"
-  },
-  {
-   "topic": "ചക്കക്കൊമ്പൻ കാടുകയറി; ദൗത്യം തൽക്കാലത്തേക്ക് നിർത്തിവച്ചു",
-   "context": "മയക്കുവെടി വെക്കാനുള്ള ശ്രമങ്ങൾ പരാജയപ്പെട്ടതിനെ തുടർന്ന് വനംവകുപ്പിന്റെ അടുത്ത നീക്കം.",
-   "where": "News & Top Headlines"
-  }
- ]
+ "caption": "ചെന്നൈ ആസ്ഥാനമായുള്ള പ്രശസ്ത ഇരുചക്ര വാഹന നിർമാതാക്കളായ റോയൽ എൻഫീൽഡിന്റെ പുതിയ അഡ്വഞ്ചർ ബൈക്ക് വിപണിയിൽ എത്തിയത് വലിയ ചർച്ചയായിരിക്കുകയാണ്.\n\nറിപ്പോർട്ടുകൾ പ്രകാരം റോയൽ എൻഫീൽഡിന്റെ പുതിയ ഹിമാലയൻ ശ്രേണിയിലെ മോഡൽ ആകർഷകമായ ഫീച്ചറുകളോടെയാണ് വിപണിയിൽ എത്തിയിരിക്കുന്നത്. ലോഞ്ച് ചെയ്ത ഈ പുതിയ ബൈക്കിന്റെ പ്രാരംഭ വില 4.89 ലക്ഷം രൂപയാണ്.\n\nദീർഘദൂര യാത്രകളും ഓഫ്-റോഡിംഗും ഇഷ്ടപ്പെടുന്ന റൈഡേഴ്സിനെ ലക്ഷ്യമിട്ടാണ് ഈ വാഹനം രൂപകൽപ്പന ചെയ്തിരിക്കുന്നത്. ശക്തമായ എൻജിൻ പ്രകടനവും റൈഡിംഗ് കംഫർട്ടും ഈ വാഹനത്തെ സവിശേഷമാക്കുന്നു.\n\nഎന്നാൽ അഞ്ച് ലക്ഷത്തോളം രൂപ പ്രാരംഭ വില വരുന്ന ഈ പ്രീമിയം മോഡൽ ആഗോളതലത്തിലും ഇന്ത്യൻ വിപണിയിലും മറ്റ് വമ്പൻ അഡ്വഞ്ചർ ബൈക്കുകളോട് കടുത്ത മത്സരം നേരിടേണ്ടി വരുമെന്ന് ഓട്ടോമൊബൈൽ വിദഗ്ധർ വിലയിരുത്തുന്നു.\n\nഈ വില നിലവാരത്തിൽ റോയൽ എൻഫീൽഡ് ഹിമാലയൻ ശ്രേണിയിലെ ഈ പുതിയ മോഡൽ ഇന്ത്യൻ റൈഡേഴ്സിന്റെ പ്രതീക്ഷകൾ എത്രത്തോളം നിറവേറ്റുമെന്ന് കാത്തിരുന്ന് കാണേണ്ടതുണ്ട്.\n\n#RoyalEnfield #Himalayan #BikeLaunch #AdventureBike #AutoNews #MalayalamNews #Motorcycles"
 }
