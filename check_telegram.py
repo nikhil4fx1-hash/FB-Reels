@@ -11,6 +11,7 @@ STATE_FILE = "pending.json"
 EXPIRE_HOURS = 24
 REEL_WORDS = ("reel", "/reel", "post", "/post", "done", "/done")
 CANCEL_WORDS = ("cancel", "/cancel")
+AUTO_WORDS = ("auto", "/auto")
 SUGGEST_WORDS = ("trends", "/trends", "trending", "/trending", "news", "/news", "suggest", "/suggest")
 IGNORE = {"yes", "y", "no", "n", "hi", "hii", "hello", "hey", "ok", "okay", "thanks", "thank you", "/start", "/help"}
 WORKER_URL = (os.environ.get("WORKER_URL") or "").rstrip("/")
@@ -130,7 +131,8 @@ def main():
         if low.startswith("/new "):
             new_topic = text[5:].strip()
         elif (status in IDLE and text and not text.startswith("/") and low not in IGNORE
-              and low not in REEL_WORDS and low not in CANCEL_WORDS and low not in SUGGEST_WORDS
+              and low not in REEL_WORDS and low not in AUTO_WORDS and low not in CANCEL_WORDS
+              and low not in SUGGEST_WORDS
               and not low.rstrip(".)").isdigit()):
             new_topic = text
         if new_topic is not None:
@@ -152,17 +154,23 @@ def main():
         if status == "waiting_media":
             if is_media:
                 media_count += 1
+            elif low in AUTO_WORDS:                      # use the bot's own keywords
+                return out("publish")
             elif low in REEL_WORDS:
                 if media_count > 0:
                     return out("publish")
                 state["offset"] = uid + 1
                 save(state)
-                say("📸 ഫോട്ടോ ഒന്നും കിട്ടിയില്ല. ഫോട്ടോകൾ അയച്ച ശേഷം 'reel' എന്ന് ടൈപ്പ് ചെയ്യൂ.")
+                say("📸 കീവേഡോ ഫോട്ടോയോ ഒന്നും കിട്ടിയില്ല. അവ അയച്ച ശേഷം 'reel' എന്ന് ടൈപ്പ് ചെയ്യൂ. "
+                    "ബോട്ടിന്റെ സ്വന്തം കീവേഡ് മതിയെങ്കിൽ 'auto' അയക്കൂ.")
             elif low in CANCEL_WORDS:
                 state.update(status="cancelled", offset=uid + 1)
                 save(state)
                 say("🗑️ റദ്ദാക്കി. പുതിയ വിഷയം അയക്കാം.")
                 return out("none")
+            elif (text and not text.startswith("/") and low not in IGNORE
+                  and not low.rstrip(".)").isdigit()):    # a keyword message
+                media_count += 1
 
     if status in IDLE and last_id is not None:   # ignore chatter, don't re-read it every time
         state["offset"] = last_id + 1
