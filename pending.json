@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795802188.0349503,
- "offset": 141181893,
- "topic": "രോഹിത് ശർമ വീണ്ടും മുംബൈ ഇന്ത്യൻസ് ക്യാപ്റ്റൻ",
+ "status": "waiting_media",
+ "created": 1795838464.783217,
+ "offset": 141181894,
+ "topic": "മണ്ഡല പുനർനിർണയ ബില്ല്: അറിയേണ്ട പ്രധാന കാര്യങ്ങൾ",
  "suggested_at": 1795836819.8738234,
  "seen_topics": [
   "യുവന്റസ് കളിക്ക് കാത്തിരിക്കുന്ന ഫുട്ബോൾ ആരാധകർ",
@@ -66,110 +66,50 @@
   "ടിവികെ എംഎൽഎ അറസ്റ്റിലായി; അറിയേണ്ടത്",
   "അധ്യാപകർക്ക് പുതിയ നിർദ്ദേശങ്ങൾ; വികാസ് ഭവൻ"
  ],
- "context": "ഐപിഎല്ലില്‍ രോഹിത് ശർമയെ വീണ്ടും മുംബൈ ഇന്ത്യൻസ് നായകനായി പ്രഖ്യാപിച്ചു",
+ "context": "കേന്ദ്ര മന്ത്രിസഭയുടെ അംഗീകാരം ലഭിച്ച പുതിയ ബില്ലിനെക്കുറിച്ചുള്ള വിവരങ്ങൾ.",
  "scenes": [
   {
-   "narration": "രോഹിത് ശർമ വീണ്ടും മുംബൈ ഇന്ത്യൻസിന്റെ ക്യാപ്റ്റൻ കസേരയിലേക്ക്!\nഇതെന്ത് നാടകമാണ്?",
-   "keywords": [
-    "Rohit Sharma",
-    "Mumbai Indians",
-    "captaincy"
-   ],
-   "image_prompt": "Cinematic portrait of Rohit Sharma looking intense in a Mumbai Indians jersey, dramatic stadium lighting, 4k",
-   "wiki_title": "Rohit Sharma"
+   "narration": "ഇന്ത്യയിലെ രാഷ്ട്രീയ ഭൂപടം ഉടൻ മാറാൻ പോകുന്നു. നിങ്ങളുടെ വോട്ട് മൂല്യത്തെ ഇത് ബാധിക്കുമോ?",
+   "keywords": "Indian map, politics",
+   "image_prompt": "Cinematic shot of a 3D map of India with glowing boundaries shifting and changing colors, digital interface style, high resolution",
+   "wiki_title": "Delimitation Commission of India"
   },
   {
-   "narration": "കഴിഞ്ഞ ഐപിഎൽ സീസണിൽ ഹാർദിക് പാണ്ഡ്യയെ നായകനാക്കിയത് വലിയ വിവാദങ്ങൾക്ക് വഴിവെച്ചിരുന്നു.\nകടുത്ത ആരാധകരോഷവും ടീമിലെ ചേരിപ്പോരും പരസ്യമായ രഹസ്യമായിരുന്നു.",
-   "keywords": [
-    "Hardik Pandya",
-    "IPL",
-    "controversy"
-   ],
-   "image_prompt": "Hardik Pandya looking thoughtful in Mumbai Indians kit on the cricket ground, realistic sports photography",
-   "wiki_title": "Hardik Pandya"
+   "narration": "കേന്ദ്ര മന്ത്രിസഭയുടെ അംഗീകാരത്തോടെ മണ്ഡല പുനർനിർണയ നടപടികൾക്ക് തുടക്കമാകുകയാണ്.",
+   "keywords": "Union Cabinet, meeting",
+   "image_prompt": "A professional wide shot of the Indian Union Cabinet meeting in a grand conference room, official government atmosphere, realistic",
+   "wiki_title": "Cabinet of India"
   },
   {
-   "narration": "എന്നാൽ പുതിയ സീസണിന് മുന്നോടിയായി മുംബൈ ഫ്രാഞ്ചൈസി വീണ്ടും നിലപാട് മാറ്റുകയാണ്.\nരോഹിത് ശർമയെ നായകസ്ഥാനത്തേക്ക് തിരികെ കൊണ്ടുവന്നതായി റിപ്പോർട്ടുകൾ വ്യക്തമാക്കുന്നു.",
-   "keywords": [
-    "Cricket team",
-    "announcement",
-    "news"
-   ],
-   "image_prompt": "Mumbai Indians team logo and cricket stadium packed with fans, vibrant atmosphere, digital art",
-   "wiki_title": "Mumbai Indians"
+   "narration": "ജനസംഖ്യയിലെ മാറ്റങ്ങൾക്കനുസരിച്ച് ലോക്‌സഭാ, നിയമസഭാ മണ്ഡലങ്ങളുടെ അതിരുകൾ പുതുക്കി നിശ്ചയിക്കുന്നതിനെയാണ് ഡിലിമിറ്റേഷൻ എന്ന് പറയുന്നത്.",
+   "keywords": "boundary, map",
+   "image_prompt": "Close up of a hand drawing new lines on a political map of India with a red marker, blueprint architectural style",
+   "wiki_title": "Delimitation Commission of India"
   },
   {
-   "narration": "അഞ്ച് ഐപിഎൽ കിരീടങ്ങൾ മുംബൈക്ക് സമ്മാനിച്ച ക്യാപ്റ്റനാണ് രോഹിത്.\nഅദ്ദേഹത്തിന്റെ അനുഭവസമ്പത്ത് ടീമിന് വീണ്ടും കരുത്താകുമെന്നാണ് മാനേജ്‌മെന്റിന്റെ വിലയിരുത്തൽ.",
-   "keywords": [
-    "Trophy",
-    "victory",
-    "celebration"
-   ],
-   "image_prompt": "Rohit Sharma lifting the IPL trophy with a joyful expression, confetti falling, sports photography",
-   "wiki_title": "Indian Premier League"
+   "narration": "1971-ലെ കണക്കുകൾ പ്രകാരമാണ് നിലവിൽ മണ്ഡലങ്ങൾ വിഭജിച്ചിരിക്കുന്നത്. ഇത് 2026 വരെ മരവിപ്പിച്ചിരിക്കുകയായിരുന്നു.",
+   "keywords": "Census, documents",
+   "image_prompt": "Vintage 1971 census documents overlapping with a futuristic digital 2026 calendar, symbolic of time transition",
+   "wiki_title": "Census of India"
   },
   {
-   "narration": "ഈ മാറ്റം ഹാർദിക് പാണ്ഡ്യയുടെ ടീമിലെ ഭാവിയെ എങ്ങനെ ബാധിക്കും?\nഅല്ലെങ്കിൽ ഇതൊരു തന്ത്രപരമായ തീരുമാനമാണോ?",
-   "keywords": [
-    "Discussion",
-    "cricket strategy",
-    "players"
-   ],
-   "image_prompt": "Two cricket players shaking hands on the field, sunset lighting, professional sports atmosphere",
-   "wiki_title": ""
+   "narration": "പുതിയ കണക്കുകൾ വരുമ്പോൾ ജനസംഖ്യ കൂടിയ വടക്കൻ സംസ്ഥാനങ്ങൾക്ക് കൂടുതൽ സീറ്റുകൾ ലഭിക്കും. എന്നാൽ തെക്കൻ സംസ്ഥാനങ്ങൾക്ക് പ്രതിനിധി എണ്ണത്തിൽ കുറവുണ്ടാകാം.",
+   "keywords": "North India, South India",
+   "image_prompt": "A split screen showing a densely populated city in North India on one side and a developed city in South India on the other",
+   "wiki_title": "India"
   },
   {
-   "narration": "മുംബൈ ഇന്ത്യൻസിന്റെ ഈ പുതിയ പടപ്പുറപ്പാട് വരാനിരിക്കുന്ന ഐപിഎൽ സീസണിൽ വലിയ മാറ്റങ്ങൾക്ക് വഴിയൊരുക്കുമെന്നുറപ്പാണ്.",
-   "keywords": [
-    "Stadium",
-    "match day",
-    "excitement"
-   ],
-   "image_prompt": "Wankhede stadium packed with cheering cricket fans holding blue flags, night match, cinematic shot",
-   "wiki_title": "Wankhede Stadium"
+   "narration": "ജനസംഖ്യ നിയന്ത്രിച്ച സംസ്ഥാനങ്ങൾക്ക് ഇത് രാഷ്ട്രീയമായ തിരിച്ചടിയാകുമെന്ന് തെക്കൻ സംസ്ഥാനങ്ങൾ ആശങ്കപ്പെടുന്നു.",
+   "keywords": "balance, politics",
+   "image_prompt": "An artistic representation of a balance scale, with a population icon on one side and a parliament seat icon on the other, tilted",
+   "wiki_title": "Kerala"
+  },
+  {
+   "narration": "ജനാധിപത്യപരമായ തുല്യ പ്രതിനിധാനം വേണോ, അതോ ജനസംഖ്യ നിയന്ത്രിച്ചവർക്ക് പ്രത്യേക പരിഗണന നൽകണോ എന്നതാണ് ഇവിടുത്തെ വലിയ ചോദ്യം.",
+   "keywords": "Democracy, Parliament",
+   "image_prompt": "High angle wide shot of the new Indian Parliament building (Sansad Bhavan) under a dramatic evening sky",
+   "wiki_title": "Parliament of India"
   }
  ],
- "caption": "ചുളുവില്‍ ക്യാപ്റ്റന്‍സി തിരികെ പിടിച്ചോ രോഹിത്? മുംബൈ ഇന്ത്യന്‍സില്‍ വീണ്ടും വമ്പന്‍ അഴിച്ചുപണി! 🏏\n\nഐപിഎൽ ആരാധകരെ ഞെട്ടിച്ചുകൊണ്ട് മുംബൈ ഇന്ത്യൻസ് ക്യാപ്റ്റൻസിയിൽ വീണ്ടും നിർണായക മാറ്റം. റിപ്പോർട്ടുകൾ പ്രകാരം രോഹിത് ശർമയെ ടീമിന്റെ നായകനായി വീണ്ടും പ്രഖ്യാപിച്ചിരിക്കുകയാണ്. കഴിഞ്ഞ സീസണിൽ ഹാർദിക് പാണ്ഡ്യയെ ക്യാപ്റ്റനായി നിയമിച്ചത് വലിയ ആരാധകരോഷത്തിനും സ്റ്റേഡിയത്തിലെ കൂവലുകൾക്കും ടീമിനുള്ളിലെ അസ്വാരസ്യങ്ങൾക്കും കാരണമായിരുന്നു.\n\nഅഞ്ച് ഐപിഎൽ ട്രോഫികൾ മുംബൈക്ക് സമ്മാനിച്ച രോഹിത് ശർമയുടെ അനുഭവസമ്പത്ത് ടീമിന് തിരികെ ആവശ്യമാണെന്ന തിരിച്ചറിവാണ് ഫ്രാഞ്ചൈസിയെ ഈ തീരുമാനത്തിലേക്ക് നയിച്ചതെന്നാണ് സൂചന. അതേസമയം, കഴിഞ്ഞ വർഷം വലിയ തുക നൽകി ഗുജറാത്ത് ടൈറ്റൻസിൽ നിന്നും ട്രേഡ് ചെയ്തെടുത്ത ഹാർദിക് പാണ്ഡ്യയുടെ പുതിയ പങ്ക് എന്തായിരിക്കുമെന്നത് സംബന്ധിച്ച് വ്യക്തത വന്നിട്ടില്ല.\n\nഒരു ഭാഗത്ത് ആരാധകർ ആഹ്ളാദം കൊള്ളുമ്പോൾ, മറുവശത്ത് മുൻ ക്യാപ്റ്റനും നിലവിലെ ക്യാപ്റ്റനും തമ്മിലുള്ള ഈ മാറ്റം ടീമിന്റെ ഡ്രെസ്സിങ് റൂം അന്തരീക്ഷത്തെ എങ്ങനെ ബാധിക്കുമെന്ന ചോദ്യവും ശക്തമാണ്.\n\n#RohitSharma #MumbaiIndians #IPL #HardikPandya #CricketNews #IPLAuction #IndianPremierLeague",
- "suggestions": [
-  {
-   "topic": "മണ്ഡല പുനർനിർണയ ബില്ല്: അറിയേണ്ട പ്രധാന കാര്യങ്ങൾ",
-   "context": "കേന്ദ്ര മന്ത്രിസഭയുടെ അംഗീകാരം ലഭിച്ച പുതിയ ബില്ലിനെക്കുറിച്ചുള്ള വിവരങ്ങൾ.",
-   "where": "news"
-  },
-  {
-   "topic": "സ്ത്രീകൾക്ക് 2500 രൂപ; എന്താണ് തടസ്സം?",
-   "context": "അക്കൗണ്ടിൽ പണം വരാതെ കാത്തിരിക്കുന്ന 7 ലക്ഷം സ്ത്രീകൾ.",
-   "where": "news"
-  },
-  {
-   "topic": "രാത്രി ഷിഫ്റ്റിൽ ജോലി ചെയ്യുന്ന സ്ത്രീകൾ അറിയാൻ",
-   "context": "നിയമ ഭേദഗതി പ്രകാരം രാത്രി ഷിഫ്റ്റിൽ സമ്മതപത്രവും ഗതാഗത സൗകര്യവും നിർബന്ധം.",
-   "where": "news"
-  },
-  {
-   "topic": "പാലക്കാട് ജ്വല്ലറി കവർച്ച; ജീവനക്കാരിയുടെ ധീരത",
-   "context": "കവർച്ചയ്ക്കിടെ വെടിയുതിർത്തപ്പോൾ ജീവനക്കാരി ചെറുത്തുനിന്ന സാഹചര്യം.",
-   "where": "news"
-  },
-  {
-   "topic": "ഓഹരി വിപണിയിൽ റെക്കോർഡ് കുതിപ്പ്",
-   "context": "സെൻസക്സും നിഫ്റ്റിയും പുതിയ ഉയർന്ന നിലവാരത്തിലേക്ക്.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "സ്വർണ്ണവിലയിൽ വീണ്ടും വർധനവ്",
-   "context": "സ്വർണ്ണവിലയിൽ വന്ന പുതിയ മാറ്റങ്ങൾ അറിയാം.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ടിവികെ എംഎൽഎ അറസ്റ്റിലായി; അറിയേണ്ടത്",
-   "context": "ഐഎഎസ് ഉദ്യോഗസ്ഥയെ അപമാനിച്ച സംഭവത്തിൽ എംഎൽഎ അറസ്റ്റിൽ.",
-   "where": "news"
-  },
-  {
-   "topic": "അധ്യാപകർക്ക് പുതിയ നിർദ്ദേശങ്ങൾ; വികാസ് ഭവൻ",
-   "context": "സംസ്ഥാന അധ്യാപകർക്കായി പുറത്തിറക്കിയ പുതിയ മാർഗ്ഗനിർദ്ദേശങ്ങൾ.",
-   "where": "news"
-  }
- ]
+ "caption": "🚨 മണ്ഡല പുനർനിർണയം: വോട്ട് മൂല്യത്തിൽ മാറ്റം വരുമോ?\n\nഇന്ത്യയിലെ ലോക്‌സഭാ, നിയമസഭാ മണ്ഡലങ്ങളുടെ അതിരുകൾ പുനർനിർണ്ണയിക്കാനുള്ള (Delimitation) നടപടികൾക്ക് കേന്ദ്ര മന്ത്രിസഭ അംഗീകാരം നൽകി. വരാനിരിക്കുന്ന സെൻസസ് കണക്കുകളുടെ അടിസ്ഥാനത്തിലായിരിക്കും ഈ മാറ്റങ്ങൾ നടപ്പിലാക്കുക.\n\nനിലവിൽ 1971-ലെ ജനസംഖ്യാ കണക്കുകളുടെ അടിസ്ഥാനത്തിലാണ് മണ്ഡലങ്ങൾ വിഭജിച്ചിരിക്കുന്നത്. ജനസംഖ്യാ നിയന്ത്രണം പ്രോത്സാഹിപ്പിക്കുന്നതിനായി 2026 വരെ ഈ നടപടി മരവിപ്പിച്ചിരിക്കുകയായിരുന്നു. എന്നാൽ പുതിയ കാലഘട്ടത്തിൽ ജനസംഖ്യയിൽ വലിയ മാറ്റങ്ങൾ വന്നിരിക്കുന്നു.\n\nഇതിന്റെ ഫലമായി ജനസംഖ്യ വേഗത്തിൽ വർദ്ധിച്ച ഉത്തർപ്രദേശ്, ബിഹാർ തുടങ്ങിയ വടക്കൻ സംസ്ഥാനങ്ങൾക്ക് പാർലമെന്റിലും നിയമസഭകളിലും കൂടുതൽ സീറ്റുകൾ ലഭിക്കാൻ സാധ്യതയുണ്ട്. അതേസമയം, ജനസംഖ്യാ നിയന്ത്രണത്തിൽ വിജയിച്ച കേരളം, തമിഴ്നാട് തുടങ്ങിയ തെക്കൻ സംസ്ഥാനങ്ങളുടെ രാഷ്ട്രീയ പ്രാതിനിധ്യം താരതമ്യേന കുറയാൻ സാധ്യതയുണ്ട്.\n\nഒരു വശത്ത് 'ഒരാൾക്ക് ഒരു വോട്ട്' എന്ന ജനാധിപത്യ തത്വപ്രകാരം തുല്യ പ്രതിനിധാനം വേണമെന്ന് വാദമുണ്ട്. മറുവശത്ത്, ജനസംഖ്യ കുറച്ച സംസ്ഥാനങ്ങളെ ശിക്ഷിക്കുന്നതിന് തുല്യമാണിതെന്ന് തെക്കൻ സംസ്ഥാനങ്ങൾ ആരോപിക്കുന്നു.\n\nജനസംഖ്യ അടിസ്ഥാനമാക്കിയുള്ള സീറ്റ് വിഭജനം ജനാധിപത്യപരമാണോ, അതോ വികസനവും ജനസംഖ്യാ നിയന്ത്രണവും പരിഗണിച്ചുള്ള പ്രത്യേക ക്രമീകരണങ്ങൾ വേണോ എന്നതാണ് നിലവിലെ തർക്കം.\n\n#Delimitation #IndianPolitics #LokSabha #Census2021 #SouthIndia #PoliticalRepresentation #IndiaNews #Democracy"
 }
