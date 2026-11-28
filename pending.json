@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795866313.7062466,
- "offset": 141181915,
- "topic": "ഐപിഎൽ 2027: മുംബൈ ഇന്ത്യൻസ് ഹെഡ് കോച്ചായി കീറോൺ പൊള്ളാർഡ്",
+ "status": "waiting_media",
+ "created": 1795873239.9496384,
+ "offset": 141181916,
+ "topic": "മുഹമ്മദ് ഷാമിയും രാജസ്ഥാൻ റോയൽസും",
  "suggested_at": 1795872981.6277924,
  "seen_topics": [
   "സൗദി പെട്രോളിയം റിഫൈനറിക്ക് നേരെ മിസൈൽ ആക്രമണം",
@@ -66,110 +66,44 @@
   "ഷദാബ് ഖാനെക്കുറിച്ചുള്ള പുതിയ വിശേഷങ്ങൾ",
   "വിവാഹമോചനവും മാനസികാരോഗ്യവും തമ്മിലുള്ള ബന്ധം"
  ],
- "context": "മുംബൈ ഇന്ത്യൻസ് പരിശീലകനായി കീറോൺ പൊള്ളാർഡിനെ പിന്തുണച്ച് രോഹിത് ശർമ്മ.",
+ "context": "ഷാം еди പുതിയ ഐപിഎൽ ടീമായ രാജസ്ഥാൻ റോയൽസിലേക്ക് മാറുന്നതിനെക്കുറിച്ചുള്ള ചർച്ചകൾ.",
  "scenes": [
   {
-   "narration": "ഐപിഎൽ 2027-ൽ മുംബൈ ഇന്ത്യൻസിന്റെ അമരത്തേക്ക് കീറോൺ പൊള്ളാർഡ് എത്തുമോ?\nക്രിക്കറ്റ് ലോകത്ത് ഇപ്പോൾ ചർച്ചയാകുന്ന ഈ മാറ്റത്തിന് പിന്നിൽ രോഹിത് ശർമ്മയുടെ ശക്തമായ പിന്തുണയുമുണ്ട്!",
-   "keywords": [
-    "Kieron Pollard",
-    "Rohit Sharma",
-    "Mumbai Indians"
-   ],
-   "image_prompt": "Cinematic portrait of Kieron Pollard and Rohit Sharma together in Mumbai Indians jersey, dramatic stadium lighting, high detail, 4k",
-   "wiki_title": "Kieron Pollard"
+   "narration": "മുഹമ്മദ് ഷാമി ഇനി മറ്റൊരു നിറത്തിലോ? രാജസ്ഥാൻ റോയൽസിലേക്കുള്ള അദ്ദേഹത്തിന്റെ നീക്കം ഇപ്പോൾ വലിയ ചർച്ചയാകുന്നു!",
+   "keywords": "Mohammed Shami, Cricket news",
+   "image_prompt": "A cinematic, high-contrast close-up of Indian fast bowler Mohammed Shami looking intense, stadium lights in the background, professional sports photography style, 8k resolution.",
+   "wiki_title": "Mohammed Shami"
   },
   {
-   "narration": "ഫ്രാഞ്ചൈസി ക്രിക്കറ്റിൽ മുംബൈ ഇന്ത്യൻസിന്റെ വിശ്വസ്തനായ മാച്ച് വിന്നറായിരുന്നു കീറോൺ പൊള്ളാർഡ്.\nതാരത്തിന്റെ വിരമിക്കലിന് ശേഷം ടീമിന്റെ ബാറ്റിംഗ് കോച്ചായി അദ്ദേഹം സേവനം അനുഷ്ഠിച്ചിരുന്നു.",
-   "keywords": [
-    "Pollard batting",
-    "Mumbai Indians",
-    "Coach"
-   ],
-   "image_prompt": "Kieron Pollard as batting coach giving instructions to players in Mumbai Indians dugout, professional sports photography",
-   "wiki_title": "Mumbai Indians"
+   "narration": "ഗുജറാത്ത് ടൈറ്റൻസിന്റെ വിജയങ്ങളിൽ നിർണ്ണായക പങ്കുവഹിച്ച ഷാമി, ഐപിഎല്ലിലെ ഏറ്റവും മികച്ച ഇന്ത്യൻ പേസർമാരിൽ ഒരാളാണ്.",
+   "keywords": "Gujarat Titans, Cricket action",
+   "image_prompt": "Mohammed Shami celebrating a wicket in a cricket stadium, wearing a blue cricket jersey, motion blur, action shot, high energy.",
+   "wiki_title": "Gujarat Titans"
   },
   {
-   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം, മുംബൈ ഇന്ത്യൻസിന്റെ പുതിയ ഹെഡ് കോച്ച് സ്ഥാനത്തേക്ക് പൊള്ളാർഡിന്റെ പേര് ശക്തമായി ഉയർന്നു വരുന്നുണ്ട്.\nഈ നീക്കത്തിന് ടീമിന്റെ മുൻ ക്യാപ്റ്റൻ രോഹിത് ശർമ്മയുടെ പൂർണ്ണ പിന്തുണയുണ്ടെന്നാണ് വിവരം.",
-   "keywords": [
-    "Head coach",
-    "Discussion",
-    "Cricket stadium"
-   ],
-   "image_prompt": "Rohit Sharma and team management having a serious discussion on the cricket ground, cinematic style",
-   "wiki_title": "Rohit Sharma"
+   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം, രാജസ്ഥാൻ റോയൽസ് ഷാമിയെ സ്വന്തമാക്കാൻ താൽപ്പര്യപ്പെടുന്നുണ്ട്.",
+   "keywords": "Rajasthan Royals, IPL rumors",
+   "image_prompt": "The Rajasthan Royals logo glowing on a large digital screen inside a massive cricket stadium, professional broadcast style.",
+   "wiki_title": "Rajasthan Royals"
   },
   {
-   "narration": "കളിക്കാരനായും മെന്ററായും ഡ്രസ്സിംഗ് റൂമിൽ വലിയ സ്വാധീനമുള്ള വ്യക്തിയാണ് പൊള്ളാർഡ്.\nതാരങ്ങളുമായുള്ള അദ്ദേഹത്തിന്റെ അടുത്ത ബന്ധം പരിശീലകന്റെ റോളിൽ വലിയ നേട്ടമാകും എന്നാണ് വിലയിരുത്തപ്പെടുന്നത്.",
-   "keywords": [
-    "Team huddle",
-    "Dressing room",
-    "Celebration"
-   ],
-   "image_prompt": "Mumbai Indians cricket team celebrating victory together on the field, emotional and energetic atmosphere",
+   "narration": "അനുഭവസമ്പന്നനായ ഒരു ഇന്ത്യൻ പേസർ രാജസ്ഥാന്റെ ബൗളിംഗ് നിരയ്ക്ക് വലിയ കരുത്താകുമെന്നാണ് കരുതുന്നത്.",
+   "keywords": "Fast bowling, Cricket pitch",
+   "image_prompt": "A professional fast bowler's hand releasing a cricket ball at high speed, dramatic lighting, dust rising from the pitch, extreme close-up.",
+   "wiki_title": "Fast bowling"
+  },
+  {
+   "narration": "എന്നാൽ വരാനിരിക്കുന്ന മെഗാ ഓക്ഷനിൽ മറ്റ് ടീമുകളും ഷാമിക്കായി വൻ തുക മുടക്കിയേക്കാം.",
+   "keywords": "IPL auction, Cricket hammer",
+   "image_prompt": "A wooden auction hammer striking a table in a professional, high-stakes auction room, bokeh background with blurred people.",
    "wiki_title": "Indian Premier League"
   },
   {
-   "narration": "എന്നാൽ ഫ്രാഞ്ചൈസി ഇതുവരെ ഔദ്യോഗികമായി അന്തിമ പ്രഖ്യാപനം നടത്തിയിട്ടില്ല.\nവരുന്ന സീസണുകളിൽ മുംബൈ നിരയിൽ വലിയ അഴിച്ചുപണികൾ ഉണ്ടാകുമെന്നാണ് സൂചന.",
-   "keywords": [
-    "IPL trophy",
-    "Press conference",
-    "Cricket gear"
-   ],
-   "image_prompt": "IPL cricket trophy gleaming under stadium lights with blurred background of cricket pitch",
+   "narration": "ഷാമി രാജസ്ഥാൻ റോയൽസിലേക്ക് മാറുന്നത് ആ ടീമിനെ പുതിയ ഉയരങ്ങളിലെത്തിക്കുമോ, അതോ ഗുജറാത്തിൽ തുടരുന്നതാകുമോ ഉചിതം?",
+   "keywords": "Cricket trophy, Decision",
+   "image_prompt": "A split-screen image: one side showing Rajasthan Royals pink colors and the other side showing Gujarat Titans blue colors, with a cricket ball in the center divider.",
    "wiki_title": "Indian Premier League"
-  },
-  {
-   "narration": "കളിക്കളത്തിലെ റെക്കോർഡുകൾക്ക് ശേഷം കോച്ചിംഗ് കുപ്പായത്തിൽ പൊള്ളാർഡ് മുംബൈയെ വിജയത്തിലേക്ക് നയിക്കുമോ?\nഈ പുതിയ നേതൃമാറ്റം മുംബൈ ഇന്ത്യൻസിന്റെ ഭാഗ്യജാതകം മാറ്റിയെഴുതുമോ എന്നത് കാത്തിരുന്നു കാണേണ്ടി വരും.",
-   "keywords": [
-    "Future cricket",
-    "Strategy board",
-    "Stadium fans"
-   ],
-   "image_prompt": "Kieron Pollard thinking deeply with strategy board in hand, stadium background, cinematic lighting",
-   "wiki_title": "Kieron Pollard"
   }
  ],
- "caption": "ഐപിഎൽ 2027: മുംബൈ ഇന്ത്യൻസ് ഹെഡ് കോച്ചായി കീറോൺ പൊള്ളാർഡ് വരുന്നുവോ? 🏏\n\nഐപിഎൽ ക്രിക്കറ്റ് ലോകത്ത് വലിയ ചർച്ചകൾക്ക് തുടക്കമിട്ട് മുംബൈ ഇന്ത്യൻസിന്റെ അടുത്ത നീക്കം സംബന്ധിച്ച റിപ്പോർട്ടുകൾ പുറത്ത്. ഫ്രാഞ്ചൈസിയുടെ വിശ്വസ്തനായ മുൻ താരം കീറോൺ പൊള്ളാർഡിനെ ടീമിന്റെ ഹെഡ് കോച്ച് സ്ഥാനത്തേക്ക് പരിഗണിക്കുന്നതായാണ് വിവരം. നിലവിൽ മുംബൈ ഇന്ത്യൻസിന്റെ ബാറ്റിംഗ് കോച്ചായി പ്രവർത്തിക്കുന്ന പൊള്ളാർഡിന് ടീമിനുള്ളിൽ വലിയ സ്വാധീനമാണുള്ളത്.\n\nഈ തീരുമാനത്തിന് പിന്നിൽ ടീമിന്റെ മുൻ ക്യാപ്റ്റൻ രോഹിത് ശർമ്മയുടെ ശക്തമായ പിന്തുണയുണ്ടെന്നാണ് പുറത്തുവരുന്ന റിപ്പോർട്ടുകൾ വ്യക്തമാക്കുന്നത്. കളിക്കളത്തിലും ഡ്രസ്സിംഗ് റൂമിലും രോഹിതും പൊള്ളാർഡും തമ്മിലുള്ള ആത്മബന്ധം മുംബൈ നിരയിൽ എക്കാലത്തും ചർച്ചയായിരുന്നു. ഈ കൂട്ടുകെട്ട് പരിശീലകന്റെ റോളിൽ കൂടി തുടരുന്നത് ടീമിന് കരുത്തുപകരുമെന്നാണ് മാനേജ്‌മെന്റിന്റെ വിലയിരുത്തൽ.\n\nഎന്നാൽ ഫ്രാഞ്ചൈസിയുടെ ഭാഗത്തുനിന്ന് ഔദ്യോഗിക സ്ഥിരീകരണങ്ങൾ വരാനിരിക്കുന്നതേയുള്ളൂ. മാറ്റങ്ങൾ ടീമിന്റെ വിജയഗാഥ തുടരാൻ സഹായിക്കുമോ അതോ പുതിയ വെല്ലുവിളികൾ സൃഷ്ടിക്കുമോ എന്നത് സമയമാണ് തീരുമാനിക്കേണ്ടത്.\n\n#MumbaiIndians #KieronPollard #RohitSharma #IPL2027 #CricketNews #IPLUpdates #MumbaiIndiansCoach",
- "suggestions": [
-  {
-   "topic": "മുഹമ്മദ് ഷാമിയും രാജസ്ഥാൻ റോയൽസും",
-   "context": "ഷാം еди പുതിയ ഐപിഎൽ ടീമായ രാജസ്ഥാൻ റോയൽസിലേക്ക് മാറുന്നതിനെക്കുറിച്ചുള്ള ചർച്ചകൾ.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ടെസ്റ്റ് ക്രിക്കറ്റിൽ ആകാശ് ദീപിന്റെ തിളക്കം",
-   "context": "ന്യൂസിലൻഡിനെതിരായ മത്സരത്തിൽ ആകാശ് ദീപിന്റെ മികച്ച ബൗളിംഗ് പ്രകടനം.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "നാനിയുടെ പുതിയ സിനിമയെക്കുറിച്ച്",
-   "context": "'സത്യം സുന്ദരം' സംവിധായകനൊപ്പം നാനി പുതിയ ചിത്രത്തിലേക്ക്.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ലാ ലിഗയിൽ ബെറ്റിസും റായോയും ഏറ്റുമുട്ടുന്നു",
-   "context": "സ്പാനിഷ് ഫുട്ബോൾ ലീഗിലെ പ്രധാന മത്സരങ്ങളെക്കുറിച്ചുള്ള വിശേഷങ്ങൾ.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "വിവേക് ഒബറോയിയുടെ മാതൃകാപരമായ പ്രവർത്തനം",
-   "context": "ക്യാൻസർ രോഗികൾക്കായി രാമായണം സ്ക്രീനിംഗ് നടത്തിയ വിവേക് ഒബറോയ്.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ഡെലിമിറ്റേഷൻ ബില്ലും അരുന്ധതി റോയിയുടെ വിമർശനവും",
-   "context": "മണ്ഡല പുനർനിർണയ ബില്ലിനെതിരെ അരുന്ധതി റോയ് ഉന്നയിക്കുന്ന രാഷ്ട്രീയ നിലപാടുകൾ.",
-   "where": "News"
-  },
-  {
-   "topic": "ഷദാബ് ഖാനെക്കുറിച്ചുള്ള പുതിയ വിശേഷങ്ങൾ",
-   "context": "ക്രിക്കറ്റ് ലോകത്ത് ഷദാബ് ഖാനെ സംബന്ധിച്ച പുതിയ ചർച്ചകൾ.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "വിവാഹമോചനവും മാനസികാരോഗ്യവും തമ്മിലുള്ള ബന്ധം",
-   "context": "സാമൂഹിക ജീവിതത്തിലെ മാറ്റങ്ങളും അവ മാനസികാരോഗ്യത്തിൽ ചെലുത്തുന്ന സ്വാധീനവും.",
-   "where": "Google Trends"
-  }
- ]
+ "caption": "മുഹമ്മദ് ഷാമി ഇനി രാജസ്ഥാൻ റോയൽസിലോ? 🏏\n\nഐപിഎൽ ആരാധകർക്കിടയിൽ ഇപ്പോൾ വലിയ ചർച്ചയാണ് മുഹമ്മദ് ഷാമിയെ സംബന്ധിച്ചുള്ളത്. ഗുജറാത്ത് ടൈറ്റൻസിന്റെ വിജയങ്ങളിൽ നിർണ്ണായക പങ്കുവഹിച്ച ഷാമി, രാജസ്ഥാൻ റോയൽസിലേക്ക് മാറാൻ സാധ്യതയുണ്ടെന്ന റിപ്പോർട്ടുകളാണ് പുറത്തുവരുന്നത്.\n\nരാജസ്ഥാൻ റോയൽസിന് നിലവിൽ ഒരു കരുത്തുറ്റ ഇന്ത്യൻ പേസർ ആവശ്യമാണ്. ഷാമിയുടെ അനുഭവസമ്പത്തും വേഗതയും ടീമിന്റെ ബൗളിംഗ് നിരയ്ക്ക് വലിയ മുതൽക്കൂട്ടാകും. എന്നാൽ വരാനിരിക്കുന്ന മെഗാ ഓക്ഷനിൽ മറ്റ് പ്രമുഖ ടീമുകളും ഷാമിക്കായി വൻ തുക മുടക്കിയേക്കാം എന്നതും ഒരു വസ്തുതയാണ്.\n\nഷാമി രാജസ്ഥാൻ റോയൽസിന്റെ ഭാഗമാകുന്നതുകൊണ്ട് ആ ടീമിന് ചാമ്പ്യൻഷിപ്പ് നേടാൻ സാധിക്കുമോ? അതോ ഗുജറാത്ത് ടൈറ്റൻസിലെ നിലവിലെ ടീമിനൊപ്പം തുടരുന്നതാണ് അദ്ദേഹത്തിന് കൂടുതൽ ഗുണകരമാകുക?\n\n#MohammedShami #RajasthanRoyals #IPL2025 #CricketNews #IPLTransfer #GujaratTitans #MalayalamCricket #IPLUpdates"
 }
