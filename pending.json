@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795857290.2939913,
- "offset": 141181905,
- "topic": "Suggestion",
+ "status": "waiting_media",
+ "created": 1795864376.4260044,
+ "offset": 141181906,
+ "topic": "ജിടിഎ 6 ഗ്രാഫിക്സ് പ്രശ്നം; പരിഹാര മാർഗ്ഗങ്ങൾ അറിയാം",
  "suggested_at": 1795862120.7560775,
  "seen_topics": [
   "ആഗോള ഫാഷൻ ബ്രാൻഡുകൾ ഓർഡറുകൾ ഇന്ത്യയിലേക്ക് മാറ്റുന്നു",
@@ -66,92 +66,44 @@
   "ഫീബി ലിച്ച്‌ഫീൽഡിന്റെ തകർപ്പൻ പ്രകടനം; പുതിയ തരംഗം",
   "ഇന്ത്യ-യുഎസ് വ്യാപാര കരാർ ഉടൻ; സാമ്പത്തിക രംഗത്ത് മാറ്റം?"
  ],
- "context": "",
+ "context": "ജിടിഎ 6 ഗ്രാഫിക്സ് ഡൗൺഗ്രേഡ് സംബന്ധിച്ച ചർച്ചകളും പരിഹാരങ്ങളും വൈറലാവുന്നു.",
  "scenes": [
   {
-   "narration": "മിഡിൽ ഈസ്റ്റിനെ ഒന്നടങ്കം നടുക്കി ഇറാൻ പ്രസിഡന്റ് ഇബ്രാഹിം റെയ്സി ഒരു ഹെലികോപ്റ്റർ അപകടത്തിൽ കൊല്ലപ്പെട്ടിരിക്കുന്നു.",
-   "keywords": "Iran President helicopter",
-   "image_prompt": "Cinematic wide shot of a blue and white helicopter flying over rugged, foggy mountains in Iran, dramatic atmosphere, high detail.",
-   "wiki_title": "Ebrahim Raisi"
+   "narration": "ജിടിഎ 6-ന്റെ ഗ്രാഫിക്സ് കുറച്ചോ? ഗെയിമിംഗ് ലോകത്ത് ഇപ്പോൾ വലിയ ചർച്ചയാണിത്!",
+   "keywords": "GTA 6 trailer",
+   "image_prompt": "A cinematic, high-detail close-up of a video game character in a neon-lit Vice City street, split screen showing a high-quality version and a slightly lower quality version, dramatic lighting",
+   "wiki_title": "Grand Theft Auto VI"
   },
   {
-   "narration": "അസർബൈജാൻ അതിർത്തിയിലെ അണക്കെട്ട് ഉദ്ഘാടനത്തിന് ശേഷം മടങ്ങവേ കിഴക്കൻ അസർബൈജാൻ പ്രവിശ്യയിലെ വനമേഖലയിലാണ് അപകടമുണ്ടായത്.",
-   "keywords": "mountain crash site",
-   "image_prompt": "Aerial view of dense green forest and steep mountains covered in thick white fog, Azerbaijan border region, mysterious and somber.",
-   "wiki_title": "East Azerbaijan province"
-  },
-  {
-   "narration": "റെയ്സിക്കൊപ്പം വിദേശകാര്യമന്ത്രി ഹുസൈൻ അമീർ അബ്ദുള്ളാഹിയാൻ അടക്കം ഒൻപത് പേരാണ് വിമാനത്തിലുണ്ടായിരുന്നത്, എല്ലാവരും മരിച്ചതായി സ്ഥിരീകരിച്ചു.",
-   "keywords": "Hossein Amir-Abdollahian",
-   "image_prompt": "Splitscreen professional portraits of Ebrahim Raisi and Hossein Amir-Abdollahian with a black ribbon in the corner.",
-   "wiki_title": "Hossein Amir-Abdollahian"
-  },
-  {
-   "narration": "അതിശൈത്യവും കനത്ത മൂടൽമഞ്ഞും കാരണം 15 മണിക്കൂറിലധികം നീണ്ട തിരച്ചിലിനൊടുവിലാണ് ഡ്രോണുകളുടെ സഹായത്തോടെ അവശിഷ്ടങ്ങൾ കണ്ടെത്തിയത്.",
-   "keywords": "rescue team fog",
-   "image_prompt": "Rescue workers in orange gear walking through deep fog on a rocky mountain slope at night, flashlights cutting through the mist.",
+   "narration": "ട്രെയിലറിലെ അതിശയിപ്പിക്കുന്ന ദൃശ്യങ്ങൾ യഥാർത്ഥ ഗെയിമിൽ ഉണ്ടാകില്ലെന്ന് ചില റിപ്പോർട്ടുകൾ പറയുന്നു.",
+   "keywords": "gaming comparison",
+   "image_prompt": "A person looking at a large monitor comparing two side-by-side gameplay clips of a tropical city, one vibrant and one slightly muted, professional gaming setup",
    "wiki_title": ""
   },
   {
-   "narration": "ഇറാൻ ഭരണഘടനയനുസരിച്ച് താൽക്കാലിക ചുമതല വൈസ് പ്രസിഡന്റ് മുഹമ്മദ് മുഖ്ബർ ഏറ്റെടുക്കും, 50 ദിവസത്തിനുള്ളിൽ പുതിയ തിരഞ്ഞെടുപ്പ് നടക്കും.",
-   "keywords": "Mohammad Mokhber",
-   "image_prompt": "Mohammad Mokhber sitting in a formal office setting with the Iranian flag in the background, looking serious.",
-   "wiki_title": "Mohammad Mokhber"
-  },
-  {
-   "narration": "ഇസ്രായേൽ-ഹമാസ് യുദ്ധം കൊടുമ്പിരിക്കൊണ്ടിരിക്കുന്ന ഈ സാഹചര്യത്തിൽ റെയ്സിയുടെ വിയോഗം മേഖലയിലെ സമാധാന ചർച്ചകളെ എങ്ങനെ ബാധിക്കുമെന്ന ആശങ്കയിലാണ് ലോകം.",
-   "keywords": "Middle East geopolitics",
-   "image_prompt": "A world map focused on the Middle East with glowing red highlights on Iran, Israel, and Gaza, symbolic of geopolitical tension.",
+   "narration": "ഗെയിം എല്ലാ കൺസോളുകളിലും സ്മൂത്തായി പ്രവർത്തിക്കാൻ വേണ്ടിയുള്ള ഒപ്റ്റിമൈസേഷൻ ആണ് ഇതിന് കാരണം.",
+   "keywords": "game optimization",
+   "image_prompt": "Abstract digital representation of computer code and gears optimizing a 3D city landscape, futuristic tech aesthetic",
    "wiki_title": ""
   },
   {
-   "narration": "കടുത്ത നിലപാടുകാരനായ റെയ്സിയുടെ പിൻഗാമിയായി വരുന്ന വ്യക്തിക്ക് ഇറാന്റെ ആഭ്യന്തര പ്രശ്നങ്ങളും അന്താരാഷ്ട്ര സമ്മർദ്ദങ്ങളും ഒരുപോലെ നേരിടാൻ സാധിക്കുമോ എന്നതാണ് കണ്ടറിയേണ്ടത്.",
-   "keywords": "Tehran street mourning",
-   "image_prompt": "Crowds of people in Tehran gathered in a public square, some holding photos of Raisi, a sense of national uncertainty and grief.",
-   "wiki_title": "Tehran"
+   "narration": "പിഎസ് 5, എക്സ് ബോക്സ് തുടങ്ങിയവയുടെ ഹാർഡ്‌വെയർ പരിമിതികൾ പരിഗണിച്ചാണ് റോക്ക്സ്റ്റാർ ഈ തീരുമാനമെടുത്തതെന്ന് കരുതപ്പെടുന്നു.",
+   "keywords": "PS5 Xbox console",
+   "image_prompt": "High-quality 3D render of PlayStation 5 and Xbox Series X consoles side by side with glowing blue and green lights",
+   "wiki_title": "Rockstar Games"
+  },
+  {
+   "narration": "പിന്നീട് പുറത്തിറങ്ങുന്ന പിസി വേർഷനിലോ മോഡുകളിലൂടെയോ കൂടുതൽ മികച്ച ഗ്രാഫിക്സ് ലഭിക്കാൻ സാധ്യതയുണ്ട്.",
+   "keywords": "gaming PC mods",
+   "image_prompt": "A powerful high-end gaming PC with RGB lighting, liquid cooling, and multiple monitors showing ultra-realistic city scenery",
+   "wiki_title": ""
+  },
+  {
+   "narration": "വിഷ്വൽ ക്വാളിറ്റി കുറഞ്ഞാലും ഗെയിം ലാഗ് ഇല്ലാതെ പ്രവർത്തിക്കുന്നതാണോ അതോ ഗ്രാഫിക്സ് മികച്ചതാക്കി കുറച്ചു ലാഗ് സഹിക്കുന്നതാണോ ശരി.",
+   "keywords": "gaming dilemma",
+   "image_prompt": "A conceptual image of a scale balancing a 'Golden GPU' on one side and a 'Smooth Clock' on the other, representing quality vs performance",
+   "wiki_title": ""
   }
  ],
- "caption": "ഇറാനെ നടുക്കി ആകാശദുരന്തം: പ്രസിഡന്റ് ഇബ്രാഹിം റെയ്സി അന്തരിച്ചു 🇮🇷\n\nഇറാൻ പ്രസിഡന്റ് ഇബ്രാഹിം റെയ്സിയും വിദേശകാര്യമന്ത്രി ഹുസൈൻ അമീർ അബ്ദുള്ളാഹിയാനും ഹെലികോപ്റ്റർ അപകടത്തിൽ കൊല്ലപ്പെട്ട വാർത്ത ഞെട്ടലോടെയാണ് ലോകം കേട്ടത്. ഞായറാഴ്ച വൈകുന്നേരം അസർബൈജാൻ അതിർത്തിയിലുണ്ടായ അപകടത്തിൽ റെയ്സിക്കൊപ്പം ഹെലികോപ്റ്ററിലുണ്ടായിരുന്ന ഒൻപത് പേരും മരണപ്പെട്ടു.\n\nഅസർബൈജാൻ അതിർത്തിയിലെ ഖിസ് ഖലാസി അണക്കെട്ട് ഉദ്ഘാടനം കഴിഞ്ഞ് മടങ്ങുമ്പോഴാണ് അപകടം സംഭവിച്ചത്. കനത്ത മൂടൽമഞ്ഞും മഴയും കലർന്ന മോശം കാലാവസ്ഥയാണ് അപകടത്തിന് കാരണമായതെന്നാണ് പ്രാഥമിക റിപ്പോർട്ടുകൾ. 15 മണിക്കൂറിലധികം നീണ്ട ദുഷ്കരമായ തിരച്ചിലിനൊടുവിൽ തുർക്കിയുടെ അക്കിഞ്ചി ഡ്രോണുകളാണ് തകർന്ന ഹെലികോപ്റ്ററിന്റെ അവശിഷ്ടങ്ങൾ കണ്ടെത്തിയത്.\n\nഇറാനിൽ അഞ്ച് ദിവസത്തെ ദുഃഖാചരണം പ്രഖ്യാപിച്ചിരിക്കുകയാണ്. ഭരണഘടനയനുസരിച്ച് ഫസ്റ്റ് വൈസ് പ്രസിഡന്റ് മുഹമ്മദ് മുഖ്ബർ രാജ്യത്തിന്റെ താൽക്കാലിക ചുമതല ഏറ്റെടുക്കും. വരും ദിവസങ്ങളിൽ പുതിയ പ്രസിഡന്റിനെ തിരഞ്ഞെടുക്കാനുള്ള നടപടികൾ ആരംഭിക്കും. 2021-ൽ അധികാരമേറ്റ റെയ്സി, ഇറാന്റെ പരമോന്നത നേതാവ് ആയത്തുള്ള ഖൊമേനിയുടെ പിൻഗാമിയാകുമെന്ന് കരുതപ്പെട്ടിരുന്ന വ്യക്തിയായിരുന്നു.\n\nമിഡിൽ ഈസ്റ്റിൽ ഇസ്രായേൽ-ഹമാസ് സംഘർഷം നിലനിൽക്കുന്ന ഈ നിർണ്ണായക ഘട്ടത്തിൽ റെയ്സിയുടെ വിയോഗം വലിയ രാഷ്ട്രീയ ചർച്ചകൾക്ക് വഴിവെച്ചിരിക്കുകയാണ്. ഇറാന്റെ വിദേശനയങ്ങളിലും പ്രാദേശിക ഇടപെടലുകളിലും ഈ മാറ്റം എന്ത് സ്വാധീനമുണ്ടാക്കും?\n\nപുതിയൊരു നേതൃത്വം ഇറാന്റെ കടുത്ത നിലപാടുകളിൽ മാറ്റം വരുത്തുമോ അതോ ആഭ്യന്തര സുരക്ഷയ്ക്കും സ്ഥിരതയ്ക്കും കൂടുതൽ പ്രാധാന്യം നൽകുമോ എന്നത് ലോകം ഉറ്റുനോക്കുന്ന കാര്യമാണ്.\n\n#Iran #EbrahimRaisi #HelicopterCrash #WorldNews #IranPresident #BreakingNews #MiddleEast",
- "suggestions": [
-  {
-   "topic": "എംഐക്ക് പുതിയ ദിശ വേണം; പോളാർഡിനെക്കുറിച്ച് രോഹിത് ശർമ്മ",
-   "context": "മുംബൈ ഇന്ത്യൻസിന്റെ ഭാവി സംബന്ധിച്ച് രോഹിത് ശർമ്മ നടത്തിയ പരാമർശം ചർച്ചയാകുന്നു.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ഋഷഭ് പന്ത് ചരിത്രം കുറിച്ചു; കീവി ബൗളർമാരെ ഞെട്ടിച്ച പ്രകടനം",
-   "context": "കീവി ബൗളർമാർക്കെതിരെ പന്ത് നടത്തിയ മികച്ച പ്രകടനം സോഷ്യൽ മീഡിയയിൽ ശ്രദ്ധേയമാകുന്നു.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ജിടിഎ 6 ഗ്രാഫിക്സ് പ്രശ്നം; പരിഹാര മാർഗ്ഗങ്ങൾ അറിയാം",
-   "context": "ജിടിഎ 6 ഗ്രാഫിക്സ് ഡൗൺഗ്രേഡ് സംബന്ധിച്ച ചർച്ചകളും പരിഹാരങ്ങളും വൈറലാവുന്നു.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ഇന്ത്യയുടെ ഫീൽഡിംഗ് മോശം; വിമർശനവുമായി സുനിൽ ഗവാസ്കർ",
-   "context": "ഇന്ത്യൻ ഫീൽഡിംഗ് ശൈലിയെക്കുറിച്ച് മുൻ താരം സുനിൽ ഗവാസ്കർ രംഗത്ത്.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "വെള്ളക്കെട്ട് ഒഴിവാക്കിയതിന് പ്രശംസ, പിന്നാലെ ട്രോൾ മഴ!",
-   "context": "നഗരത്തിലെ വെള്ളക്കെട്ട് ഒഴിവാക്കിയതിന് മേയർക്ക് ലഭിച്ച ട്രോളുകൾ ചർച്ചയാകുന്നു.",
-   "where": "News"
-  },
-  {
-   "topic": "ബഹിരാകാശത്ത് ചൈനയുടെ കുതിപ്പ്; പുതിയ നേട്ടങ്ങൾ",
-   "context": "ബഹിരാകാശ രംഗത്ത് ചൈനയുടെ പുതിയ മുന്നേറ്റങ്ങൾ ലോകശ്രദ്ധ ആകർഷിക്കുന്നു.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ഫീബി ലിച്ച്‌ഫീൽഡിന്റെ തകർപ്പൻ പ്രകടനം; പുതിയ തരംഗം",
-   "context": "ലിച്ച്‌ഫീൽഡിന്റെ മികച്ച ബാറ്റിംഗ് പ്രകടനം ക്രിക്കറ്റ് പ്രേമികൾക്കിടയിൽ ചർച്ചയാകുന്നു.",
-   "where": "Google Trends"
-  },
-  {
-   "topic": "ഇന്ത്യ-യുഎസ് വ്യാപാര കരാർ ഉടൻ; സാമ്പത്തിക രംഗത്ത് മാറ്റം?",
-   "context": "ഇന്ത്യയും അമേരിക്കയും തമ്മിലുള്ള പുതിയ വ്യാപാര കരാർ പൂർത്തീകരണത്തിലേക്ക് നീങ്ങുന്നു.",
-   "where": "News"
-  }
- ]
+ "caption": "🎮 GTA 6 ഗ്രാഫിക്സ് ഡൗൺഗ്രേഡ്? സത്യമെന്ത്!\n\nGTA 6-ന്റെ വരവിനായി ലോകം കാത്തിരിക്കുമ്പോൾ, ഗെയിമിന്റെ ഗ്രാഫിക്സ് കുറച്ചെന്ന തരത്തിലുള്ള ചർച്ചകൾ സോഷ്യൽ മീഡിയയിൽ വൈറലാകുന്നു. ട്രെയിലറിലെ അതിമനോഹരമായ ദൃശ്യങ്ങൾ യഥാർത്ഥ ഗെയിമിൽ ലഭ്യമാകില്ലെന്ന് റിപ്പോർട്ടുകൾ സൂചിപ്പിക്കുന്നു.\n\nസാധാരണയായി വലിയ ഗെയിമുകൾ പുറത്തിറക്കുമ്പോൾ, എല്ലാ കൺസോളുകളിലും ഒരുപോലെ പ്രവർത്തിക്കാൻ വേണ്ടി 'ഒപ്റ്റിമൈസേഷൻ' എന്ന പ്രക്രിയ നടത്താറുണ്ട്. ഇതിന്റെ ഭാഗമായി ചില വിഷ്വൽ ക്വാളിറ്റി കുറച്ചേക്കാം. പിഎസ് 5, എക്സ് ബോക്സ് തുടങ്ങിയവയുടെ ഹാർഡ്‌വെയർ പരിമിതികൾ പരിഗണിച്ചാണ് റോക്ക്സ്റ്റാർ ഗെയിംസ് ഇത്തരം മാറ്റങ്ങൾ വരുത്തുന്നത്.\n\n2025-ൽ പുറത്തിറങ്ങുന്ന ഈ ഗെയിം പിന്നീട് പിസിയിലേക്ക് വരുമ്പോൾ കൂടുതൽ മികച്ച ഗ്രാഫിക്സും മോഡുകളും പ്രതീക്ഷിക്കാം.\n\nവിഷ്വൽ ക്വാളിറ്റി കുറഞ്ഞാലും ഗെയിം ലാഗ് ഇല്ലാതെ പ്രവർത്തിക്കുന്നതാണോ നല്ലത്, അതോ ഗ്രാഫിക്സ് മികച്ചതാക്കി കുറച്ചു ലാഗ് സഹിക്കുന്നതാണോ ശരി എന്ന വലിയ ചോദ്യമാണ് ഇപ്പോൾ ഗെയിമിംഗ് കമ്മ്യൂണിറ്റിയിൽ ഉയരുന്നത്.\n\n#GTA6 #RockstarGames #GamingNews #MalayalamGaming #GrandTheftAuto #GamingCommunity #GraphicsDowngrade #PS5"
 }
