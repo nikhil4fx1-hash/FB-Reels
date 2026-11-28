@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795838464.783217,
- "offset": 141181895,
- "topic": "മണ്ഡല പുനർനിർണയ ബില്ല്: അറിയേണ്ട പ്രധാന കാര്യങ്ങൾ",
+ "status": "waiting_media",
+ "created": 1795857290.2939913,
+ "offset": 141181896,
+ "topic": "Suggestion",
  "suggested_at": 1795856673.7766256,
  "seen_topics": [
   "കേന്ദ്ര മന്ത്രിസഭ ഡെലിമിറ്റേഷൻ ബില്ലിന് പച്ചക്കൊടി കാട്ടി",
@@ -66,92 +66,50 @@
   "സൗദി ജസാൻ റിഫൈനറിക്ക് നേരെ ആക്രമണം",
   "യുഎഇയുടെ വഴിയേ ഇറാഖും; എണ്ണ വിപണിയിൽ ആശങ്ക"
  ],
- "context": "കേന്ദ്ര മന്ത്രിസഭയുടെ അംഗീകാരം ലഭിച്ച പുതിയ ബില്ലിനെക്കുറിച്ചുള്ള വിവരങ്ങൾ.",
+ "context": "",
  "scenes": [
   {
-   "narration": "ഇന്ത്യയിലെ രാഷ്ട്രീയ ഭൂപടം ഉടൻ മാറാൻ പോകുന്നു. നിങ്ങളുടെ വോട്ട് മൂല്യത്തെ ഇത് ബാധിക്കുമോ?",
-   "keywords": "Indian map, politics",
-   "image_prompt": "Cinematic shot of a 3D map of India with glowing boundaries shifting and changing colors, digital interface style, high resolution",
-   "wiki_title": "Delimitation Commission of India"
+   "narration": "മിഡിൽ ഈസ്റ്റിനെ ഒന്നടങ്കം നടുക്കി ഇറാൻ പ്രസിഡന്റ് ഇബ്രാഹിം റെയ്സി ഒരു ഹെലികോപ്റ്റർ അപകടത്തിൽ കൊല്ലപ്പെട്ടിരിക്കുന്നു.",
+   "keywords": "Iran President helicopter",
+   "image_prompt": "Cinematic wide shot of a blue and white helicopter flying over rugged, foggy mountains in Iran, dramatic atmosphere, high detail.",
+   "wiki_title": "Ebrahim Raisi"
   },
   {
-   "narration": "കേന്ദ്ര മന്ത്രിസഭയുടെ അംഗീകാരത്തോടെ മണ്ഡല പുനർനിർണയ നടപടികൾക്ക് തുടക്കമാകുകയാണ്.",
-   "keywords": "Union Cabinet, meeting",
-   "image_prompt": "A professional wide shot of the Indian Union Cabinet meeting in a grand conference room, official government atmosphere, realistic",
-   "wiki_title": "Cabinet of India"
+   "narration": "അസർബൈജാൻ അതിർത്തിയിലെ അണക്കെട്ട് ഉദ്ഘാടനത്തിന് ശേഷം മടങ്ങവേ കിഴക്കൻ അസർബൈജാൻ പ്രവിശ്യയിലെ വനമേഖലയിലാണ് അപകടമുണ്ടായത്.",
+   "keywords": "mountain crash site",
+   "image_prompt": "Aerial view of dense green forest and steep mountains covered in thick white fog, Azerbaijan border region, mysterious and somber.",
+   "wiki_title": "East Azerbaijan province"
   },
   {
-   "narration": "ജനസംഖ്യയിലെ മാറ്റങ്ങൾക്കനുസരിച്ച് ലോക്‌സഭാ, നിയമസഭാ മണ്ഡലങ്ങളുടെ അതിരുകൾ പുതുക്കി നിശ്ചയിക്കുന്നതിനെയാണ് ഡിലിമിറ്റേഷൻ എന്ന് പറയുന്നത്.",
-   "keywords": "boundary, map",
-   "image_prompt": "Close up of a hand drawing new lines on a political map of India with a red marker, blueprint architectural style",
-   "wiki_title": "Delimitation Commission of India"
+   "narration": "റെയ്സിക്കൊപ്പം വിദേശകാര്യമന്ത്രി ഹുസൈൻ അമീർ അബ്ദുള്ളാഹിയാൻ അടക്കം ഒൻപത് പേരാണ് വിമാനത്തിലുണ്ടായിരുന്നത്, എല്ലാവരും മരിച്ചതായി സ്ഥിരീകരിച്ചു.",
+   "keywords": "Hossein Amir-Abdollahian",
+   "image_prompt": "Splitscreen professional portraits of Ebrahim Raisi and Hossein Amir-Abdollahian with a black ribbon in the corner.",
+   "wiki_title": "Hossein Amir-Abdollahian"
   },
   {
-   "narration": "1971-ലെ കണക്കുകൾ പ്രകാരമാണ് നിലവിൽ മണ്ഡലങ്ങൾ വിഭജിച്ചിരിക്കുന്നത്. ഇത് 2026 വരെ മരവിപ്പിച്ചിരിക്കുകയായിരുന്നു.",
-   "keywords": "Census, documents",
-   "image_prompt": "Vintage 1971 census documents overlapping with a futuristic digital 2026 calendar, symbolic of time transition",
-   "wiki_title": "Census of India"
+   "narration": "അതിശൈത്യവും കനത്ത മൂടൽമഞ്ഞും കാരണം 15 മണിക്കൂറിലധികം നീണ്ട തിരച്ചിലിനൊടുവിലാണ് ഡ്രോണുകളുടെ സഹായത്തോടെ അവശിഷ്ടങ്ങൾ കണ്ടെത്തിയത്.",
+   "keywords": "rescue team fog",
+   "image_prompt": "Rescue workers in orange gear walking through deep fog on a rocky mountain slope at night, flashlights cutting through the mist.",
+   "wiki_title": ""
   },
   {
-   "narration": "പുതിയ കണക്കുകൾ വരുമ്പോൾ ജനസംഖ്യ കൂടിയ വടക്കൻ സംസ്ഥാനങ്ങൾക്ക് കൂടുതൽ സീറ്റുകൾ ലഭിക്കും. എന്നാൽ തെക്കൻ സംസ്ഥാനങ്ങൾക്ക് പ്രതിനിധി എണ്ണത്തിൽ കുറവുണ്ടാകാം.",
-   "keywords": "North India, South India",
-   "image_prompt": "A split screen showing a densely populated city in North India on one side and a developed city in South India on the other",
-   "wiki_title": "India"
+   "narration": "ഇറാൻ ഭരണഘടനയനുസരിച്ച് താൽക്കാലിക ചുമതല വൈസ് പ്രസിഡന്റ് മുഹമ്മദ് മുഖ്ബർ ഏറ്റെടുക്കും, 50 ദിവസത്തിനുള്ളിൽ പുതിയ തിരഞ്ഞെടുപ്പ് നടക്കും.",
+   "keywords": "Mohammad Mokhber",
+   "image_prompt": "Mohammad Mokhber sitting in a formal office setting with the Iranian flag in the background, looking serious.",
+   "wiki_title": "Mohammad Mokhber"
   },
   {
-   "narration": "ജനസംഖ്യ നിയന്ത്രിച്ച സംസ്ഥാനങ്ങൾക്ക് ഇത് രാഷ്ട്രീയമായ തിരിച്ചടിയാകുമെന്ന് തെക്കൻ സംസ്ഥാനങ്ങൾ ആശങ്കപ്പെടുന്നു.",
-   "keywords": "balance, politics",
-   "image_prompt": "An artistic representation of a balance scale, with a population icon on one side and a parliament seat icon on the other, tilted",
-   "wiki_title": "Kerala"
+   "narration": "ഇസ്രായേൽ-ഹമാസ് യുദ്ധം കൊടുമ്പിരിക്കൊണ്ടിരിക്കുന്ന ഈ സാഹചര്യത്തിൽ റെയ്സിയുടെ വിയോഗം മേഖലയിലെ സമാധാന ചർച്ചകളെ എങ്ങനെ ബാധിക്കുമെന്ന ആശങ്കയിലാണ് ലോകം.",
+   "keywords": "Middle East geopolitics",
+   "image_prompt": "A world map focused on the Middle East with glowing red highlights on Iran, Israel, and Gaza, symbolic of geopolitical tension.",
+   "wiki_title": ""
   },
   {
-   "narration": "ജനാധിപത്യപരമായ തുല്യ പ്രതിനിധാനം വേണോ, അതോ ജനസംഖ്യ നിയന്ത്രിച്ചവർക്ക് പ്രത്യേക പരിഗണന നൽകണോ എന്നതാണ് ഇവിടുത്തെ വലിയ ചോദ്യം.",
-   "keywords": "Democracy, Parliament",
-   "image_prompt": "High angle wide shot of the new Indian Parliament building (Sansad Bhavan) under a dramatic evening sky",
-   "wiki_title": "Parliament of India"
+   "narration": "കടുത്ത നിലപാടുകാരനായ റെയ്സിയുടെ പിൻഗാമിയായി വരുന്ന വ്യക്തിക്ക് ഇറാന്റെ ആഭ്യന്തര പ്രശ്നങ്ങളും അന്താരാഷ്ട്ര സമ്മർദ്ദങ്ങളും ഒരുപോലെ നേരിടാൻ സാധിക്കുമോ എന്നതാണ് കണ്ടറിയേണ്ടത്.",
+   "keywords": "Tehran street mourning",
+   "image_prompt": "Crowds of people in Tehran gathered in a public square, some holding photos of Raisi, a sense of national uncertainty and grief.",
+   "wiki_title": "Tehran"
   }
  ],
- "caption": "🚨 മണ്ഡല പുനർനിർണയം: വോട്ട് മൂല്യത്തിൽ മാറ്റം വരുമോ?\n\nഇന്ത്യയിലെ ലോക്‌സഭാ, നിയമസഭാ മണ്ഡലങ്ങളുടെ അതിരുകൾ പുനർനിർണ്ണയിക്കാനുള്ള (Delimitation) നടപടികൾക്ക് കേന്ദ്ര മന്ത്രിസഭ അംഗീകാരം നൽകി. വരാനിരിക്കുന്ന സെൻസസ് കണക്കുകളുടെ അടിസ്ഥാനത്തിലായിരിക്കും ഈ മാറ്റങ്ങൾ നടപ്പിലാക്കുക.\n\nനിലവിൽ 1971-ലെ ജനസംഖ്യാ കണക്കുകളുടെ അടിസ്ഥാനത്തിലാണ് മണ്ഡലങ്ങൾ വിഭജിച്ചിരിക്കുന്നത്. ജനസംഖ്യാ നിയന്ത്രണം പ്രോത്സാഹിപ്പിക്കുന്നതിനായി 2026 വരെ ഈ നടപടി മരവിപ്പിച്ചിരിക്കുകയായിരുന്നു. എന്നാൽ പുതിയ കാലഘട്ടത്തിൽ ജനസംഖ്യയിൽ വലിയ മാറ്റങ്ങൾ വന്നിരിക്കുന്നു.\n\nഇതിന്റെ ഫലമായി ജനസംഖ്യ വേഗത്തിൽ വർദ്ധിച്ച ഉത്തർപ്രദേശ്, ബിഹാർ തുടങ്ങിയ വടക്കൻ സംസ്ഥാനങ്ങൾക്ക് പാർലമെന്റിലും നിയമസഭകളിലും കൂടുതൽ സീറ്റുകൾ ലഭിക്കാൻ സാധ്യതയുണ്ട്. അതേസമയം, ജനസംഖ്യാ നിയന്ത്രണത്തിൽ വിജയിച്ച കേരളം, തമിഴ്നാട് തുടങ്ങിയ തെക്കൻ സംസ്ഥാനങ്ങളുടെ രാഷ്ട്രീയ പ്രാതിനിധ്യം താരതമ്യേന കുറയാൻ സാധ്യതയുണ്ട്.\n\nഒരു വശത്ത് 'ഒരാൾക്ക് ഒരു വോട്ട്' എന്ന ജനാധിപത്യ തത്വപ്രകാരം തുല്യ പ്രതിനിധാനം വേണമെന്ന് വാദമുണ്ട്. മറുവശത്ത്, ജനസംഖ്യ കുറച്ച സംസ്ഥാനങ്ങളെ ശിക്ഷിക്കുന്നതിന് തുല്യമാണിതെന്ന് തെക്കൻ സംസ്ഥാനങ്ങൾ ആരോപിക്കുന്നു.\n\nജനസംഖ്യ അടിസ്ഥാനമാക്കിയുള്ള സീറ്റ് വിഭജനം ജനാധിപത്യപരമാണോ, അതോ വികസനവും ജനസംഖ്യാ നിയന്ത്രണവും പരിഗണിച്ചുള്ള പ്രത്യേക ക്രമീകരണങ്ങൾ വേണോ എന്നതാണ് നിലവിലെ തർക്കം.\n\n#Delimitation #IndianPolitics #LokSabha #Census2021 #SouthIndia #PoliticalRepresentation #IndiaNews #Democracy",
- "suggestions": [
-  {
-   "topic": "പൂജാ ബമ്പർ നറുക്കെടുപ്പ് ഇന്ന്; 12 കോടി ആർക്ക്?",
-   "context": "45 ലക്ഷം ടിക്കറ്റുകൾ വിറ്റഴിഞ്ഞ പൂജാ ബമ്പർ ലോട്ടറിയുടെ വിജയിയെ ഇന്ന് പ്രഖ്യാപിക്കുന്നു.",
-   "where": "Google Trends & Kerala News"
-  },
-  {
-   "topic": "മണ്ഡല പുനർനിർണയ ബിൽ; ഡിഎംകെ നിലപാട് ചർച്ചയാകുന്നു",
-   "context": "കേന്ദ്രസർക്കാരിന്റെ മണ്ഡല പുനർനിർണയ ബില്ലിനെ പിന്തുണയ്ക്കാൻ ഡിഎംകെ തീരുമാനം; കോൺഗ്രസുമായി ഭിന്നത രൂക്ഷം.",
-   "where": "Top Headlines & National News"
-  },
-  {
-   "topic": "ബിസ്‌ലറി വെള്ളത്തിൽ ബാക്ടീരിയ സാന്നിധ്യം; നടുക്കം",
-   "context": "പ്രമുഖ കുപ്പിവെള്ള ബ്രാൻഡായ ബിസ്‌ലറിയുടെ പുതിയ സാമ്പിളിൽ ബാക്ടീരിയ കണ്ടെത്തിയതായി റിപ്പോർട്ട്.",
-   "where": "Reuters & National News"
-  },
-  {
-   "topic": "തമിഴ്നാട്ടിൽ ടിവികെ എംഎൽഎ അറസ്റ്റിൽ",
-   "context": "സർക്കാർ ഉദ്യോഗസ്ഥനെ ഭീഷണിപ്പെടുത്തിയ കേസിൽ തമിഴക വെട്രി കഴകം (ടിവികെ) എംഎൽഎ അരുൾ വിഘ്നേഷ് അറസ്റ്റിൽ.",
-   "where": "The Hindu & South Indian News"
-  },
-  {
-   "topic": "ഡെൽഹി-എൻസിആർ മേഖലയിൽ വൻ ഭീകരവാദ പദ്ധതി തകർത്തു",
-   "context": "ഐഎസ്‌ഐ ബന്ധമുള്ള ജെയ്ഷെ മുഹമ്മദ് ഭീകരൻ ഡെൽഹിയിൽ പിടിയിലായി.",
-   "where": "News18 & National News"
-  },
-  {
-   "topic": "പെറു ഹൈവേയിൽ മലയാളിക്ക് നേരെ തോക്കുധാരികളുടെ ആക്രമണം",
-   "context": "പെറുവിൽ ഇന്ത്യൻ പൗരന് നേരെ വെടിവെപ്പ് നടക്കുകയും സ്വർണാഭരണങ്ങൾ കവർച്ച ചെയ്യുകയും ചെയ്തു.",
-   "where": "NDTV & International News"
-  },
-  {
-   "topic": "സൗദി ജസാൻ റിഫൈനറിക്ക് നേരെ ആക്രമണം",
-   "context": "സൗദി അറേബ്യയിലെ ജസാൻ റിഫൈനറിയിൽ ഉണ്ടായ ആക്രമണത്തെ തുടർന്ന് പ്രവർത്തനങ്ങൾ തടസ്സപ്പെട്ടു.",
-   "where": "Al Jazeera & Global News"
-  },
-  {
-   "topic": "യുഎഇയുടെ വഴിയേ ഇറാഖും; എണ്ണ വിപണിയിൽ ആശങ്ക",
-   "context": "ഇറാഖിലെ എണ്ണ ഉത്പാദനത്തിലെ പുതിയ മാറ്റങ്ങളും യുഎസ് ഇടപെടലും ആഗോള വിപണിയിൽ ചർച്ചയാകുന്നു.",
-   "where": "Manorama Online & Business News"
-  }
- ]
+ "caption": "ഇറാനെ നടുക്കി ആകാശദുരന്തം: പ്രസിഡന്റ് ഇബ്രാഹിം റെയ്സി അന്തരിച്ചു 🇮🇷\n\nഇറാൻ പ്രസിഡന്റ് ഇബ്രാഹിം റെയ്സിയും വിദേശകാര്യമന്ത്രി ഹുസൈൻ അമീർ അബ്ദുള്ളാഹിയാനും ഹെലികോപ്റ്റർ അപകടത്തിൽ കൊല്ലപ്പെട്ട വാർത്ത ഞെട്ടലോടെയാണ് ലോകം കേട്ടത്. ഞായറാഴ്ച വൈകുന്നേരം അസർബൈജാൻ അതിർത്തിയിലുണ്ടായ അപകടത്തിൽ റെയ്സിക്കൊപ്പം ഹെലികോപ്റ്ററിലുണ്ടായിരുന്ന ഒൻപത് പേരും മരണപ്പെട്ടു.\n\nഅസർബൈജാൻ അതിർത്തിയിലെ ഖിസ് ഖലാസി അണക്കെട്ട് ഉദ്ഘാടനം കഴിഞ്ഞ് മടങ്ങുമ്പോഴാണ് അപകടം സംഭവിച്ചത്. കനത്ത മൂടൽമഞ്ഞും മഴയും കലർന്ന മോശം കാലാവസ്ഥയാണ് അപകടത്തിന് കാരണമായതെന്നാണ് പ്രാഥമിക റിപ്പോർട്ടുകൾ. 15 മണിക്കൂറിലധികം നീണ്ട ദുഷ്കരമായ തിരച്ചിലിനൊടുവിൽ തുർക്കിയുടെ അക്കിഞ്ചി ഡ്രോണുകളാണ് തകർന്ന ഹെലികോപ്റ്ററിന്റെ അവശിഷ്ടങ്ങൾ കണ്ടെത്തിയത്.\n\nഇറാനിൽ അഞ്ച് ദിവസത്തെ ദുഃഖാചരണം പ്രഖ്യാപിച്ചിരിക്കുകയാണ്. ഭരണഘടനയനുസരിച്ച് ഫസ്റ്റ് വൈസ് പ്രസിഡന്റ് മുഹമ്മദ് മുഖ്ബർ രാജ്യത്തിന്റെ താൽക്കാലിക ചുമതല ഏറ്റെടുക്കും. വരും ദിവസങ്ങളിൽ പുതിയ പ്രസിഡന്റിനെ തിരഞ്ഞെടുക്കാനുള്ള നടപടികൾ ആരംഭിക്കും. 2021-ൽ അധികാരമേറ്റ റെയ്സി, ഇറാന്റെ പരമോന്നത നേതാവ് ആയത്തുള്ള ഖൊമേനിയുടെ പിൻഗാമിയാകുമെന്ന് കരുതപ്പെട്ടിരുന്ന വ്യക്തിയായിരുന്നു.\n\nമിഡിൽ ഈസ്റ്റിൽ ഇസ്രായേൽ-ഹമാസ് സംഘർഷം നിലനിൽക്കുന്ന ഈ നിർണ്ണായക ഘട്ടത്തിൽ റെയ്സിയുടെ വിയോഗം വലിയ രാഷ്ട്രീയ ചർച്ചകൾക്ക് വഴിവെച്ചിരിക്കുകയാണ്. ഇറാന്റെ വിദേശനയങ്ങളിലും പ്രാദേശിക ഇടപെടലുകളിലും ഈ മാറ്റം എന്ത് സ്വാധീനമുണ്ടാക്കും?\n\nപുതിയൊരു നേതൃത്വം ഇറാന്റെ കടുത്ത നിലപാടുകളിൽ മാറ്റം വരുത്തുമോ അതോ ആഭ്യന്തര സുരക്ഷയ്ക്കും സ്ഥിരതയ്ക്കും കൂടുതൽ പ്രാധാന്യം നൽകുമോ എന്നത് ലോകം ഉറ്റുനോക്കുന്ന കാര്യമാണ്.\n\n#Iran #EbrahimRaisi #HelicopterCrash #WorldNews #IranPresident #BreakingNews #MiddleEast"
 }
