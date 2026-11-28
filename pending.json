@@ -1,8 +1,8 @@
 {
- "status": "choosing",
- "created": 1795873239.9496384,
- "offset": 141181924,
- "topic": "മുഹമ്മദ് ഷാമിയും രാജസ്ഥാൻ റോയൽസും",
+ "status": "waiting_media",
+ "created": 1795877388.0295608,
+ "offset": 141181925,
+ "topic": "വിജയ്‌യുടെ ടിവികെ - ഡിഎംകെ രാഷ്ട്രീയ വാക്പോര്",
  "suggested_at": 1795876476.820883,
  "seen_topics": [
   "ഓഹരി വിപണിയിൽ റെക്കോർഡ് കുതിപ്പ്",
@@ -66,86 +66,62 @@
   "മൊകേരി ലിച്ചു കൃഷ്ണ കുറ്റവിമുക്തൻ",
   "കർണാടകയിൽ വാഹനാപകടം; പൊലിഞ്ഞത് മലയാളി ജീവനുകൾ"
  ],
- "context": "ഷാം еди പുതിയ ഐപിഎൽ ടീമായ രാജസ്ഥാൻ റോയൽസിലേക്ക് മാറുന്നതിനെക്കുറിച്ചുള്ള ചർച്ചകൾ.",
+ "context": "സ്റ്റാലിനെതിരെ രൂക്ഷ വിമർശനവുമായി വിജയ്‌യുടെ തമിഴക വെട്രി കഴകം",
  "scenes": [
   {
-   "narration": "മുഹമ്മദ് ഷാമി ഇനി മറ്റൊരു നിറത്തിലോ? രാജസ്ഥാൻ റോയൽസിലേക്കുള്ള അദ്ദേഹത്തിന്റെ നീക്കം ഇപ്പോൾ വലിയ ചർച്ചയാകുന്നു!",
-   "keywords": "Mohammed Shami, Cricket news",
-   "image_prompt": "A cinematic, high-contrast close-up of Indian fast bowler Mohammed Shami looking intense, stadium lights in the background, professional sports photography style, 8k resolution.",
-   "wiki_title": "Mohammed Shami"
+   "narration": "നടൻ വിജയ് തന്റെ രാഷ്ട്രീയ പാർട്ടിയായ തമിഴക വെട്രി കഴകത്തിന്റെ ആദ്യ സമ്മേളനത്തിൽ ഡിഎംകെ സർക്കാരിനെതിരെ രൂക്ഷമായ വിമർശനമാണ് ഉന്നയിച്ചത്.",
+   "keywords": [
+    "Vijay TVK conference",
+    "Stalin criticism"
+   ],
+   "image_prompt": "Cinematic portrait of actor Vijay addressing a massive political rally in Tamil Nadu, dramatic lighting, high quality.",
+   "wiki_title": "Tamilaga Vettri Kazhagam"
   },
   {
-   "narration": "ഗുജറാത്ത് ടൈറ്റൻസിന്റെ വിജയങ്ങളിൽ നിർണ്ണായക പങ്കുവഹിച്ച ഷാമി, ഐപിഎല്ലിലെ ഏറ്റവും മികച്ച ഇന്ത്യൻ പേസർമാരിൽ ഒരാളാണ്.",
-   "keywords": "Gujarat Titans, Cricket action",
-   "image_prompt": "Mohammed Shami celebrating a wicket in a cricket stadium, wearing a blue cricket jersey, motion blur, action shot, high energy.",
-   "wiki_title": "Gujarat Titans"
+   "narration": "2024 ഒക്ടോബർ 27-ന് വില്ലുപുരം ജില്ലയിലെ വിക്രവണ്ടിയിലാണ് പതിനായിരക്കണക്കിന് ആളുകൾ പങ്കെടുത്ത ഈ ആദ്യ സംസ്ഥാന സമ്മേളനം നടന്നത്.",
+   "keywords": [
+    "Vikravandi conference",
+    "crowd rally"
+   ],
+   "image_prompt": "A huge crowd of people gathered at a political conference ground in Vikravandi, Tamil Nadu, daytime, wide shot.",
+   "wiki_title": ""
   },
   {
-   "narration": "റിപ്പോർട്ടുകൾ പ്രകാരം, രാജസ്ഥാൻ റോയൽസ് ഷാമിയെ സ്വന്തമാക്കാൻ താൽപ്പര്യപ്പെടുന്നുണ്ട്.",
-   "keywords": "Rajasthan Royals, IPL rumors",
-   "image_prompt": "The Rajasthan Royals logo glowing on a large digital screen inside a massive cricket stadium, professional broadcast style.",
-   "wiki_title": "Rajasthan Royals"
+   "narration": "സംസ്ഥാനത്തെ നിലവിലെ ഭരണത്തിൽ അഴിമതിയും കുടുംബാധിപത്യ രാഷ്ട്രീയവുമാണ് നടക്കുന്നതെന്ന് വിജയ് തന്റെ പ്രസംഗത്തിൽ കുറ്റപ്പെടുത്തി.",
+   "keywords": [
+    "political corruption",
+    "dynasty politics"
+   ],
+   "image_prompt": "Conceptual image of political debate and governance challenges in Tamil Nadu, professional editorial style.",
+   "wiki_title": "Dravida Munnetra Kazhagam"
   },
   {
-   "narration": "അനുഭവസമ്പന്നനായ ഒരു ഇന്ത്യൻ പേസർ രാജസ്ഥാന്റെ ബൗളിംഗ് നിരയ്ക്ക് വലിയ കരുത്താകുമെന്നാണ് കരുതുന്നത്.",
-   "keywords": "Fast bowling, Cricket pitch",
-   "image_prompt": "A professional fast bowler's hand releasing a cricket ball at high speed, dramatic lighting, dust rising from the pitch, extreme close-up.",
-   "wiki_title": "Fast bowling"
+   "narration": "2024 ഫെബ്രുവരി 2-നാണ് വിജയ് ഔദ്യോഗികമായി ടിവികെ പ്രഖ്യാപിച്ചത്. സിനിമയിൽ നിന്ന് രാഷ്ട്രീയത്തിലേക്കുള്ള അദ്ദേഹത്തിന്റെ ചുവടുമാറ്റം വലിയ ചർച്ചയായിരുന്നു.",
+   "keywords": [
+    "Vijay political entry",
+    "TVK announcement"
+   ],
+   "image_prompt": "Actor turned politician Vijay making an official announcement, press conference setting, realistic.",
+   "wiki_title": "Vijay (actor)"
   },
   {
-   "narration": "എന്നാൽ വരാനിരിക്കുന്ന മെഗാ ഓക്ഷനിൽ മറ്റ് ടീമുകളും ഷാമിക്കായി വൻ തുക മുടക്കിയേക്കാം.",
-   "keywords": "IPL auction, Cricket hammer",
-   "image_prompt": "A wooden auction hammer striking a table in a professional, high-stakes auction room, bokeh background with blurred people.",
-   "wiki_title": "Indian Premier League"
+   "narration": "എന്നാൽ വിജയിയുടെ പ്രസംഗം വെറും സിനിമാ സ്റ്റൈൽ രാഷ്ട്രീയമാണെന്നും, അടിസ്ഥാനമില്ലാത്ത ആരോപണങ്ങളാണെന്നുമാണ് ഡിഎംകെ നേതൃത്വത്തിന്റെ പ്രതികരണം.",
+   "keywords": [
+    "DMK response",
+    "political reaction"
+   ],
+   "image_prompt": "Political leaders in a discussion, press meet background, Tamil Nadu politics, news broadcast style.",
+   "wiki_title": "M. K. Stalin"
   },
   {
-   "narration": "ഷാമി രാജസ്ഥാൻ റോയൽസിലേക്ക് മാറുന്നത് ആ ടീമിനെ പുതിയ ഉയരങ്ങളിലെത്തിക്കുമോ, അതോ ഗുജറാത്തിൽ തുടരുന്നതാകുമോ ഉചിതം?",
-   "keywords": "Cricket trophy, Decision",
-   "image_prompt": "A split-screen image: one side showing Rajasthan Royals pink colors and the other side showing Gujarat Titans blue colors, with a cricket ball in the center divider.",
-   "wiki_title": "Indian Premier League"
+   "narration": "2026-ലെ നിയമസഭാ തെരഞ്ഞെടുപ്പ് ലക്ഷ്യമിട്ടാണ് ടിവികെ ഇപ്പോൾ അടിത്തട്ട് മുതൽ സംഘടനയെ ശക്തിപ്പെടുത്തുന്നത്. തമിഴ്നാട്ടിൽ ഇനിയൊരു രാഷ്ട്രീയ മാറ്റത്തിന് ഇതെങ്ങനെ വഴിയൊരുക്കും?",
+   "keywords": [
+    "2026 TN elections",
+    "political future"
+   ],
+   "image_prompt": "Electoral map of Tamil Nadu with political symbols, future election concept, professional graphic design.",
+   "wiki_title": "2026 Tamil Nadu Legislative Assembly election"
   }
  ],
- "caption": "മുഹമ്മദ് ഷാമി ഇനി രാജസ്ഥാൻ റോയൽസിലോ? 🏏\n\nഐപിഎൽ ആരാധകർക്കിടയിൽ ഇപ്പോൾ വലിയ ചർച്ചയാണ് മുഹമ്മദ് ഷാമിയെ സംബന്ധിച്ചുള്ളത്. ഗുജറാത്ത് ടൈറ്റൻസിന്റെ വിജയങ്ങളിൽ നിർണ്ണായക പങ്കുവഹിച്ച ഷാമി, രാജസ്ഥാൻ റോയൽസിലേക്ക് മാറാൻ സാധ്യതയുണ്ടെന്ന റിപ്പോർട്ടുകളാണ് പുറത്തുവരുന്നത്.\n\nരാജസ്ഥാൻ റോയൽസിന് നിലവിൽ ഒരു കരുത്തുറ്റ ഇന്ത്യൻ പേസർ ആവശ്യമാണ്. ഷാമിയുടെ അനുഭവസമ്പത്തും വേഗതയും ടീമിന്റെ ബൗളിംഗ് നിരയ്ക്ക് വലിയ മുതൽക്കൂട്ടാകും. എന്നാൽ വരാനിരിക്കുന്ന മെഗാ ഓക്ഷനിൽ മറ്റ് പ്രമുഖ ടീമുകളും ഷാമിക്കായി വൻ തുക മുടക്കിയേക്കാം എന്നതും ഒരു വസ്തുതയാണ്.\n\nഷാമി രാജസ്ഥാൻ റോയൽസിന്റെ ഭാഗമാകുന്നതുകൊണ്ട് ആ ടീമിന് ചാമ്പ്യൻഷിപ്പ് നേടാൻ സാധിക്കുമോ? അതോ ഗുജറാത്ത് ടൈറ്റൻസിലെ നിലവിലെ ടീമിനൊപ്പം തുടരുന്നതാണ് അദ്ദേഹത്തിന് കൂടുതൽ ഗുണകരമാകുക?\n\n#MohammedShami #RajasthanRoyals #IPL2025 #CricketNews #IPLTransfer #GujaratTitans #MalayalamCricket #IPLUpdates",
- "suggestions": [
-  {
-   "topic": "പൂജാ ബമ്പർ ഭാഗ്യശാലി ആര്? 12 കോടി ഫലം പ്രഖ്യാപിച്ചു",
-   "context": "JC 234427 ടിക്കറ്റിന് പൂജാ ബമ്പർ ഒന്നാം സമ്മാനം",
-   "where": "മലയാളം വാർത്തകൾ"
-  },
-  {
-   "topic": "മണ്ഡല പുനർനിർണയ ബിൽ; ഡിഎംകെ നിലപാടും രാഷ്ട്രീയ ചർച്ചകളും",
-   "context": "ഡെലിമിറ്റേഷൻ ബില്ലിനെച്ചൊല്ലി രാഷ്ട്രീയ പോര് ശക്തമാകുന്നു",
-   "where": "ദേശീയ മാധ്യമങ്ങൾ"
-  },
-  {
-   "topic": "യുഎസിന്റെ പുതിയ 25% താരിഫ്; ഇന്ത്യയ്ക്ക് തിരിച്ചടി",
-   "context": "ഇന്ത്യൻ ഉൽപ്പന്നങ്ങൾക്ക് മേൽ അമേരിക്ക പുതിയ തീരുവ ചുമത്തി",
-   "where": "പ്രധാന വാർത്തകൾ"
-  },
-  {
-   "topic": "സ്വർണ്ണവിലയിലെ ഇടിവും മലയാളികൾക്കുള്ള പാഠവും",
-   "context": "സ്വർണ്ണവില ജനുവരിയിലെ ഉയരത്തിൽ നിന്ന് 28% താഴേക്ക്",
-   "where": "ഗൂഗിൾ ട്രെൻഡ്സ്"
-  },
-  {
-   "topic": "വിജയ്‌യുടെ ടിവികെ - ഡിഎംകെ രാഷ്ട്രീയ വാക്പോര്",
-   "context": "സ്റ്റാലിനെതിരെ രൂക്ഷ വിമർശനവുമായി വിജയ്‌യുടെ തമിഴക വെട്രി കഴകം",
-   "where": "സോഷ്യൽ മീഡിയ"
-  },
-  {
-   "topic": "ഐഎൽടി20: ദുബായ് കാപ്പിറ്റൽസ് വിജയം",
-   "context": "ദുബായ് കാപ്പിറ്റൽസ് 45 റൺസിന് ജയിച്ചു കയറി",
-   "where": "ഗൂഗിൾ ട്രെൻഡ്സ്"
-  },
-  {
-   "topic": "മൊകേരി ലിച്ചു കൃഷ്ണ കുറ്റവിമുക്തൻ",
-   "context": "ബലാത്സംഗക്കേസിൽ സംവിധായകൻ ലിജു കൃഷ്ണയെ കോടതി വെറുതെവിട്ടു",
-   "where": "കേരള വാർത്തകൾ"
-  },
-  {
-   "topic": "കർണാടകയിൽ വാഹനാപകടം; പൊലിഞ്ഞത് മലയാളി ജീവനുകൾ",
-   "context": "കർണാടകയിലുണ്ടായ വാഹനാപകടത്തിൽ രണ്ട് മലയാളികൾക്ക് ദാരുണാന്ത്യം",
-   "where": "പ്രധാന വാർത്തകൾ"
-  }
- ]
+ "caption": "🎬 വിജയ്-ഡിഎംകെ രാഷ്ട്രീയ വാക്പോര് മുറുകുന്നു: തമിഴ്നാട്ടിൽ പുതിയ രാഷ്ട്രീയ സമവാക്യങ്ങളോ?\n\nതമിഴ്നാട് രാഷ്ട്രീയത്തിൽ നടൻ വിജയ് നേതൃത്വം നൽകുന്ന തമിഴക വെട്രി കഴകം (ടിവികെ) പാർട്ടിയും ഭരണകക്ഷിയായ ഡിഎംകെയും തമ്മിലുള്ള പോരാട്ടം ശക്തമാകുന്നു. 2024 ഒക്ടോബർ 27-ന് വില്ലുപുരം ജില്ലയിലെ വിക്രവണ്ടിയിൽ നടന്ന ടിവികെയുടെ ആദ്യ സംസ്ഥാന സമ്മേളനമാണ് ഈ രാഷ്ട്രീയ പോരിന് പ്രധാന കാരണം. പതിനായിരക്കണക്കിന് പ്രവർത്തകർ പങ്കെടുത്ത ഈ സമ്മേളനത്തിലൂടെ വിജയ് ഡിഎംകെ സർക്കാരിനെതിരെ നേരിട്ടുള്ള വിമർശനങ്ങളാണ് അഴിച്ചുവിട്ടത്.\n\nസംസ്ഥാനത്ത് അഴിമതിയും കുടുംബാധിപത്യ രാഷ്ട്രീയവുമാണ് നടക്കുന്നതെന്നാണ് വിജയ് പ്രധാനമായും ആരോപിച്ചത്. ജനങ്ങളെ ഭിന്നിപ്പിച്ച് ഭരിക്കുന്ന 'വിഭജിച്ച് ഭരിക്കൽ' തന്ത്രമാണ് ഭരണകക്ഷിയുടേതെന്നും, സാധാരണക്കാരുടെ പ്രശ്നങ്ങൾ പരിഹരിക്കാൻ നിലവിലെ സർക്കാരിന് കഴിഞ്ഞിട്ടില്ലെന്നും അദ്ദേഹം കുറ്റപ്പെടുത്തി. 2024 ഫെബ്രുവരി 2-ന് ഔദ്യോഗികമായി പാർട്ടി പ്രഖ്യാപിച്ചതിനുശേഷം വിജയ് നടത്തിയ ഏറ്റവും ശക്തമായ രാഷ്ട്രീയ നീക്കമാണിത്.\n\nപഴയ ദ്രാവിഡ രാഷ്ട്രീയ മാതൃകകളിൽ നിന്ന് വ്യത്യസ്തമായി മതേതരത്വവും സാമൂഹിക നീതിയും ഉറപ്പുനൽകുന്ന പുതിയൊരു രാഷ്ട്രീയ ബദലാണ് ടിവികെ മുന്നോട്ടുവെക്കുന്നത്. സിനിമയിൽ നിന്ന് രാഷ്ട്രീയത്തിലേക്ക് പ്രവേശിച്ച മുൻകാല നേതാക്കളുടെ പാത പിന്തുടർന്ന് തന്റെ ജനപ്രിയത വോട്ടാക്കി മാറ്റാനുള്ള തീവ്രശ്രമത്തിലാണ് വിജയ്. ഇതിനായി മാസങ്ങളായി ഗ്രാസ്റൂട്ട് തലത്തിൽ സംഘടനയെ ശക്തിപ്പെടുത്തുന്ന പ്രവർത്തനങ്ങളിലാണ് പാർട്ടി.\n\nഎന്നാൽ വിജയിയുടെ ഈ കടന്നാക്രമണങ്ങളെ ഡിഎംകെ നേതൃത്വം വളരെ നിസാരമായാണ് കാണുന്നത്. വിജയിയുടെ പ്രസംഗം വെറും 'സിനിമാ സ്റ്റൈൽ' പ്രസംഗം മാത്രമാണെന്നും യാതൊരു രാഷ്ട്രീയ ആഴവുമില്ലെന്നുമാണ് ഡിഎംകെ നേതാക്കളുടെ വാദം. ദ്രാവിഡ ആശയങ്ങളുടെ വേരുകൾ ആഴത്തിലുള്ള തമിഴ്നാട്ടിൽ ഒരു സിനിമാ താരത്തിന് പെട്ടെന്ന് രാഷ്ട്രീയ മാറ്റമുണ്ടാക്കാൻ കഴിയില്ലെന്നാണ് ഭരണപക്ഷത്തിന്റെ വിലയിരുത്തൽ.\n\nവരാനിരിക്കുന്ന 2026-ലെ നിയമസഭാ തെരഞ്ഞെടുപ്പ് ലക്ഷ്യമിട്ടാണ് ടിവികെ ഇപ്പോൾ കരുക്കൾ നീക്കുന്നത്. പരമ്പരാഗത പാർട്ടികൾക്കെതിരെ തമിഴ്നാട്ടിലെ യുവജനങ്ങൾക്കിടയിൽ രൂപപ്പെടുന്ന അതൃപ്തി മുതലെടുക്കാൻ വിജയിക്ക് കഴിയുമോ എന്നാണ് രാഷ്ട്രീയ നിരീക്ഷകർ ഉറ്റുനോക്കുന്നത്.\n\nസിനിമാ താരങ്ങളുടെ രാഷ്ട്രീയ പ്രവേശം തമിഴ്നാട്ടിൽ പലതവണ വിജയിച്ചിട്ടുണ്ടെങ്കിലും, ഡിഎംകെയുടെ ശക്തമായ സംഘടനാ സംവിധാനത്തെ മറികടക്കാൻ വിജയിന്റെ പുതിയ പാർട്ടിക്ക് സാധിക്കുമെന്ന് നിങ്ങൾ കരുതുന്നുണ്ടോ?\n\n#Vijay #TVK #DMK #MKStalin #TamilNaduPolitics #VikravandiConference #VijayPoliticialEntry #2026Elections"
 }
